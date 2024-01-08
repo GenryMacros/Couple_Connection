@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://bci0ardhy0y4e"]
+
+[ext_resource type="Script" path="res://NotesAndInteractions/InteractionArea.gd" id="1_hp1r3"]
+
+[node name="InteractionArea" type="Area3D"]
+collision_layer = 0
+collision_mask = 64
+script = ExtResource("1_hp1r3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_exited" from="." to="." method="_on_area_exited"]
