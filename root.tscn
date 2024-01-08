@@ -1,10 +1,13 @@
-[gd_scene load_steps=9 format=3 uid="uid://dkgcx7k7x1aff"]
+[gd_scene load_steps=13 format=3 uid="uid://dkgcx7k7x1aff"]
 
 [ext_resource type="MeshLibrary" uid="uid://dxvwh8s1do674" path="res://Environment/mesh_library.tres" id="1_42eyh"]
+[ext_resource type="PackedScene" uid="uid://co7ga5viqxnk" path="res://NotesAndInteractions/UI/interaction_controller.tscn" id="1_beo8v"]
+[ext_resource type="PackedScene" uid="uid://sy2i2si6n7gg" path="res://NotesAndInteractions/UI/notes_controller.tscn" id="1_pee0b"]
 [ext_resource type="PackedScene" uid="uid://bwyei52th0g1e" path="res://Environment/Imported/imported_wall_mock.tscn" id="2_51hkn"]
 [ext_resource type="PackedScene" uid="uid://btv3xq8q2os8c" path="res://Characters/Player.tscn" id="2_rns53"]
 [ext_resource type="Script" path="res://Scripts/Player/player_sc.gd" id="4_05d21"]
 [ext_resource type="PackedScene" uid="uid://b2i8tmpnfqoyf" path="res://Characters/camera_rig.tscn" id="4_6n7wx"]
+[ext_resource type="PackedScene" uid="uid://bci0ardhy0y4e" path="res://NotesAndInteractions/World/interaction_area.tscn" id="6_s64gn"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_vokdu"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -19,7 +22,16 @@ sky = SubResource("Sky_tcdlv")
 tonemap_mode = 2
 glow_enabled = true
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_qagbv"]
+size = Vector3(3.73676, 1.71045, 2.67767)
+
 [node name="root" type="Node3D"]
+
+[node name="NotesController" parent="." instance=ExtResource("1_pee0b")]
+notes_file = "res://NotesAndInteractions/json/Notes.json"
+
+[node name="InteractionController" parent="." instance=ExtResource("1_beo8v")]
+interactions_text_file = "res://NotesAndInteractions/json/Interactions.json"
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_sld77")
@@ -49,3 +61,42 @@ light_energy = 3.0
 omni_range = 36.3671
 
 [node name="CameraRig" parent="." instance=ExtResource("4_6n7wx")]
+
+[node name="ImportedWallMock" parent="." instance=ExtResource("2_51hkn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.02146, 1.98057, -3.41997)
+
+[node name="Wall" parent="ImportedWallMock" index="0"]
+layers = 1
+
+[node name="StaticBody3D" parent="ImportedWallMock/Wall" index="0"]
+collision_layer = 65
+collision_mask = 64
+
+[node name="InteractionArea" parent="ImportedWallMock" instance=ExtResource("6_s64gn")]
+interaction_key = "interaction1"
+
+[node name="CollisionShape3D" parent="ImportedWallMock/InteractionArea" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0692446, 0.567871, -0.214692)
+shape = SubResource("BoxShape3D_qagbv")
+
+[node name="ImportedWallMock2" parent="." instance=ExtResource("2_51hkn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.02146, 1.98057, 1.55432)
+
+[node name="Wall" parent="ImportedWallMock2" index="0"]
+layers = 1
+
+[node name="StaticBody3D" parent="ImportedWallMock2/Wall" index="0"]
+collision_layer = 65
+collision_mask = 64
+
+[node name="InteractionArea" parent="ImportedWallMock2" instance=ExtResource("6_s64gn")]
+interaction_key = "interaction2"
+
+[node name="CollisionShape3D" parent="ImportedWallMock2/InteractionArea" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0692446, 0.567871, -0.214692)
+shape = SubResource("BoxShape3D_qagbv")
+
+[editable path="ImportedWallMock"]
+[editable path="ImportedWallMock/InteractionArea"]
+[editable path="ImportedWallMock2"]
+[editable path="ImportedWallMock2/InteractionArea"]
