@@ -1,10 +1,10 @@
 [gd_scene load_steps=4 format=3 uid="uid://b2i8tmpnfqoyf"]
 
-[ext_resource type="Script" path="res://Characters/Scripts/camera_rig.gd" id="1_j00m2"]
-[ext_resource type="Shader" path="res://Shaders/forground_shader.gdshader" id="2_ergob"]
+[ext_resource type="Script" path="res://Scripts/Player/camera_rig.gd" id="1_j00m2"]
+[ext_resource type="Shader" path="res://Scripts/Shaders/forground_shader.gdshader" id="2_xdwda"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ef2tf"]
-shader = ExtResource("2_ergob")
+shader = ExtResource("2_xdwda")
 shader_parameter/MULTIPLIER = 0.56
 shader_parameter/SCALE = 0.5
 shader_parameter/SOFTNESS = 0.45

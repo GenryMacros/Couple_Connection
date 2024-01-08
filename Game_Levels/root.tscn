@@ -1,9 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://dkgcx7k7x1aff"]
+[gd_scene load_steps=9 format=3 uid="uid://dum3u8ny6bfvw"]
 
 [ext_resource type="MeshLibrary" uid="uid://dxvwh8s1do674" path="res://Environment/mesh_library.tres" id="1_42eyh"]
 [ext_resource type="PackedScene" uid="uid://bwyei52th0g1e" path="res://Environment/Imported/imported_wall_mock.tscn" id="2_51hkn"]
+[ext_resource type="Script" path="res://Characters/Scripts/player_sc.gd" id="2_56cjd"]
 [ext_resource type="PackedScene" uid="uid://btv3xq8q2os8c" path="res://Characters/Player.tscn" id="2_rns53"]
-[ext_resource type="Script" path="res://Scripts/Player/player_sc.gd" id="4_05d21"]
 [ext_resource type="PackedScene" uid="uid://b2i8tmpnfqoyf" path="res://Characters/camera_rig.tscn" id="4_6n7wx"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_vokdu"]
@@ -40,7 +40,7 @@ transform = Transform3D(-3.0598e-07, 0, 1, 0, 2, 0, -7, 0, -4.37114e-08, -6.9888
 
 [node name="Player" parent="." instance=ExtResource("2_rns53")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.01384, 3.60631, 3.60871)
-script = ExtResource("4_05d21")
+script = ExtResource("2_56cjd")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13.4375, -1.45409)
