@@ -1,0 +1,12 @@
+{
+	"interaction1": {
+		"messageText": "Hello, I am the test dialog 1.\n And I am the best in the world\n Do you agree with me, dont' you?",
+		"messageAudio": "res://NotesAndInteractions/UI/resource/House In a Forest Loop.ogg",
+		"relatedNoteKey": "note1"
+	},
+	"interaction2": {
+		"messageText": "Hallo, I am the test dialog 2.\n Is it a good weather outside, isn't it?\n I love frost and cold outside!!!",
+		"messageAudio": "res://NotesAndInteractions/UI/resource/House In a Forest Loop.ogg",
+		"relatedNoteKey": "note2"
+	}
+}

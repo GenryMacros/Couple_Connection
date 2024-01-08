@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://sy2i2si6n7gg"]
+
+[ext_resource type="Script" path="res://Scripts/NotesAndInteractions/NotesController.gd" id="1_mk3tb"]
+
+[node name="NotesController" type="Node"]
+script = ExtResource("1_mk3tb")

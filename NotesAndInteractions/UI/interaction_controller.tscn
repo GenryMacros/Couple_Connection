@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://co7ga5viqxnk"]
+
+[ext_resource type="Script" path="res://Scripts/NotesAndInteractions/InteractionController.gd" id="1_vdlv1"]
+[ext_resource type="Texture2D" uid="uid://1i5xjdxabbgg" path="res://NotesAndInteractions/UI/resource/Ruby.png" id="2_f68um"]
+
+[node name="InteractionController" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_vdlv1")
+
+[node name="Background" type="TextureRect" parent="."]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 32.0
+offset_top = -200.0
+offset_right = -20.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("2_f68um")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Background"]
+layout_mode = 0
+offset_right = 1100.0
+offset_bottom = 188.0
+text = "Hallo"
+autowrap_mode = 2
+text_overrun_behavior = 1
+
+[node name="VoicePlayer" type="AudioStreamPlayer" parent="Background"]

@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://bci0ardhy0y4e"]
+
+[ext_resource type="Script" path="res://Scripts/NotesAndInteractions/InteractionArea.gd" id="1_tuehb"]
+
+[node name="InteractionArea" type="Area3D"]
+process_mode = 3
+collision_layer = 0
+collision_mask = 64
+script = ExtResource("1_tuehb")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.210388, 0.212646, 0.247314)
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_exited" from="." to="." method="_on_area_exited"]
