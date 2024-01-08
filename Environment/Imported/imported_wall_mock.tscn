@@ -15,6 +15,7 @@ size = Vector3(2, 2, 2)
 [node name="ImportedWallMock" type="Node3D"]
 
 [node name="Wall" type="MeshInstance3D" parent="."]
+layers = 2
 material_override = SubResource("StandardMaterial3D_gsqvm")
 mesh = SubResource("BoxMesh_05g0q")
 
