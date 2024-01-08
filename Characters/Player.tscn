@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://btv3xq8q2os8c"]
+
+[ext_resource type="PackedScene" uid="uid://b1tpvfaq2u4g7" path="res://Characters/player_mesh.tscn" id="1_kudel"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_2db5b"]
+
+[node name="Player" type="CharacterBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1.5, 0, 0, 0, 1, 0, -0.00225425, 0)
+shape = SubResource("CylinderShape3D_2db5b")
+
+[node name="visuals" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 3, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="Player" parent="visuals" instance=ExtResource("1_kudel")]

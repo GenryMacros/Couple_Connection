@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bua1cj864xkr8"]
+
+[ext_resource type="PackedScene" uid="uid://d3f55afhln80g" path="res://Environment/Imported/imported_floor_mock.tscn" id="1_by48i"]
+[ext_resource type="PackedScene" uid="uid://bwyei52th0g1e" path="res://Environment/Imported/imported_wall_mock.tscn" id="2_bpsgh"]
+
+[node name="root" type="Node3D"]
+
+[node name="ImportedFloorMock" parent="." instance=ExtResource("1_by48i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="ImportedWallMock" parent="." instance=ExtResource("2_bpsgh")]
