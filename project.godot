@@ -13,3 +13,11 @@ config_version=5
 config/name="Couple Connection"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+NotesAndInteractionService="*res://NotesAndInteractions/NotesAndInteractionService.gd"
+
+[layer_names]
+
+3d_physics/layer_7="Interactions"
