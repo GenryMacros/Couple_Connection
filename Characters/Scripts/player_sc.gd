@@ -3,8 +3,13 @@ extends CharacterBody3D
 
 var SPEED = ProjectSettings.get_setting("Player/speed")
 var gravity = ProjectSettings.get_setting("World/gravity")
+@onready var camera_point = $camera_point
 
 
+func _ready():
+	GameManager.set_player(self)
+	
+	
 func _physics_process(delta):
 
 	if not is_on_floor():
