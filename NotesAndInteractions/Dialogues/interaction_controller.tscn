@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://co7ga5viqxnk"]
+[gd_scene load_steps=2 format=3 uid="uid://co7ga5viqxnk"]
 
 [ext_resource type="Script" path="res://Scripts/NotesAndInteractions/InteractionController.gd" id="1_vdlv1"]
-[ext_resource type="Texture2D" uid="uid://1i5xjdxabbgg" path="res://NotesAndInteractions/Dialogues/resource/Ruby.png" id="2_f68um"]
 
 [node name="InteractionController" type="CanvasLayer"]
 process_mode = 3
@@ -23,7 +22,6 @@ size_flags_stretch_ratio = 2.0
 [node name="Background" type="TextureRect" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
-texture = ExtResource("2_f68um")
 expand_mode = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/Background"]
