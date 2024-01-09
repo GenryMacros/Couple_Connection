@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://co7ga5viqxnk" path="res://NotesAndInteractions/Dialogues/interaction_controller.tscn" id="2_neh0s"]
 [ext_resource type="PackedScene" uid="uid://b2i8tmpnfqoyf" path="res://Characters/camera_rig.tscn" id="3_5dclv"]
 [ext_resource type="Texture2D" uid="uid://1i5xjdxabbgg" path="res://NotesAndInteractions/Dialogues/resource/Ruby.png" id="3_cqf11"]
-[ext_resource type="MeshLibrary" uid="uid://c5tyc6ek5gi5v" path="res://Environment/mesh_library.tres" id="4_ks7np"]
+[ext_resource type="MeshLibrary" uid="uid://wkdyprkxjgv4" path="res://Environment/mesh_library.tres" id="4_ks7np"]
 [ext_resource type="PackedScene" uid="uid://c7qk7b1lfqg7m" path="res://Environment/Imported/Wall/brick.tscn" id="5_welc3"]
 [ext_resource type="PackedScene" uid="uid://bci0ardhy0y4e" path="res://NotesAndInteractions/World/interaction_area.tscn" id="6_sjel4"]
 

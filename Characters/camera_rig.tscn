@@ -7,8 +7,8 @@
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_qtgp6"]
 shader = ExtResource("2_o8ghg")
 shader_parameter/crt_brightness = 1.0
-shader_parameter/crt_ghost = 0.0
-shader_parameter/crt_grid = 1.0
+shader_parameter/crt_ghost = 1.0
+shader_parameter/crt_grid = 0.7
 shader_parameter/crt_white_noise = 0.0
 shader_parameter/crt_curve = 0.0
 
