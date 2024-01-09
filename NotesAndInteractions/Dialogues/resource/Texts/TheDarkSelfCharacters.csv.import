@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://crfjhk02le7i8"
+
+[deps]
+
+files=["res://NotesAndInteractions/Dialogues/resource/Texts/TheDarkSelfCharacters.en.translation", "res://NotesAndInteractions/Dialogues/resource/Texts/TheDarkSelfCharacters.ua.translation"]
+
+source_file="res://NotesAndInteractions/Dialogues/resource/Texts/TheDarkSelfCharacters.csv"
+dest_files=["res://NotesAndInteractions/Dialogues/resource/Texts/TheDarkSelfCharacters.en.translation", "res://NotesAndInteractions/Dialogues/resource/Texts/TheDarkSelfCharacters.ua.translation"]
+
+[params]
+
+compress=true
+delimiter=0

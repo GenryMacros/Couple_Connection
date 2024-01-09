@@ -28,6 +28,13 @@ config/icon="res://icon.svg"
 NotesAndInteractionService="*res://Scripts/NotesAndInteractions/NotesAndInteractionService.gd"
 GameManager="*res://game_manager.gd"
 
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/stretch/mode="viewport"
+window/stretch/aspect="expand"
+
 [input]
 
 forward={
@@ -50,6 +57,10 @@ right={
 "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":68,"key_label":0,"unicode":100,"echo":false,"script":null)
 ]
 }
+
+[internationalization]
+
+locale/translations=PackedStringArray("res://NotesAndInteractions/Dialogues/resource/Texts/TheDarkSelfCharacters.en.translation", "res://NotesAndInteractions/Dialogues/resource/Texts/TheDarkSelfCharacters.ua.translation", "res://NotesAndInteractions/Dialogues/resource/Texts/TheDarkSelfDialogues.en.translation", "res://NotesAndInteractions/Dialogues/resource/Texts/TheDarkSelfDialogues.ua.translation")
 
 [layer_names]
 

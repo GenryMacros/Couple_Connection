@@ -1,0 +1,71 @@
+{
+	"dialog1":
+	{
+		"script":
+		{
+			"replica1": 
+			{
+				"actorName":"ACTOR_1",
+				"visibleName":"ACTOR_1",
+				"text": "DIALOGUE_1_0",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/YOASOBI_祝福_Official_Music_Video_機動戦士ガンダム_水星の魔女_オープニングテーマ.ogg",
+				"optionReplicas":[],
+				"nextReplica": "replica2"
+			},
+			"replica2":
+			{
+				"actorName":"ACTOR_2",
+				"visibleName":"ACTOR_2",
+				"text": "DIALOGUE_2_0",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/YOASOBI_祝福_Official_Music_Video_機動戦士ガンダム_水星の魔女_オープニングテーマ.ogg",
+				"optionReplicas":[],
+				"nextReplica": "replica3"
+			},
+			"replica3":
+			{
+				"actorName":"ACTOR_1",
+				"visibleName":"ACTOR_1",
+				"text": "DIALOGUE_1_1",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/YOASOBI_祝福_Official_Music_Video_機動戦士ガンダム_水星の魔女_オープニングテーマ.ogg",
+				"optionReplicas":[],
+				"nextReplica": "replica4"
+			},
+			"replica4":
+			{
+				"actorName":"ACTOR_2",
+				"visibleName":"ACTOR_2",
+				"text": "DIALOGUE_2_1",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/YOASOBI_祝福_Official_Music_Video_機動戦士ガンダム_水星の魔女_オープニングテーマ.ogg",
+				"optionReplicas":[],
+				"nextReplica": "replica5"
+			},
+			"replica5":
+			{
+				"actorName":"ACTOR_1",
+				"visibleName":"ACTOR_1",
+				"text": "DIALOGUE_1_2",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/YOASOBI_祝福_Official_Music_Video_機動戦士ガンダム_水星の魔女_オープニングテーマ.ogg",
+				"optionReplicas":[],
+				"nextReplica": "replica6"
+			},
+			"replica6":
+			{
+				"actorName":"ACTOR_2",
+				"visibleName":"???",
+				"text": "DIALOGUE_2_2",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/YOASOBI_祝福_Official_Music_Video_機動戦士ガンダム_水星の魔女_オープニングテーマ.ogg",
+				"optionReplicas":[],
+				"nextReplica": "end"
+			},
+			"end":
+			{
+				"actorName":"",
+				"visibleName":"",
+				"text": "",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "stop"
+			}
+		}
+	}
+}

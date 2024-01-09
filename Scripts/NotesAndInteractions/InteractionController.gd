@@ -2,17 +2,22 @@ extends CanvasLayer
 
 @export_file("*json")  var interactions_text_file
 var interactions = {};
-var selected_text = [];
-var related_note_key = "";
+var messages = [];
+var message_char_index = 0;
+var curr_message = "";
 var is_in_progress = false;
+var type_character_speed = .1;
+@onready var background = $VBoxContainer/Background;
+@onready var label = $VBoxContainer/Background/HBoxContainer/Label;
+@onready var voicePlayer = $VBoxContainer/Background/VoicePlayer;
+@onready var nextCharTimer = $VBoxContainer/Background/HBoxContainer/Label/next_char;
 
-@onready var background = $Background;
-@onready var label = $Background/Label;
-@onready var voicePlayer = $Background/VoicePlayer;
+
 func _ready():
 	background.visible = false;
 	interactions = load_interactions_text();
 	NotesAndInteractionService.display_interaction.connect(on_display_iteraction);
+	
 
 
 func load_interactions_text():
@@ -27,21 +32,31 @@ func load_interactions_text():
 		print("File doesn't exist!");
 
 func show_text():
-	label.text = selected_text.pop_front();
+	label.text += curr_message[message_char_index];
+	message_char_index+=1;
+	if message_char_index >= curr_message.length():
+		message_char_index = 0;
+		nextCharTimer.stop();
 	
 func next_line():
-	if selected_text.size() > 0:
-		show_text()
+	if messages.size() > 0:
+		if message_char_index == 0:
+			curr_message = tr(messages.pop_front());
+		nextCharTimer.start();
 	else:
 		finish()
 
 func finish():
+	nextCharTimer.stop();
+	curr_message = "";
+	message_char_index = 0;
 	label.text = "";
 	background.visible = false;
 	is_in_progress = false;
 	get_tree().paused = false
-	NotesAndInteractionService.add_note.emit(related_note_key);
 	voicePlayer.stop();
+	
+	
 	
 func on_display_iteraction(interaction_key):
 	if is_in_progress:
@@ -50,8 +65,12 @@ func on_display_iteraction(interaction_key):
 		get_tree().paused = true;
 		background.visible = true;
 		is_in_progress = true;
-		selected_text = [interactions[interaction_key]["messageText"]];
-		related_note_key = interactions[interaction_key]["relatedNoteKey"];
+		messages = [interactions[interaction_key]["messageText"]];
 		voicePlayer.stream = load(interactions[interaction_key]["messageAudio"]);
 		voicePlayer.play();
-		show_text();
+		nextCharTimer.set_wait_time(type_character_speed);
+		next_line();
+
+
+func _on_next_char_timeout():
+	show_text()

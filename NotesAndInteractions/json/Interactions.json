@@ -1,12 +1,10 @@
 {
 	"interaction1": {
-		"messageText": "Hello, I am the test dialog 1.\n And I am the best in the world\n Do you agree with me, dont' you?",
-		"messageAudio": "res://NotesAndInteractions/UI/resource/House In a Forest Loop.ogg",
-		"relatedNoteKey": "note1"
+		"messageText": "DIALOGUE_1_0",
+		"messageAudio": "res://NotesAndInteractions/Dialogues/resource/House In a Forest Loop.ogg"
 	},
 	"interaction2": {
-		"messageText": "Hallo, I am the test dialog 2.\n Is it a good weather outside, isn't it?\n I love frost and cold outside!!!",
-		"messageAudio": "res://NotesAndInteractions/UI/resource/House In a Forest Loop.ogg",
-		"relatedNoteKey": "note2"
+		"messageText": "DIALOGUE_2_0",
+		"messageAudio": "res://NotesAndInteractions/Dialogues/resource/YOASOBI_祝福_Official_Music_Video_機動戦士ガンダム_水星の魔女_オープニングテーマ.ogg"
 	}
 }

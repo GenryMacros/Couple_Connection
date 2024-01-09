@@ -1,8 +1,8 @@
 [gd_scene load_steps=13 format=3 uid="uid://dkgcx7k7x1aff"]
 
 [ext_resource type="MeshLibrary" uid="uid://dxvwh8s1do674" path="res://Environment/mesh_library.tres" id="1_42eyh"]
-[ext_resource type="PackedScene" uid="uid://co7ga5viqxnk" path="res://NotesAndInteractions/UI/interaction_controller.tscn" id="1_beo8v"]
-[ext_resource type="PackedScene" uid="uid://sy2i2si6n7gg" path="res://NotesAndInteractions/UI/notes_controller.tscn" id="1_pee0b"]
+[ext_resource type="PackedScene" uid="uid://co7ga5viqxnk" path="res://NotesAndInteractions/Dialogues/interaction_controller.tscn" id="1_beo8v"]
+[ext_resource type="PackedScene" uid="uid://hvgt15fjxbed" path="res://NotesAndInteractions/Dialogues/dialog_player.tscn" id="1_jad7k"]
 [ext_resource type="PackedScene" uid="uid://bwyei52th0g1e" path="res://Environment/Imported/imported_wall_mock.tscn" id="2_51hkn"]
 [ext_resource type="PackedScene" uid="uid://btv3xq8q2os8c" path="res://Characters/Player.tscn" id="2_rns53"]
 [ext_resource type="Script" path="res://Scripts/Player/player_sc.gd" id="4_05d21"]
@@ -27,8 +27,8 @@ size = Vector3(3.73676, 1.71045, 2.67767)
 
 [node name="root" type="Node3D"]
 
-[node name="NotesController" parent="." instance=ExtResource("1_pee0b")]
-notes_file = "res://NotesAndInteractions/json/Notes.json"
+[node name="Dialog_Player" parent="." instance=ExtResource("1_jad7k")]
+dialog_file = "res://NotesAndInteractions/json/Dialogs.json"
 
 [node name="InteractionController" parent="." instance=ExtResource("1_beo8v")]
 interactions_text_file = "res://NotesAndInteractions/json/Interactions.json"
@@ -73,7 +73,7 @@ collision_layer = 65
 collision_mask = 64
 
 [node name="InteractionArea" parent="ImportedWallMock" instance=ExtResource("6_s64gn")]
-interaction_key = "interaction1"
+dialog_key = "dialog1"
 
 [node name="CollisionShape3D" parent="ImportedWallMock/InteractionArea" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0692446, 0.567871, -0.214692)
@@ -90,7 +90,6 @@ collision_layer = 65
 collision_mask = 64
 
 [node name="InteractionArea" parent="ImportedWallMock2" instance=ExtResource("6_s64gn")]
-interaction_key = "interaction2"
 
 [node name="CollisionShape3D" parent="ImportedWallMock2/InteractionArea" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0692446, 0.567871, -0.214692)
