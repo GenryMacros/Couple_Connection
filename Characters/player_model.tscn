@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://52b1r8cvhd6e"]
+
+[ext_resource type="PackedScene" uid="uid://osaablbtmq8u" path="res://Characters/Imported/couple_character.glb" id="1_dbis6"]
+
+[node name="couple_character" instance=ExtResource("1_dbis6")]
+
+[node name="Skeleton3D" parent="Armature" index="0"]
+bones/3/rotation = Quaternion(-0.338905, 0.041351, 0.101065, 0.934462)
+bones/6/rotation = Quaternion(0.429324, -0.272556, -0.0912487, 0.856194)
+bones/9/rotation = Quaternion(-0.638018, 0.0277175, -0.0849928, 0.764815)
+bones/10/rotation = Quaternion(-8.81846e-09, -1.69384e-07, 1.10012e-08, 1)
+bones/12/rotation = Quaternion(0.561944, 0.265315, -0.152905, 0.768405)
+bones/13/rotation = Quaternion(-4.73365e-07, -1.05167e-06, 0.364334, 0.931269)
+
+[node name="Torso" parent="Armature/Skeleton3D" index="0"]
+transform = Transform3D(1, 0, -1.86265e-09, 3.72529e-09, 1, -2.98023e-08, -9.31323e-09, 8.9407e-08, 1, 0, 0, 0)
+cast_shadow = 0
+gi_mode = 0

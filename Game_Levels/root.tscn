@@ -1,7 +1,5 @@
-[gd_scene load_steps=9 format=3 uid="uid://dum3u8ny6bfvw"]
+[gd_scene load_steps=7 format=3 uid="uid://dum3u8ny6bfvw"]
 
-[ext_resource type="MeshLibrary" uid="uid://dxvwh8s1do674" path="res://Environment/mesh_library.tres" id="1_42eyh"]
-[ext_resource type="PackedScene" uid="uid://bwyei52th0g1e" path="res://Environment/Imported/imported_wall_mock.tscn" id="2_51hkn"]
 [ext_resource type="Script" path="res://Scripts/Player/player_sc.gd" id="2_56cjd"]
 [ext_resource type="PackedScene" uid="uid://btv3xq8q2os8c" path="res://Characters/Player.tscn" id="2_rns53"]
 [ext_resource type="PackedScene" uid="uid://b2i8tmpnfqoyf" path="res://Characters/camera_rig.tscn" id="4_6n7wx"]
@@ -10,12 +8,12 @@
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
 ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
 
-[sub_resource type="Sky" id="Sky_tcdlv"]
+[sub_resource type="Sky" id="Sky_u8qqt"]
 sky_material = SubResource("ProceduralSkyMaterial_vokdu")
 
 [sub_resource type="Environment" id="Environment_sld77"]
 background_mode = 2
-sky = SubResource("Sky_tcdlv")
+sky = SubResource("Sky_u8qqt")
 tonemap_mode = 2
 glow_enabled = true
 
@@ -23,20 +21,6 @@ glow_enabled = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_sld77")
-
-[node name="GridMap" type="GridMap" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00351286, -0.0194302, -0.0287657)
-mesh_library = ExtResource("1_42eyh")
-data = {
-"cells": PackedInt32Array(0, 65535, 0, 1, 0, 0, 3, 0, 0, 3, 65535, 0, 3, 65534, 0, 65535, 1, 0, 1, 1, 0, 2, 1, 0, 3, 1, 0, 65535, 2, 0, 1, 2, 0, 3, 2, 0, 1, 65532, 0, 2, 65532, 0, 1, 3, 0, 3, 3, 0, 4, 65532, 0, 4, 65533, 0, 4, 65534, 0, 4, 65535, 0, 4, 0, 0, 4, 1, 0, 4, 2, 0, 4, 3, 0, 65532, 65532, 0, 65532, 65531, 0, 4, 65531, 0, 0, 0, 0, 0, 1, 0, 0, 2, 0, 2, 3, 0, 0, 3, 0, 65535, 3, 0, 65534, 3, 0, 65533, 3, 0, 65532, 3, 0, 65532, 2, 0, 65532, 1, 0, 65532, 0, 0, 65532, 65535, 0, 65532, 65534, 0, 65532, 65533, 0, 65533, 65531, 0, 65534, 65531, 0, 65535, 65531, 0, 0, 65531, 0, 1, 65531, 0, 2, 65531, 0, 3, 65531, 0, 3, 65533, 0, 65534, 65532, 0, 65533, 65533, 0, 65533, 65534, 0, 65533, 65535, 0, 65533, 2, 0, 65534, 2, 0, 65534, 1, 0, 65534, 0, 0, 65534, 65535, 0, 65534, 65534, 0, 65534, 65533, 0, 65535, 65533, 0, 65535, 65532, 0, 0, 65532, 0, 1, 65533, 0, 1, 65534, 0, 1, 65535, 0, 65535, 0, 0, 65535, 65535, 0, 65535, 65534, 0, 65533, 0, 0, 65533, 1, 0, 0, 65534, 0, 0, 65533, 0, 2, 65534, 0, 2, 65535, 0, 2, 0, 0, 2, 2, 0, 2, 65533, 0, 3, 65532, 0, 65533, 65532, 0, 131076, 3, 1, 131076, 2, 1, 131076, 1, 1, 131076, 0, 1, 131076, 65535, 1, 131076, 65534, 1, 131076, 65533, 1, 131076, 65532, 1, 131076, 65531, 1, 196604, 3, 1, 196605, 3, 1, 196606, 3, 1, 196607, 3, 1, 131072, 3, 1, 131073, 3, 1, 131074, 3, 1, 131075, 3, 1, 65540, 3, 1, 65540, 2, 1, 65540, 1, 1, 65540, 0, 1, 65540, 65535, 1, 65540, 65534, 1, 65540, 65533, 1, 65540, 65532, 1, 131069, 3, 1, 131071, 3, 1, 65536, 3, 1, 65537, 3, 1, 65538, 3, 1, 65539, 3, 1, 131068, 3, 1, 131070, 3, 1, 65540, 65531, 1)
-}
-metadata/_editor_floor_ = Vector3(0, 2, 0)
-
-[node name="opaque_wall_0" parent="GridMap" instance=ExtResource("2_51hkn")]
-transform = Transform3D(8, 0, 0, 0, 2, 0, 0, 0, 1, 0.00178397, 3.98527, -8.9993)
-
-[node name="opaque_wall_1" parent="GridMap" instance=ExtResource("2_51hkn")]
-transform = Transform3D(-3.0598e-07, 0, 1, 0, 2, 0, -7, 0, -4.37114e-08, -6.98886, 3.99556, -1.00603)
 
 [node name="Player" parent="." instance=ExtResource("2_rns53")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.01384, 3.60631, 3.60871)
