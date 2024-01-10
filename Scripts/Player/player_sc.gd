@@ -6,6 +6,7 @@ var gravity = ProjectSettings.get_setting("World/gravity")
 @onready var camera_point = $camera_point
 @onready var couple_character = $visuals/couple_character/AnimationPlayer
 @onready var visuals = $visuals
+@onready var player_interaction_area_position = $PlayerInteractionAreaPosition
 
 
 func _ready():
@@ -21,6 +22,7 @@ func _physics_process(delta):
 	var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	if direction:
 		visuals.look_at(direction + position)
+		player_interaction_area_position.look_at(direction + position)
 		
 		velocity.x = direction.x * SPEED
 		velocity.z = direction.z * SPEED
