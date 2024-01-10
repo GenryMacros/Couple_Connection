@@ -6,16 +6,24 @@ var pickup_pressed = false
 var SPEED = ProjectSettings.get_setting("Player/speed")
 var gravity = ProjectSettings.get_setting("World/gravity")
 @onready var item_placeholder: Node = get_node("visuals/item_placeholder")
+var is_stopped = false
 @onready var camera_point = $camera_point
 @onready var couple_character = $visuals/couple_character/AnimationPlayer
 @onready var visuals = $visuals
+@onready var player_interaction_area_position = $PlayerInteractionAreaPosition
 
 
 func _ready():
 	GameManager.set_player(self)
+	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+	
+	
 	NotesAndInteractionService.pickup_item.connect(_on_item_pick_up)
 
 func _physics_process(delta):
+	if is_stopped:
+		return
+		
 	if hasItem and Input.is_action_pressed("item_pickup") and !pickup_pressed:
 		pickup_pressed = true
 		var main_node = get_node("../../Main")
@@ -34,6 +42,7 @@ func _physics_process(delta):
 	var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	if direction:
 		visuals.look_at(direction + position)
+		player_interaction_area_position.look_at(direction + position)
 		
 		velocity.x = direction.x * SPEED
 		velocity.z = direction.z * SPEED

@@ -16,13 +16,12 @@ var curr_message = "";
 var is_in_progress = false;
 var type_character_speed = .1;
 
-# Called when the node enters the scene tree for the first time.
+
 func _ready():
 	background.visible = false;
 	dialogs = load_dialogs();
 	NotesAndInteractionService.display_dialog.connect(on_display_dialog);
 	
-
 
 func load_dialogs():
 	if FileAccess.file_exists(dialog_file):

@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://bchuqv0bdf50e"]
+[gd_scene load_steps=29 format=3 uid="uid://bchuqv0bdf50e"]
 
 [ext_resource type="PackedScene" uid="uid://btv3xq8q2os8c" path="res://Characters/Player.tscn" id="1_eb004"]
 [ext_resource type="PackedScene" uid="uid://hvgt15fjxbed" path="res://NotesAndInteractions/Dialogues/dialog_player.tscn" id="1_swquk"]
@@ -6,9 +6,22 @@
 [ext_resource type="PackedScene" uid="uid://co7ga5viqxnk" path="res://NotesAndInteractions/Dialogues/interaction_controller.tscn" id="2_neh0s"]
 [ext_resource type="PackedScene" uid="uid://b2i8tmpnfqoyf" path="res://Characters/camera_rig.tscn" id="3_5dclv"]
 [ext_resource type="Texture2D" uid="uid://1i5xjdxabbgg" path="res://NotesAndInteractions/Dialogues/resource/Ruby.png" id="3_cqf11"]
-[ext_resource type="MeshLibrary" uid="uid://wkdyprkxjgv4" path="res://Environment/mesh_library.tres" id="4_ks7np"]
-[ext_resource type="PackedScene" uid="uid://c7qk7b1lfqg7m" path="res://Environment/Imported/Wall/brick.tscn" id="5_welc3"]
+[ext_resource type="PackedScene" uid="uid://cxf7ahxfy4t34" path="res://NotesAndInteractions/World/pc_display.tscn" id="4_rf74g"]
 [ext_resource type="PackedScene" uid="uid://bci0ardhy0y4e" path="res://NotesAndInteractions/World/interaction_area.tscn" id="6_sjel4"]
+[ext_resource type="PackedScene" uid="uid://cra4bso80oc30" path="res://Environment/Imported/Floor/room_block.tscn" id="8_y1de4"]
+[ext_resource type="PackedScene" uid="uid://b1cqgrbtducyf" path="res://Environment/Imported/Floor/room_block_opaque.tscn" id="9_x8v6r"]
+[ext_resource type="PackedScene" uid="uid://g71dwt2ov1r5" path="res://Environment/Imported/Room/Couch.glb" id="10_taccj"]
+[ext_resource type="PackedScene" uid="uid://b6211nyoff0u5" path="res://Environment/Imported/Room/painting.glb" id="11_klgkt"]
+[ext_resource type="PackedScene" uid="uid://6vtklfyupyuc" path="res://Environment/Imported/Room/Rug.glb" id="12_k8cs1"]
+[ext_resource type="PackedScene" uid="uid://coinc2vl2bpk" path="res://Environment/Imported/Room/bench.glb" id="13_341ky"]
+[ext_resource type="PackedScene" uid="uid://c0xrlivuicc5e" path="res://Environment/Room/work_table_2.tscn" id="14_donkb"]
+[ext_resource type="PackedScene" uid="uid://dlm5okvr06uf0" path="res://Environment/Imported/Room/work_chair.glb" id="15_f74ns"]
+[ext_resource type="PackedScene" uid="uid://c8was8jit472m" path="res://Environment/Imported/Room/Coffee_table.glb" id="16_dxndc"]
+[ext_resource type="PackedScene" uid="uid://dwpnlytuf1r5g" path="res://Environment/Imported/Room/chair.glb" id="17_yss6t"]
+[ext_resource type="PackedScene" uid="uid://c0tsq1orbltdl" path="res://Environment/Imported/Room/Cylinder.glb" id="18_0fldr"]
+[ext_resource type="PackedScene" uid="uid://c31sr1atp6es6" path="res://Environment/Imported/Room/Clock.glb" id="19_30it2"]
+[ext_resource type="PackedScene" uid="uid://4ija24cqmm7j" path="res://Environment/Imported/pc.tscn" id="20_gm3ur"]
+[ext_resource type="PackedScene" uid="uid://fe8kcl1klpdp" path="res://Environment/Imported/Door/door_mock.tscn" id="22_tt4k0"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_d4mk8"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -50,6 +63,9 @@ interactions_text_file = "res://NotesAndInteractions/json/Interactions.json"
 [node name="Background" parent="InteractionController/VBoxContainer" index="1"]
 texture = ExtResource("3_cqf11")
 
+[node name="PcDisplay" parent="InteractionController" instance=ExtResource("4_rf74g")]
+visible = false
+
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_nrash")
 
@@ -65,125 +81,8 @@ omni_range = 36.3671
 
 [node name="CameraRig" parent="." instance=ExtResource("3_5dclv")]
 
-[node name="GridMap" type="GridMap" parent="."]
-mesh_library = ExtResource("4_ks7np")
-data = {
-"cells": PackedInt32Array(65535, 65533, 0, 65534, 65533, 0, 65533, 65533, 0, 65532, 65533, 0, 0, 65533, 0, 1, 65533, 0, 5, 3, 0, 5, 5, 0, 5, 4, 0, 5, 65534, 0, 5, 65533, 0, 65531, 65533, 0, 65531, 0, 0, 5, 6, 0, 4, 6, 0, 3, 6, 0, 1, 6, 0, 0, 6, 0, 65535, 6, 0, 65534, 6, 0, 65533, 6, 0, 65531, 6, 0, 65532, 6, 0, 131067, 6, 65537, 131068, 6, 0, 131069, 6, 0, 131070, 6, 0, 131071, 6, 0, 65536, 6, 0, 65537, 6, 0, 65538, 6, 0, 65539, 6, 0, 65540, 6, 0, 131077, 65533, 0, 131077, 65534, 0, 131077, 65535, 0, 131077, 3, 0, 131077, 4, 0, 131077, 5, 0, 131077, 6, 0, 131076, 6, 0, 131075, 6, 0, 131074, 6, 0, 196606, 6, 0, 196605, 6, 0, 196604, 6, 0, 196603, 6, 0, 196607, 6, 0, 131072, 6, 0, 131073, 6, 0, 131077, 2, 0, 131077, 0, 0, 131077, 1, 0, 65541, 6, 65537, 65541, 5, 0, 65541, 4, 0, 65541, 3, 0, 65541, 2, 0, 65541, 65535, 0, 65541, 65534, 0, 65541, 65533, 0, 65541, 1, 0, 65541, 0, 0, 65532, 0, 0, 65533, 0, 0, 65534, 0, 0, 65535, 0, 0, 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 3, 65535, 0, 2, 65535, 0, 1, 65535, 0, 0, 65535, 0, 65535, 65535, 0, 65534, 65535, 0, 65533, 65535, 0, 65532, 65535, 0, 65531, 65535, 0, 65531, 65534, 0, 65532, 65534, 0, 65533, 65534, 0, 65534, 65534, 0, 65535, 65534, 0, 0, 65534, 0, 1, 65534, 0, 2, 65534, 0, 3, 65534, 0, 65531, 5, 0, 65531, 4, 0, 65532, 4, 0, 65532, 5, 0, 65531, 2, 0, 65532, 2, 0, 65533, 2, 0, 65533, 1, 0, 65533, 3, 0, 65533, 4, 0, 65533, 5, 0, 65532, 3, 0, 65531, 1, 0, 65532, 1, 0, 65534, 5, 0, 65534, 4, 0, 65534, 3, 0, 65534, 2, 0, 65535, 2, 0, 65535, 1, 0, 0, 2, 0, 0, 3, 0, 1, 3, 0, 1, 4, 0, 1, 5, 0, 2, 5, 0, 2, 6, 0, 0, 5, 0, 65535, 5, 0, 65535, 4, 0, 65535, 3, 0, 0, 4, 0, 65534, 1, 0, 0, 1, 0, 1, 1, 0, 2, 1, 0, 3, 1, 0, 4, 2, 0, 3, 2, 0, 3, 3, 0, 2, 2, 0, 1, 2, 0, 2, 3, 0, 3, 4, 0, 2, 4, 0, 3, 5, 0, 4, 5, 0, 4, 4, 0, 4, 3, 0, 5, 65535, 0, 5, 0, 0, 5, 1, 0, 5, 2, 0, 4, 1, 0, 4, 0, 0, 4, 65535, 0, 4, 65534, 0, 4, 65533, 0, 3, 65533, 0, 2, 65533, 0, 65531, 3, 0)
-}
-metadata/_editor_floor_ = Vector3(0, 0, 0)
-
-[node name="opaque_walls" type="Node3D" parent="GridMap"]
-
-[node name="brick18" parent="GridMap/opaque_walls" instance=ExtResource("5_welc3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 3, -5)
-
-[node name="brick" parent="GridMap/opaque_walls" instance=ExtResource("5_welc3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 3, -5)
-
-[node name="brick2" parent="GridMap/opaque_walls" instance=ExtResource("5_welc3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 3, -5)
-
-[node name="brick3" parent="GridMap/opaque_walls" instance=ExtResource("5_welc3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 3, -5)
-
-[node name="brick4" parent="GridMap/opaque_walls" instance=ExtResource("5_welc3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 3, -5)
-
-[node name="brick5" parent="GridMap/opaque_walls" instance=ExtResource("5_welc3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 3, -5)
-
-[node name="brick6" parent="GridMap/opaque_walls" instance=ExtResource("5_welc3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 3, -5)
-
-[node name="brick7" parent="GridMap/opaque_walls" instance=ExtResource("5_welc3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 3, -5)
-
-[node name="brick8" parent="GridMap/opaque_walls" instance=ExtResource("5_welc3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 3, -5)
-
-[node name="brick19" parent="GridMap/opaque_walls" instance=ExtResource("5_welc3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 5, -5)
-
-[node name="brick20" parent="GridMap/opaque_walls" instance=ExtResource("5_welc3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 5, -5)
-
-[node name="brick21" parent="GridMap/opaque_walls" instance=ExtResource("5_welc3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 5, -5)
-
-[node name="brick22" parent="GridMap/opaque_walls" instance=ExtResource("5_welc3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 5, -5)
-
-[node name="brick23" parent="GridMap/opaque_walls" instance=ExtResource("5_welc3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 5, -5)
-
-[node name="brick24" parent="GridMap/opaque_walls" instance=ExtResource("5_welc3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 5, -5)
-
-[node name="brick25" parent="GridMap/opaque_walls" instance=ExtResource("5_welc3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 5, -5)
-
-[node name="brick26" parent="GridMap/opaque_walls" instance=ExtResource("5_welc3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 5, -5)
-
-[node name="brick27" parent="GridMap/opaque_walls" instance=ExtResource("5_welc3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 5, -5)
-
-[node name="brick28" parent="GridMap/opaque_walls" instance=ExtResource("5_welc3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 5, -5)
-
-[node name="brick9" parent="GridMap/opaque_walls" instance=ExtResource("5_welc3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 3, -5)
-
-[node name="brick10" parent="GridMap/opaque_walls" instance=ExtResource("5_welc3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 3, -3)
-
-[node name="brick11" parent="GridMap/opaque_walls" instance=ExtResource("5_welc3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 3, -1)
-
-[node name="brick12" parent="GridMap/opaque_walls" instance=ExtResource("5_welc3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 3, 1)
-
-[node name="brick13" parent="GridMap/opaque_walls" instance=ExtResource("5_welc3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 3, 3)
-
-[node name="brick14" parent="GridMap/opaque_walls" instance=ExtResource("5_welc3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 3, 5)
-
-[node name="brick15" parent="GridMap/opaque_walls" instance=ExtResource("5_welc3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 3, 7)
-
-[node name="brick16" parent="GridMap/opaque_walls" instance=ExtResource("5_welc3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 3, 9)
-
-[node name="brick29" parent="GridMap/opaque_walls" instance=ExtResource("5_welc3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 5, -3)
-
-[node name="brick30" parent="GridMap/opaque_walls" instance=ExtResource("5_welc3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 5, -1)
-
-[node name="brick31" parent="GridMap/opaque_walls" instance=ExtResource("5_welc3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 5, 1)
-
-[node name="brick32" parent="GridMap/opaque_walls" instance=ExtResource("5_welc3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 5, 3)
-
-[node name="brick33" parent="GridMap/opaque_walls" instance=ExtResource("5_welc3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 5, 5)
-
-[node name="brick34" parent="GridMap/opaque_walls" instance=ExtResource("5_welc3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 5, 7)
-
-[node name="brick35" parent="GridMap/opaque_walls" instance=ExtResource("5_welc3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 5, 9)
-
-[node name="brick36" parent="GridMap/opaque_walls" instance=ExtResource("5_welc3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 5, 11)
-
-[node name="brick17" parent="GridMap/opaque_walls" instance=ExtResource("5_welc3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 3, 11)
-
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.42495, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 3.42495, 7)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
 mesh = SubResource("CylinderMesh_v7wwc")
@@ -198,6 +97,64 @@ dialog_key = "dialog1"
 [node name="CollisionShape3D" parent="StaticBody3D/InteractionArea" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00616473, 0.212646, 0.0989986)
 shape = SubResource("BoxShape3D_tlqqc")
+
+[node name="Walls" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0160999, -0.0173073, 0.0252876)
+
+[node name="room_block" parent="Walls" instance=ExtResource("8_y1de4")]
+transform = Transform3D(9.7298, 0, 0, 0, 1.00019, 0, 0, 0, 9.79815, 0.419647, 1.67705, 3.83753)
+
+[node name="room_block2" parent="Walls" instance=ExtResource("8_y1de4")]
+transform = Transform3D(-1.02501e-07, 1.00019, 0, -2.34494, -4.37196e-08, 0, 0, 0, 9.79815, 9.16763, 4.95048, 3.86443)
+
+[node name="room_block3" parent="Walls" instance=ExtResource("8_y1de4")]
+transform = Transform3D(1.28114e-14, -4.37196e-08, -8.81475, -2.34494, -4.37196e-08, 0, -1.02501e-07, 1.00019, -3.85305e-07, -0.554859, 4.95048, 12.6483)
+
+[node name="room_block_opaque1" parent="Walls" instance=ExtResource("9_x8v6r")]
+transform = Transform3D(-1.02503e-07, 1.01135, 0, -2.345, -4.42077e-08, 0, 0, 0, 8.81166, -8.37304, 4.91521, 2.89062)
+
+[node name="room_block_opaque2" parent="Walls" instance=ExtResource("9_x8v6r")]
+transform = Transform3D(4.48056e-15, -4.42077e-08, 7.80439, -2.345, -4.42077e-08, 0, 1.02503e-07, -1.01135, -3.41141e-07, 0.400944, 4.91521, -4.95291)
+
+[node name="Environment" type="Node3D" parent="."]
+
+[node name="Couch" parent="Environment" instance=ExtResource("10_taccj")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -0.347473, 2.65993, -2.98968)
+
+[node name="painting" parent="Environment" instance=ExtResource("11_klgkt")]
+transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, 8.05266, 5.65993, 3.80714)
+
+[node name="Rug" parent="Environment" instance=ExtResource("12_k8cs1")]
+transform = Transform3D(5.15438, 0, 0, 0, 1, 0, 0, 0, 3.92019, -0.299154, 2.68996, 1.30091)
+
+[node name="bench" parent="Environment" instance=ExtResource("13_341ky")]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, -6.16289, 2.65993, 1.28803)
+
+[node name="work_table2" parent="Environment" instance=ExtResource("14_donkb")]
+transform = Transform3D(0.783404, 0, 0, 0, 0.686881, 0, 0, 0, 1.21105, 7.28336, 3.80056, -1.0742)
+
+[node name="work_chair" parent="Environment" instance=ExtResource("15_f74ns")]
+transform = Transform3D(0.656638, 0, 0.754206, 0, 1, 0, -0.754206, 0, 0.656638, 5.82592, 2.47678, -1.61234)
+
+[node name="Coffee_table" parent="Environment" instance=ExtResource("16_dxndc")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -0.275656, 3.12852, -0.725033)
+
+[node name="chair2" parent="Environment" instance=ExtResource("17_yss6t")]
+transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, -5.40735, 4.44493, -2.10473)
+
+[node name="Cylinder2" parent="Environment" instance=ExtResource("18_0fldr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -5.41368, 4.70378, -2.08154)
+
+[node name="Clock2" parent="Environment" instance=ExtResource("19_30it2")]
+transform = Transform3D(2, 0, 0, 0, -8.74228e-08, -2, 0, 2, -8.74228e-08, -0.209828, 6.53534, -3.8281)
+
+[node name="Pc" parent="." node_paths=PackedStringArray("connected_door", "pc_display") instance=ExtResource("20_gm3ur")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.50922, 4.34117, -1.09978)
+connected_door = NodePath("../DoorMock")
+pc_display = NodePath("../InteractionController/PcDisplay")
+
+[node name="DoorMock" parent="." instance=ExtResource("22_tt4k0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.918936, 4.83881, 6.37311)
 
 [node name="RigidBody3D" type="RigidBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.26524, 3.71585, 0)

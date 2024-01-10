@@ -1,10 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://pl2tj5u8lwm2"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_gjnk6"]
-load_path = "res://.godot/imported/floor_color.png-55023797a8c9e96babc7f21e3f43fe16.s3tc.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ofbwn"]
-load_path = "res://.godot/imported/floor_normal.png-3b27a4bdee378020c678d37d1decaf69.s3tc.ctex"
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_elvcr"]
 albedo_texture = SubResource("CompressedTexture2D_gjnk6")
