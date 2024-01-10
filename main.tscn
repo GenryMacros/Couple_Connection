@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://bchuqv0bdf50e"]
+[gd_scene load_steps=18 format=3 uid="uid://bchuqv0bdf50e"]
 
 [ext_resource type="PackedScene" uid="uid://btv3xq8q2os8c" path="res://Characters/Player.tscn" id="1_eb004"]
 [ext_resource type="PackedScene" uid="uid://hvgt15fjxbed" path="res://NotesAndInteractions/Dialogues/dialog_player.tscn" id="1_swquk"]
@@ -35,6 +35,10 @@ glow_enabled = true
 [sub_resource type="BoxShape3D" id="BoxShape3D_tlqqc"]
 size = Vector3(1.82178, 1, 1.77856)
 
+[sub_resource type="SphereShape3D" id="SphereShape3D_vpm5v"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_6blgr"]
+
 [node name="Main" type="Node3D"]
 
 [node name="Dialog_Player" parent="." instance=ExtResource("1_swquk")]
@@ -50,7 +54,7 @@ texture = ExtResource("3_cqf11")
 environment = SubResource("Environment_nrash")
 
 [node name="Player" parent="." instance=ExtResource("1_eb004")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.01384, 2.60631, 3.60871)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.01384, 2.60631, 4.38577)
 script = ExtResource("2_h58oa")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
@@ -195,5 +199,22 @@ dialog_key = "dialog1"
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00616473, 0.212646, 0.0989986)
 shape = SubResource("BoxShape3D_tlqqc")
 
+[node name="RigidBody3D" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.26524, 3.71585, 0)
+
+[node name="InteractionArea" parent="RigidBody3D" instance=ExtResource("6_sjel4")]
+isPickUp = true
+
+[node name="CollisionShape3D" parent="RigidBody3D/InteractionArea" index="0"]
+shape = SubResource("SphereShape3D_vpm5v")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+shape = SubResource("SphereShape3D_6blgr")
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="RigidBody3D"]
+
 [editable path="InteractionController"]
+[editable path="Player"]
+[editable path="Player/PlayerInteractionAreaPosition"]
 [editable path="StaticBody3D/InteractionArea"]
+[editable path="RigidBody3D/InteractionArea"]

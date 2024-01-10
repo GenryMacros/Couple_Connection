@@ -1,6 +1,6 @@
 extends CharacterBody3D
 
-
+var item_placeholder: Node = null
 var SPEED = ProjectSettings.get_setting("Player/speed")
 var gravity = ProjectSettings.get_setting("World/gravity")
 @onready var camera_point = $camera_point
@@ -10,7 +10,7 @@ var gravity = ProjectSettings.get_setting("World/gravity")
 
 func _ready():
 	GameManager.set_player(self)
-	
+	NotesAndInteractionService.pickup_item.connect(_on_item_pick_up)
 	
 func _physics_process(delta):
 
@@ -33,3 +33,12 @@ func _physics_process(delta):
 	else:
 		couple_character.stop()
 	move_and_slide()
+
+func _on_item_pick_up(item_node: Node):
+	item_placeholder = get_node("item_placeholder")
+	item_placeholder.add_child(item_node)
+	item_node.position = item_placeholder.position
+	item_node.gravity_scale = 0
+	print("Works")
+	print(item_placeholder.position)
+	print(item_node.name)
