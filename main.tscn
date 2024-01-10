@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://bchuqv0bdf50e"]
+[gd_scene load_steps=29 format=3 uid="uid://bchuqv0bdf50e"]
 
 [ext_resource type="PackedScene" uid="uid://btv3xq8q2os8c" path="res://Characters/Player.tscn" id="1_eb004"]
 [ext_resource type="PackedScene" uid="uid://hvgt15fjxbed" path="res://NotesAndInteractions/Dialogues/dialog_player.tscn" id="1_swquk"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://co7ga5viqxnk" path="res://NotesAndInteractions/Dialogues/interaction_controller.tscn" id="2_neh0s"]
 [ext_resource type="PackedScene" uid="uid://b2i8tmpnfqoyf" path="res://Characters/camera_rig.tscn" id="3_5dclv"]
 [ext_resource type="Texture2D" uid="uid://1i5xjdxabbgg" path="res://NotesAndInteractions/Dialogues/resource/Ruby.png" id="3_cqf11"]
+[ext_resource type="PackedScene" uid="uid://cxf7ahxfy4t34" path="res://NotesAndInteractions/World/pc_display.tscn" id="4_rf74g"]
 [ext_resource type="PackedScene" uid="uid://bci0ardhy0y4e" path="res://NotesAndInteractions/World/interaction_area.tscn" id="6_sjel4"]
 [ext_resource type="PackedScene" uid="uid://cra4bso80oc30" path="res://Environment/Imported/Floor/room_block.tscn" id="8_y1de4"]
 [ext_resource type="PackedScene" uid="uid://b1cqgrbtducyf" path="res://Environment/Imported/Floor/room_block_opaque.tscn" id="9_x8v6r"]
@@ -20,6 +21,7 @@
 [ext_resource type="PackedScene" uid="uid://c0tsq1orbltdl" path="res://Environment/Imported/Room/Cylinder.glb" id="18_0fldr"]
 [ext_resource type="PackedScene" uid="uid://c31sr1atp6es6" path="res://Environment/Imported/Room/Clock.glb" id="19_30it2"]
 [ext_resource type="PackedScene" uid="uid://4ija24cqmm7j" path="res://Environment/Imported/pc.tscn" id="20_gm3ur"]
+[ext_resource type="PackedScene" uid="uid://fe8kcl1klpdp" path="res://Environment/Imported/Door/door_mock.tscn" id="22_tt4k0"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_d4mk8"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -56,6 +58,9 @@ interactions_text_file = "res://NotesAndInteractions/json/Interactions.json"
 
 [node name="Background" parent="InteractionController/VBoxContainer" index="1"]
 texture = ExtResource("3_cqf11")
+
+[node name="PcDisplay" parent="InteractionController" instance=ExtResource("4_rf74g")]
+visible = false
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_nrash")
@@ -139,8 +144,13 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -5.41368, 4.70378, -2.08154)
 [node name="Clock2" parent="Environment" instance=ExtResource("19_30it2")]
 transform = Transform3D(2, 0, 0, 0, -8.74228e-08, -2, 0, 2, -8.74228e-08, -0.209828, 6.53534, -3.8281)
 
-[node name="Pc" parent="." instance=ExtResource("20_gm3ur")]
+[node name="Pc" parent="." node_paths=PackedStringArray("connected_door", "pc_display") instance=ExtResource("20_gm3ur")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.50922, 4.34117, -1.09978)
+connected_door = NodePath("../DoorMock")
+pc_display = NodePath("../InteractionController/PcDisplay")
+
+[node name="DoorMock" parent="." instance=ExtResource("22_tt4k0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.918936, 4.83881, 6.37311)
 
 [editable path="InteractionController"]
 [editable path="StaticBody3D/InteractionArea"]

@@ -3,6 +3,7 @@ extends CharacterBody3D
 
 var SPEED = ProjectSettings.get_setting("Player/speed")
 var gravity = ProjectSettings.get_setting("World/gravity")
+var is_stopped = false
 @onready var camera_point = $camera_point
 @onready var couple_character = $visuals/couple_character/AnimationPlayer
 @onready var visuals = $visuals
@@ -11,10 +12,13 @@ var gravity = ProjectSettings.get_setting("World/gravity")
 
 func _ready():
 	GameManager.set_player(self)
+	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	
 	
 func _physics_process(delta):
-
+	if is_stopped:
+		return
+		
 	if not is_on_floor():
 		velocity.y -= gravity * delta
 		
