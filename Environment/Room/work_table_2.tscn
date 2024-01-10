@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://c0xrlivuicc5e"]
+
+[ext_resource type="PackedScene" uid="uid://bbcu4p0yaqbjw" path="res://Environment/Imported/Room/work_table.glb" id="1_euupb"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y3ha7"]
+albedo_color = Color(0.639216, 0.8, 0.878431, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t1wa7"]
+albedo_color = Color(0.776471, 0.894118, 0.941176, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rgvld"]
+size = Vector3(1, 18.6053, 1)
+
+[node name="work_table2" instance=ExtResource("1_euupb")]
+
+[node name="work_table" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, -0.0451832, 0, 0, 0, 1, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_y3ha7")
+
+[node name="Cylinder_001" parent="work_table" index="0"]
+material_override = SubResource("StandardMaterial3D_t1wa7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="work_table/Cylinder_001" index="0"]
+transform = Transform3D(14.3298, 0, 0, 0, -0.0546195, 0, 0, 0, 14.3298, 11.7507, 1.0113, 11.6308)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="work_table/Cylinder_001/StaticBody3D" index="0"]
+transform = Transform3D(1.99999, 0, 0, 0, 2, 0, 0, 0, 1.99999, 0, 17.6054, 0)
+shape = SubResource("BoxShape3D_rgvld")

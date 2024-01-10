@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://btv3xq8q2os8c"]
 
 [ext_resource type="PackedScene" uid="uid://dht7ly0w7siyc" path="res://NotesAndInteractions/World/player_interaction_area.tscn" id="1_73k1i"]
-[ext_resource type="PackedScene" path="res://Characters/player_model.tscn" id="2_8e5e6"]
+[ext_resource type="PackedScene" uid="uid://52b1r8cvhd6e" path="res://Characters/player_model.tscn" id="2_8e5e6"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_teffj"]
 size = Vector3(1, 2.69595, 1)

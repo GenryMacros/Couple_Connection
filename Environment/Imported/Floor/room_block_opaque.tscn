@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://b1cqgrbtducyf"]
+
+[ext_resource type="PackedScene" uid="uid://b53dbxvu0q7ct" path="res://Environment/Imported/Floor/room_block.glb" id="1_57shw"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_a2y42"]
+
+[node name="room_block" instance=ExtResource("1_57shw")]
+
+[node name="room_brick" parent="." index="0"]
+layers = 2
+
+[node name="StaticBody3D" type="StaticBody3D" parent="room_brick" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="room_brick/StaticBody3D" index="0"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+shape = SubResource("BoxShape3D_a2y42")
