@@ -1,8 +1,11 @@
 extends CharacterBody3D
 
-var item_placeholder: Node = null
+var item:Node
+var hasItem = false
+var pickup_pressed = false
 var SPEED = ProjectSettings.get_setting("Player/speed")
 var gravity = ProjectSettings.get_setting("World/gravity")
+@onready var item_placeholder: Node = get_node("visuals/item_placeholder")
 @onready var camera_point = $camera_point
 @onready var couple_character = $visuals/couple_character/AnimationPlayer
 @onready var visuals = $visuals
@@ -11,9 +14,19 @@ var gravity = ProjectSettings.get_setting("World/gravity")
 func _ready():
 	GameManager.set_player(self)
 	NotesAndInteractionService.pickup_item.connect(_on_item_pick_up)
-	
-func _physics_process(delta):
 
+func _physics_process(delta):
+	if hasItem and Input.is_action_pressed("item_pickup") and !pickup_pressed:
+		pickup_pressed = true
+		var main_node = get_node("../../Main")
+		item_placeholder.remove_child(item)
+		item.position = item_placeholder.global_transform.origin
+		item.gravity_scale = gravity
+		hasItem = false
+		main_node.add_child(item)
+	elif !Input.is_action_pressed("item_pickup"):
+		pickup_pressed = false
+	
 	if not is_on_floor():
 		velocity.y -= gravity * delta
 		
@@ -32,13 +45,19 @@ func _physics_process(delta):
 		couple_character.play("Movement")
 	else:
 		couple_character.stop()
+	
 	move_and_slide()
 
 func _on_item_pick_up(item_node: Node):
-	item_placeholder = get_node("item_placeholder")
-	item_placeholder.add_child(item_node)
-	item_node.position = item_placeholder.position
-	item_node.gravity_scale = 0
-	print("Works")
-	print(item_placeholder.position)
-	print(item_node.name)
+	if !hasItem:
+		var main_node = get_node("../../Main")
+		main_node.remove_child(item_node)
+		item_placeholder.add_child(item_node)
+		item_node.position = Vector3(0,0,0)
+		item_node.linear_velocity = Vector3(0,0,0)
+		item_node.gravity_scale = 0
+		hasItem = true
+		item = item_node
+		pickup_pressed = true
+
+

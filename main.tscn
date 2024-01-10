@@ -215,6 +215,6 @@ shape = SubResource("SphereShape3D_6blgr")
 
 [editable path="InteractionController"]
 [editable path="Player"]
-[editable path="Player/PlayerInteractionAreaPosition"]
+[editable path="Player/visuals/PlayerInteractionAreaPosition"]
 [editable path="StaticBody3D/InteractionArea"]
 [editable path="RigidBody3D/InteractionArea"]
