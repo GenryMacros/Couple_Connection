@@ -1,11 +1,9 @@
-[gd_scene load_steps=16 format=3 uid="uid://bchuqv0bdf50e"]
+[gd_scene load_steps=14 format=3 uid="uid://bchuqv0bdf50e"]
 
 [ext_resource type="PackedScene" uid="uid://btv3xq8q2os8c" path="res://Characters/Player.tscn" id="1_eb004"]
 [ext_resource type="PackedScene" uid="uid://hvgt15fjxbed" path="res://NotesAndInteractions/Dialogues/dialog_player.tscn" id="1_swquk"]
 [ext_resource type="Script" path="res://Scripts/Player/player_sc.gd" id="2_h58oa"]
-[ext_resource type="PackedScene" uid="uid://co7ga5viqxnk" path="res://NotesAndInteractions/Dialogues/interaction_controller.tscn" id="2_neh0s"]
 [ext_resource type="PackedScene" uid="uid://b2i8tmpnfqoyf" path="res://Characters/camera_rig.tscn" id="3_5dclv"]
-[ext_resource type="Texture2D" uid="uid://1i5xjdxabbgg" path="res://NotesAndInteractions/Dialogues/resource/Ruby.png" id="3_cqf11"]
 [ext_resource type="MeshLibrary" uid="uid://wkdyprkxjgv4" path="res://Environment/mesh_library.tres" id="4_ks7np"]
 [ext_resource type="PackedScene" uid="uid://c7qk7b1lfqg7m" path="res://Environment/Imported/Wall/brick.tscn" id="5_welc3"]
 [ext_resource type="PackedScene" uid="uid://bci0ardhy0y4e" path="res://NotesAndInteractions/World/interaction_area.tscn" id="6_sjel4"]
@@ -39,12 +37,6 @@ size = Vector3(1.82178, 1, 1.77856)
 
 [node name="Dialog_Player" parent="." instance=ExtResource("1_swquk")]
 dialog_file = "res://NotesAndInteractions/json/Dialogs.json"
-
-[node name="InteractionController" parent="." instance=ExtResource("2_neh0s")]
-interactions_text_file = "res://NotesAndInteractions/json/Interactions.json"
-
-[node name="Background" parent="InteractionController/VBoxContainer" index="1"]
-texture = ExtResource("3_cqf11")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_nrash")
@@ -189,11 +181,12 @@ skeleton = NodePath("../..")
 shape = SubResource("SphereShape3D_woqya")
 
 [node name="InteractionArea" parent="StaticBody3D" instance=ExtResource("6_sjel4")]
-dialog_key = "dialog1"
 
 [node name="CollisionShape3D" parent="StaticBody3D/InteractionArea" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00616473, 0.212646, 0.0989986)
 shape = SubResource("BoxShape3D_tlqqc")
 
-[editable path="InteractionController"]
+[node name="IDialogCaller" parent="StaticBody3D/InteractionArea" index="1"]
+dialog_key = "dialog1"
+
 [editable path="StaticBody3D/InteractionArea"]

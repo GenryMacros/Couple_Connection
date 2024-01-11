@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dmm5my5vbyaua"]
+
+[ext_resource type="Script" path="res://Scripts/Dialogs/dialog_caller_interface.gd" id="1_4weak"]
+
+[node name="DialogCallerInterface" type="Node"]
+script = ExtResource("1_4weak")
