@@ -47,16 +47,14 @@ func _physics_process(delta):
 	if	Input.is_action_pressed("camera_switch") and can_switch and !players.is_empty():
 		if GameManager.player == self:
 			_start_switch_delay()
-			#var player2:Node
 			for player in players:
 				if player != self:
-					#player2 = player
 					GameManager.set_player(player)
 					player._start_switch_delay()
 	
 	if has_item and Input.is_action_pressed("item_pickup") and !pickup_pressed:
 		pickup_pressed = true
-		var main_node = get_node("../../Main")
+		var main_node = get_parent()
 		item_placeholder.remove_child(item)
 		item.position = item_placeholder.global_transform.origin
 		item.gravity_scale = gravity
@@ -87,8 +85,9 @@ func _physics_process(delta):
 	move_and_slide()
 
 func _on_item_pick_up(item_node: Node):
+	print("Works")
 	if !has_item:
-		var main_node = get_node("../../Main")
+		var main_node = get_parent()
 		main_node.remove_child(item_node)
 		item_placeholder.add_child(item_node)
 		item_node.position = Vector3(0,0,0)

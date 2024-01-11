@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://bchuqv0bdf50e"]
+[gd_scene load_steps=41 format=3 uid="uid://bchuqv0bdf50e"]
 
 [ext_resource type="PackedScene" uid="uid://btv3xq8q2os8c" path="res://Characters/Player.tscn" id="1_eb004"]
 [ext_resource type="PackedScene" uid="uid://hvgt15fjxbed" path="res://NotesAndInteractions/Dialogues/dialog_player.tscn" id="1_swquk"]
@@ -33,6 +33,7 @@
 [ext_resource type="PackedScene" uid="uid://jjvbctafqwi6" path="res://Environment/Imported/Room/tolet_empty.glb" id="29_dufsp"]
 [ext_resource type="PackedScene" uid="uid://dq2k0fmbx0drm" path="res://Environment/Imported/Room/lubber.glb" id="30_7mnpu"]
 [ext_resource type="PackedScene" uid="uid://isuyxsvmy2o2" path="res://Environment/Room/note.tscn" id="33_u85er"]
+[ext_resource type="PackedScene" uid="uid://bci0ardhy0y4e" path="res://NotesAndInteractions/World/interaction_area.tscn" id="34_31ou8"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_d4mk8"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -54,6 +55,10 @@ glow_enabled = true
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wgeh7"]
 size = Vector3(1.22211, 1.5321, 1.35452)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_wc48o"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_wau2m"]
 
 [node name="Main" type="Node3D"]
 
@@ -216,4 +221,20 @@ transform = Transform3D(0.319437, 0, -0.240748, 0, 0.4, 0, 0.240748, 0, 0.319437
 [node name="Note" parent="." instance=ExtResource("33_u85er")]
 transform = Transform3D(0.794324, 0, 0.605069, 0, 0.998528, 0, -0.605069, 0, 0.794324, -3.72908, 2.67313, -3.2367)
 
+[node name="RigidBody3D" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.31893, 3.79652, 1.32229)
+
+[node name="InteractionArea" parent="RigidBody3D" instance=ExtResource("34_31ou8")]
+isPickUp = true
+
+[node name="CollisionShape3D" parent="RigidBody3D/InteractionArea" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.210388, 0.142807, -0.176694)
+shape = SubResource("SphereShape3D_wc48o")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+shape = SubResource("SphereShape3D_wau2m")
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="RigidBody3D"]
+
 [editable path="InteractionController"]
+[editable path="RigidBody3D/InteractionArea"]
