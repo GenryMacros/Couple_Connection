@@ -6,8 +6,6 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_teffj"]
 size = Vector3(1, 2.69595, 1)
 
-[sub_resource type="CylinderShape3D" id="CylinderShape3D_2db5b"]
-
 [node name="Player" type="CharacterBody3D"]
 
 [node name="PlayerInteractionAreaPosition" parent="." instance=ExtResource("1_73k1i")]
@@ -26,6 +24,16 @@ transform = Transform3D(1, 0, 0, 0, 1.5, 0, 0, 0, 1, 0, 1.61473, 0)
 shape = SubResource("CylinderShape3D_2db5b")
 
 [node name="visuals" type="Node3D" parent="."]
+
+[node name="PlayerInteractionAreaPosition" parent="visuals" instance=ExtResource("1_73k1i")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.315485, 0, 0)
+
+[node name="PlayerInteractionArea" parent="visuals/PlayerInteractionAreaPosition" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.05205e-08, 0, 0.240681)
+
+[node name="CollisionShape3D" parent="visuals/PlayerInteractionAreaPosition/PlayerInteractionArea" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.04769, 1.73158, -0.596615)
+shape = SubResource("BoxShape3D_teffj")
 
 [node name="SpotLight3D" type="SpotLight3D" parent="visuals"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 14.7018, -0.0126693)
@@ -47,4 +55,4 @@ transform = Transform3D(-3.0598e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.0598e-08, -1
 [node name="camera_point" type="Node3D" parent="."]
 transform = Transform3D(-0.515038, 0.656628, -0.550976, 0, 0.642788, 0.766044, 0.857167, 0.394542, -0.33106, -8.97317, 9.93776, -5.87174)
 
-[editable path="PlayerInteractionAreaPosition"]
+[editable path="visuals/PlayerInteractionAreaPosition"]
