@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://fe8kcl1klpdp"]
+
+[ext_resource type="Script" path="res://Scripts/Environment/door.gd" id="1_y61w6"]
+[ext_resource type="PackedScene" uid="uid://da5ap1y2jqiut" path="res://Environment/Imported/Door/jail_door.glb" id="2_mbsuc"]
+
+[node name="DoorMock" type="Node3D"]
+script = ExtResource("1_y61w6")
+
+[node name="rotation_point" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="jail_door2" parent="rotation_point" instance=ExtResource("2_mbsuc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.995, 0, 0)

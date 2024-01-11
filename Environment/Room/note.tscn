@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://isuyxsvmy2o2"]
+[gd_scene load_steps=9 format=3 uid="uid://isuyxsvmy2o2"]
 
 [ext_resource type="Shader" path="res://Scripts/Shaders/highlighter.gdshader" id="1_k00kg"]
+[ext_resource type="Script" path="res://Scripts/Environment/note.gd" id="1_s1aaq"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_gsyqd"]
 render_priority = 0
@@ -26,6 +27,7 @@ size = Vector3(1, 52.2011, 1)
 [sub_resource type="BoxMesh" id="BoxMesh_as70o"]
 
 [node name="Note" type="Node3D"]
+script = ExtResource("1_s1aaq")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.745179, 0, 0, 0, 0.0128308, 0, 0, 0, 0.466796, 0.00193107, -0.00302976, 0.00156951)
@@ -33,6 +35,8 @@ material_override = SubResource("StandardMaterial3D_5x773")
 mesh = SubResource("BoxMesh_gd44y")
 
 [node name="Area3D" type="Area3D" parent="MeshInstance3D"]
+collision_layer = 64
+collision_mask = 64
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/Area3D"]
 transform = Transform3D(1.37695, 0, 0, 0, 1.76092, 0, 0, 0, 1.84279, 0, 32.5023, 0)

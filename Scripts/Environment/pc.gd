@@ -7,6 +7,7 @@ var is_usable = true
 @export var pc_display: Control
 @onready var area_3d = $pc/Area3D
 
+@onready var cube_002 = $Cube_002
 
 func _ready():
 	area_3d.body_entered.connect(body_entered)
@@ -25,6 +26,7 @@ func body_exited(other_body: Node3D):
 	
 
 func pass_entered():
+	$pc/Cube_002.get_active_material(0).get_next_pass().set("shader_param/shine_color", Vector3(0, 0, 0));
 	is_usable = false
 	connected_door.open()
 	
