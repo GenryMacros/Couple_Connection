@@ -1,23 +1,14 @@
 [gd_scene load_steps=5 format=3 uid="uid://btv3xq8q2os8c"]
 
 [ext_resource type="PackedScene" uid="uid://dht7ly0w7siyc" path="res://NotesAndInteractions/World/player_interaction_area.tscn" id="1_73k1i"]
-[ext_resource type="PackedScene" uid="uid://52b1r8cvhd6e" path="res://Characters/player_model.tscn" id="2_8e5e6"]
+[ext_resource type="PackedScene" path="res://Characters/player_model.tscn" id="2_8e5e6"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_teffj"]
-size = Vector3(1, 2.69595, 1)
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_2db5b"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_8sskt"]
+radius = 0.545
 
 [node name="Player" type="CharacterBody3D"]
-
-[node name="PlayerInteractionAreaPosition" parent="." instance=ExtResource("1_73k1i")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.0146589, 0, 0.0485203)
-
-[node name="PlayerInteractionArea" parent="PlayerInteractionAreaPosition" index="0"]
-transform = Transform3D(2.21238, 0, 7.10543e-15, 0, 1, 0, 0, 0, 1.43602, -1.66907, 0, 0.319141)
-disable_mode = 2
-
-[node name="CollisionShape3D" parent="PlayerInteractionAreaPosition/PlayerInteractionArea" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.01916, 1.73158, -0.24711)
-shape = SubResource("BoxShape3D_teffj")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1.5, 0, 0, 0, 1, 0, 1.61473, 0)
@@ -26,14 +17,10 @@ shape = SubResource("CylinderShape3D_2db5b")
 [node name="visuals" type="Node3D" parent="."]
 
 [node name="PlayerInteractionAreaPosition" parent="visuals" instance=ExtResource("1_73k1i")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.315485, 0, 0)
-
-[node name="PlayerInteractionArea" parent="visuals/PlayerInteractionAreaPosition" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.05205e-08, 0, 0.240681)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.411997, 1.29408, -0.302777)
 
 [node name="CollisionShape3D" parent="visuals/PlayerInteractionAreaPosition/PlayerInteractionArea" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.04769, 1.73158, -0.596615)
-shape = SubResource("BoxShape3D_teffj")
+shape = SubResource("CylinderShape3D_8sskt")
 
 [node name="SpotLight3D" type="SpotLight3D" parent="visuals"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 14.7018, -0.0126693)
