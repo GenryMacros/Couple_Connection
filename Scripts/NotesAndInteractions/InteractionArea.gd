@@ -2,6 +2,7 @@ extends Area3D
 
 @export var interaction_key = "";
 @export var dialog_key = "";
+@export var isPickUp = false;
 var isAreaActive = false;
 
 func _input(event):
@@ -10,6 +11,8 @@ func _input(event):
 			NotesAndInteractionService.display_interaction.emit(interaction_key);
 		if dialog_key != "":
 			NotesAndInteractionService.display_dialog.emit(dialog_key);
+	elif isAreaActive and event.is_action_pressed("item_pickup") and isPickUp:
+		NotesAndInteractionService.pickup_item.emit(get_parent());
 
 func _on_area_entered(area):
 	isAreaActive = true;
