@@ -5,7 +5,7 @@ var is_player_in_area = false
 var is_usable = true
 @export var connected_door: Node3D
 @export var pc_display: Control
-@onready var area_3d = $MeshInstance3D/Area3D
+@onready var area_3d = $pc/Area3D
 
 
 func _ready():

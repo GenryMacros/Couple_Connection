@@ -1,0 +1,50 @@
+[gd_scene load_steps=8 format=3 uid="uid://xerh8g6ekani"]
+
+[ext_resource type="PackedScene" uid="uid://bdjv50624di7h" path="res://Environment/Imported/Room/pc.glb" id="1_swwlj"]
+[ext_resource type="Shader" path="res://Scripts/Shaders/highlighter.gdshader" id="2_whsdd"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wi5hn"]
+render_priority = 0
+shader = ExtResource("2_whsdd")
+shader_parameter/shine_color = Color(1, 1, 0, 1)
+shader_parameter/cycle_interval = 1.0
+shader_parameter/shine_speed = 3.0
+shader_parameter/shine_width = 30.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qgsno"]
+next_pass = SubResource("ShaderMaterial_wi5hn")
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_su5aj"]
+albedo_color = Color(0.0313726, 0, 1, 1)
+emission_enabled = true
+emission = Color(0.0313726, 0, 1, 1)
+emission_energy_multiplier = 22.0
+emission_on_uv2 = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qwj8r"]
+albedo_color = Color(0.0313726, 0, 1, 1)
+emission_enabled = true
+emission = Color(0.0313726, 0, 1, 1)
+emission_energy_multiplier = 22.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_5738m"]
+
+[node name="pc" instance=ExtResource("1_swwlj")]
+
+[node name="Cube_002" parent="." index="0"]
+cast_shadow = 0
+gi_mode = 0
+surface_material_override/0 = SubResource("StandardMaterial3D_qgsno")
+
+[node name="Plane" parent="Cube_002" index="0"]
+transform = Transform3D(1.24724, 0, 0, 0, 3.20364e-07, 11.343, 0, -0.719837, 5.0482e-06, 0, 18.7856, -0.0573868)
+visible = false
+material_override = SubResource("StandardMaterial3D_su5aj")
+cast_shadow = 0
+gi_mode = 0
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Cube_002" index="1"]
+transform = Transform3D(2.5, 0, 0, 0, 23, 0, 0, 0, 0.132, 0, 18.7301, 0.00708603)
+material_override = SubResource("StandardMaterial3D_qwj8r")
+mesh = SubResource("BoxMesh_5738m")

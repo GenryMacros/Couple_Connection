@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://cborf1xtuxvoy"]
+
+[ext_resource type="PackedScene" uid="uid://bx3cd04ghqu2m" path="res://Environment/Imported/Room/tv.glb" id="1_wev3n"]
+[ext_resource type="Texture2D" uid="uid://qtncaghrpdxy" path="res://Environment/Imported/pacman.PNG" id="2_ajaxb"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_72rjk"]
+shading_mode = 0
+specular_mode = 2
+albedo_texture = ExtResource("2_ajaxb")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_8o8vg"]
+
+[node name="tv" instance=ExtResource("1_wev3n")]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Cube_004" index="0"]
+transform = Transform3D(0.962651, 0, 0, 0, -4.37114e-08, -0.976208, 0, 1, -4.26714e-08, 4.6788e-05, 0.00598976, 0.0960458)
+material_override = SubResource("StandardMaterial3D_72rjk")
+mesh = SubResource("PlaneMesh_8o8vg")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Cube_004" index="2"]
+transform = Transform3D(0.495563, 0, 0, 0, 1, 0, 0, 0, 10.8377, 0, 0, 10.337)
+visible = false

@@ -1,19 +1,17 @@
 [gd_scene load_steps=4 format=3 uid="uid://4ija24cqmm7j"]
 
 [ext_resource type="Script" path="res://Scripts/Environment/pc.gd" id="1_wvgsf"]
-
-[sub_resource type="BoxMesh" id="BoxMesh_kj1mi"]
+[ext_resource type="PackedScene" uid="uid://xerh8g6ekani" path="res://Environment/Room/pc.tscn" id="2_ohs3x"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7i12x"]
 
 [node name="Pc" type="Node3D"]
 script = ExtResource("1_wvgsf")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-mesh = SubResource("BoxMesh_kj1mi")
+[node name="pc" parent="." instance=ExtResource("2_ohs3x")]
 
-[node name="Area3D" type="Area3D" parent="MeshInstance3D"]
+[node name="Area3D" type="Area3D" parent="pc"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/Area3D"]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="pc/Area3D"]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
 shape = SubResource("BoxShape3D_7i12x")

@@ -1,0 +1,21 @@
+[gd_scene load_steps=6 format=3 uid="uid://3m7b0exls5u8"]
+
+[ext_resource type="Texture2D" uid="uid://cuvt2umsus0ph" path="res://Environment/Imported/ahegao2.jpg" id="1_alc8b"]
+[ext_resource type="Shader" path="res://Scripts/Shaders/pixelization.gdshader" id="2_as5k2"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0kwtn"]
+render_priority = 0
+shader = ExtResource("2_as5k2")
+shader_parameter/pixel_size = 10
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2asku"]
+next_pass = SubResource("ShaderMaterial_0kwtn")
+albedo_texture = ExtResource("1_alc8b")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_f8fqy"]
+
+[node name="Poster" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+material_override = SubResource("StandardMaterial3D_2asku")
+mesh = SubResource("PlaneMesh_f8fqy")

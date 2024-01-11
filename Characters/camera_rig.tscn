@@ -7,7 +7,7 @@
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_qtgp6"]
 shader = ExtResource("2_o8ghg")
 shader_parameter/crt_brightness = 1.0
-shader_parameter/crt_ghost = 1.0
+shader_parameter/crt_ghost = 0.0
 shader_parameter/crt_grid = 0.7
 shader_parameter/crt_white_noise = 0.0
 shader_parameter/crt_curve = 0.0
@@ -16,7 +16,7 @@ shader_parameter/crt_curve = 0.0
 shader = ExtResource("2_xdwda")
 shader_parameter/MULTIPLIER = 0.56
 shader_parameter/SCALE = 0.5
-shader_parameter/SOFTNESS = 0.605
+shader_parameter/SOFTNESS = 1.0
 shader_parameter/BASE_OPACITY = 1.0
 
 [node name="CameraRig" type="Node3D"]
