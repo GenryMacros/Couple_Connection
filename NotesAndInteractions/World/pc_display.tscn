@@ -14,18 +14,11 @@ shader_parameter/crt_curve = 0.0
 [sub_resource type="Theme" id="Theme_xjpgd"]
 default_font_size = 220
 
-[node name="PcDisplay" type="Control"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="PcDisplay" type="CanvasLayer"]
 script = ExtResource("1_ef1eq")
 
 [node name="PcDisplay" type="ColorRect" parent="."]
 material = SubResource("ShaderMaterial_q6cmc")
-layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -33,43 +26,44 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
-[node name="Control" type="Control" parent="PcDisplay"]
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="Control" type="HBoxContainer" parent="PcDisplay"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -346.0
+offset_top = -140.0
+offset_right = 346.0
+offset_bottom = 140.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="TextEdit1" type="TextEdit" parent="PcDisplay/Control"]
-layout_mode = 0
-offset_left = 427.0
-offset_top = 329.0
-offset_right = 564.0
-offset_bottom = 646.0
+[node name="TextEdit1" type="Label" parent="PcDisplay/Control"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
 theme = SubResource("Theme_xjpgd")
 text = "0"
 
-[node name="TextEdit2" type="TextEdit" parent="PcDisplay/Control"]
-layout_mode = 0
-offset_left = 702.0
-offset_top = 327.0
-offset_right = 839.0
-offset_bottom = 644.0
+[node name="TextEdit2" type="Label" parent="PcDisplay/Control"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
 theme = SubResource("Theme_xjpgd")
 text = "0"
 
-[node name="TextEdit3" type="TextEdit" parent="PcDisplay/Control"]
-layout_mode = 0
-offset_left = 989.0
-offset_top = 326.0
-offset_right = 1126.0
-offset_bottom = 643.0
+[node name="TextEdit3" type="Label" parent="PcDisplay/Control"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
 theme = SubResource("Theme_xjpgd")
 text = "0"
 
-[node name="TextEdit4" type="TextEdit" parent="PcDisplay/Control"]
-layout_mode = 0
-offset_left = 1279.0
-offset_top = 329.0
-offset_right = 1416.0
-offset_bottom = 646.0
+[node name="TextEdit4" type="Label" parent="PcDisplay/Control"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
 theme = SubResource("Theme_xjpgd")
 text = "0"

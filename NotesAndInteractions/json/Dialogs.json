@@ -112,5 +112,66 @@
 				"nextReplica": "stop"
 			}
 		}
+	},
+	"dialog0":
+	{
+		"script":
+		{
+			"start":
+			{
+				"actorName":"ACTOR_1",
+				"visibleName":"ACTOR_3",
+				"text": "DIALOGUE_1_3",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/YOASOBI_祝福_Official_Music_Video_機動戦士ガンダム_水星の魔女_オープニングテーマ.ogg",
+				"optionReplicas":["replica8","replica9"],
+				"nextReplica": "choice"
+			},
+			"replica8":
+			{
+				"actorName":"ACTOR_1",
+				"visibleName":"ACTOR_3",
+				"text": "DIALOGUE_1_3_OPTION_1",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/House In a Forest Loop.ogg",
+				"optionReplicas":[],
+				"nextReplica": "replica10"
+			},
+			"replica9":
+			{
+				"actorName":"ACTOR_1",
+				"visibleName":"ACTOR_3",
+				"text": "DIALOGUE_1_3_OPTION_2",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/House In a Forest Loop.ogg",
+				"optionReplicas":[],
+				"nextReplica": "replica11"
+			},
+			"replica10":
+			{
+				"actorName":"ACTOR_2",
+				"visibleName":"ACTOR_2",
+				"text": "DIALOGUE_2_3",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/YOASOBI_祝福_Official_Music_Video_機動戦士ガンダム_水星の魔女_オープニングテーマ.ogg",
+				"optionReplicas":[],
+				"nextReplica": "end"
+			},
+			"replica11":
+			{
+				"actorName":"ACTOR_2",
+				"visibleName":"ACTOR_2",
+				"text": "DIALOGUE_2_4",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/YOASOBI_祝福_Official_Music_Video_機動戦士ガンダム_水星の魔女_オープニングテーマ.ogg",
+				"optionReplicas":[],
+				"nextReplica": "end"
+			},
+			"end":
+			{
+				"actorName":"",
+				"visibleName":"",
+				"text": "",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "stop"
+			}
+		}
+
 	}
 }

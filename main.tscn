@@ -1,11 +1,10 @@
-[gd_scene load_steps=38 format=3 uid="uid://bchuqv0bdf50e"]
+[gd_scene load_steps=43 format=3 uid="uid://bchuqv0bdf50e"]
 
 [ext_resource type="PackedScene" uid="uid://btv3xq8q2os8c" path="res://Characters/Player.tscn" id="1_eb004"]
 [ext_resource type="PackedScene" uid="uid://hvgt15fjxbed" path="res://NotesAndInteractions/Dialogues/dialog_player.tscn" id="1_swquk"]
 [ext_resource type="Script" path="res://Scripts/Player/player_sc.gd" id="2_h58oa"]
 [ext_resource type="PackedScene" uid="uid://co7ga5viqxnk" path="res://NotesAndInteractions/Dialogues/interaction_controller.tscn" id="2_neh0s"]
 [ext_resource type="PackedScene" uid="uid://b2i8tmpnfqoyf" path="res://Characters/camera_rig.tscn" id="3_5dclv"]
-[ext_resource type="Texture2D" uid="uid://1i5xjdxabbgg" path="res://NotesAndInteractions/Dialogues/resource/Ruby.png" id="3_cqf11"]
 [ext_resource type="PackedScene" uid="uid://cxf7ahxfy4t34" path="res://NotesAndInteractions/World/pc_display.tscn" id="4_rf74g"]
 [ext_resource type="PackedScene" uid="uid://cra4bso80oc30" path="res://Environment/Imported/Floor/room_block.tscn" id="8_y1de4"]
 [ext_resource type="PackedScene" uid="uid://b1cqgrbtducyf" path="res://Environment/Imported/Floor/room_block_opaque.tscn" id="9_x8v6r"]
@@ -27,6 +26,7 @@
 [ext_resource type="PackedScene" uid="uid://3m7b0exls5u8" path="res://Environment/Room/poster.tscn" id="25_12g3g"]
 [ext_resource type="PackedScene" uid="uid://cborf1xtuxvoy" path="res://Environment/Room/tv.tscn" id="26_rhuc6"]
 [ext_resource type="PackedScene" uid="uid://clvvxrls6w1ou" path="res://Environment/Imported/Room/gaypad.glb" id="27_6n0b6"]
+[ext_resource type="PackedScene" uid="uid://bci0ardhy0y4e" path="res://NotesAndInteractions/World/interaction_area.tscn" id="27_50l4p"]
 [ext_resource type="PackedScene" uid="uid://bcmi5ftw4550x" path="res://Environment/Imported/Room/fucked_paper.glb" id="27_dik0s"]
 [ext_resource type="PackedScene" uid="uid://ol4j8hj1pxcj" path="res://Environment/Imported/Room/trash_can.glb" id="28_0ypj5"]
 [ext_resource type="PackedScene" uid="uid://ddtc8t238p1vm" path="res://Environment/Imported/Room/tolet.glb" id="28_ji80t"]
@@ -52,21 +52,40 @@ sky = SubResource("Sky_6yv3s")
 tonemap_mode = 2
 glow_enabled = true
 
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_bopqx"]
+height = 0.947923
+radius = 0.318039
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6e8ei"]
+size = Vector3(2.08545, 0.697754, 2.28528)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tvyxs"]
+size = Vector3(4.03351, 2.1095, 0.512939)
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_wgeh7"]
 size = Vector3(1.22211, 1.5321, 1.35452)
 
-[node name="Main" type="Node3D"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_idfqp"]
+size = Vector3(1.29395, 1.12408, 1.19043)
 
-[node name="Dialog_Player" parent="." instance=ExtResource("1_swquk")]
-dialog_file = "res://NotesAndInteractions/json/Dialogs.json"
+[sub_resource type="BoxShape3D" id="BoxShape3D_lh8i0"]
+size = Vector3(1, 1.56165, 1)
+
+[node name="Main" type="Node3D"]
 
 [node name="InteractionController" parent="." instance=ExtResource("2_neh0s")]
 interactions_text_file = "res://NotesAndInteractions/json/Interactions.json"
 
-[node name="Background" parent="InteractionController/VBoxContainer" index="1"]
-texture = ExtResource("3_cqf11")
+[node name="Dialog_Player" parent="." instance=ExtResource("1_swquk")]
+dialog_file = "res://NotesAndInteractions/json/Level1Dialogs.json"
 
-[node name="PcDisplay" parent="InteractionController" instance=ExtResource("4_rf74g")]
+[node name="CharacterName" parent="Dialog_Player/CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer" index="0"]
+theme_type_variation = &"GoodPanelContainer"
+
+[node name="DialogPanel" parent="Dialog_Player/CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer" index="1"]
+theme_type_variation = &"GoodPanelContainer"
+
+[node name="PcDisplay" parent="Dialog_Player" instance=ExtResource("4_rf74g")]
 visible = false
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -134,6 +153,14 @@ transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, -5.40735, 4.44493, -2.1
 [node name="Cylinder2" parent="Environment" instance=ExtResource("18_0fldr")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -5.41368, 4.70378, -2.08154)
 
+[node name="InteractionArea" parent="Environment/Cylinder2" instance=ExtResource("27_50l4p")]
+
+[node name="CollisionShape3D" parent="Environment/Cylinder2/InteractionArea" index="0"]
+shape = SubResource("CylinderShape3D_bopqx")
+
+[node name="IDialogCaller" parent="Environment/Cylinder2/InteractionArea" index="1"]
+dialog_key = "flower"
+
 [node name="Clock2" parent="Environment" instance=ExtResource("19_30it2")]
 transform = Transform3D(2, 0, 0, 0, -8.74228e-08, -2, 0, 2, -8.74228e-08, -0.209828, 6.53534, -3.8281)
 
@@ -149,8 +176,26 @@ transform = Transform3D(-2.18557e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.18557e-08, 
 [node name="Poster" parent="Environment" instance=ExtResource("25_12g3g")]
 transform = Transform3D(-1, -3.82137e-15, 8.74228e-08, -8.74228e-08, 4.37114e-08, -1, 0, -1, -4.37114e-08, 5.50096, 5.7607, 7.75374)
 
+[node name="InteractionArea" parent="Environment/Poster" instance=ExtResource("27_50l4p")]
+
+[node name="CollisionShape3D" parent="Environment/Poster/InteractionArea" index="0"]
+transform = Transform3D(1, 0, 1.11075e-28, 0, 1, 0, 0, 0, 1, 0.0153809, -0.151123, 0.046936)
+shape = SubResource("BoxShape3D_6e8ei")
+
+[node name="IDialogCaller" parent="Environment/Poster/InteractionArea" index="1"]
+dialog_key = "ahegao"
+
 [node name="tv2" parent="Environment" instance=ExtResource("26_rhuc6")]
 transform = Transform3D(-1.2, 0, 1.50996e-07, 0, 1, 0, -1.81195e-07, 0, -1, -0.455034, 6, 6.90666)
+
+[node name="InteractionArea" parent="Environment/tv2" instance=ExtResource("27_50l4p")]
+
+[node name="CollisionShape3D" parent="Environment/tv2/InteractionArea" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0454407, 0.0205688, -0.0098877)
+shape = SubResource("BoxShape3D_tvyxs")
+
+[node name="IDialogCaller" parent="Environment/tv2/InteractionArea" index="1"]
+dialog_key = "tv"
 
 [node name="gaypad" parent="Environment" instance=ExtResource("27_6n0b6")]
 transform = Transform3D(0.117125, 0.0937108, -4.09623e-09, 0, -6.55671e-09, -0.15, -0.0937108, 0.117125, -5.1197e-09, -0.127246, 3.40471, -0.693029)
@@ -187,6 +232,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0851851, 0.405148, -0.3287
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.21032, 3.5263, 3.34929)
 shape = SubResource("BoxShape3D_wgeh7")
 
+[node name="InteractionArea" parent="Environment/Toilet_batch/StaticBody3D/CollisionShape3D" instance=ExtResource("27_50l4p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.042465, -0.239589, 0.132057)
+
+[node name="CollisionShape3D" parent="Environment/Toilet_batch/StaticBody3D/CollisionShape3D/InteractionArea" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0182343, 0.0620422, -0.0952148)
+shape = SubResource("BoxShape3D_idfqp")
+
+[node name="IDialogCaller" parent="Environment/Toilet_batch/StaticBody3D/CollisionShape3D/InteractionArea" index="1"]
+dialog_key = "jerkoffPaper"
+
 [node name="tolet" parent="Environment/Toilet_batch/StaticBody3D" instance=ExtResource("28_ji80t")]
 transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 3.06994, 2.91022, 3.43825)
 
@@ -205,7 +260,7 @@ transform = Transform3D(0.195585, 0.0413677, 0.00593023, 0, 0.0283807, -0.197976
 [node name="Pc" parent="." node_paths=PackedStringArray("connected_door", "pc_display") instance=ExtResource("20_gm3ur")]
 transform = Transform3D(-2.62268e-08, 0, 0.6, 0, 0.6, 0, -0.6, 0, -2.62268e-08, 7.60486, 3.89458, -0.96828)
 connected_door = NodePath("../DoorMock")
-pc_display = NodePath("../InteractionController/PcDisplay")
+pc_display = NodePath("../Dialog_Player/PcDisplay")
 
 [node name="DoorMock" parent="." instance=ExtResource("22_tt4k0")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1.10044, 0, -1, 0, -4.37114e-08, -8.39397, 4.89296, 4.53748)
@@ -216,4 +271,18 @@ transform = Transform3D(0.319437, 0, -0.240748, 0, 0.4, 0, 0.240748, 0, 0.319437
 [node name="Note" parent="." instance=ExtResource("33_u85er")]
 transform = Transform3D(0.794324, 0, 0.605069, 0, 0.998528, 0, -0.605069, 0, 0.794324, -3.72908, 2.67313, -3.2367)
 
-[editable path="InteractionController"]
+[node name="InteractionArea" parent="Note" instance=ExtResource("27_50l4p")]
+
+[node name="CollisionShape3D" parent="Note/InteractionArea" index="0"]
+transform = Transform3D(1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, 1, 0, 0.280823, 0)
+shape = SubResource("BoxShape3D_lh8i0")
+
+[node name="IDialogCaller" parent="Note/InteractionArea" index="1"]
+dialog_key = "note"
+
+[editable path="Dialog_Player"]
+[editable path="Environment/Cylinder2/InteractionArea"]
+[editable path="Environment/Poster/InteractionArea"]
+[editable path="Environment/tv2/InteractionArea"]
+[editable path="Environment/Toilet_batch/StaticBody3D/CollisionShape3D/InteractionArea"]
+[editable path="Note/InteractionArea"]

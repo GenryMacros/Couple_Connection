@@ -10,7 +10,6 @@ collision_mask = 64
 script = ExtResource("1_tuehb")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.210388, 0.212646, 0.247314)
 
 [node name="IDialogCaller" type="Node" parent="."]
 script = ExtResource("2_34wo2")

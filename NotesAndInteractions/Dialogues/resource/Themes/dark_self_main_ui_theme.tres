@@ -12,24 +12,26 @@
 [ext_resource type="Texture2D" uid="uid://cfv4o4vtyih7p" path="res://NotesAndInteractions/Dialogues/resource/Themes/textures/pressed_button_marker/arrow_rotation_3.png" id="9_mmifc"]
 [ext_resource type="Texture2D" uid="uid://c8glgv0qgh5rq" path="res://NotesAndInteractions/Dialogues/resource/Themes/textures/pressed_button_marker/arrow_rotation_4.png" id="10_rbkla"]
 [ext_resource type="Texture2D" uid="uid://bkx2itwk08fsn" path="res://NotesAndInteractions/Dialogues/resource/Themes/textures/pressed_button_marker/arrow_rotation_5.png" id="11_18pjd"]
-[ext_resource type="Texture2D" uid="uid://bpfo2iyqhbhqk" path="res://NotesAndInteractions/Dialogues/resource/Themes/textures/border/border_evil_240x240_v1.png" id="12_uc8i3"]
-[ext_resource type="Texture2D" uid="uid://bl1mfqfpkkgs4" path="res://NotesAndInteractions/Dialogues/resource/Themes/textures/border/border_good_240x240_v1.png" id="13_we25n"]
+[ext_resource type="Texture2D" uid="uid://cyml6vs8hw2xd" path="res://NotesAndInteractions/Dialogues/resource/Themes/textures/border/black_root.png" id="12_gpbum"]
+[ext_resource type="Texture2D" uid="uid://cyxi7u6oe86wu" path="res://NotesAndInteractions/Dialogues/resource/Themes/textures/border/white_root.png" id="13_2pnq4"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ohg03"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_femru"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_avjih"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4e7tw"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_76djy"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_knr3i"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4n856"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lapye"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c6s8h"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gusgv"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_acfve"]
 
-[sub_resource type="AnimatedTexture" id="AnimatedTexture_1mrro"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qnqix"]
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_063o4"]
 frames = 9
 speed_scale = 10.0
 frame_0/texture = ExtResource("1_6n5bj")
@@ -50,11 +52,9 @@ frame_7/duration = 1.0
 frame_8/texture = ExtResource("1_6n5bj")
 frame_8/duration = 1.0
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uk7cf"]
-texture = SubResource("AnimatedTexture_1mrro")
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gf15m"]
+texture = SubResource("AnimatedTexture_063o4")
 texture_margin_left = 45.0
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_s4n2r"]
 
 [sub_resource type="AnimatedTexture" id="AnimatedTexture_t0ghx"]
 frames = 6
@@ -77,7 +77,7 @@ texture = SubResource("AnimatedTexture_t0ghx")
 texture_margin_left = 65.0
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fbfan"]
-texture = ExtResource("12_uc8i3")
+texture = ExtResource("12_gpbum")
 texture_margin_left = 38.0
 texture_margin_top = 30.0
 texture_margin_right = 30.0
@@ -86,7 +86,7 @@ axis_stretch_horizontal = 2
 axis_stretch_vertical = 2
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3efln"]
-texture = ExtResource("13_we25n")
+texture = ExtResource("13_2pnq4")
 texture_margin_left = 38.0
 texture_margin_top = 30.0
 texture_margin_right = 30.0
@@ -117,20 +117,23 @@ Button/constants/icon_max_width = 0
 Button/constants/outline_size = 0
 Button/font_sizes/font_size = 30
 Button/styles/disabled = SubResource("StyleBoxEmpty_ohg03")
-Button/styles/focus = SubResource("StyleBoxEmpty_femru")
-Button/styles/hover = SubResource("StyleBoxEmpty_4e7tw")
-Button/styles/normal = SubResource("StyleBoxEmpty_knr3i")
+Button/styles/focus = SubResource("StyleBoxEmpty_avjih")
+Button/styles/hover = SubResource("StyleBoxEmpty_76djy")
+Button/styles/normal = SubResource("StyleBoxEmpty_4n856")
 Button/styles/pressed = SubResource("StyleBoxEmpty_lapye")
 DialogButton/base_type = &"Button"
-DialogButton/colors/font_color = Color(0.87451, 0.87451, 0.87451, 1)
-DialogButton/colors/font_disabled_color = Color(0.87451, 0.87451, 0.87451, 0.501961)
+DialogButton/colors/font_color = Color(0.94902, 0.94902, 0.94902, 1)
+DialogButton/colors/font_disabled_color = Color(0.94902, 0.94902, 0.94902, 1)
 DialogButton/colors/font_focus_color = Color(0.94902, 0.94902, 0.94902, 1)
 DialogButton/colors/font_hover_color = Color(0.94902, 0.94902, 0.94902, 1)
+DialogButton/constants/h_separation = 0
+DialogButton/constants/icon_max_width = 0
+DialogButton/constants/outline_size = 0
 DialogButton/font_sizes/font_size = 30
 DialogButton/styles/disabled = SubResource("StyleBoxEmpty_c6s8h")
-DialogButton/styles/focus = SubResource("StyleBoxEmpty_gusgv")
-DialogButton/styles/hover = SubResource("StyleBoxTexture_uk7cf")
-DialogButton/styles/normal = SubResource("StyleBoxEmpty_s4n2r")
+DialogButton/styles/focus = SubResource("StyleBoxEmpty_acfve")
+DialogButton/styles/hover = SubResource("StyleBoxEmpty_qnqix")
+DialogButton/styles/normal = SubResource("StyleBoxTexture_gf15m")
 DialogButton/styles/pressed = SubResource("StyleBoxTexture_mhld6")
 EvilPanelContainer/base_type = &"PanelContainer"
 EvilPanelContainer/styles/panel = SubResource("StyleBoxTexture_fbfan")

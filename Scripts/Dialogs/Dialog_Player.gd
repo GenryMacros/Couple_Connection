@@ -7,6 +7,7 @@ extends Control
 @onready var type_char_timer = $CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/DialogPanel/HBoxContainer/DialogText/VBoxContainer/Replica/CharacterTyper
 @onready var character_name_label = $CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer/CharacterName/CharacterName
 @onready var buttons_container = $CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/DialogPanel/HBoxContainer/DialogText/VBoxContainer/Buttons
+@onready var wait_timer = $PausePerNextDialog;
 
 var dialog_key = ""
 var dialogs = {};
@@ -15,6 +16,7 @@ var curr_replica : Dictionary = {};
 var message_char_index = 0;
 var curr_message = "";
 var is_in_progress = false;
+var is_rested = true;
 var type_character_speed = .1;
 var isChoiceReplicaTextTyped = false;
 var isAllOptionShowed = false;
@@ -72,7 +74,8 @@ func process_option_replica():
 	else:
 		if isOptionChosen:
 			on_choice_voice_finished();
-			
+
+var _focused_button_index = 0;
 func add_options():
 	if not isAllOptionShowed:	
 		var options = curr_replica["optionReplicas"];
@@ -81,14 +84,25 @@ func add_options():
 			button.theme_type_variation = "DialogButton";
 			button.text = tr(dialog_script[option]["text"]);
 			button.name = option;
+			button.disabled = true;
+			button.focus_mode = Control.FOCUS_ALL;
+			button.focus_entered.connect(on_option_focus_entered.bind(button));
+			button.focus_exited.connect(on_option_focus_exited.bind(button))
 			button.alignment = HORIZONTAL_ALIGNMENT_LEFT;
 			button.pressed.connect(on_option_pressed.bind(button));
 			buttons_container.add_child(button);
+		var first = buttons_container.get_child(_focused_button_index) as Button;
+		first.grab_focus();
 		isAllOptionShowed = true;
 
-
+func on_option_focus_entered(button : Button):
+	button.disabled = false;
+	
+	
+func on_option_focus_exited(button : Button):
+	button.disabled = true;
+	
 func on_option_pressed(button: Button):
-	print(button.name);
 	if isAllOptionShowed:
 		if  not isOptionChosen:
 			isOptionChosen = true;
@@ -136,32 +150,39 @@ func finish_dialog():
 	message_char_index = 0;
 	replica_text_label.text = "";
 	character_name_label.text = "";
-	background.visible = false;
-	is_in_progress = false;
-	get_tree().paused = false
 	replica_audio_player.stop();
 	type_char_timer.set_wait_time(type_character_speed);
+	background.visible = false;
+	get_tree().paused = false
 	caller.dialog_finished.emit(dialog_key,chosenOptions);
+	is_in_progress = false;
+	is_rested = false;
+	wait_timer.start();
 		
 func on_display_dialog(dialog_caller):
-	if is_in_progress:
+	if not is_rested:
+		return;
+	elif is_in_progress:
 			next_replica()
 	else:
-		get_tree().paused = true;
-		background.visible = true;
-		is_in_progress = true;
 		caller = dialog_caller
 		dialog_key = caller.dialog_key;
-		dialog_script = dialogs[dialog_key]["script"];
-		curr_replica = dialog_script["start"];
-		type_char_timer.set_wait_time(type_character_speed);
-		TranslationServer.set_locale("ua");
-		next_replica();
+		if not dialogs.has(dialog_key):
+			caller.dialog_finished.emit(dialog_key,["invalid key"]);
+		else:
+			get_tree().paused = true;
+			background.visible = true;
+			is_in_progress = true;
+			dialog_script = dialogs[dialog_key]["script"];
+			curr_replica = dialog_script["start"];
+			type_char_timer.set_wait_time(type_character_speed);
+			TranslationServer.set_locale("ua");
+			next_replica();
 
 
 func _on_character_typer_timeout():
 	show_replica();
 
 
-func _on_buttons_text_typer_timeout():
-	pass # Replace with function body.
+func _on_pause_per_next_dialog_timeout():
+	is_rested = true;

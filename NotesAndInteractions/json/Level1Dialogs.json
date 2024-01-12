@@ -1,0 +1,122 @@
+{
+    "tv":
+	{
+		"script":
+		{
+			"start":
+			{
+				"actorName":"tv",
+				"visibleName":"tv",
+				"text": "tv",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "end"
+			},
+			"end":
+			{
+				"actorName":"",
+				"visibleName":"",
+				"text": "",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "stop"
+			}
+		}
+	},
+	"jerkoffPaper":
+	{
+		"script":
+		{
+			"start":
+			{
+				"actorName":"jerkoffPaper",
+				"visibleName":"jerkoffPaper",
+				"text": "jerkoffPaper",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "end"
+			},
+			"end":
+			{
+				"actorName":"",
+				"visibleName":"",
+				"text": "",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "stop"
+			}
+		}
+	},
+	"flower":
+	{
+		"script":
+		{
+			"start":
+			{
+				"actorName":"flower",
+				"visibleName":"flower",
+				"text": "flower",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "end"
+			},
+			"end":
+			{
+				"actorName":"",
+				"visibleName":"",
+				"text": "",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "stop"
+			}
+		}
+	},
+	"ahegao":
+	{
+		"script":
+		{
+			"start":
+			{
+				"actorName":"ahegao",
+				"visibleName":"ahegao",
+				"text": "ahegao",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "end"
+			},
+			"end":
+			{
+				"actorName":"",
+				"visibleName":"",
+				"text": "",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "stop"
+			}
+		}
+	},
+	"note":
+	{
+		"script":
+		{
+			"start":
+			{
+				"actorName":"note",
+				"visibleName":"note",
+				"text": "note",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "end"
+			},
+			"end":
+			{
+				"actorName":"",
+				"visibleName":"",
+				"text": "",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "stop"
+			}
+		}
+	}
+}

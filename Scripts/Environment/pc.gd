@@ -4,7 +4,7 @@ extends Node3D
 var is_player_in_area = false
 var is_usable = true
 @export var connected_door: Node3D
-@export var pc_display: Control
+@export var pc_display: CanvasLayer
 @onready var area_3d = $pc/Area3D
 
 
