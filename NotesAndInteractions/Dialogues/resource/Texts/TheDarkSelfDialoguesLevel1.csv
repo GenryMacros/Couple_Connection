@@ -1,0 +1,25 @@
+KEY,en,ua
+INNER_VOICE,Inner voice,Внутрішній голос
+TV_REPLICA_0,*Shabby TV*,*Пошарпаний телевізор*
+TV_REPLICA_1,"As a kid, the screen seemed so big... And Pacman was more fun...",У дитинстві екран здавався таким великим... І Pаcman був веселішим...
+AHEGAO_0,*Portrait with a female face full of .....\njoy*,*Портрет з жіночим обличчям переповненим .... \nрадістю*
+AHEGAO_1,How about another round of my Goddess? Let me just find some napkins...,Як щодо ще одного раунду моя Богиня? Зараз тільки знайду якусь серветку...
+AHEGAO_2_IF_PAPER_CHECKED,"Damn, I didn't find anything... *You are looking at a basket of used napkins*","Дідько, нічого не знайшов.. *Ви дивитесь на кошик з використаними серветками*"
+AHEGAO_2_OPTION_1,"Hmm, why not?. *Take a napkin from the basket*","Хмм, а чому б і ні.? *Взяти серветку з кошика*"
+AHEGAO_2_OPTION_2,No! No! No! No!  I still have some dignity.,Ні! Ні! Ні!  У мене все ще є хоч якась гідність. 
+AHEGAO_3_1,"*Your hand goes into the basket. You feel something sticky, wet and still WARM!*","*Ваша рука опускається в кошик. Ви відчуваєте, щось липке, вологе та ще ТЕПЛЕ!*"
+AHEGAO_4_1,This is too much! What the hell made me do this... *You reject the idea*,Це вже занадто! Який біс змусив мене зробити це... *Ви відмовляєтесь від цієї ідеї*
+AHEGAO_3_2,*You're proud that you held back. This time...*,"*Ви пишаєтесь, що стрималися. Цього разу...*"
+AHEGAO_5_0,"Unfortunately, not today, my Goddess.","На жаль, вже не сьогодні, моя Богине."
+PAPER_0,*A pile of used toilet paper.*,*Купа використаного туалетного паперу.*
+FLOWER_0,*The potted plant*,*Рослина в горщику*
+FLOWER_1,"My mom loved you, if only she could see how beautiful you are now.","Моя мама любила тебе, ех, якби ж вона тільки побачила яка ти гарна зараз."
+NOTE_0,"*An old note*,",*Стара записка*
+NOTE_1,"I write to you, the future me... It is 1987, today we lost our parents...","Пишу тобі, майбутній я... Зараз 1987 рік, сьогодні ми втратили батьків..."
+NOTE_2,"Don't you dare withdraw into yourself, mom and dad wouldn't want that...","Я тебе знаю, а точніше себе. Не смій замикатися в собі, мама з татом цього б не хотіли..."
+NOTE_3,I hope you are better than me... Because I have a feeling I'm going to break down.," Сподіваюся, що ти кращий за мене. Бо я відчуваю, що зараз не витримаю."
+NOTE_AUTHOR,Note author,Автор записки
+NOTE_0_1,Where the hell did this come from?,Звідки це в біса взялося?
+NOTE_0_1_OPTION1,Read,Прочитати
+NOTE_0_1_OPTION2,Back off,Відійти
+PAPER_1,*Not suitable for use!*,*Не годиться для використання!*

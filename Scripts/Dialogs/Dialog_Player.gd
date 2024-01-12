@@ -23,7 +23,9 @@ var isAllOptionShowed = false;
 var isOptionChosen = false;
 var chosenReplicaKey; 
 var chosenOptions : Array = [];
+var playedDialogs : Dictionary;
 var caller : IDialogCaller;
+signal change_dialog_key(from,to);
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	background.visible = false;
@@ -108,15 +110,12 @@ func on_option_pressed(button: Button):
 			isOptionChosen = true;
 			chosenReplicaKey = button.name;
 			var replica = dialog_script[chosenReplicaKey];
-			replica_audio_player.stream = load(replica["audioPath"]);
-			var buttons = buttons_container.get_children();
-			for node in buttons:
-				if node is Button:
-					var button_node = node as Button;
-					if button_node != button:
-						button_node.disabled = true;
-			replica_audio_player.play();
-			replica_audio_player.finished.connect(on_choice_voice_finished)
+			if FileAccess.file_exists(replica["audioPath"]):
+				replica_audio_player.stream = load(replica["audioPath"]);
+				replica_audio_player.play();
+				replica_audio_player.finished.connect(on_choice_voice_finished);
+			else:
+				finish_option_replica(chosenReplicaKey);
 
 func on_choice_voice_finished():
 	replica_audio_player.finished.disconnect(on_choice_voice_finished);
@@ -154,7 +153,11 @@ func finish_dialog():
 	type_char_timer.set_wait_time(type_character_speed);
 	background.visible = false;
 	get_tree().paused = false
-	caller.dialog_finished.emit(dialog_key,chosenOptions);
+	if playedDialogs.has(dialog_key):
+		playedDialogs[dialog_key] += 1;
+	else:
+		playedDialogs[dialog_key] = 1;
+	caller.dialog_finished.emit(caller,chosenOptions);
 	is_in_progress = false;
 	is_rested = false;
 	wait_timer.start();
@@ -186,3 +189,13 @@ func _on_character_typer_timeout():
 
 func _on_pause_per_next_dialog_timeout():
 	is_rested = true;
+
+
+
+func _on_i_dialog_caller_dialog_finished(caller, chosenOptions):
+	var plot : Dictionary = dialogs["plot"];
+	var key = caller.dialog_key;
+	if plot.has(key):
+		var requiredDialogs : Array = plot[key]["requiredDialogKeys"];
+		if playedDialogs.has_all(requiredDialogs):
+			change_dialog_key.emit(plot[key]["changeKey"],plot[key]["changeTo"]);

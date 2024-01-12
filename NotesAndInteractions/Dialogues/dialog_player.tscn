@@ -100,7 +100,7 @@ mouse_filter = 2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-size_flags_stretch_ratio = 4.0
+size_flags_stretch_ratio = 14.11
 mouse_filter = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/DialogPanel/HBoxContainer/DialogText"]
@@ -133,13 +133,19 @@ layout_mode = 2
 size_flags_horizontal = 0
 focus_mode = 2
 
-[node name="Space3" type="Control" parent="CanvasLayer/VBoxContainer/HBoxContainer"]
+[node name="Space3" type="Control" parent="CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/DialogPanel/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
+[node name="Space4" type="Control" parent="CanvasLayer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+
 [node name="PausePerNextDialog" type="Timer" parent="."]
-wait_time = 0.5
+wait_time = 0.2
 one_shot = true
 
 [connection signal="timeout" from="CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/DialogPanel/HBoxContainer/DialogText/VBoxContainer/Replica/CharacterTyper" to="." method="_on_character_typer_timeout"]
