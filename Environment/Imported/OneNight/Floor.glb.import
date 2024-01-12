@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://co4gfejuy03x0"
-path="res://.godot/imported/brick.glb-f64fd006096dd149f27a0e570e75bb12.scn"
+uid="uid://cd3yjko7x3jvd"
+path="res://.godot/imported/Floor.glb-7795780406a3c2dce7427d500b8a2310.scn"
 
 [deps]
 
-source_file="res://Environment/Imported/Wall/brick.glb"
-dest_files=["res://.godot/imported/brick.glb-f64fd006096dd149f27a0e570e75bb12.scn"]
+source_file="res://Environment/Imported/OneNight/Floor.glb"
+dest_files=["res://.godot/imported/Floor.glb-7795780406a3c2dce7427d500b8a2310.scn"]
 
 [params]
 
@@ -31,7 +31,7 @@ animation/remove_immutable_tracks=true
 import_script/path=""
 _subresources={
 "nodes": {
-"PATH:Cube": {
+"PATH:Floor": {
 "generate/physics": true,
 "physics/shape_type": 3
 }

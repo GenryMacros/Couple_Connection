@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://co4gfejuy03x0"
-path="res://.godot/imported/brick.glb-f64fd006096dd149f27a0e570e75bb12.scn"
+uid="uid://dsnai72ms74x"
+path="res://.godot/imported/photo_frame.glb-1a286fad7ea2a44baae4af2047049733.scn"
 
 [deps]
 
-source_file="res://Environment/Imported/Wall/brick.glb"
-dest_files=["res://.godot/imported/brick.glb-f64fd006096dd149f27a0e570e75bb12.scn"]
+source_file="res://Environment/Imported/School/photo_frame.glb"
+dest_files=["res://.godot/imported/photo_frame.glb-1a286fad7ea2a44baae4af2047049733.scn"]
 
 [params]
 
@@ -31,7 +31,7 @@ animation/remove_immutable_tracks=true
 import_script/path=""
 _subresources={
 "nodes": {
-"PATH:Cube": {
+"PATH:photo_frame": {
 "generate/physics": true,
 "physics/shape_type": 3
 }

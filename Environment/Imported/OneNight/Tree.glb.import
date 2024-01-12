@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://co4gfejuy03x0"
-path="res://.godot/imported/brick.glb-f64fd006096dd149f27a0e570e75bb12.scn"
+uid="uid://bqqw1wn2oh5cp"
+path="res://.godot/imported/Tree.glb-682a3c15a0a288f7fe5c3ce71e77d328.scn"
 
 [deps]
 
-source_file="res://Environment/Imported/Wall/brick.glb"
-dest_files=["res://.godot/imported/brick.glb-f64fd006096dd149f27a0e570e75bb12.scn"]
+source_file="res://Environment/Imported/OneNight/Tree.glb"
+dest_files=["res://.godot/imported/Tree.glb-682a3c15a0a288f7fe5c3ce71e77d328.scn"]
 
 [params]
 
@@ -31,9 +31,11 @@ animation/remove_immutable_tracks=true
 import_script/path=""
 _subresources={
 "nodes": {
-"PATH:Cube": {
+"PATH:Tree": {
 "generate/physics": true,
-"physics/shape_type": 3
+"physics/shape_type": 3,
+"primitive/position": Vector3(0, 2, 0),
+"primitive/size": Vector3(2, 6, 2)
 }
 }
 }

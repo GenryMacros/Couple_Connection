@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://co4gfejuy03x0"
-path="res://.godot/imported/brick.glb-f64fd006096dd149f27a0e570e75bb12.scn"
+uid="uid://c38w6xectx5mi"
+path="res://.godot/imported/school_chair.glb-a4048dad522511a390d16989691f794f.scn"
 
 [deps]
 
-source_file="res://Environment/Imported/Wall/brick.glb"
-dest_files=["res://.godot/imported/brick.glb-f64fd006096dd149f27a0e570e75bb12.scn"]
+source_file="res://Environment/Imported/School/school_chair.glb"
+dest_files=["res://.godot/imported/school_chair.glb-a4048dad522511a390d16989691f794f.scn"]
 
 [params]
 
@@ -31,9 +31,11 @@ animation/remove_immutable_tracks=true
 import_script/path=""
 _subresources={
 "nodes": {
-"PATH:Cube": {
+"PATH:school_chair": {
 "generate/physics": true,
-"physics/shape_type": 3
+"physics/shape_type": 3,
+"primitive/position": Vector3(4, 7, 0),
+"primitive/size": Vector3(10, 15, 2)
 }
 }
 }

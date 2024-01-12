@@ -19,7 +19,7 @@ gravity=9.8
 [application]
 
 config/name="Couple Connection"
-run/main_scene="res://main.tscn"
+run/main_scene="res://Game_Levels/main.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.png"
 

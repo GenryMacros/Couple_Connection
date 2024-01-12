@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://b6tckarb8r2bi"]
+
+[ext_resource type="PackedScene" uid="uid://7uyke5nigqpm" path="res://Environment/Imported/OneNight/Cube_001.glb" id="1_skm2a"]
+[ext_resource type="Shader" path="res://Scripts/Shaders/highlighter.gdshader" id="2_m6uyx"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7dn0b"]
+render_priority = 0
+shader = ExtResource("2_m6uyx")
+shader_parameter/shine_color = Color(1, 1, 0, 1)
+shader_parameter/cycle_interval = 1.0
+shader_parameter/shine_speed = 3.0
+shader_parameter/shine_width = 3.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h2p7y"]
+next_pass = SubResource("ShaderMaterial_7dn0b")
+albedo_color = Color(0.254902, 0.254902, 0.729412, 1)
+
+[node name="Cube_0012" instance=ExtResource("1_skm2a")]
+
+[node name="Cube_001" parent="." index="0"]
+material_override = SubResource("StandardMaterial3D_h2p7y")

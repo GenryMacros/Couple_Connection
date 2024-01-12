@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://co4gfejuy03x0"
-path="res://.godot/imported/brick.glb-f64fd006096dd149f27a0e570e75bb12.scn"
+uid="uid://d3vu3dr5v3s6c"
+path="res://.godot/imported/mirror.glb-dbd946b90cc7379e17a7bc8dc1e4fd0e.scn"
 
 [deps]
 
-source_file="res://Environment/Imported/Wall/brick.glb"
-dest_files=["res://.godot/imported/brick.glb-f64fd006096dd149f27a0e570e75bb12.scn"]
+source_file="res://Environment/Imported/Mirror/mirror.glb"
+dest_files=["res://.godot/imported/mirror.glb-dbd946b90cc7379e17a7bc8dc1e4fd0e.scn"]
 
 [params]
 
@@ -31,9 +31,10 @@ animation/remove_immutable_tracks=true
 import_script/path=""
 _subresources={
 "nodes": {
-"PATH:Cube": {
+"PATH:mirror": {
 "generate/physics": true,
-"physics/shape_type": 3
+"physics/shape_type": 3,
+"primitive/size": Vector3(2, 1, 2)
 }
 }
 }

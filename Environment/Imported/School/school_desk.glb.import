@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://co4gfejuy03x0"
-path="res://.godot/imported/brick.glb-f64fd006096dd149f27a0e570e75bb12.scn"
+uid="uid://dnwdouhkly3wf"
+path="res://.godot/imported/school_desk.glb-66b8b97078c68e686099a7458c847b4a.scn"
 
 [deps]
 
-source_file="res://Environment/Imported/Wall/brick.glb"
-dest_files=["res://.godot/imported/brick.glb-f64fd006096dd149f27a0e570e75bb12.scn"]
+source_file="res://Environment/Imported/School/school_desk.glb"
+dest_files=["res://.godot/imported/school_desk.glb-66b8b97078c68e686099a7458c847b4a.scn"]
 
 [params]
 
@@ -31,9 +31,11 @@ animation/remove_immutable_tracks=true
 import_script/path=""
 _subresources={
 "nodes": {
-"PATH:Cube": {
+"PATH:school_desk": {
 "generate/physics": true,
-"physics/shape_type": 3
+"physics/shape_type": 3,
+"primitive/position": Vector3(0, -10, 0),
+"primitive/size": Vector3(2, 20, 2)
 }
 }
 }

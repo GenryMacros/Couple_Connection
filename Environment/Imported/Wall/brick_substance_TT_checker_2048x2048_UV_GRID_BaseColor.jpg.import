@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddydlblsc7bd7"
-path.s3tc="res://.godot/imported/brick_roughness.png-d8adcc1e81e2be23bea26f884b3810c4.s3tc.ctex"
+uid="uid://cxjbgew3j37mq"
+path.s3tc="res://.godot/imported/brick_substance_TT_checker_2048x2048_UV_GRID_BaseColor.jpg-dbc05912cc914555a1d18bf1e6c8746c.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Environment/Imported/Wall/brick_roughness.png"
-dest_files=["res://.godot/imported/brick_roughness.png-d8adcc1e81e2be23bea26f884b3810c4.s3tc.ctex"]
+source_file="res://Environment/Imported/Wall/brick_substance_TT_checker_2048x2048_UV_GRID_BaseColor.jpg"
+dest_files=["res://.godot/imported/brick_substance_TT_checker_2048x2048_UV_GRID_BaseColor.jpg-dbc05912cc914555a1d18bf1e6c8746c.s3tc.ctex"]
 
 [params]
 
