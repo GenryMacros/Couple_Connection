@@ -6,7 +6,7 @@ var isAreaActive = false;
 
 
 func _input(event):
-	if isAreaActive and event.is_action_pressed("Interact"):
+	if isAreaActive and event.is_action_pressed("interact"):
 		if interaction_key != "":
 			NotesAndInteractionService.display_interaction.emit(interaction_key);
 		if dialog_caller.has_valid_key:
@@ -16,6 +16,7 @@ func _input(event):
 
 func _on_area_entered(area):
 	isAreaActive = true;
+	
 
 
 func _on_area_exited(area):
