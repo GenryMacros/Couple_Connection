@@ -15,7 +15,7 @@ var players = []
 @onready var camera_point = $camera_point
 @onready var couple_character = $visuals/couple_character/AnimationPlayer
 @onready var visuals = $visuals
-@onready var player_interaction_area_position =$visuals/PlayerInteractionAreaPosition
+@onready var player_interaction_area_position = $PlayerInteractionAreaPosition
 
 
 func _ready():
