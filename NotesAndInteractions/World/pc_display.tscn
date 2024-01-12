@@ -1,12 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://cxf7ahxfy4t34"]
+[gd_scene load_steps=10 format=3 uid="uid://cxf7ahxfy4t34"]
 
 [ext_resource type="Shader" path="res://Scripts/Shaders/analog.gdshader" id="1_bhakg"]
 [ext_resource type="Script" path="res://Scripts/Environment/pc_display_ui_control.gd" id="1_ef1eq"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_q6cmc"]
 shader = ExtResource("1_bhakg")
-shader_parameter/crt_brightness = 0.165
-shader_parameter/crt_ghost = 5.09
+shader_parameter/crt_brightness = 0.713
+shader_parameter/crt_ghost = 0.065
 shader_parameter/crt_grid = 0.32
 shader_parameter/crt_white_noise = 0.465
 shader_parameter/crt_curve = 0.0
@@ -14,18 +14,25 @@ shader_parameter/crt_curve = 0.0
 [sub_resource type="Theme" id="Theme_xjpgd"]
 default_font_size = 220
 
-[node name="PcDisplay" type="Control"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ve3tw"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_jruka"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_off76"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eyuu4"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xwfuu"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[node name="PcDisplay" type="CanvasLayer"]
 script = ExtResource("1_ef1eq")
 
 [node name="PcDisplay" type="ColorRect" parent="."]
 material = SubResource("ShaderMaterial_q6cmc")
-layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -34,42 +41,152 @@ grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
 [node name="Control" type="Control" parent="PcDisplay"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -412.0
+offset_top = -140.0
+offset_right = 412.0
+offset_bottom = 140.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextEdit1" type="Label" parent="PcDisplay/Control"]
+z_index = -1
+layout_mode = 2
+offset_right = 170.0
+offset_bottom = 280.0
+size_flags_horizontal = 6
+theme = SubResource("Theme_xjpgd")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ve3tw")
+text = "0"
+
+[node name="ColorRect" type="ColorRect" parent="PcDisplay/Control/TextEdit1"]
+visible = false
+material = SubResource("ShaderMaterial_jruka")
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.983
+anchor_right = 0.521
+anchor_bottom = 1.0
+offset_left = -65.0
+offset_top = -19.24
+offset_right = -28.57
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(3.48, 0.96)
+
+[node name="Spacer" type="Control" parent="PcDisplay/Control"]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 2
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 174.0
+offset_right = 214.0
+offset_bottom = 280.0
+size_flags_horizontal = 3
 
-[node name="TextEdit1" type="TextEdit" parent="PcDisplay/Control"]
-layout_mode = 0
-offset_left = 427.0
-offset_top = 329.0
-offset_right = 564.0
-offset_bottom = 646.0
+[node name="TextEdit2" type="Label" parent="PcDisplay/Control"]
+z_index = -1
+layout_mode = 2
+offset_left = 218.0
+offset_right = 388.0
+offset_bottom = 280.0
+size_flags_horizontal = 6
 theme = SubResource("Theme_xjpgd")
+theme_override_styles/normal = SubResource("StyleBoxFlat_off76")
 text = "0"
 
-[node name="TextEdit2" type="TextEdit" parent="PcDisplay/Control"]
-layout_mode = 0
-offset_left = 702.0
-offset_top = 327.0
-offset_right = 839.0
-offset_bottom = 644.0
+[node name="ColorRect" type="ColorRect" parent="PcDisplay/Control/TextEdit2"]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -65.0
+offset_top = -24.0
+offset_right = -25.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(3.48, 0.96)
+
+[node name="Spacer2" type="Control" parent="PcDisplay/Control"]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 2
+anchors_preset = 0
+offset_left = 392.0
+offset_right = 432.0
+offset_bottom = 280.0
+size_flags_horizontal = 3
+
+[node name="TextEdit3" type="Label" parent="PcDisplay/Control"]
+z_index = -1
+layout_mode = 2
+offset_left = 436.0
+offset_right = 606.0
+offset_bottom = 280.0
+size_flags_horizontal = 6
 theme = SubResource("Theme_xjpgd")
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyuu4")
 text = "0"
 
-[node name="TextEdit3" type="TextEdit" parent="PcDisplay/Control"]
-layout_mode = 0
-offset_left = 989.0
-offset_top = 326.0
-offset_right = 1126.0
-offset_bottom = 643.0
+[node name="ColorRect" type="ColorRect" parent="PcDisplay/Control/TextEdit3"]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -65.0
+offset_top = -24.0
+offset_right = -25.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(3.48, 0.96)
+
+[node name="Spacer3" type="Control" parent="PcDisplay/Control"]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 2
+anchors_preset = 0
+offset_left = 610.0
+offset_right = 650.0
+offset_bottom = 280.0
+size_flags_horizontal = 6
+
+[node name="TextEdit4" type="Label" parent="PcDisplay/Control"]
+z_index = -1
+layout_mode = 2
+offset_left = 654.0
+offset_right = 824.0
+offset_bottom = 280.0
+size_flags_horizontal = 6
 theme = SubResource("Theme_xjpgd")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xwfuu")
 text = "0"
 
-[node name="TextEdit4" type="TextEdit" parent="PcDisplay/Control"]
-layout_mode = 0
-offset_left = 1279.0
-offset_top = 329.0
-offset_right = 1416.0
-offset_bottom = 646.0
-theme = SubResource("Theme_xjpgd")
-text = "0"
+[node name="ColorRect" type="ColorRect" parent="PcDisplay/Control/TextEdit4"]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -65.0
+offset_top = -24.0
+offset_right = -25.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(3.48, 0.96)
+
+[node name="Timer" type="Timer" parent="."]

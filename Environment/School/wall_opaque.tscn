@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://81vmlytqfcyp"]
+
+[ext_resource type="PackedScene" uid="uid://b6xi1cd7chubh" path="res://Environment/Imported/School/Floor.glb" id="1_qotwo"]
+
+[node name="Floor2" instance=ExtResource("1_qotwo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.375, 0, 0, 0)
+
+[node name="Floor" parent="." index="0"]
+transform = Transform3D(2.37215, 0, 0, 0, -8.05546e-09, -2.37215, 0, 0.184287, -1.0369e-07, 0, 0, 0)
+layers = 2

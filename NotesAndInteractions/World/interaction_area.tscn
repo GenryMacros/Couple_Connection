@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://bci0ardhy0y4e"]
+[gd_scene load_steps=4 format=3 uid="uid://bci0ardhy0y4e"]
 
 [ext_resource type="Script" path="res://Scripts/NotesAndInteractions/InteractionArea.gd" id="1_tuehb"]
+[ext_resource type="Script" path="res://Scripts/Dialogs/dialog_caller_interface.gd" id="2_34wo2"]
+[ext_resource type="Script" path="res://Scripts/NotesAndInteractions/ExclamationMark.gd" id="3_ken3y"]
 
 [node name="InteractionArea" type="Area3D"]
 process_mode = 3
@@ -9,7 +11,35 @@ collision_mask = 64
 script = ExtResource("1_tuehb")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.210388, 0.212646, 0.247314)
+
+[node name="IDialogCaller" type="Node" parent="."]
+script = ExtResource("2_34wo2")
+
+[node name="LabelPos" type="Marker3D" parent="."]
+
+[node name="ExclamationMark" type="Sprite3D" parent="LabelPos"]
+visible = false
+billboard = 1
+script = ExtResource("3_ken3y")
+
+[node name="SubViewport" type="SubViewport" parent="LabelPos/ExclamationMark"]
+transparent_bg = true
+gui_disable_input = true
+size = Vector2i(40, 40)
+
+[node name="Label" type="Label" parent="LabelPos/ExclamationMark/SubViewport"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_type_variation = &"InteractionLabel"
+theme_override_font_sizes/font_size = 40
+text = "!"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="area_exited" from="." to="." method="_on_area_exited"]

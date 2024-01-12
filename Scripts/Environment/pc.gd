@@ -4,9 +4,10 @@ extends Node3D
 var is_player_in_area = false
 var is_usable = true
 @export var connected_door: Node3D
-@export var pc_display: Control
+@export var pc_display: CanvasLayer
 @onready var area_3d = $pc/Area3D
 
+@onready var cube_002 = $Cube_002
 
 func _ready():
 	area_3d.body_entered.connect(body_entered)
@@ -25,6 +26,7 @@ func body_exited(other_body: Node3D):
 	
 
 func pass_entered():
+	$pc/Cube_002.get_active_material(0).get_next_pass().set("shader_param/shine_color", Vector3(0, 0, 0));
 	is_usable = false
 	connected_door.open()
 	

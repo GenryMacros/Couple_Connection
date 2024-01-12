@@ -1,11 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bua1cj864xkr8"]
+[gd_scene load_steps=2 format=3 uid="uid://bjn7vf560u8ac"]
 
-[ext_resource type="PackedScene" uid="uid://bobi6rnxiufr2" path="res://Environment/Imported/Floor/floor.tscn" id="2_gfui0"]
-[ext_resource type="PackedScene" uid="uid://c7qk7b1lfqg7m" path="res://Environment/Imported/Wall/brick.tscn" id="2_vulvs"]
+[ext_resource type="PackedScene" uid="uid://cn8dtih4pw5sj" path="res://Environment/Imported/Wall/brick.tscn" id="1_dptrf"]
 
-[node name="root" type="Node3D"]
+[node name="MeshLibrary" type="Node3D"]
 
-[node name="brick" parent="." instance=ExtResource("2_vulvs")]
-
-[node name="floor2" parent="." instance=ExtResource("2_gfui0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+[node name="brick" parent="." instance=ExtResource("1_dptrf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -1)
