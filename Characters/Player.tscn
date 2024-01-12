@@ -39,7 +39,20 @@ spot_range = 48.633
 [node name="couple_character" parent="visuals" instance=ExtResource("2_8e5e6")]
 transform = Transform3D(-3.0598e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.0598e-08, -1.69107, 0, 0)
 
+[node name="item_placeholder" type="Node3D" parent="visuals"]
+
 [node name="camera_point" type="Node3D" parent="."]
 transform = Transform3D(-0.515038, 0.656628, -0.550976, 0, 0.642788, 0.766044, 0.857167, 0.394542, -0.33106, -8.97317, 9.93776, -5.87174)
 
-[editable path="visuals/PlayerInteractionAreaPosition"]
+[node name="PlayerInteractionAreaPosition" parent="." instance=ExtResource("1_73k1i")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.0146589, 0, 0.0485203)
+
+[node name="PlayerInteractionArea" parent="PlayerInteractionAreaPosition" index="0"]
+transform = Transform3D(2.21238, 0, 7.10543e-15, 0, 1, 0, 0, 0, 1.43602, -1.66907, 0, 0.319141)
+disable_mode = 2
+
+[node name="CollisionShape3D" parent="PlayerInteractionAreaPosition/PlayerInteractionArea" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.01916, 1.73158, -0.24711)
+shape = SubResource("BoxShape3D_teffj")
+
+[editable path="PlayerInteractionAreaPosition"]
