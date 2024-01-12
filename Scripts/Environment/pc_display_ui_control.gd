@@ -1,11 +1,11 @@
-extends Control
+extends CanvasLayer
 
 signal correct_pass_entered();
 signal pc_exit();
 
 var correct_pass = "1987"
 var is_active = false
-@onready var pass_slots: Array[TextEdit] = [
+@onready var pass_slots: Array[Label] = [
 	$PcDisplay/Control/TextEdit1,
 	$PcDisplay/Control/TextEdit2,
 	$PcDisplay/Control/TextEdit3,

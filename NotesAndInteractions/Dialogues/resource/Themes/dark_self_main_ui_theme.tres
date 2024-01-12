@@ -1,0 +1,163 @@
+[gd_resource type="Theme" load_steps=31 format=3 uid="uid://cxw1o1d60dfw"]
+
+[ext_resource type="Texture2D" uid="uid://b7i0wivwpmnlb" path="res://NotesAndInteractions/Dialogues/resource/Themes/textures/marker arrow/arrow_0.png" id="1_6n5bj"]
+[ext_resource type="FontFile" uid="uid://drhvbioc31k4l" path="res://NotesAndInteractions/Dialogues/resource/Themes/fonts/retro_gaming/Retro Gaming.ttf" id="1_f2kld"]
+[ext_resource type="Texture2D" uid="uid://owx134kwdf6y" path="res://NotesAndInteractions/Dialogues/resource/Themes/textures/marker arrow/arrow_1.png" id="2_0vcrr"]
+[ext_resource type="Texture2D" uid="uid://bsh8m2pv5bsrf" path="res://NotesAndInteractions/Dialogues/resource/Themes/textures/marker arrow/arrow_2.png" id="3_02sgt"]
+[ext_resource type="Texture2D" uid="uid://csvgnt1salweo" path="res://NotesAndInteractions/Dialogues/resource/Themes/textures/marker arrow/arrow_3.png" id="4_r8cc0"]
+[ext_resource type="Texture2D" uid="uid://dhadgbvrlafjs" path="res://NotesAndInteractions/Dialogues/resource/Themes/textures/marker arrow/arrow_4.png" id="5_syns3"]
+[ext_resource type="Texture2D" uid="uid://03ef6l6o61m3" path="res://NotesAndInteractions/Dialogues/resource/Themes/textures/pressed_button_marker/arrow_rotation_0.png" id="6_wi6dt"]
+[ext_resource type="Texture2D" uid="uid://b5kvr27dlo3x8" path="res://NotesAndInteractions/Dialogues/resource/Themes/textures/pressed_button_marker/arrow_rotation_1.png" id="7_1ayp1"]
+[ext_resource type="Texture2D" uid="uid://dck07prw5pr4b" path="res://NotesAndInteractions/Dialogues/resource/Themes/textures/pressed_button_marker/arrow_rotation_2.png" id="8_lgk0h"]
+[ext_resource type="Texture2D" uid="uid://cfv4o4vtyih7p" path="res://NotesAndInteractions/Dialogues/resource/Themes/textures/pressed_button_marker/arrow_rotation_3.png" id="9_mmifc"]
+[ext_resource type="Texture2D" uid="uid://c8glgv0qgh5rq" path="res://NotesAndInteractions/Dialogues/resource/Themes/textures/pressed_button_marker/arrow_rotation_4.png" id="10_rbkla"]
+[ext_resource type="Texture2D" uid="uid://bkx2itwk08fsn" path="res://NotesAndInteractions/Dialogues/resource/Themes/textures/pressed_button_marker/arrow_rotation_5.png" id="11_18pjd"]
+[ext_resource type="Texture2D" uid="uid://cyml6vs8hw2xd" path="res://NotesAndInteractions/Dialogues/resource/Themes/textures/border/black_root.png" id="12_gpbum"]
+[ext_resource type="Texture2D" uid="uid://cyxi7u6oe86wu" path="res://NotesAndInteractions/Dialogues/resource/Themes/textures/border/white_root.png" id="13_2pnq4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ohg03"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_avjih"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_76djy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4n856"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lapye"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c6s8h"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_acfve"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qnqix"]
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_063o4"]
+frames = 9
+speed_scale = 10.0
+frame_0/texture = ExtResource("1_6n5bj")
+frame_1/texture = ExtResource("2_0vcrr")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("3_02sgt")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("4_r8cc0")
+frame_3/duration = 1.0
+frame_4/texture = ExtResource("5_syns3")
+frame_4/duration = 1.0
+frame_5/texture = ExtResource("4_r8cc0")
+frame_5/duration = 1.0
+frame_6/texture = ExtResource("3_02sgt")
+frame_6/duration = 1.0
+frame_7/texture = ExtResource("2_0vcrr")
+frame_7/duration = 1.0
+frame_8/texture = ExtResource("1_6n5bj")
+frame_8/duration = 1.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gf15m"]
+texture = SubResource("AnimatedTexture_063o4")
+texture_margin_left = 45.0
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_t0ghx"]
+frames = 6
+one_shot = true
+speed_scale = 0.8
+frame_0/texture = ExtResource("6_wi6dt")
+frame_1/texture = ExtResource("7_1ayp1")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("8_lgk0h")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("9_mmifc")
+frame_3/duration = 1.0
+frame_4/texture = ExtResource("10_rbkla")
+frame_4/duration = 1.0
+frame_5/texture = ExtResource("11_18pjd")
+frame_5/duration = 1.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mhld6"]
+texture = SubResource("AnimatedTexture_t0ghx")
+texture_margin_left = 65.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fbfan"]
+texture = ExtResource("12_gpbum")
+texture_margin_left = 38.0
+texture_margin_top = 30.0
+texture_margin_right = 30.0
+texture_margin_bottom = 33.0
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3efln"]
+texture = ExtResource("13_2pnq4")
+texture_margin_left = 38.0
+texture_margin_top = 30.0
+texture_margin_right = 30.0
+texture_margin_bottom = 33.0
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_usac6"]
+bg_color = Color(1, 0.992157, 0.815686, 1)
+corner_radius_top_left = 1024
+corner_radius_top_right = 1024
+corner_radius_bottom_right = 1024
+corner_radius_bottom_left = 1024
+corner_detail = 1
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f4jwa"]
+
+[resource]
+default_font = ExtResource("1_f2kld")
+default_font_size = 24
+Button/colors/font_color = Color(0.87451, 0.87451, 0.87451, 1)
+Button/colors/font_disabled_color = Color(0.87451, 0.87451, 0.87451, 0.501961)
+Button/colors/font_focus_color = Color(0.94902, 0.94902, 0.94902, 1)
+Button/colors/font_hover_color = Color(0.94902, 0.94902, 0.94902, 1)
+Button/colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+Button/colors/font_outline_color = Color(1, 1, 1, 1)
+Button/colors/font_pressed_color = Color(1, 1, 1, 1)
+Button/colors/icon_disabled_color = Color(1, 1, 1, 0.4)
+Button/colors/icon_focus_color = Color(1, 1, 1, 1)
+Button/colors/icon_hover_color = Color(1, 1, 1, 1)
+Button/colors/icon_hover_pressed_color = Color(1, 1, 1, 1)
+Button/colors/icon_normal_color = Color(1, 1, 1, 1)
+Button/colors/icon_pressed_color = Color(1, 1, 1, 1)
+Button/constants/h_separation = 0
+Button/constants/icon_max_width = 0
+Button/constants/outline_size = 0
+Button/font_sizes/font_size = 30
+Button/styles/disabled = SubResource("StyleBoxEmpty_ohg03")
+Button/styles/focus = SubResource("StyleBoxEmpty_avjih")
+Button/styles/hover = SubResource("StyleBoxEmpty_76djy")
+Button/styles/normal = SubResource("StyleBoxEmpty_4n856")
+Button/styles/pressed = SubResource("StyleBoxEmpty_lapye")
+DialogButton/base_type = &"Button"
+DialogButton/colors/font_color = Color(0.94902, 0.94902, 0.94902, 1)
+DialogButton/colors/font_disabled_color = Color(0.94902, 0.94902, 0.94902, 1)
+DialogButton/colors/font_focus_color = Color(0.94902, 0.94902, 0.94902, 1)
+DialogButton/colors/font_hover_color = Color(0.94902, 0.94902, 0.94902, 1)
+DialogButton/constants/h_separation = 0
+DialogButton/constants/icon_max_width = 0
+DialogButton/constants/outline_size = 0
+DialogButton/font_sizes/font_size = 30
+DialogButton/styles/disabled = SubResource("StyleBoxEmpty_c6s8h")
+DialogButton/styles/focus = SubResource("StyleBoxEmpty_acfve")
+DialogButton/styles/hover = SubResource("StyleBoxEmpty_qnqix")
+DialogButton/styles/normal = SubResource("StyleBoxTexture_gf15m")
+DialogButton/styles/pressed = SubResource("StyleBoxTexture_mhld6")
+EvilPanelContainer/base_type = &"PanelContainer"
+EvilPanelContainer/styles/panel = SubResource("StyleBoxTexture_fbfan")
+GoodPanelContainer/base_type = &"PanelContainer"
+GoodPanelContainer/styles/panel = SubResource("StyleBoxTexture_3efln")
+HeaderLarge/font_sizes/font_size = 64
+HeaderMedium/font_sizes/font_size = 48
+InteractionLabel/base_type = &"Label"
+InteractionLabel/colors/font_color = Color(1, 1, 0, 1)
+InteractionLabel/colors/font_outline_color = Color(0.0156863, 0.0156863, 0.0156863, 1)
+InteractionLabel/colors/font_shadow_color = Color(0, 0, 0, 1)
+InteractionLabel/font_sizes/font_size = 40
+InteractionLabel/styles/normal = SubResource("StyleBoxFlat_usac6")
+Label/colors/font_color = Color(1, 1, 1, 1)
+Label/colors/font_outline_color = Color(1, 1, 1, 1)
+Label/colors/font_shadow_color = Color(0, 0, 0, 0)
+Label/font_sizes/font_size = 30
+Label/styles/normal = SubResource("StyleBoxEmpty_f4jwa")
+PanelContainer/styles/panel = null

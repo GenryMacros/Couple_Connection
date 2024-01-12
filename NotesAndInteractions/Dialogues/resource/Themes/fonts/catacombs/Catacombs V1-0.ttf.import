@@ -1,0 +1,33 @@
+[remap]
+
+importer="font_data_dynamic"
+type="FontFile"
+uid="uid://ch5li7x2nf65"
+path="res://.godot/imported/Catacombs V1-0.ttf-9045d9915d8f3440d799e7d92b005a92.fontdata"
+
+[deps]
+
+source_file="res://NotesAndInteractions/Dialogues/resource/Themes/fonts/catacombs/Catacombs V1-0.ttf"
+dest_files=["res://.godot/imported/Catacombs V1-0.ttf-9045d9915d8f3440d799e7d92b005a92.fontdata"]
+
+[params]
+
+Rendering=null
+antialiasing=1
+generate_mipmaps=false
+multichannel_signed_distance_field=false
+msdf_pixel_range=8
+msdf_size=48
+allow_system_fallback=true
+force_autohinter=false
+hinting=1
+subpixel_positioning=1
+oversampling=0.0
+Fallbacks=null
+fallbacks=[]
+Compress=null
+compress=true
+preload=[]
+language_support={}
+script_support={}
+opentype_features={}
