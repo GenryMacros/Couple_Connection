@@ -10,6 +10,7 @@ var pickup_pressed = false
 var timer = null
 var camera_switch_delay = .5
 var can_switch = true
+var can_walk = true
 var players = []
 @onready var item_placeholder: Node = get_node("visuals/item_placeholder")
 @onready var camera_point = $camera_point
@@ -22,11 +23,17 @@ func _ready():
 	GameManager.set_player(self)
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	NotesAndInteractionService.pickup_item.connect(_on_item_pick_up)
+	
+	var collisionDetectionArea = get_node("visuals/CollisionDetectionArea")
+	collisionDetectionArea.body_entered_signal.connect(_on_collision_detection_entered)
+	collisionDetectionArea.body_exited_signal.connect(_on_collision_detection_exited)
+	
 	timer = Timer.new()
 	timer.set_one_shot(true)
 	timer.set_wait_time(camera_switch_delay)
 	timer.timeout.connect(_on_timeout_complete)
 	add_child(timer)
+	
 	var player = get_parent().get_node("Player")
 	var player2 = get_parent().get_node("Player2")
 	if player and player2:
@@ -60,6 +67,7 @@ func _physics_process(delta):
 		item.gravity_scale = gravity
 		has_item = false
 		main_node.add_child(item)
+		item = null
 	elif !Input.is_action_pressed("item_pickup"):
 		pickup_pressed = false
 	
@@ -69,11 +77,14 @@ func _physics_process(delta):
 	var input_dir = Input.get_vector("backward", "forward", "left", "right")
 	var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	if direction:
+		#var new_position = position + direction * 1
+		#if !is_collision(new_position, item_placeholder.global_transform.origin):
 		visuals.look_at(direction + position)
 		player_interaction_area_position.look_at(direction + position)
 		
-		velocity.x = direction.x * SPEED
-		velocity.z = direction.z * SPEED
+		if can_walk || !has_item:
+			velocity.x = direction.x * SPEED
+			velocity.z = direction.z * SPEED
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
@@ -85,7 +96,6 @@ func _physics_process(delta):
 	move_and_slide()
 
 func _on_item_pick_up(item_node: Node):
-	print("Works")
 	if !has_item:
 		var main_node = get_parent()
 		main_node.remove_child(item_node)
@@ -96,3 +106,17 @@ func _on_item_pick_up(item_node: Node):
 		has_item = true
 		item = item_node
 		pickup_pressed = true
+
+func _on_collision_detection_entered():
+	can_walk = false
+
+func _on_collision_detection_exited():
+	can_walk = true
+
+#func is_collision(start: Vector3, end: Vector3) -> bool:
+	#var space_state = get_world_3d().direct_space_state
+	#var query = PhysicsRayQueryParameters3D.create(start, end)
+#
+	#var result = space_state.intersect_ray(query)
+	#print(result)
+	#return result.collider != null

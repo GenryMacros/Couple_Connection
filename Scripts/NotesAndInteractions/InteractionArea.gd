@@ -6,8 +6,6 @@ extends Area3D
 var isAreaActive = false;
 
 func _input(event):
-	if event.is_action_pressed("item_pickup"):
-		print("Fucking works")
 	if isAreaActive and event.is_action_pressed("ui_accept"):
 		if interaction_key != "":
 			NotesAndInteractionService.display_interaction.emit(interaction_key);
