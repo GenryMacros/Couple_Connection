@@ -60,7 +60,7 @@ radius = 0.489483
 size = Vector3(3.25903, 2.24251, 2.28528)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_tvyxs"]
-size = Vector3(4.03351, 2.40778, 0.83081)
+size = Vector3(4.03351, 3.01248, 0.896973)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wgeh7"]
 size = Vector3(1.22211, 1.5321, 1.35452)
@@ -161,6 +161,9 @@ shape = SubResource("CylinderShape3D_bopqx")
 [node name="IDialogCaller" parent="Environment/Cylinder2/InteractionArea" index="1"]
 dialog_key = "flower"
 
+[node name="LabelPos" parent="Environment/Cylinder2/InteractionArea" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.699803, 0)
+
 [node name="Clock2" parent="Environment" instance=ExtResource("19_30it2")]
 transform = Transform3D(2, 0, 0, 0, -8.74228e-08, -2, 0, 2, -8.74228e-08, -0.209828, 6.53534, -3.8281)
 
@@ -185,17 +188,26 @@ shape = SubResource("BoxShape3D_6e8ei")
 [node name="IDialogCaller" parent="Environment/Poster/InteractionArea" index="1"]
 dialog_key = "ahegao"
 
+[node name="LabelPos" parent="Environment/Poster/InteractionArea" index="2"]
+transform = Transform3D(-0.958225, -0.0801525, -0.274554, 0.283785, -0.146822, -0.947581, 0.0356403, -0.98591, 0.163435, 0.636312, 0.518324, -2.0918)
+
 [node name="tv2" parent="Environment" instance=ExtResource("26_rhuc6")]
 transform = Transform3D(-1.2, 0, 1.50996e-07, 0, 1, 0, -1.81195e-07, 0, -1, -0.455034, 6, 6.90666)
 
 [node name="InteractionArea" parent="Environment/tv2" instance=ExtResource("27_50l4p")]
 
 [node name="CollisionShape3D" parent="Environment/tv2/InteractionArea" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0454407, -0.12857, 0.149048)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0454406, -0.430922, 0.182129)
 shape = SubResource("BoxShape3D_tvyxs")
 
 [node name="IDialogCaller" parent="Environment/tv2/InteractionArea" index="1"]
 dialog_key = "tv"
+
+[node name="LabelPos" parent="Environment/tv2/InteractionArea" index="2"]
+transform = Transform3D(0.674601, 0.738185, -1.87539e-07, 0.707914, -0.646935, -0.28343, -0.209224, 0.191201, -0.958993, 0.583665, 1.59966, 0.851592)
+
+[node name="ExclamationMark" parent="Environment/tv2/InteractionArea/LabelPos" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.9407e-08, -0.454018, 0.797312)
 
 [node name="gaypad" parent="Environment" instance=ExtResource("27_6n0b6")]
 transform = Transform3D(0.117125, 0.0937108, -4.09623e-09, 0, -6.55671e-09, -0.15, -0.0937108, 0.117125, -5.1197e-09, -0.127246, 3.40471, -0.693029)
@@ -240,7 +252,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.124385, 0.360856, -0.27735
 shape = SubResource("BoxShape3D_idfqp")
 
 [node name="IDialogCaller" parent="Environment/Toilet_batch/StaticBody3D/CollisionShape3D/InteractionArea" index="1"]
-dialog_key = "jerkoffPaper"
+dialog_key = "paper"
+
+[node name="LabelPos" parent="Environment/Toilet_batch/StaticBody3D/CollisionShape3D/InteractionArea" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.09418, 0)
+
+[node name="SubViewport" parent="Environment/Toilet_batch/StaticBody3D/CollisionShape3D/InteractionArea/LabelPos/ExclamationMark" index="0"]
+disable_3d = true
 
 [node name="tolet" parent="Environment/Toilet_batch/StaticBody3D" instance=ExtResource("28_ji80t")]
 transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 3.06994, 2.91022, 3.43825)
@@ -279,6 +297,14 @@ shape = SubResource("BoxShape3D_lh8i0")
 
 [node name="IDialogCaller" parent="Note/InteractionArea" index="1"]
 dialog_key = "note"
+
+[node name="LabelPos" parent="Note/InteractionArea" index="2"]
+transform = Transform3D(1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, 1, -0.76963, 2.78689, -1.89574)
+
+[connection signal="change_dialog_key" from="Dialog_Player" to="Environment/Poster/InteractionArea/IDialogCaller" method="_on_dialog_player_change_dialog_key"]
+[connection signal="change_dialog_key" from="Dialog_Player" to="Environment/Toilet_batch/StaticBody3D/CollisionShape3D/InteractionArea/IDialogCaller" method="_on_dialog_player_change_dialog_key"]
+[connection signal="dialog_finished" from="Environment/Poster/InteractionArea/IDialogCaller" to="Dialog_Player" method="_on_i_dialog_caller_dialog_finished"]
+[connection signal="dialog_finished" from="Environment/Toilet_batch/StaticBody3D/CollisionShape3D/InteractionArea/IDialogCaller" to="Dialog_Player" method="_on_i_dialog_caller_dialog_finished"]
 
 [editable path="Dialog_Player"]
 [editable path="Environment/Cylinder2/InteractionArea"]

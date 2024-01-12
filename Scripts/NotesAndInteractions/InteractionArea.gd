@@ -1,6 +1,7 @@
 extends Area3D
 @export var interaction_key = "";
 @onready var dialog_caller : IDialogCaller = $IDialogCaller;
+@onready var exclamation_mark = $LabelPos/ExclamationMark;
 @export var isPickUp = false;
 var isAreaActive = false;
 
@@ -16,11 +17,12 @@ func _input(event):
 
 func _on_area_entered(area):
 	isAreaActive = true;
-	
+	exclamation_mark.visible = true;
 
 
 func _on_area_exited(area):
 	isAreaActive = false;
+	exclamation_mark.visible = false;
 
 
 func _on_dialog_player_dialog_finished():

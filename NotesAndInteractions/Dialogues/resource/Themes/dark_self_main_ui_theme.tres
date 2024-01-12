@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=30 format=3 uid="uid://cxw1o1d60dfw"]
+[gd_resource type="Theme" load_steps=31 format=3 uid="uid://cxw1o1d60dfw"]
 
 [ext_resource type="Texture2D" uid="uid://b7i0wivwpmnlb" path="res://NotesAndInteractions/Dialogues/resource/Themes/textures/marker arrow/arrow_0.png" id="1_6n5bj"]
 [ext_resource type="FontFile" uid="uid://drhvbioc31k4l" path="res://NotesAndInteractions/Dialogues/resource/Themes/fonts/retro_gaming/Retro Gaming.ttf" id="1_f2kld"]
@@ -94,6 +94,14 @@ texture_margin_bottom = 33.0
 axis_stretch_horizontal = 2
 axis_stretch_vertical = 2
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_usac6"]
+bg_color = Color(1, 0.992157, 0.815686, 1)
+corner_radius_top_left = 1024
+corner_radius_top_right = 1024
+corner_radius_bottom_right = 1024
+corner_radius_bottom_left = 1024
+corner_detail = 1
+
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f4jwa"]
 
 [resource]
@@ -141,6 +149,12 @@ GoodPanelContainer/base_type = &"PanelContainer"
 GoodPanelContainer/styles/panel = SubResource("StyleBoxTexture_3efln")
 HeaderLarge/font_sizes/font_size = 64
 HeaderMedium/font_sizes/font_size = 48
+InteractionLabel/base_type = &"Label"
+InteractionLabel/colors/font_color = Color(1, 1, 0, 1)
+InteractionLabel/colors/font_outline_color = Color(0.0156863, 0.0156863, 0.0156863, 1)
+InteractionLabel/colors/font_shadow_color = Color(0, 0, 0, 1)
+InteractionLabel/font_sizes/font_size = 40
+InteractionLabel/styles/normal = SubResource("StyleBoxFlat_usac6")
 Label/colors/font_color = Color(1, 1, 1, 1)
 Label/colors/font_outline_color = Color(1, 1, 1, 1)
 Label/colors/font_shadow_color = Color(0, 0, 0, 0)
