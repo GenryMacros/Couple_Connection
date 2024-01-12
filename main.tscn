@@ -53,28 +53,25 @@ tonemap_mode = 2
 glow_enabled = true
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_bopqx"]
-height = 0.947923
-radius = 0.318039
+height = 0.725625
+radius = 0.489483
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_6e8ei"]
-size = Vector3(2.08545, 0.697754, 2.28528)
+size = Vector3(3.25903, 2.24251, 2.28528)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_tvyxs"]
-size = Vector3(4.03351, 2.1095, 0.512939)
+size = Vector3(4.03351, 2.40778, 0.83081)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wgeh7"]
 size = Vector3(1.22211, 1.5321, 1.35452)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_idfqp"]
-size = Vector3(1.29395, 1.12408, 1.19043)
+size = Vector3(2.33416, 1.72171, 2.26115)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_lh8i0"]
-size = Vector3(1, 1.56165, 1)
+size = Vector3(0.71582, 1.37458, 0.755371)
 
 [node name="Main" type="Node3D"]
-
-[node name="InteractionController" parent="." instance=ExtResource("2_neh0s")]
-interactions_text_file = "res://NotesAndInteractions/json/Interactions.json"
 
 [node name="Dialog_Player" parent="." instance=ExtResource("1_swquk")]
 dialog_file = "res://NotesAndInteractions/json/Level1Dialogs.json"
@@ -87,6 +84,9 @@ theme_type_variation = &"GoodPanelContainer"
 
 [node name="PcDisplay" parent="Dialog_Player" instance=ExtResource("4_rf74g")]
 visible = false
+
+[node name="InteractionController" parent="." instance=ExtResource("2_neh0s")]
+interactions_text_file = "res://NotesAndInteractions/json/Interactions.json"
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_nrash")
@@ -179,7 +179,7 @@ transform = Transform3D(-1, -3.82137e-15, 8.74228e-08, -8.74228e-08, 4.37114e-08
 [node name="InteractionArea" parent="Environment/Poster" instance=ExtResource("27_50l4p")]
 
 [node name="CollisionShape3D" parent="Environment/Poster/InteractionArea" index="0"]
-transform = Transform3D(1, 0, 1.11075e-28, 0, 1, 0, 0, 0, 1, 0.0153809, -0.151123, 0.046936)
+transform = Transform3D(1, 0, 1.11075e-28, 0, 1, 0, 0, 0, 1, -0.571411, 0.621254, 0.046936)
 shape = SubResource("BoxShape3D_6e8ei")
 
 [node name="IDialogCaller" parent="Environment/Poster/InteractionArea" index="1"]
@@ -191,7 +191,7 @@ transform = Transform3D(-1.2, 0, 1.50996e-07, 0, 1, 0, -1.81195e-07, 0, -1, -0.4
 [node name="InteractionArea" parent="Environment/tv2" instance=ExtResource("27_50l4p")]
 
 [node name="CollisionShape3D" parent="Environment/tv2/InteractionArea" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0454407, 0.0205688, -0.0098877)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0454407, -0.12857, 0.149048)
 shape = SubResource("BoxShape3D_tvyxs")
 
 [node name="IDialogCaller" parent="Environment/tv2/InteractionArea" index="1"]
@@ -236,7 +236,7 @@ shape = SubResource("BoxShape3D_wgeh7")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.042465, -0.239589, 0.132057)
 
 [node name="CollisionShape3D" parent="Environment/Toilet_batch/StaticBody3D/CollisionShape3D/InteractionArea" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0182343, 0.0620422, -0.0952148)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.124385, 0.360856, -0.277351)
 shape = SubResource("BoxShape3D_idfqp")
 
 [node name="IDialogCaller" parent="Environment/Toilet_batch/StaticBody3D/CollisionShape3D/InteractionArea" index="1"]
@@ -274,7 +274,7 @@ transform = Transform3D(0.794324, 0, 0.605069, 0, 0.998528, 0, -0.605069, 0, 0.7
 [node name="InteractionArea" parent="Note" instance=ExtResource("27_50l4p")]
 
 [node name="CollisionShape3D" parent="Note/InteractionArea" index="0"]
-transform = Transform3D(1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, 1, 0, 0.280823, 0)
+transform = Transform3D(1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, 1, 0.0307626, 0.187285, -0.122317)
 shape = SubResource("BoxShape3D_lh8i0")
 
 [node name="IDialogCaller" parent="Note/InteractionArea" index="1"]
