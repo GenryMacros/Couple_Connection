@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=3 uid="uid://duvf4xnqtswgg"]
+[gd_scene load_steps=42 format=3 uid="uid://cct77j184w7vd"]
 
 [ext_resource type="PackedScene" uid="uid://btv3xq8q2os8c" path="res://Characters/Player.tscn" id="1_k28sf"]
 [ext_resource type="PackedScene" uid="uid://fe8kcl1klpdp" path="res://Environment/Room/door.tscn" id="2_wyioy"]
@@ -18,7 +18,7 @@
 [ext_resource type="PackedScene" uid="uid://cgsd3x4inu21x" path="res://Environment/Imported/Room/Donut.glb" id="13_v33pp"]
 [ext_resource type="PackedScene" uid="uid://d1dn40ecqledo" path="res://Environment/OneNight/invisible_wall.tscn" id="14_h42mb"]
 [ext_resource type="PackedScene" uid="uid://cn8dtih4pw5sj" path="res://Environment/Imported/Wall/brick.tscn" id="16_pesdm"]
-[ext_resource type="MeshLibrary" uid="uid://b3sdnfyf2x443" path="res://Environment/mesh_library.tres" id="17_lor0l"]
+[ext_resource type="MeshLibrary" uid="uid://washly5p813j" path="res://Environment/mesh_library.tres" id="17_lor0l"]
 [ext_resource type="PackedScene" uid="uid://c5ic8bnrpcrie" path="res://Environment/Imported/School/school_board.glb" id="19_47gl6"]
 [ext_resource type="PackedScene" uid="uid://dr1jkqtrvc3ni" path="res://Environment/mirror/floor_opaque.tscn" id="19_jvmlp"]
 [ext_resource type="PackedScene" uid="uid://dqjti6o8umhw1" path="res://Environment/Imported/School/teacher_desk.glb" id="20_q3ua7"]

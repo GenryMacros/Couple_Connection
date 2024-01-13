@@ -1,8 +1,8 @@
 {
-	"Dialogs": 20,
-	"Master": 20,
-	"Music": 20,
-	"SoundEfects": 20,
+	"Dialogs": 16,
+	"Master": 15,
+	"Music": 15,
+	"SoundEfects": 15,
 	"language": 0,
 	"window_mode": 1,
 	"window_size": 0
