@@ -85,6 +85,11 @@ func _physics_process(delta):
 		if can_walk || !has_item:
 			velocity.x = direction.x * SPEED
 			velocity.z = direction.z * SPEED
+		else:
+			print(input_dir)
+			print(can_walk)
+			print(velocity)
+			velocity = Vector3(0,0,0)
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
@@ -108,9 +113,11 @@ func _on_item_pick_up(item_node: Node):
 		pickup_pressed = true
 
 func _on_collision_detection_entered():
+	print("suka")
 	can_walk = false
 
 func _on_collision_detection_exited():
+	print("blyat")
 	can_walk = true
 
 #func is_collision(start: Vector3, end: Vector3) -> bool:

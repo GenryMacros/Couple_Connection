@@ -1,11 +1,10 @@
-[gd_scene load_steps=43 format=3 uid="uid://cwoawh7fjqwvy"]
+[gd_scene load_steps=42 format=3 uid="uid://cwoawh7fjqwvy"]
 
 [ext_resource type="PackedScene" uid="uid://hvgt15fjxbed" path="res://NotesAndInteractions/Dialogues/dialog_player.tscn" id="1_lutu8"]
 [ext_resource type="PackedScene" uid="uid://btv3xq8q2os8c" path="res://Characters/Player.tscn" id="1_x3at1"]
 [ext_resource type="PackedScene" uid="uid://co7ga5viqxnk" path="res://NotesAndInteractions/Dialogues/interaction_controller.tscn" id="2_6hqw6"]
 [ext_resource type="Script" path="res://Scripts/Player/player_sc.gd" id="2_sdpnk"]
 [ext_resource type="PackedScene" uid="uid://b2i8tmpnfqoyf" path="res://Characters/camera_rig.tscn" id="3_3auwh"]
-[ext_resource type="Texture2D" uid="uid://1i5xjdxabbgg" path="res://NotesAndInteractions/Dialogues/resource/Ruby.png" id="3_uehbx"]
 [ext_resource type="PackedScene" uid="uid://cra4bso80oc30" path="res://Environment/Imported/Floor/room_block.tscn" id="4_ogwsb"]
 [ext_resource type="PackedScene" uid="uid://cxf7ahxfy4t34" path="res://NotesAndInteractions/World/pc_display.tscn" id="4_r0ksq"]
 [ext_resource type="PackedScene" uid="uid://b1cqgrbtducyf" path="res://Environment/Imported/Floor/room_block_opaque.tscn" id="5_3inev"]
@@ -30,7 +29,7 @@
 [ext_resource type="PackedScene" uid="uid://ddtc8t238p1vm" path="res://Environment/Imported/Room/tolet.glb" id="24_2vp2p"]
 [ext_resource type="PackedScene" uid="uid://jjvbctafqwi6" path="res://Environment/Imported/Room/tolet_empty.glb" id="25_gmfeg"]
 [ext_resource type="PackedScene" uid="uid://4ija24cqmm7j" path="res://Environment/Imported/pc.tscn" id="26_10nb0"]
-[ext_resource type="PackedScene" uid="uid://fe8kcl1klpdp" path="res://Environment/Imported/Door/door_mock.tscn" id="27_wxa4s"]
+[ext_resource type="PackedScene" uid="uid://fe8kcl1klpdp" path="res://Environment/Room/door.tscn" id="27_wxa4s"]
 [ext_resource type="PackedScene" uid="uid://dq2k0fmbx0drm" path="res://Environment/Imported/Room/lubber.glb" id="28_cbv6t"]
 [ext_resource type="PackedScene" uid="uid://isuyxsvmy2o2" path="res://Environment/Room/note.tscn" id="29_n0cod"]
 [ext_resource type="PackedScene" uid="uid://bci0ardhy0y4e" path="res://NotesAndInteractions/World/interaction_area.tscn" id="34_rvty2"]
@@ -70,9 +69,6 @@ dialog_file = "res://NotesAndInteractions/json/Dialogs.json"
 
 [node name="InteractionController" parent="." instance=ExtResource("2_6hqw6")]
 interactions_text_file = "res://NotesAndInteractions/json/Interactions.json"
-
-[node name="Background" parent="InteractionController/VBoxContainer" index="1"]
-texture = ExtResource("3_uehbx")
 
 [node name="PcDisplay" parent="InteractionController" instance=ExtResource("4_r0ksq")]
 visible = false
@@ -229,9 +225,6 @@ dialog_file = "res://NotesAndInteractions/json/Dialogs.json"
 
 [node name="InteractionController2" parent="." instance=ExtResource("2_6hqw6")]
 interactions_text_file = "res://NotesAndInteractions/json/Interactions.json"
-
-[node name="Background" parent="InteractionController2/VBoxContainer" index="1"]
-texture = ExtResource("3_uehbx")
 
 [node name="PcDisplay" parent="InteractionController2" instance=ExtResource("4_r0ksq")]
 visible = false
@@ -392,7 +385,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.31893, 3.79652, 1.32229)
 isPickUp = true
 
 [node name="CollisionShape3D" parent="RigidBody3D/InteractionArea" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.210388, 0.142807, -0.176694)
 shape = SubResource("SphereShape3D_nks2q")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
