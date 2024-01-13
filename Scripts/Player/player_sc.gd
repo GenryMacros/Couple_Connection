@@ -7,6 +7,7 @@ var gravity = ProjectSettings.get_setting("World/gravity")
 var is_stopped = false
 var has_item = false
 var pickup_pressed = false
+var is_first_person = false
 var timer = null
 var camera_switch_delay = .5
 var can_switch = true
@@ -17,11 +18,15 @@ var players = []
 @onready var couple_character = $visuals/couple_character/AnimationPlayer
 @onready var visuals = $visuals
 @onready var player_interaction_area_position :Marker3D = $visuals/PlayerInteractionAreaPosition
+@onready var camera_point_first = $camera_point_first
+@onready var camera_3d = $camera_point_first/Camera3D
+@onready var spot_light_3d: SpotLight3D= $visuals/SpotLight3D
+
 
 	
 func _ready():
 	GameManager.set_player(self)
-	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	NotesAndInteractionService.pickup_item.connect(_on_item_pick_up)
 	
 	var collisionDetectionArea = get_node("visuals/CollisionDetectionArea")
@@ -39,6 +44,11 @@ func _ready():
 	#	players.append(player) 
 	#	players.append(player2)
 
+func activate_first_person():
+	is_first_person = true
+	spot_light_3d.spot_angle = 30
+	spot_light_3d.light_energy = 10
+	
 func _on_timeout_complete():
 	can_switch = true
 
@@ -72,31 +82,65 @@ func _physics_process(delta):
 	
 	if not is_on_floor():
 		velocity.y -= gravity * delta
-		
-	var input_dir = Input.get_vector("backward", "forward", "left", "right")
-	var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
-	if direction:
-		#var new_position = position + direction * 1
-		#if !is_collision(new_position, item_placeholder.global_transform.origin):
-		visuals.look_at(direction + position)
-		if can_walk || !has_item:
-			velocity.x = direction.x * SPEED
-			velocity.z = direction.z * SPEED
-		else:
-			print(input_dir)
-			print(can_walk)
-			print(velocity)
-			velocity = Vector3(0,0,0)
-	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
-		velocity.z = move_toward(velocity.z, 0, SPEED)
 	
-	if velocity.x != 0 or velocity.z != 0:
-		couple_character.play("Movement")
-	else:
-		couple_character.stop()
-	move_and_slide()
+	
+	if is_first_person:
+		#velocity.y += gravity * delta
+		var desired_velocity = get_input_first_person() * SPEED
 
+		velocity.x = desired_velocity.x
+		velocity.z = desired_velocity.z
+		if velocity.x != 0 or velocity.z != 0:
+			couple_character.play("Movement")
+		else:
+			couple_character.stop()
+		move_and_slide()
+	else:
+		var input_dir = Input.get_vector("backward", "forward", "left", "right")
+		var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+		if direction:
+			#var new_position = position + direction * 1
+			#if !is_collision(new_position, item_placeholder.global_transform.origin):
+			visuals.look_at(direction + position)
+			if can_walk || !has_item:
+				velocity.x = direction.x * SPEED
+				velocity.z = direction.z * SPEED
+			else:
+				print(input_dir)
+				print(can_walk)
+				print(velocity)
+				velocity = Vector3(0,0,0)
+		else:
+			velocity.x = move_toward(velocity.x, 0, SPEED)
+			velocity.z = move_toward(velocity.z, 0, SPEED)
+		
+		if velocity.x != 0 or velocity.z != 0:
+			couple_character.play("Movement")
+		else:
+			couple_character.stop()
+		move_and_slide()
+
+func _unhandled_input(event):
+	if event is InputEventMouseMotion and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
+		rotate_y(-event.relative.x * 0.002)
+		camera_3d.rotate_x(-event.relative.y * 0.002)
+		camera_3d.rotation.x = clamp(camera_3d.rotation.x, -PI /2 , PI / 2)
+		
+			
+func get_input_first_person():
+	var input_dir = Vector3()
+	# desired move in camera direction
+	if Input.is_action_pressed("forward"):
+		input_dir += -global_transform.basis.z
+	if Input.is_action_pressed("backward"):
+		input_dir += global_transform.basis.z
+	if Input.is_action_pressed("left"):
+		input_dir += -global_transform.basis.x
+	if Input.is_action_pressed("right"):
+		input_dir += global_transform.basis.x
+	input_dir = input_dir.normalized()
+	return input_dir
+	
 func _on_item_pick_up(item_node: Node):
 	if !has_item:
 		var main_node = get_parent()

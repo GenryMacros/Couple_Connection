@@ -36,6 +36,7 @@ shadow_transmittance_bias = 0.0
 shadow_opacity = 0.0
 shadow_blur = 0.0
 spot_range = 48.633
+spot_angle = 43.0
 
 [node name="couple_character" parent="visuals" instance=ExtResource("2_8e5e6")]
 transform = Transform3D(-3.0598e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.0598e-08, -1.69107, 0, 0)
@@ -63,6 +64,24 @@ shape = SubResource("BoxShape3D_teffj")
 
 [node name="camera_point" type="Node3D" parent="."]
 transform = Transform3D(-0.515038, 0.656628, -0.550976, 0, 0.642788, 0.766044, 0.857167, 0.394542, -0.33106, -8.97317, 9.93776, -5.87174)
+
+[node name="camera_point_first" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999999, -0.250027, 2.25471, -0.599389)
+
+[node name="Camera3D" type="Camera3D" parent="camera_point_first"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.244229, 0.264764, 0.0872371)
+
+[node name="viewport_container" type="SubViewportContainer" parent="camera_point_first/Camera3D"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="background_viewport" type="SubViewport" parent="camera_point_first/Camera3D/viewport_container"]
+transparent_bg = true
+handle_input_locally = false
+render_target_update_mode = 4
 
 [connection signal="body_entered" from="visuals/CollisionDetectionArea" to="visuals/CollisionDetectionArea" method="_on_body_entered"]
 [connection signal="body_exited" from="visuals/CollisionDetectionArea" to="visuals/CollisionDetectionArea" method="_on_body_exited"]

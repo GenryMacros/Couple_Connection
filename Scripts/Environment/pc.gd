@@ -7,7 +7,6 @@ var is_usable = true
 @export var pc_display: CanvasLayer
 @onready var area_3d = $pc/Area3D
 
-@onready var cube_002 = $Cube_002
 
 func _ready():
 	area_3d.body_entered.connect(body_entered)
