@@ -16,7 +16,7 @@ var players = []
 @onready var camera_point = $camera_point
 @onready var couple_character = $visuals/couple_character/AnimationPlayer
 @onready var visuals = $visuals
-@onready var player_interaction_area_position :Marker3D = $PlayerInteractionAreaPosition
+@onready var player_interaction_area_position :Marker3D = $visuals/PlayerInteractionAreaPosition
 
 	
 func _ready():
@@ -34,10 +34,10 @@ func _ready():
 	add_child(timer)
 	
 	var player = get_parent().get_node("Player")
-	var player2 = get_parent().get_node("Player2")
-	if player and player2:
-		players.append(player) 
-		players.append(player2)
+	#var player2 = get_parent().get_node("Player2")
+	#if player and player2:
+	#	players.append(player) 
+	#	players.append(player2)
 
 func _on_timeout_complete():
 	can_switch = true
@@ -79,7 +79,6 @@ func _physics_process(delta):
 		#var new_position = position + direction * 1
 		#if !is_collision(new_position, item_placeholder.global_transform.origin):
 		visuals.look_at(direction + position)
-		player_interaction_area_position.look_at(direction + position)
 		if can_walk || !has_item:
 			velocity.x = direction.x * SPEED
 			velocity.z = direction.z * SPEED
@@ -111,11 +110,9 @@ func _on_item_pick_up(item_node: Node):
 		pickup_pressed = true
 
 func _on_collision_detection_entered():
-	print("suka")
 	can_walk = false
 
 func _on_collision_detection_exited():
-	print("blyat")
 	can_walk = true
 
 #func is_collision(start: Vector3, end: Vector3) -> bool:

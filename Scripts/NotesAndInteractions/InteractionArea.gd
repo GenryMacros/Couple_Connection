@@ -16,11 +16,15 @@ func _input(event):
 		NotesAndInteractionService.pickup_item.emit(get_parent());
 
 func _on_area_entered(area):
+	if area.name != "PlayerInteractionArea":
+		return
 	isAreaActive = true;
 	exclamation_mark.visible = true;
 
 
 func _on_area_exited(area):
+	if area.name != "PlayerInteractionArea":
+		return
 	isAreaActive = false;
 	exclamation_mark.visible = false;
 

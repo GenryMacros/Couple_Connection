@@ -18,7 +18,7 @@
 [ext_resource type="PackedScene" uid="uid://cgsd3x4inu21x" path="res://Environment/Imported/Room/Donut.glb" id="13_v33pp"]
 [ext_resource type="PackedScene" uid="uid://d1dn40ecqledo" path="res://Environment/OneNight/invisible_wall.tscn" id="14_h42mb"]
 [ext_resource type="PackedScene" uid="uid://cn8dtih4pw5sj" path="res://Environment/Imported/Wall/brick.tscn" id="16_pesdm"]
-[ext_resource type="MeshLibrary" uid="uid://washly5p813j" path="res://Environment/mesh_library.tres" id="17_lor0l"]
+[ext_resource type="MeshLibrary" uid="uid://b3sdnfyf2x443" path="res://Environment/mesh_library.tres" id="17_lor0l"]
 [ext_resource type="PackedScene" uid="uid://c5ic8bnrpcrie" path="res://Environment/Imported/School/school_board.glb" id="19_47gl6"]
 [ext_resource type="PackedScene" uid="uid://dr1jkqtrvc3ni" path="res://Environment/mirror/floor_opaque.tscn" id="19_jvmlp"]
 [ext_resource type="PackedScene" uid="uid://dqjti6o8umhw1" path="res://Environment/Imported/School/teacher_desk.glb" id="20_q3ua7"]
@@ -41,7 +41,7 @@
 [ext_resource type="PackedScene" uid="uid://x2bff2ehka12" path="res://Environment/Imported/Mirror/yellow.glb" id="39_lnqb6"]
 [ext_resource type="PackedScene" uid="uid://bt3oi5guncniv" path="res://Environment/Imported/Mirror/pink.glb" id="40_sjuqp"]
 [ext_resource type="PackedScene" uid="uid://6vtklfyupyuc" path="res://Environment/Imported/Room/Rug.glb" id="41_xq0cs"]
-[ext_resource type="PackedScene" path="res://Characters/Anti.tscn" id="42_ttlb3"]
+[ext_resource type="PackedScene" uid="uid://ckujhod8fx636" path="res://Characters/Anti.tscn" id="42_ttlb3"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_684b2"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)

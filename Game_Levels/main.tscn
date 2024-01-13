@@ -73,8 +73,7 @@ size = Vector3(0.71582, 1.37458, 0.755371)
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_2w1vh"]
 
-[sub_resource type="SphereShape3D" id="SphereShape3D_nomjv"]
-radius = 0.6
+[sub_resource type="BoxShape3D" id="BoxShape3D_8onma"]
 
 [node name="Main" type="Node3D"]
 
@@ -316,7 +315,8 @@ isPickUp = true
 shape = SubResource("SphereShape3D_2w1vh")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
-shape = SubResource("SphereShape3D_nomjv")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0564115)
+shape = SubResource("BoxShape3D_8onma")
 
 [node name="CSGSphere3D" type="CSGSphere3D" parent="RigidBody3D"]
 
