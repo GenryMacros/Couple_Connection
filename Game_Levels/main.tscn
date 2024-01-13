@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=3 uid="uid://bchuqv0bdf50e"]
+[gd_scene load_steps=43 format=3 uid="uid://6itvjd6nald"]
 
 [ext_resource type="PackedScene" uid="uid://btv3xq8q2os8c" path="res://Characters/Player.tscn" id="1_eb004"]
 [ext_resource type="PackedScene" uid="uid://hvgt15fjxbed" path="res://NotesAndInteractions/Dialogues/dialog_player.tscn" id="1_swquk"]
@@ -70,11 +70,6 @@ size = Vector3(2.33416, 1.72171, 2.26115)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_lh8i0"]
 size = Vector3(0.71582, 1.37458, 0.755371)
-
-[sub_resource type="SphereShape3D" id="SphereShape3D_2w1vh"]
-
-[sub_resource type="SphereShape3D" id="SphereShape3D_nomjv"]
-radius = 0.6
 
 [node name="Main" type="Node3D"]
 
@@ -306,20 +301,6 @@ dialog_key = "note"
 [node name="LabelPos" parent="Note/InteractionArea" index="2"]
 transform = Transform3D(1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, 1, -0.76963, 2.78689, -1.89574)
 
-[node name="RigidBody3D" type="RigidBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.71171, 2.98193, -3.43634)
-
-[node name="InteractionArea" parent="RigidBody3D" instance=ExtResource("27_50l4p")]
-isPickUp = true
-
-[node name="CollisionShape3D" parent="RigidBody3D/InteractionArea" index="0"]
-shape = SubResource("SphereShape3D_2w1vh")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
-shape = SubResource("SphereShape3D_nomjv")
-
-[node name="CSGSphere3D" type="CSGSphere3D" parent="RigidBody3D"]
-
 [connection signal="change_dialog_key" from="Dialog_Player" to="Environment/Poster/InteractionArea/IDialogCaller" method="_on_dialog_player_change_dialog_key"]
 [connection signal="change_dialog_key" from="Dialog_Player" to="Environment/Toilet_batch/StaticBody3D/CollisionShape3D/InteractionArea/IDialogCaller" method="_on_dialog_player_change_dialog_key"]
 [connection signal="dialog_finished" from="Environment/Poster/InteractionArea/IDialogCaller" to="Dialog_Player" method="_on_i_dialog_caller_dialog_finished"]
@@ -331,4 +312,3 @@ shape = SubResource("SphereShape3D_nomjv")
 [editable path="Environment/tv2/InteractionArea"]
 [editable path="Environment/Toilet_batch/StaticBody3D/CollisionShape3D/InteractionArea"]
 [editable path="Note/InteractionArea"]
-[editable path="RigidBody3D/InteractionArea"]

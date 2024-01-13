@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=37 format=3 uid="uid://cxw1o1d60dfw"]
+[gd_resource type="Theme" load_steps=31 format=3 uid="uid://cxw1o1d60dfw"]
 
 [ext_resource type="Texture2D" uid="uid://b7i0wivwpmnlb" path="res://NotesAndInteractions/Dialogues/resource/Themes/textures/marker arrow/arrow_0.png" id="1_6n5bj"]
 [ext_resource type="FontFile" uid="uid://drhvbioc31k4l" path="res://NotesAndInteractions/Dialogues/resource/Themes/fonts/retro_gaming/Retro Gaming.ttf" id="1_f2kld"]
@@ -14,7 +14,6 @@
 [ext_resource type="Texture2D" uid="uid://bkx2itwk08fsn" path="res://NotesAndInteractions/Dialogues/resource/Themes/textures/pressed_button_marker/arrow_rotation_5.png" id="11_18pjd"]
 [ext_resource type="Texture2D" uid="uid://cyml6vs8hw2xd" path="res://NotesAndInteractions/Dialogues/resource/Themes/textures/border/black_root.png" id="12_gpbum"]
 [ext_resource type="Texture2D" uid="uid://cyxi7u6oe86wu" path="res://NotesAndInteractions/Dialogues/resource/Themes/textures/border/white_root.png" id="13_2pnq4"]
-[ext_resource type="Texture2D" uid="uid://bndih22undeig" path="res://NotesAndInteractions/Dialogues/resource/Themes/textures/slider_arrow/slider_arrow_38x43.png" id="14_r815r"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ohg03"]
 
@@ -26,7 +25,11 @@
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lapye"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cdsta"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c6s8h"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_acfve"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qnqix"]
 
 [sub_resource type="AnimatedTexture" id="AnimatedTexture_063o4"]
 frames = 9
@@ -49,14 +52,14 @@ frame_7/duration = 1.0
 frame_8/texture = ExtResource("1_6n5bj")
 frame_8/duration = 1.0
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xk32u"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gf15m"]
 texture = SubResource("AnimatedTexture_063o4")
 texture_margin_left = 45.0
 
 [sub_resource type="AnimatedTexture" id="AnimatedTexture_t0ghx"]
 frames = 6
 one_shot = true
-speed_scale = 3.0
+speed_scale = 0.8
 frame_0/texture = ExtResource("6_wi6dt")
 frame_1/texture = ExtResource("7_1ayp1")
 frame_1/duration = 1.0
@@ -68,22 +71,6 @@ frame_4/texture = ExtResource("10_rbkla")
 frame_4/duration = 1.0
 frame_5/texture = ExtResource("11_18pjd")
 frame_5/duration = 1.0
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ix8xr"]
-texture = SubResource("AnimatedTexture_t0ghx")
-texture_margin_left = 65.0
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c6s8h"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_acfve"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qnqix"]
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gf15m"]
-texture = SubResource("AnimatedTexture_063o4")
-texture_margin_left = 45.0
-axis_stretch_horizontal = 2
-axis_stretch_vertical = 2
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mhld6"]
 texture = SubResource("AnimatedTexture_t0ghx")
@@ -106,12 +93,6 @@ texture_margin_right = 30.0
 texture_margin_bottom = 33.0
 axis_stretch_horizontal = 2
 axis_stretch_vertical = 2
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_10ejh"]
-bg_color = Color(0.298039, 0.368627, 0.882353, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6ianc"]
-bg_color = Color(0.298039, 0.368627, 0.882353, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_usac6"]
 bg_color = Color(1, 0.992157, 0.815686, 1)
@@ -148,13 +129,6 @@ Button/styles/focus = SubResource("StyleBoxEmpty_avjih")
 Button/styles/hover = SubResource("StyleBoxEmpty_76djy")
 Button/styles/normal = SubResource("StyleBoxEmpty_4n856")
 Button/styles/pressed = SubResource("StyleBoxEmpty_lapye")
-CustomOptionButton/base_type = &"OptionButton"
-CustomOptionButton/colors/font_color = Color(0.94902, 0.94902, 0.94902, 1)
-CustomOptionButton/colors/font_disabled_color = Color(0.94902, 0.94902, 0.94902, 1)
-CustomOptionButton/colors/font_focus_color = Color(0.94902, 0.94902, 0.94902, 1)
-CustomOptionButton/styles/focus = SubResource("StyleBoxEmpty_cdsta")
-CustomOptionButton/styles/normal = SubResource("StyleBoxTexture_xk32u")
-CustomOptionButton/styles/pressed = SubResource("StyleBoxTexture_ix8xr")
 DialogButton/base_type = &"Button"
 DialogButton/colors/font_color = Color(0.94902, 0.94902, 0.94902, 1)
 DialogButton/colors/font_disabled_color = Color(0.94902, 0.94902, 0.94902, 1)
@@ -173,9 +147,6 @@ EvilPanelContainer/base_type = &"PanelContainer"
 EvilPanelContainer/styles/panel = SubResource("StyleBoxTexture_fbfan")
 GoodPanelContainer/base_type = &"PanelContainer"
 GoodPanelContainer/styles/panel = SubResource("StyleBoxTexture_3efln")
-HSlider/icons/grabber_highlight = ExtResource("14_r815r")
-HSlider/styles/grabber_area = SubResource("StyleBoxFlat_10ejh")
-HSlider/styles/grabber_area_highlight = SubResource("StyleBoxFlat_6ianc")
 HeaderLarge/font_sizes/font_size = 64
 HeaderMedium/font_sizes/font_size = 48
 InteractionLabel/base_type = &"Label"

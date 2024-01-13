@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=3 uid="uid://ckujhod8fx636"]
+
+[ext_resource type="Script" path="res://Scripts/Anti/couple_character_anti.gd" id="1_by5nl"]
+[ext_resource type="PackedScene" uid="uid://dfrdw7dpa3aew" path="res://Characters/couple_character_anti.glb" id="2_t3qnf"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_kl1j4"]
+
+[node name="Anti" type="Node3D"]
+script = ExtResource("1_by5nl")
+
+[node name="visuals" type="Node3D" parent="."]
+
+[node name="SpotLight3D" type="SpotLight3D" parent="visuals"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 14.7018, -0.0126693)
+visible = false
+layers = 31
+light_energy = 20.0
+light_indirect_energy = 1.091
+light_volumetric_fog_energy = 2.0
+light_bake_mode = 1
+shadow_bias = 0.394
+shadow_normal_bias = 1.12
+shadow_transmittance_bias = 0.0
+shadow_opacity = 0.0
+shadow_blur = 0.0
+spot_range = 48.633
+
+[node name="item_placeholder" type="Node3D" parent="visuals"]
+
+[node name="couple_character_anti" parent="visuals" instance=ExtResource("2_t3qnf")]
+transform = Transform3D(-3.0598e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.0598e-08, 3, 0, -0.00850272)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1.5, 0, 0, 0, 1, 0, 1.61473, 0)
+shape = SubResource("CylinderShape3D_kl1j4")

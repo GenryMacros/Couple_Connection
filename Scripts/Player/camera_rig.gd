@@ -11,6 +11,10 @@ func _ready():
 	resize()
 
 
+func setup_first_level_shaders():
+	$pc/Cube_002.get_active_material(0).get_next_pass().set("shader_param/shine_color", Vector3(0, 0, 0));
+	
+
 func resize():
 	background_viewport.size = DisplayServer.window_get_size()
 	foreground_viewport.size = DisplayServer.window_get_size()
