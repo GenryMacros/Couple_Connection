@@ -17,7 +17,7 @@ var players = []
 @onready var visuals = $visuals
 @onready var player_interaction_area_position = $PlayerInteractionAreaPosition
 
-
+	
 func _ready():
 	GameManager.set_player(self)
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
