@@ -1,0 +1,19 @@
+key,en,ua
+PLAY_0,Play,Грати
+SETTINGS_0,Settings,Налаштування
+EXIT_0,Exit,Вихід
+LOADING_0,Loading...,Завантаження
+SCREEN_RESOLUTION_0,Screen resolution,Розширення екрану
+MASTER_VOLUME_0,Main Volume,Загальна Гучність
+DIALOG_VOLUME_0,Dialogs Volume,Гучність Діалогів
+MUSIC_VOLUME_0,Music Volume,Гучність Музики
+SFX_VOLUME_0,Sound Effects Volume,Гучність Звукових Ефектів
+VIDEO_SETTINGS_0,Video Settings,Налаштування Відео
+VOLUME_SETTINGS_0,Volume Settings,Налаштування Звуку
+LANGUAGE_SETTINGS_0,Language Settings,Налаштування Мови
+LANGUAGE_SETTINGS_1,Language,Мова
+ENGLISH_0,English,Англійська
+UKRAINIAN_0,Ukrainian,Українська
+WINDOW_MODE_0,Window Mode,Віконний режим
+WINDOW_MODE_WINDOWED,Windowed,Віконний
+WINDOW_MODE_FULLSCREEN,Fullscreen,Повноекранний
