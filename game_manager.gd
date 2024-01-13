@@ -4,6 +4,8 @@ var nextScene
 var scenes = ["res://main.tscn",
 			  "res://Game_Levels/dungeon.tscn"]
 var player: Node
+var is_game_paused = false
+
 
 func _ready():
 	nextScene = scenes[0]

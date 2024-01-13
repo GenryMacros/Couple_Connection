@@ -1,5 +1,4 @@
-[gd_scene load_steps=52 format=3 uid="uid://cct77j184w7vd"]
-[gd_scene load_steps=52 format=3 uid="uid://cct77j184w7vd"]
+[gd_scene load_steps=49 format=3 uid="uid://cct77j184w7vd"]
 
 [ext_resource type="Script" path="res://Scripts/Environment/dungeon.gd" id="1_exde2"]
 [ext_resource type="PackedScene" uid="uid://btv3xq8q2os8c" path="res://Characters/Player.tscn" id="1_k28sf"]
@@ -7,7 +6,6 @@
 [ext_resource type="PackedScene" uid="uid://fe8kcl1klpdp" path="res://Environment/Room/door.tscn" id="2_wyioy"]
 [ext_resource type="Script" path="res://Scripts/Player/player_sc.gd" id="2_y44xa"]
 [ext_resource type="PackedScene" uid="uid://bqqw1wn2oh5cp" path="res://Environment/Imported/OneNight/Tree.glb" id="3_c15b2"]
-[ext_resource type="Shader" path="res://Scripts/Shaders/half_black.gdshader" id="3_poeyk"]
 [ext_resource type="PackedScene" uid="uid://cd3yjko7x3jvd" path="res://Environment/Imported/OneNight/Floor.glb" id="4_0os1i"]
 [ext_resource type="PackedScene" uid="uid://b6xi1cd7chubh" path="res://Environment/Imported/School/Floor.glb" id="4_sdo48"]
 [ext_resource type="PackedScene" uid="uid://c2uigl6mvadc" path="res://Environment/Imported/OneNight/Tree_001.glb" id="5_dlgqh"]
@@ -45,14 +43,6 @@
 [ext_resource type="PackedScene" uid="uid://bt3oi5guncniv" path="res://Environment/Imported/Mirror/pink.glb" id="40_sjuqp"]
 [ext_resource type="PackedScene" uid="uid://6vtklfyupyuc" path="res://Environment/Imported/Room/Rug.glb" id="41_xq0cs"]
 [ext_resource type="PackedScene" uid="uid://ckujhod8fx636" path="res://Characters/Anti.tscn" id="42_ttlb3"]
-[ext_resource type="PackedScene" uid="uid://cwgg2x8lo2gop" path="res://Environment/mirror/reflecting_mirror.tscn" id="43_hat0q"]
-[ext_resource type="Shader" path="res://Environment/mirror/mirror.gdshader" id="44_agchl"]
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_siebo"]
-shader = ExtResource("3_poeyk")
-
-[sub_resource type="ViewportTexture" id="ViewportTexture_5mpet"]
-viewport_path = NodePath("Player/camera_point_first/Camera3D/viewport_container/background_viewport")
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_684b2"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -76,29 +66,10 @@ glow_enabled = true
 
 [sub_resource type="BoxMesh" id="BoxMesh_y455d"]
 
-[sub_resource type="ViewportTexture" id="ViewportTexture_tcc6a"]
-viewport_path = NodePath("reflecting_mirror/glass2/glass/SubViewport")
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_ky23q"]
-resource_local_to_scene = true
-render_priority = 0
-shader = ExtResource("44_agchl")
-shader_parameter/refl_tx = SubResource("ViewportTexture_tcc6a")
-
 [node name="Dungeon" type="Node3D"]
 script = ExtResource("1_exde2")
 
 [node name="Settins" parent="." instance=ExtResource("2_jqfeo")]
-
-[node name="Background" parent="Settins/CanvasLayer" index="0"]
-material = SubResource("ShaderMaterial_siebo")
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 0.0
-offset_right = 0.0
-offset_bottom = 0.0
-texture = SubResource("ViewportTexture_5mpet")
 
 [node name="Player" parent="." instance=ExtResource("1_k28sf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.47826, 0.0301895)
@@ -613,23 +584,3 @@ transform = Transform3D(-0.998877, 0, 0.0473853, 0, 1, 0, -0.0473853, 0, -0.9988
 
 [node name="Anti_empty" parent="." instance=ExtResource("42_ttlb3")]
 transform = Transform3D(0.679095, 0, -0.73405, 0, 1, 0, 0.73405, 0, 0.679095, -3.21565, 0.655, 32.7062)
-
-[node name="reflecting_mirror" parent="." instance=ExtResource("43_hat0q")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.39133, -1.51787)
-
-[node name="glass" parent="reflecting_mirror/glass2" index="0"]
-material_overlay = SubResource("ShaderMaterial_ky23q")
-
-[node name="SubViewport" parent="reflecting_mirror/glass2/glass" index="0"]
-size = Vector2i(1920, 1680)
-
-[node name="Camera3D" parent="reflecting_mirror/glass2/glass/SubViewport" index="0"]
-transform = Transform3D(-0.999169, 0, -0.0407596, 0, 1, 0, 0.0407596, 0, -0.999169, -2.38419e-07, 2.89632, -1.28161)
-fov = 140.0
-
-[editable path="reflecting_mirror"]
-[editable path="reflecting_mirror/glass2"]
-
-[editable path="Settins"]
-[editable path="Player"]
-[editable path="Player/visuals/PlayerInteractionAreaPosition"]

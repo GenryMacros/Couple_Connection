@@ -31,6 +31,6 @@ func pass_entered():
 	
 	
 func _input(event):
-	if event.is_action_pressed("ui_accept") and is_usable:
+	if !GameManager.is_game_paused and event.is_action_pressed("ui_accept") and is_usable:
 		if is_player_in_area:
 			pc_display.activate()
