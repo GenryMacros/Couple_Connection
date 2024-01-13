@@ -127,6 +127,7 @@ autowrap_mode = 2
 [node name="CharacterTyper" type="Timer" parent="CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/DialogPanel/HBoxContainer/DialogText/VBoxContainer/Replica"]
 
 [node name="VoicePlayer" type="AudioStreamPlayer" parent="CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/DialogPanel/HBoxContainer/DialogText/VBoxContainer/Replica"]
+bus = &"Dialogs"
 
 [node name="Buttons" type="VBoxContainer" parent="CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/DialogPanel/HBoxContainer/DialogText/VBoxContainer"]
 layout_mode = 2
