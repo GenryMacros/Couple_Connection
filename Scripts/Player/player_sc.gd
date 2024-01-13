@@ -57,8 +57,6 @@ func _start_switch_delay():
 	timer.start()
 	
 func _physics_process(delta):
-	if is_stopped:
-		return
 	
 	if	Input.is_action_pressed("camera_switch") and can_switch and !players.is_empty():
 		if GameManager.player == self:
@@ -85,6 +83,9 @@ func _physics_process(delta):
 	
 	
 	if is_first_person:
+		if GameManager.is_game_paused:
+			couple_character.stop()
+			return
 		#velocity.y += gravity * delta
 		var desired_velocity = get_input_first_person() * SPEED
 
@@ -96,6 +97,10 @@ func _physics_process(delta):
 			couple_character.stop()
 		move_and_slide()
 	else:
+		if GameManager.is_game_paused:
+			couple_character.stop()
+			return
+		
 		var input_dir = Input.get_vector("backward", "forward", "left", "right")
 		var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 		if direction:
@@ -106,9 +111,6 @@ func _physics_process(delta):
 				velocity.x = direction.x * SPEED
 				velocity.z = direction.z * SPEED
 			else:
-				print(input_dir)
-				print(can_walk)
-				print(velocity)
 				velocity = Vector3(0,0,0)
 		else:
 			velocity.x = move_toward(velocity.x, 0, SPEED)
@@ -121,10 +123,10 @@ func _physics_process(delta):
 		move_and_slide()
 
 func _unhandled_input(event):
-	if event is InputEventMouseMotion and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
+	if !GameManager.is_game_paused and event is InputEventMouseMotion and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
 		rotate_y(-event.relative.x * 0.002)
 		camera_3d.rotate_x(-event.relative.y * 0.002)
-		camera_3d.rotation.x = clamp(camera_3d.rotation.x, -PI /2 , PI / 2)
+		camera_3d.rotation.x = clamp(camera_3d.rotation.x, -PI /2 + 0.15 , PI / 2 - 0.5)
 		
 			
 func get_input_first_person():
@@ -142,7 +144,7 @@ func get_input_first_person():
 	return input_dir
 	
 func _on_item_pick_up(item_node: Node):
-	if !has_item:
+	if !GameManager.is_game_paused and !has_item:
 		var main_node = get_parent()
 		main_node.remove_child(item_node)
 		item_placeholder.add_child(item_node)
