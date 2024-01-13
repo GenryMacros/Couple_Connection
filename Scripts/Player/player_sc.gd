@@ -16,7 +16,7 @@ var players = []
 @onready var camera_point = $camera_point
 @onready var couple_character = $visuals/couple_character/AnimationPlayer
 @onready var visuals = $visuals
-@onready var player_interaction_area_position = $PlayerInteractionAreaPosition
+@onready var player_interaction_area_position :Marker3D = $PlayerInteractionAreaPosition
 
 	
 func _ready():
@@ -27,7 +27,6 @@ func _ready():
 	var collisionDetectionArea = get_node("visuals/CollisionDetectionArea")
 	collisionDetectionArea.body_entered_signal.connect(_on_collision_detection_entered)
 	collisionDetectionArea.body_exited_signal.connect(_on_collision_detection_exited)
-	
 	timer = Timer.new()
 	timer.set_one_shot(true)
 	timer.set_wait_time(camera_switch_delay)
@@ -81,7 +80,6 @@ func _physics_process(delta):
 		#if !is_collision(new_position, item_placeholder.global_transform.origin):
 		visuals.look_at(direction + position)
 		player_interaction_area_position.look_at(direction + position)
-		
 		if can_walk || !has_item:
 			velocity.x = direction.x * SPEED
 			velocity.z = direction.z * SPEED

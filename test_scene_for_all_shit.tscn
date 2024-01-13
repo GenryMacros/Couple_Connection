@@ -33,8 +33,8 @@
 [ext_resource type="PackedScene" uid="uid://dq2k0fmbx0drm" path="res://Environment/Imported/Room/lubber.glb" id="28_cbv6t"]
 [ext_resource type="PackedScene" uid="uid://isuyxsvmy2o2" path="res://Environment/Room/note.tscn" id="29_n0cod"]
 [ext_resource type="PackedScene" uid="uid://bci0ardhy0y4e" path="res://NotesAndInteractions/World/interaction_area.tscn" id="34_rvty2"]
-[ext_resource type="PackedScene" uid="uid://b4r0b40u5vi7v" path="res://Environment/Room/box.tscn" id="35_e8n8q"]
-[ext_resource type="PackedScene" uid="uid://cg6arcb32wj87" path="res://Environment/Room/laser.tscn" id="36_udvgw"]
+[ext_resource type="PackedScene" path="res://Environment/Room/box.tscn" id="35_e8n8q"]
+[ext_resource type="PackedScene" path="res://Environment/Room/laser.tscn" id="36_udvgw"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_gqlar"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)

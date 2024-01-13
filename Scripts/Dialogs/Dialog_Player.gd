@@ -63,8 +63,9 @@ func process_replica():
 			curr_message = tr(curr_replica["text"]);
 		replica_text_label.text = "";
 		character_name_label.text = tr(curr_replica["visibleName"]);
-		replica_audio_player.stream = load(curr_replica["audioPath"]);
-		replica_audio_player.play();
+		if FileAccess.file_exists(curr_replica["audioPath"]):
+			replica_audio_player.stream = load(curr_replica["audioPath"]);
+			replica_audio_player.play();
 		type_char_timer.set_wait_time(type_character_speed);
 		type_char_timer.start();
 	else:
@@ -179,7 +180,6 @@ func on_display_dialog(dialog_caller):
 			dialog_script = dialogs[dialog_key]["script"];
 			curr_replica = dialog_script["start"];
 			type_char_timer.set_wait_time(type_character_speed);
-			TranslationServer.set_locale("ua");
 			next_replica();
 
 

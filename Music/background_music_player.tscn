@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bml55achmb768"]
+
+[ext_resource type="Script" path="res://Scripts/Music/background_music_player.gd" id="2_d4bau"]
+
+[node name="BackgroundMusicPlayer" type="AudioStreamPlayer"]
+autoplay = true
+bus = &"Music"
+script = ExtResource("2_d4bau")
