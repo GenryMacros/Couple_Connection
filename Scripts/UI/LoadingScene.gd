@@ -8,7 +8,7 @@ var scene_load_status;
 
 # Called when the node enters the scene tree for the first time.
 func _ready( ):
-	sceneName = "res://main.tscn";
+	sceneName = GameManager.nextScene;
 	ResourceLoader.load_threaded_request(sceneName);
 
 
@@ -19,5 +19,6 @@ func _process(delta):
 	if scene_load_status == ResourceLoader.THREAD_LOAD_LOADED:
 		var newScene = ResourceLoader.load_threaded_get(sceneName);
 		get_tree().change_scene_to_packed(newScene);
+		GameManager.set_new_scene()
 
 
