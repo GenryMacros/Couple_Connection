@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://cwgg2x8lo2gop"]
+
+[ext_resource type="PackedScene" uid="uid://crbe0xnpt7wrn" path="res://Environment/mirror/glass_2.tscn" id="1_dw0f2"]
+[ext_resource type="PackedScene" uid="uid://c1igu33r8485t" path="res://Environment/Imported/Mirror/legs.glb" id="2_s4r1r"]
+
+[node name="reflecting_mirror" type="Node3D"]
+
+[node name="legs" parent="." instance=ExtResource("2_s4r1r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0460584, -2.33477, 0)
+
+[node name="glass2" parent="." instance=ExtResource("1_dw0f2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0163727, 0, 0)

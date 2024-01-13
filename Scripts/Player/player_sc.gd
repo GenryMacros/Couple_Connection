@@ -106,9 +106,6 @@ func _physics_process(delta):
 				velocity.x = direction.x * SPEED
 				velocity.z = direction.z * SPEED
 			else:
-				print(input_dir)
-				print(can_walk)
-				print(velocity)
 				velocity = Vector3(0,0,0)
 		else:
 			velocity.x = move_toward(velocity.x, 0, SPEED)

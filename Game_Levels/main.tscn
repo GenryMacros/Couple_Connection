@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=3 uid="uid://bchuqv0bdf50e"]
+[gd_scene load_steps=45 format=3 uid="uid://bchuqv0bdf50e"]
 
 [ext_resource type="PackedScene" uid="uid://btv3xq8q2os8c" path="res://Characters/Player.tscn" id="1_eb004"]
 [ext_resource type="PackedScene" uid="uid://hvgt15fjxbed" path="res://NotesAndInteractions/Dialogues/dialog_player.tscn" id="1_swquk"]
@@ -70,6 +70,11 @@ size = Vector3(2.33416, 1.72171, 2.26115)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_lh8i0"]
 size = Vector3(0.71582, 1.37458, 0.755371)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_s5i27"]
+size = Vector3(47.222, 10.4707, 23.4377)
+
+[sub_resource type="BoxMesh" id="BoxMesh_h5k5u"]
 
 [node name="Main" type="Node3D"]
 
@@ -305,6 +310,20 @@ transform = Transform3D(1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, 1, -0.76963
 [node name="ExclamationMark" parent="Note/InteractionArea/LabelPos" index="0"]
 visible = true
 
+[node name="InteractionArea" parent="." instance=ExtResource("27_50l4p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.9394, 2.74791, 0)
+
+[node name="CollisionShape3D" parent="InteractionArea" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.7032, -7.58823, 1.31604)
+shape = SubResource("BoxShape3D_s5i27")
+
+[node name="IDialogCaller" parent="InteractionArea" index="1"]
+dialog_key = "paper"
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="InteractionArea"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.64895, 2.78449, 4.54842)
+mesh = SubResource("BoxMesh_h5k5u")
+
 [connection signal="change_dialog_key" from="Dialog_Player" to="Environment/Poster/InteractionArea/IDialogCaller" method="_on_dialog_player_change_dialog_key"]
 [connection signal="change_dialog_key" from="Dialog_Player" to="Environment/Toilet_batch/StaticBody3D/CollisionShape3D/InteractionArea/IDialogCaller" method="_on_dialog_player_change_dialog_key"]
 [connection signal="dialog_finished" from="Environment/Poster/InteractionArea/IDialogCaller" to="Dialog_Player" method="_on_i_dialog_caller_dialog_finished"]
@@ -316,3 +335,4 @@ visible = true
 [editable path="Environment/tv2/InteractionArea"]
 [editable path="Environment/Toilet_batch/StaticBody3D/CollisionShape3D/InteractionArea"]
 [editable path="Note/InteractionArea"]
+[editable path="InteractionArea"]
