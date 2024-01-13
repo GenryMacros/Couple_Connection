@@ -28,6 +28,7 @@ config/icon="res://icon.png"
 NotesAndInteractionService="*res://Scripts/NotesAndInteractions/NotesAndInteractionService.gd"
 GameManager="*res://game_manager.gd"
 SettingService="*res://Scripts/UI/setting_service.gd"
+BackgroundMusicPlayer="*res://Music/background_music_player.tscn"
 
 [display]
 

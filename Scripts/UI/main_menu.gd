@@ -12,7 +12,9 @@ func _ready():
 	settings_button.focus_exited.connect(_on_focus_exited.bind(settings_button));
 	exit_button.focus_exited.connect(_on_focus_exited.bind(exit_button));
 	play_button.grab_focus();
-
+	if not BackgroundMusicPlayer.playing:
+		BackgroundMusicPlayer.stream = load("res://Music/tracks/YOASOBI_祝福_Official_Music_Video_機動戦士ガンダム_水星の魔女_オープニングテーマ.ogg");
+		BackgroundMusicPlayer.play();
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
