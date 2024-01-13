@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://c5gw7ipeqlpup"]
+
+[ext_resource type="PackedScene" uid="uid://dsnai72ms74x" path="res://Environment/Imported/School/photo_frame.glb" id="1_60dc0"]
+[ext_resource type="Shader" path="res://Scripts/Shaders/highlighter.gdshader" id="2_0bmqq"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_k7yjd"]
+render_priority = 0
+shader = ExtResource("2_0bmqq")
+shader_parameter/shine_color = Color(1, 1, 0, 1)
+shader_parameter/cycle_interval = 2.0
+shader_parameter/shine_speed = 2.0
+shader_parameter/shine_width = 10.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a1pc4"]
+next_pass = SubResource("ShaderMaterial_k7yjd")
+albedo_color = Color(0, 0, 0, 1)
+
+[node name="photo_frame2" instance=ExtResource("1_60dc0")]
+
+[node name="photo_frame" parent="." index="0"]
+material_override = SubResource("StandardMaterial3D_a1pc4")

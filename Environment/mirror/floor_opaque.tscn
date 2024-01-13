@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dr1jkqtrvc3ni"]
+
+[ext_resource type="PackedScene" uid="uid://2hvfb4ajs0kq" path="res://Environment/Imported/Mirror/floor.glb" id="1_4sx67"]
+
+[node name="floor" instance=ExtResource("1_4sx67")]
+
+[node name="floor_self" parent="." index="0"]
+layers = 2

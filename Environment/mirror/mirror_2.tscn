@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://pd4r2d7qrx25"]
+
+[ext_resource type="PackedScene" uid="uid://d3vu3dr5v3s6c" path="res://Environment/Imported/Mirror/mirror.glb" id="1_butmc"]
+
+[node name="mirror2" instance=ExtResource("1_butmc")]

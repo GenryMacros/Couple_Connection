@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bjn7vf560u8ac"]
+
+[ext_resource type="PackedScene" uid="uid://cn8dtih4pw5sj" path="res://Environment/Imported/Wall/brick.tscn" id="1_dptrf"]
+
+[node name="MeshLibrary" type="Node3D"]
+
+[node name="brick" parent="." instance=ExtResource("1_dptrf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -1)

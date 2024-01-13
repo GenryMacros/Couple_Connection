@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dnhbnwhyb0kvu"
-path.s3tc="res://.godot/imported/brick_wall_color.png-64cdf4a98b4bdeec4a0caad31881116f.s3tc.ctex"
+uid="uid://dj1qfm0si6v1p"
+path.s3tc="res://.godot/imported/school_board_Untitled.png-c83ac4955efd537de35920c5e8e4d362.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Environment/Imported/Wall/brick_wall_color.png"
-dest_files=["res://.godot/imported/brick_wall_color.png-64cdf4a98b4bdeec4a0caad31881116f.s3tc.ctex"]
+source_file="res://Environment/Imported/School/school_board_Untitled.png"
+dest_files=["res://.godot/imported/school_board_Untitled.png-c83ac4955efd537de35920c5e8e4d362.s3tc.ctex"]
 
 [params]
 
