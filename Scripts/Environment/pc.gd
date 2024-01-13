@@ -12,7 +12,6 @@ var is_usable = true
 func _ready():
 	area_3d.body_entered.connect(body_entered)
 	area_3d.body_exited.connect(body_exited)
-	print(self.name)
 	pc_display.correct_pass_entered.connect(pass_entered)
 	
 
