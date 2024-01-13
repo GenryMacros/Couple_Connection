@@ -1,1 +1,9 @@
-{"Dialogs":20,"Master":20,"Music":20,"SoundEfects":20,"language":0,"window_mode":1,"window_size":0}
+{
+	"Dialogs": 20,
+	"Master": 20,
+	"Music": 20,
+	"SoundEfects": 20,
+	"language": 0,
+	"window_mode": 1,
+	"window_size": 0
+}
