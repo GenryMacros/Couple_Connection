@@ -1,0 +1,2374 @@
+{
+    "startLevelShiza":
+	{
+		"script":
+		{
+			"start":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "SHIZA_RPL_1",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl1"
+			},
+			"rpl1":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "SHIZA_RPL_2",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl2"
+			},
+            "rpl2":
+			{
+				"actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "PLAYER_RPL_1",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl3"
+			},
+            "rpl3":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "SHIZA_RPL_3",
+				"audioPath": "",
+				"optionReplicas":["rpl4","rpl5"],
+				"nextReplica": "choice"
+			},
+            "rpl4":
+			{
+				"actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "SHIZA_RPL_3_PLAYER_RPL_OPTION_1",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl6"
+			},
+            "rpl5":
+			{
+				"actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "SHIZA_RPL_3_PLAYER_RPL_OPTION_2",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl6"
+			},
+            "rpl6":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "SHIZA_RPL_4",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl7"
+			},
+            "rpl7":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "SHIZA_RPL_5",
+				"audioPath": "",
+				"optionReplicas":["rpl8","rpl9","rpl10"],
+				"nextReplica": "choice"
+			},
+            "rpl8":
+			{
+				"actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "SHIZA_RPL_5_PLAYER_RPL_OPTION_1",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl11"
+			},
+            "rpl9":
+			{
+				"actorName":"INNER_VOICE",
+				"visibleName":"SHINNER_VOICEIZA",
+				"text": "SHIZA_RPL_5_PLAYER_RPL_OPTION_2",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl11"
+			},
+            "rpl10":
+			{
+				"actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "SHIZA_RPL_5_PLAYER_RPL_OPTION_3",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl11"
+			},
+            "rpl11":
+            {
+                "actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "SHIZA_RPL_6",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "end"
+            },
+			"end":
+			{
+				"actorName":"",
+				"visibleName":"",
+				"text": "",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "stop"
+			}
+		}
+	},
+    "schoolShiza":
+    {
+        "script":
+		{
+            "start":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "SCHOOL_SHIZA_RPL_1",
+				"audioPath": "",
+				"optionReplicas":["rpl1"],
+				"nextReplica": "choice"
+			},
+            "rpl1":
+            {
+                "actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "SCHOOL_SHIZA_RPL_1_PLAYER_RPL_OPTION_1",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl2"
+            },
+            "rpl2":
+            {
+                "actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "SCHOOL_PLAYER_RPL_1",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl3"
+            },
+            "rpl3":
+            {
+                "actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "SCHOOL_PLAYER_RPL_2",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl4"
+            },
+            "rpl4":
+            {
+                "actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "SCHOOL_PLAYER_RPL_3",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl5"
+            },
+            "rpl5":
+            {
+                "actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "SCHOOL_PLAYER_RPL_4",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl6"
+            },
+            "rpl6":
+            {
+                "actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "SCHOOL_SHIZA_RPL_2",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl7"
+            },
+            "rpl7":
+            {
+                "actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "SCHOOL_SHIZA_RPL_3",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl8"
+            },
+            "rpl8":
+            {
+                "actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "SCHOOL_SHIZA_RPL_4",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl9"
+            },
+            "rpl9":
+            {
+                "actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "SCHOOL_SHIZA_RPL_5",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl10"
+            },
+            "rpl10":
+            {
+                "actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "SCHOOL_PLAYER_RPL_5",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl11"
+            },
+            "rpl11":
+            {
+                "actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "SCHOOL_PLAYER_RPL_6",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl12"
+            },
+            "rpl12":
+            {
+                "actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "SCHOOL_PLAYER_RPL_7",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl13"
+            },
+            "rpl13":
+            {
+                "actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "SCHOOL_PLAYER_RPL_8",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl14"
+            },
+            "rpl14":
+            {
+                "actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "SCHOOL_SHIZA_RPL_6",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl15"
+            },
+            "rpl15":
+            {
+                "actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "SCHOOL_SHIZA_RPL_7",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl16"
+            },
+            "rpl16":
+            {
+                "actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "SCHOOL_SHIZA_RPL_8",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl17"
+            },
+            "rpl17":
+            {
+                "actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "SCHOOL_SHIZA_RPL_9",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "end"
+            },
+            "end":
+			{
+				"actorName":"",
+				"visibleName":"",
+				"text": "",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "stop"
+			}
+        }
+    },
+    "forrestShiza":
+    {
+        "script":
+		{
+            "start":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FORREST_SHIZA_RPL_1",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl1"
+			},
+            "rpl1":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FORREST_SHIZA_RPL_1",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl2"
+			},
+            "rpl2":
+			{
+				"actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "FORREST_PLAYER_RPL_1",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl3"
+			},
+            "rpl3":
+			{
+				"actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "FORREST_PLAYER_RPL_2",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl4"
+			},
+            "rpl4":
+			{
+				"actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "FORREST_PLAYER_RPL_3",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl5"
+			},
+            "rpl5":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FORREST_SHIZA_RPL_2",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl6"
+			},
+            "rpl6":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FORREST_SHIZA_RPL_3",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl7"
+			},
+            "rpl7":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FORREST_SHIZA_RPL_3",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl8"
+			},
+            "rpl8":
+			{
+				"actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "FORREST_PLAYER_RPL_4",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl9"
+			},
+            "rpl9":
+			{
+				"actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "FORREST_PLAYER_RPL_5",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl10"
+			},
+            "rpl10":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FORREST_SHIZA_RPL_4",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl11"
+			},
+            "rpl11":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FORREST_SHIZA_RPL_5",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl12"
+			},
+            "rpl12":
+			{
+				"actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "FORREST_PLAYER_RPL_6",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl13"
+			},
+            "rpl13":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FORREST_SHIZA_RPL_6",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl14"
+			},
+            "rpl14":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FORREST_SHIZA_RPL_7",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl15"
+			},
+            "rpl15":
+			{
+				"actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "FORREST_PLAYER_RPL_7",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl16"
+			},
+            "rpl16":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FORREST_SHIZA_RPL_8",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl17"
+			},
+            "rpl17":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FORREST_SHIZA_RPL_9",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl18"
+			},
+            "rpl18":
+			{
+				"actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "FORREST_PLAYER_RPL_8",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl19"
+			},
+            "rpl19":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FORREST_SHIZA_RPL_10",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl20"
+			},
+            "rpl20":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FORREST_SHIZA_RPL_11",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl21"
+			},
+            "rpl21":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FORREST_SHIZA_RPL_12",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl22"
+			},
+            "rpl22":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FORREST_SHIZA_RPL_13",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl23"
+			},
+            "rpl23":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FORREST_SHIZA_RPL_14",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl24"
+			},
+            "rpl24":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FORREST_SHIZA_RPL_15",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl25"
+			},
+            "rpl25":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FORREST_SHIZA_RPL_16",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl26"
+			},
+            "rpl26":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FORREST_SHIZA_RPL_17",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl27"
+			},
+            "rpl27":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FORREST_SHIZA_RPL_18",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl28"
+			},
+            "rpl28":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FORREST_SHIZA_RPL_18",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl29"
+			},
+            "rpl29":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FORREST_SHIZA_RPL_19",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl30"
+			},
+            "rpl30":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FORREST_SHIZA_RPL_20",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl31"
+			},
+            "rpl31":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FORREST_SHIZA_RPL_21",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl32"
+			},
+            "rpl32":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FORREST_SHIZA_RPL_22",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl33"
+			},
+            "rpl33":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FORREST_SHIZA_RPL_23",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "end"
+			},
+            "end":
+			{
+				"actorName":"",
+				"visibleName":"",
+				"text": "",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "stop"
+			}
+        }
+    },
+    "mirrorShiza":
+    {
+        "script":
+		{
+            "start":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "MIRROR_SHIZA_RPL_1",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl1"
+			},
+            "rpl1":
+            {
+                "actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "MIRROR_SHIZA_RPL_2",
+				"audioPath": "",
+				"optionReplicas":["rpl2"],
+				"nextReplica": "choice"
+            },
+            "rpl2":
+            {
+                "actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "MIRROR_SHIZA_RPL_2_PLAYER_OPTION_1",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl3"
+            },
+            "rpl3":
+            {
+                "actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "MIRROR_SHIZA_RPL_3",
+				"audioPath": "",
+				"optionReplicas":["rpl4"],
+				"nextReplica": "choice"
+            },
+            "rpl4":
+            {
+                "actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "MIRROR_SHIZA_RPL_3_PLAYER_OPTION_1",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl5"
+            },
+            "rpl5":
+            {
+                "actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "MIRROR_SHIZA_RPL_4",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl6"
+            },
+            "rpl6":
+            {
+                "actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "MIRROR_SHIZA_RPL_5",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl7"
+            },
+            "rpl7":
+            {
+                "actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "MIRROR_SHIZA_RPL_6",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl8"
+            },
+            "rpl8":
+            {
+                "actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "MIRROR_SHIZA_RPL_6",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl9"
+            },
+            "rpl9":
+            {
+                "actorName":"BROKEN_HEARTH",
+				"visibleName":"BROKEN_HEARTH",
+				"text": "MIRROR_BROKEN_HEARTH_RPL_1",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl10"
+            },
+            "rpl10":
+            {
+                "actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "MIRROR_SHIZA_RPL_7",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl11"
+            },
+            "rpl11":
+            {
+                "actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "MIRROR_SHIZA_RPL_8",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl12"
+            },
+            "rpl12":
+            {
+                "actorName":"BROKEN_HEARTH",
+				"visibleName":"BROKEN_HEARTH",
+				"text": "MIRROR_BROKEN_HEARTH_RPL_2",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl13"
+            },
+            "rpl13":
+            {
+                "actorName":"BROKEN_HEARTH",
+				"visibleName":"BROKEN_HEARTH",
+				"text": "MIRROR_BROKEN_HEARTH_RPL_2",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl14"
+            },
+            "rpl14":
+            {
+                "actorName":"BROKEN_HEARTH",
+				"visibleName":"BROKEN_HEARTH",
+				"text": "MIRROR_BROKEN_HEARTH_RPL_3",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl15"
+            },
+            "rpl15":
+            {
+                "actorName":"BROKEN_HEARTH",
+				"visibleName":"BROKEN_HEARTH",
+				"text": "MIRROR_BROKEN_HEARTH_RPL_4",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl16"
+            },
+            "rpl16":
+            {
+                "actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "MIRROR_SHIZA_RPL_9",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl17"
+            },
+            "rpl17":
+            {
+                "actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "MIRROR_SHIZA_RPL_10",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl18"
+            },
+            "rpl18":
+            {
+                "actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "MIRROR_SHIZA_RPL_10",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl19"
+            },
+            "rpl19":
+            {
+                "actorName":"BROKEN_HEARTH",
+				"visibleName":"BROKEN_HEARTH",
+				"text": "MIRROR_BROKEN_HEARTH_RPL_5",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl20"
+            },
+            "rpl20":
+            {
+                "actorName":"BROKEN_HEARTH",
+				"visibleName":"BROKEN_HEARTH",
+				"text": "MIRROR_BROKEN_HEARTH_RPL_6",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl21"
+            },
+            "rpl21":
+            {
+                "actorName":"BROKEN_HEARTH",
+				"visibleName":"BROKEN_HEARTH",
+				"text": "MIRROR_BROKEN_HEARTH_RPL_7",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl22"
+            },
+            "rpl22":
+            {
+                "actorName":"BROKEN_HEARTH",
+				"visibleName":"BROKEN_HEARTH",
+				"text": "MIRROR_BROKEN_HEARTH_RPL_8",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl23"
+            },
+            "rpl23":
+            {
+                "actorName":"BROKEN_HEARTH",
+				"visibleName":"BROKEN_HEARTH",
+				"text": "MIRROR_BROKEN_HEARTH_RPL_9",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl24"
+            },
+            "rpl24":
+            {
+                "actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "MIRROR_SHIZA_RPL_11",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl25"
+            },
+            "rpl25":
+            {
+                "actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "MIRROR_SHIZA_RPL_12",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl26"
+            },
+            "rpl26":
+            {
+                "actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "MIRROR_SHIZA_RPL_13",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl27"
+            },
+            "rpl27":
+            {
+                "actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "MIRROR_PLAYER_RPL_1",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl28"
+            },
+            "rpl28":
+            {
+                "actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "MIRROR_PLAYER_RPL_2",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "end"
+            },
+            "end":
+			{
+				"actorName":"",
+				"visibleName":"",
+				"text": "",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "stop"
+			}
+        }
+    },
+    "finalShiza":
+    {
+        "script":
+		{
+            "start":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FINAL_SHIZA_RPL_1",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl1"
+			},
+            "rpl1":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FINAL_SHIZA_RPL_2",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl2"
+			},
+            "rpl2":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FINAL_SHIZA_RPL_3",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl3"
+			},
+            "rpl3":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FINAL_SHIZA_RPL_4",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl4"
+			},
+            "rpl4":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FINAL_SHIZA_RPL_5",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl5"
+			},
+            "rpl5":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FINAL_SHIZA_RPL_6",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl6"
+			},
+            "rpl6":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FINAL_SHIZA_RPL_7",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl7"
+			},
+            "rpl7":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FINAL_SHIZA_RPL_8",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl8"
+			},
+            "rpl8":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FINAL_SHIZA_RPL_9",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl9"
+			},
+            "rpl9":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FINAL_SHIZA_RPL_9",
+				"audioPath": "",
+				"optionReplicas":["rpl10","rpl11"],
+				"nextReplica": "choice"
+			},
+            "rpl10":
+			{
+				"actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "FINAL_SHIZA_RPL_9_PLAYER_OPTION_1",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl14"
+			},
+            "rpl11":
+			{
+				"actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "FINAL_SHIZA_RPL_9_PLAYER_OPTION_2",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl12"
+			},
+            "rpl12":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FINAL_SHIZA_RPL_10_OPTION_2",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "badEndingReturnToRoom"
+			},
+            "badEndingReturnToRoom":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FINAL_SHIZA_RPL_11_OPTION_2",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "end"
+			},
+            "rpl14":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FINAL_SHIZA_RPL_10_OPTION_1",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl15"
+			},
+            "rpl15":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FINAL_SHIZA_RPL_11_OPTION_1",
+				"audioPath": "",
+				"optionReplicas":["rpl16","rpl17"],
+				"nextReplica": "choice"
+			},
+            "rpl16":
+			{
+				"actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "FINAL_SHIZA_RPL_11_OPTION_1_PLAYER_OPTION_1",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl18"
+			},
+            "rpl17":
+			{
+				"actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "FINAL_SHIZA_RPL_11_OPTION_1_PLAYER_OPTION_2",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl22"
+			},
+            "rpl18":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FINAL_SHIZA_RPL_12_OPTION_1_1",
+				"audioPath": "",
+				"optionReplicas":["rpl19"],
+				"nextReplica": "choice"
+			},
+            "rpl19":
+			{
+				"actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "FINAL_PLAYER_RPL_1_OPTION_1_1",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl20"
+			},
+            "rpl20":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FINAL_SHIZA_RPL_13_OPTION_1_1",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "middleEndingReturnToRealWorld"
+			},
+            "middleEndingReturnToRealWorld":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FINAL_SHIZA_RPL_14_OPTION_1_1",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "end"
+			},
+            "rpl22":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FINAL_SHIZA_RPL_13_OPTION_1_2",
+				"audioPath": "",
+				"optionReplicas":["rpl23"],
+				"nextReplica": "choice"
+			},
+            "rpl23":
+			{
+				"actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "FINAL_PLAYER_RPL_1_OPTION_1_2",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl24"
+			},
+            "rpl24":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FINAL_SHIZA_RPL_14_OPTION_1_2",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl25"
+			},
+            "rpl25":
+			{
+				"actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "FINAL_PLAYER_RPL_2_OPTION_1_2",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl26"
+			},
+            "rpl26":
+			{
+				"actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "FINAL_PLAYER_RPL_3_OPTION_1_2",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl27"
+			},
+            "rpl27":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FINAL_SHIZA_RPL_15_OPTION_1_2",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl28"
+			},
+            "rpl28":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FINAL_SHIZA_RPL_16_OPTION_1_2",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl29"
+			},
+            "rpl29":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FINAL_SHIZA_RPL_17_OPTION_1_2",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl30"
+			},
+            "rpl30":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FINAL_SHIZA_RPL_18_OPTION_1_2",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "goodEnding"
+			},
+            "goodEnding":
+			{
+				"actorName":"SHIZA",
+				"visibleName":"SHIZA",
+				"text": "FINAL_SHIZA_RPL_19_OPTION_1_2",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "end"
+			},
+            "end":
+			{
+				"actorName":"",
+				"visibleName":"",
+				"text": "",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "stop"
+			}
+        }
+    },
+    "maskApathy":
+    {
+        "script":
+		{
+            "start":
+			{
+				"actorName":"MASK_APATHY",
+				"visibleName":"MASK_APATHY",
+				"text": "MIRROR_MASK_APATHY_RPL_1",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "end"
+			},
+            "end":
+			{
+				"actorName":"",
+				"visibleName":"",
+				"text": "",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "stop"
+			}
+        }
+    },
+    "maskHappy":
+    {
+        "script":
+		{
+            "start":
+			{
+				"actorName":"MASK_HAPPY",
+				"visibleName":"MASK_HAPPY",
+				"text": "MIRROR_MASK_HAPPPY_RPL_1",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "end"
+			},
+            "end":
+			{
+				"actorName":"",
+				"visibleName":"",
+				"text": "",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "stop"
+			}
+        }
+    },
+    "maskSad":
+    {
+        "script":
+		{
+            "start":
+			{
+				"actorName":"MASK_SAD",
+				"visibleName":"MASK_SAD",
+				"text": "MIRROR_MASK_SAD_RPL_1",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "end"
+			},
+            "end":
+			{
+				"actorName":"",
+				"visibleName":"",
+				"text": "",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "stop"
+			}
+        }
+    },
+    "maskPink":
+    {
+        "script":
+		{
+            "start":
+			{
+				"actorName":"MASK_PINK",
+				"visibleName":"MASK_PINK",
+				"text": "MIRROR_MASK_PINK_RPL_1",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "end"
+			},
+            "end":
+			{
+				"actorName":"",
+				"visibleName":"",
+				"text": "",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "stop"
+			}
+        }
+    },
+    "strangeMirror":
+    {
+        "script":
+		{
+            "start":
+			{
+				"actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_1",
+				"audioPath": "",
+				"optionReplicas":["sad4","apathy4","happy4","pink4"],
+				"nextReplica": "choice"
+			},
+            "sad4":
+			{
+				"actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_1_OPTION_1",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "left3choseSad"
+			},
+            "apathy4":
+			{
+				"actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_1_OPTION_2",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "left3choseApathy"
+			},
+            "pink4":
+			{
+				"actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_1_OPTION_4",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "left3chosePink"
+			},
+            "happy4":
+			{
+				"actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_1_OPTION_3",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "left3choseHappy"
+			},
+            "left3choseSad":
+			{
+				"actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_2",
+				"audioPath": "",
+				"optionReplicas":["Sad_apathy3","Sad_happy3","Sad_pink3"],
+				"nextReplica": "choice"
+			},
+            "Sad_apathy3":
+			{
+				"actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_1_OPTION_2",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "left2choseSadApathy"
+			},
+            "Sad_happy3":
+			{
+				"actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_1_OPTION_3",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "left2choseSadHappy"
+			},
+            "Sad_pink3":
+			{
+				"actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_1_OPTION_4",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "left2choseSadPink"
+			},
+            "left3choseApathy":
+			{
+				"actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_2",
+				"audioPath": "",
+				"optionReplicas":["Apathy_sad3","Apathy_happy3","Apathy_pink3"],
+				"nextReplica": "choice"
+			},
+            "Apathy_sad3":
+			{
+				"actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_1_OPTION_1",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "left2choseApathySad"
+			},
+            "Apathy_happy3":
+			{
+				"actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_1_OPTION_3",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "left2choseApathyHappy"
+			},
+            "Apathy_pink3":
+			{
+				"actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_1_OPTION_4",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "left2choseApathyPink"
+			},
+            "left3choseHappy":
+			{
+				"actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_2",
+				"audioPath": "",
+				"optionReplicas":["Happy_sad3","Happy_apathy3","Happy_pink3"],
+				"nextReplica": "choice"
+			},
+            "Happy_sad3":
+			{
+				"actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_1_OPTION_1",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "left2choseHappySad"
+			},
+            "Happy_apathy3":
+			{
+				"actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_1_OPTION_2",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "left2choseHappyApathy"
+			},
+            "Happy_pink3":
+			{
+				"actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_1_OPTION_4",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "left2choseHappyPink"
+			},
+            "left3chosePink":
+			{
+				"actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_2",
+				"audioPath": "",
+				"optionReplicas":["Pink_sad3","Pink_apathy3","Pink_happy3"],
+				"nextReplica": "choice"
+			},
+            "Pink_sad3":
+			{
+				"actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_1_OPTION_1",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "left2chosePinkSad"
+			},
+            "Pink_apathy3":
+			{
+				"actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_1_OPTION_2",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "left2chosePinkApathy"
+			},
+            "Pink_happy3":
+			{
+				"actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_1_OPTION_3",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "left2chosePinkHappy"
+			},
+            "left2choseSadApathy":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_3",
+				"audioPath": "",
+				"optionReplicas":["SadApathy_happy2","SadApathy_pink2"],
+				"nextReplica": "choice"
+            },
+            "SadApathy_happy2":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_1_OPTION_3",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "fail"
+            },
+            "SadApathy_pink2":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_1_OPTION_4",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "fail"
+            },
+            "left2choseSadHappy":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_3",
+				"audioPath": "",
+				"optionReplicas":["SadHappy_apathy2","SadHappy_pink2"],
+				"nextReplica": "choice"
+            },
+            "SadHappy_apathy2":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_1_OPTION_2",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "fail"
+            },
+            "SadHappy_pink2":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_1_OPTION_4",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "fail"
+            },
+            "left2choseSadPink":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_3",
+				"audioPath": "",
+				"optionReplicas":["SadPink_apathy2","SadPink_happy2"],
+				"nextReplica": "choice"
+            },
+            "SadPink_apathy2":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_1_OPTION_2",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "fail"
+            },
+            "SadPink_happy2":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_1_OPTION_3",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "fail"
+            },
+            "left2choseApathyHappy":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_3",
+				"audioPath": "",
+				"optionReplicas":["ApathyHappy_sad2","ApathyHappy_pink2"],
+				"nextReplica": "choice"
+            },
+            "ApathyHappy_sad2":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_1_OPTION_1",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "fail"
+            },
+            "ApathyHappy_pink2":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_1_OPTION_4",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "fail"
+            },
+            "left2choseApathyPink":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_3",
+				"audioPath": "",
+				"optionReplicas":["ApathyPink_sad2","ApathyPink_happy2"],
+				"nextReplica": "choice"
+            },
+            "ApathyPink_sad2":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_1_OPTION_1",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "fail"
+            },
+            "ApathyPink_happy2":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_1_OPTION_3",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "fail"
+            },
+            "left2choseApathySad":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_3",
+				"audioPath": "",
+				"optionReplicas":["ApathySad_pink2","ApathySad_happy2"],
+				"nextReplica": "choice"
+            },
+            "ApathySad_pink2":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_1_OPTION_4",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "fail"
+            },
+            "ApathySad_happy2":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_1_OPTION_3",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "fail"
+            },
+            "left2choseHappyPink":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_3",
+				"audioPath": "",
+				"optionReplicas":["HappyPink_sad2","HappyPink_apathy2"],
+				"nextReplica": "choice"
+            },
+            "HappyPink_sad2":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_1_OPTION_1",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "fail"
+            },
+            "HappyPink_apathy2":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_1_OPTION_2",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "fail"
+            },
+            "left2choseHappySad":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_3",
+				"audioPath": "",
+				"optionReplicas":["HappySad_pinkd2","HappySad_apathy2"],
+				"nextReplica": "choice"
+            },
+            "HappySad_pinkd2":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_1_OPTION_4",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "success"
+            },
+            "success":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_4_SUCCESS",
+				"audioPath": "",
+				"optionReplicas":["success_1","success_2"],
+				"nextReplica": "choice"
+            },
+            "HappySad_apathy2":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_1_OPTION_2",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "fail"
+            },
+            "left2choseHappyApathy":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_3",
+				"audioPath": "",
+				"optionReplicas":["HappyApathy_pink2","HappyApathy_sad2"],
+				"nextReplica": "choice"
+            },
+            "HappyApathy_pink2":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_1_OPTION_4",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "fail"
+            },
+            "HappyApathy_sad2":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_1_OPTION_1",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "fail"
+            },
+            "left2chosePinkHappy":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_3",
+				"audioPath": "",
+				"optionReplicas":["PinkHappy_apathy2","PinkHappy_sad2"],
+				"nextReplica": "choice"
+            },
+            "PinkHappy_apathy2":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_1_OPTION_2",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "fail"
+            },
+            "PinkHappy_sad2":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_1_OPTION_1",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "fail"
+            },
+            "left2chosePinkSad":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_3",
+				"audioPath": "",
+				"optionReplicas":["PinkSad_apathy2","PinkSad_happy2"],
+				"nextReplica": "choice"
+            },
+            "PinkSad_apathy2":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_1_OPTION_2",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "fail"
+            },
+            "PinkSad_happy2":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_1_OPTION_3",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "fail"
+            },
+            "left2chosePinkApathy":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_3",
+				"audioPath": "",
+				"optionReplicas":["PinkApathy_sad2","PinkApathy_happy2"],
+				"nextReplica": "choice"
+            },
+            "PinkApathy_sad2":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_1_OPTION_1",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "fail"
+            },
+            "PinkApathy_happy2":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_1_OPTION_3",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "fail"
+            },
+            "success_1":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_4_SUCCESS_OPTION_1",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl1"
+            },
+            "success_2":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_4_SUCCESS_OPTION_2",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "end"
+            },
+            "rpl1":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_5",
+				"audioPath": "",
+				"optionReplicas":"",
+				"nextReplica": "rpl2"
+            },
+            "rpl2":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_5",
+				"audioPath": "",
+				"optionReplicas":"",
+				"nextReplica": "rpl3"
+            },
+            "rpl3":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_6",
+				"audioPath": "",
+				"optionReplicas":"",
+				"nextReplica": "rpl4"
+            },
+            "rpl4":
+            {
+                "actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "MIRROR_PLAYER_RPL_7",
+				"audioPath": "",
+				"optionReplicas":"",
+				"nextReplica": "rpl5"
+            },
+            "rpl5":
+            {
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_PLAYER_RPL_7",
+				"audioPath": "",
+				"optionReplicas":"",
+				"nextReplica": "end"
+            },
+            "fail":{
+                "actorName":"STRANGE_MIRROR",
+				"visibleName":"STRANGE_MIRROR",
+				"text": "MIRROR_MIRROR_RPL_4_FAIL",
+				"audioPath": "",
+				"optionReplicas":"",
+				"nextReplica": "end"
+            },
+            "end":
+			{
+				"actorName":"",
+				"visibleName":"",
+				"text": "",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "stop"
+			}
+        }
+    },
+    "forrestNote":
+    {
+        "script":
+		{
+            "start":
+			{
+				"actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "FORREST_NOTE",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "end"
+			},
+            "end":
+			{
+				"actorName":"",
+				"visibleName":"",
+				"text": "",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "stop"
+			}
+        }
+    },
+    "schoolDesk":
+    {
+        "script":
+		{
+            "start":
+			{
+				"actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "SCHOOL_DESK_PLAYER_RPL_1",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl1"
+			},
+            "rpl":
+            {
+                "actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "SCHOOL_DESK_PLAYER_RPL_2",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl2"
+            },
+            "rpl2":
+            {
+                "actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "SCHOOL_DESK_PLAYER_RPL_3",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl3"
+            },
+            "rpl3":
+            {
+                "actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "SCHOOL_DESK_PLAYER_RPL_4",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl4"
+            },
+            "rpl4":
+            {
+                "actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "SCHOOL_DESK_PLAYER_RPL_5",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl5"
+            },
+            "rpl5":
+            {
+                "actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "SCHOOL_DESK_PLAYER_RPL_6",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl6"
+            },
+            "rpl6":
+            {
+                "actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "SCHOOL_DESK_PLAYER_RPL_7",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl7"
+            },
+            "rpl7":
+            {
+                "actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "SCHOOL_DESK_PLAYER_RPL_8",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl8"
+            },
+            "rpl8":
+            {
+                "actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "SCHOOL_DESK_PLAYER_RPL_9",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl9"
+            },
+            "rpl9":
+            {
+                "actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "SCHOOL_DESK_PLAYER_RPL_10",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl10"
+            },
+            "rpl10":
+            {
+                "actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "SCHOOL_DESK_PLAYER_RPL_11",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl11"
+            },
+            "rpl11":
+            {
+                "actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "SCHOOL_DESK_PLAYER_RPL_12",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl12"
+            },
+            "rpl12":
+            {
+                "actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "SCHOOL_DESK_PLAYER_RPL_13",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl13"
+            },
+            "rpl13":
+            {
+                "actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "SCHOOL_DESK_PLAYER_RPL_14",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl14"
+            },
+            "rpl14":
+            {
+                "actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "SCHOOL_DESK_PLAYER_RPL_15",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl15"
+            },
+            "rpl15":
+            {
+                "actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "SCHOOL_DESK_PLAYER_RPL_16",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl16"
+            },
+            "rpl16":
+            {
+                "actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "SCHOOL_DESK_PLAYER_RPL_17",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl17"
+            },
+            "rpl17":
+            {
+                "actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "SCHOOL_DESK_PLAYER_RPL_18",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl18"
+            },
+            "rpl18":
+            {
+                "actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "SCHOOL_DESK_PLAYER_RPL_19",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl19"
+            },
+            "rpl19":
+            {
+                "actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "SCHOOL_DESK_PLAYER_RPL_20",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl20"
+            },
+            "rpl20":
+            {
+                "actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "SCHOOL_DESK_PLAYER_RPL_21",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "end"
+            },
+            "end":
+			{
+				"actorName":"",
+				"visibleName":"",
+				"text": "",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "stop"
+			}
+        }
+    },
+    "pieceOfPaper":
+    {
+        "script":
+		{
+            "start":
+			{
+				"actorName":"UNKNOW_AUTHOR",
+				"visibleName":"UNKNOW_AUTHOR",
+				"text": "PIECE_OF_PAPER_UNKNOW_AUTHOR_1",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl1"
+			},
+            "rpl1":
+			{
+				"actorName":"UNKNOW_AUTHOR",
+				"visibleName":"UNKNOW_AUTHOR",
+				"text": "PIECE_OF_PAPER_UNKNOW_AUTHOR_2",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl2"
+			},
+            "rpl2":
+			{
+				"actorName":"UNKNOW_AUTHOR",
+				"visibleName":"UNKNOW_AUTHOR",
+				"text": "PIECE_OF_PAPER_UNKNOW_AUTHOR_3",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl3"
+			},
+            "rpl3":
+			{
+				"actorName":"UNKNOW_AUTHOR",
+				"visibleName":"UNKNOW_AUTHOR",
+				"text": "PIECE_OF_PAPER_UNKNOW_AUTHOR_4",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl4"
+			},
+            "rpl4":
+			{
+				"actorName":"UNKNOW_AUTHOR",
+				"visibleName":"UNKNOW_AUTHOR",
+				"text": "PIECE_OF_PAPER_UNKNOW_AUTHOR_5",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl5"
+			},
+            "rpl5":
+			{
+				"actorName":"UNKNOW_AUTHOR",
+				"visibleName":"UNKNOW_AUTHOR",
+				"text": "PIECE_OF_PAPER_UNKNOW_AUTHOR_6",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl6"
+			},
+            "rpl6":
+			{
+				"actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "PIECE_OF_PAPER_PLAYER_1",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl7"
+			},
+            "rpl7":
+			{
+				"actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "PIECE_OF_PAPER_PLAYER_2",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl8"
+			},
+            "rpl8":
+			{
+				"actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "PIECE_OF_PAPER_PLAYER_3",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "end"
+			},
+            "end":
+			{
+				"actorName":"",
+				"visibleName":"",
+				"text": "",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "stop"
+			}
+        }
+    },
+    "photo":
+    {
+        "script":
+		{
+            "start":
+			{
+				"actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "PHOTO_PLAYER_1",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl1"
+			},
+            "rpl1":
+			{
+				"actorName":"SHE",
+				"visibleName":"SHE",
+				"text": "PHOTO_SHE_1",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl2"
+			},
+            "rpl2":
+			{
+				"actorName":"SHE",
+				"visibleName":"SHE",
+				"text": "PHOTO_SHE_2",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl2"
+			},
+            "rpl3":
+			{
+				"actorName":"SHE",
+				"visibleName":"SHE",
+				"text": "PHOTO_SHE_3",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl4"
+			},
+            "rpl4":
+			{
+				"actorName":"SHE",
+				"visibleName":"SHE",
+				"text": "PHOTO_SHE_4",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl5"
+			},
+            "rpl5":
+			{
+				"actorName":"SHE",
+				"visibleName":"SHE",
+				"text": "PHOTO_SHE_5",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl6"
+			},
+            "rpl7":
+			{
+				"actorName":"SHE",
+				"visibleName":"SHE",
+				"text": "PHOTO_SHE_6",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "end"
+			},
+            "end":
+			{
+				"actorName":"",
+				"visibleName":"",
+				"text": "",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "stop"
+			}
+        }
+    },
+    "void":
+    {
+        "script":
+		{
+            "start":
+			{
+				"actorName":"",
+				"visibleName":"",
+				"text": "",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "end"
+			},
+            "end":
+			{
+				"actorName":"",
+				"visibleName":"",
+				"text": "",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "stop"
+			}
+        }
+    },
+    "isPlayerCompleteLevel2":
+    {
+    },
+    "isPlayerOpenTheGate":
+    {
+    },
+    "isPlayerReadTheTable":
+    {
+    },
+    "plot":
+	{
+		"schoolShiza":
+		{
+			"requiredDialogKeys":["schoolShiza","forrestShiza","mirrorShiza"],
+			"changeKey": "isPlayerCompleteLevel2", 
+			"changeTo":"finalShiza"
+		},
+        "forrestShiza":
+		{
+			"requiredDialogKeys":["schoolShiza","forrestShiza","mirrorShiza"],
+			"changeKey": "isPlayerCompleteLevel2", 
+			"changeTo":"finalShiza"
+		},
+        "mirrorShiza":
+		{
+			"requiredDialogKeys":["schoolShiza","forrestShiza","mirrorShiza"],
+			"changeKey": "isPlayerCompleteLevel2", 
+			"changeTo":"finalShiza"
+		},
+        "schoolDesk":
+        {
+            "requiredDialogKeys":[],
+			"changeKey": "isPlayerReadTheTable", 
+			"changeTo":"pieceOfPaper"
+        },
+        "pieceOfPaper":
+        {
+            "requiredDialogKeys":["schoolDesk"],
+			"changeKey": "isPlayerOpenTheGate", 
+			"changeTo":"photo"
+        }
+	}
+}

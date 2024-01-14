@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=3 uid="uid://cnt36d02go0q5"]
+
+[ext_resource type="PackedScene" uid="uid://hvgt15fjxbed" path="res://NotesAndInteractions/Dialogues/dialog_player.tscn" id="1_0hhxm"]
+[ext_resource type="PackedScene" uid="uid://bci0ardhy0y4e" path="res://NotesAndInteractions/World/interaction_area.tscn" id="2_4c4bw"]
+[ext_resource type="PackedScene" uid="uid://bpoyg82si0vrf" path="res://NotesAndInteractions/World/player_interaction_area.tscn" id="3_otv4e"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8y0s8"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jj71y"]
+
+[node name="DialogTestScene" type="Node3D"]
+
+[node name="Dialog_Player" parent="." instance=ExtResource("1_0hhxm")]
+dialog_file = "res://NotesAndInteractions/json/Level2Dialogs.json"
+
+[node name="InteractionArea" parent="." instance=ExtResource("2_4c4bw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.616964, 0.00683713, 0)
+
+[node name="CollisionShape3D" parent="InteractionArea" index="0"]
+shape = SubResource("BoxShape3D_8y0s8")
+
+[node name="IDialogCaller" parent="InteractionArea" index="1"]
+dialog_key = "strangeMirror"
+
+[node name="PlayerInteractionAreaPosition" parent="." instance=ExtResource("3_otv4e")]
+
+[node name="CollisionShape3D" parent="PlayerInteractionAreaPosition/PlayerInteractionArea" index="0"]
+shape = SubResource("BoxShape3D_jj71y")
+
+[editable path="InteractionArea"]
+[editable path="PlayerInteractionAreaPosition"]

@@ -3,7 +3,7 @@ DIALOGUE_1_0,Hello! Somebody hears me!\nHello! Somebody hears me!\nHello! Somebo
 DIALOGUE_1_1,I am realy need help!!!,Мені дуже потрібна допомога!!!
 DIALOGUE_1_2,"HELP ME, PLEASE!","ДОПОМОЖІТЬ, БУДЬ-ЛАСКА!"
 DIALOGUE_2_0,"Hey, hey, iI'd heard you!","Гей, гей, я тебе почув !"
-DIALOGUE_2_1,But I don't see you...,Але я не бачу тебe
+DIALOGUE_2_1,But I don't see you... DIALOGUE_2_0,Але я не бачу тебe DIALOGUE_2_0
 DIALOGUE_2_2,"Please, shout louder, and I'll find you!",Будь-ласка кричіть голосніше і я знайду вас!
 DIALOGUE_1_3,Is this a realy good desition?,Чи це правильне рішення?
 DIALOGUE_1_3_OPTION_1,Shout louder,Закричати в усю горлянку
