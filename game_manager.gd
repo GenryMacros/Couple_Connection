@@ -4,6 +4,7 @@ var nextScene
 var scenes = ["res://Game_levels/main.tscn",
 			  "res://Game_Levels/dungeon.tscn"]
 var player: Node
+var current_scene = 0
 var is_game_paused = false
 
 
@@ -14,9 +15,8 @@ func set_player(player_node):
 	player = player_node
 
 func set_new_scene():
-	for scene in scenes:
-		print(scene)
-	scenes.pop_front()
-	if !scenes.is_empty():
-		nextScene = scenes[0]
+	current_scene += 1
+	if current_scene >= len(scenes):
+		current_scene = 0
+	nextScene = scenes[current_scene]
  

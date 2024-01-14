@@ -1,5 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://pd4r2d7qrx25"]
+[gd_scene load_steps=5 format=3 uid="uid://pd4r2d7qrx25"]
 
 [ext_resource type="PackedScene" uid="uid://d3vu3dr5v3s6c" path="res://Environment/Imported/Mirror/mirror.glb" id="1_butmc"]
+[ext_resource type="Texture2D" uid="uid://crjgfiorhumop" path="res://Environment/mirror/player_img_2.png" id="2_v2dfo"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m3ccd"]
+albedo_texture = ExtResource("2_v2dfo")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_t4mx3"]
 
 [node name="mirror2" instance=ExtResource("1_butmc")]
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="mirror" index="1"]
+transform = Transform3D(-0.666396, -1.14641e-14, -6.12266e-08, -6.78822e-15, -0.999997, 1.22453e-07, -5.82581e-08, 1.74845e-07, 0.700349, -0.0253834, -0.0454085, -0.0170307)
+material_override = SubResource("StandardMaterial3D_m3ccd")
+mesh = SubResource("PlaneMesh_t4mx3")

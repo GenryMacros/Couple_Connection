@@ -50,7 +50,7 @@ shader = ExtResource("3_poeyk")
 shader_parameter/alpha = 0.5
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_5mpet"]
-viewport_path = NodePath("Player/camera_point_first/Camera3D/viewport_container/background_viewport")
+viewport_path = NodePath("camera_point_first/Camera3D/viewport_container/background_viewport")
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_684b2"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -160,7 +160,7 @@ transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, 29.687
 transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 0.0922736, -0.502133, 0.370535)
 
 [node name="directer2" parent="Photo" instance=ExtResource("25_sgpfn")]
-transform = Transform3D(2.06468, 1.40964, 6.16175e-08, 0, -1.09278e-07, 2.5, 1.40964, -2.06468, -9.025e-08, 36.6845, 2.77535, 0.155986)
+transform = Transform3D(2.06468, 1.40964, 6.16175e-08, 0, -1.09278e-07, 2.5, 1.40964, -2.06468, -9.025e-08, 36.6845, 2.95104, 0.155986)
 
 [node name="Clock2" parent="Photo" instance=ExtResource("27_jkx5a")]
 transform = Transform3D(3.82137e-15, 8.74228e-08, -2, 2, -8.74228e-08, 0, -8.74228e-08, -2, -8.74228e-08, 37.4427, 4.5842, 6.28495)

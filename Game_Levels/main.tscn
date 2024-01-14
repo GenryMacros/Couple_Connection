@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=3 uid="uid://cw2afre340mco"]
+[gd_scene load_steps=50 format=3 uid="uid://cw2afre340mco"]
 
 [ext_resource type="Script" path="res://Scripts/Environment/main.gd" id="1_0lian"]
 [ext_resource type="PackedScene" uid="uid://btv3xq8q2os8c" path="res://Characters/Player.tscn" id="1_eb004"]
@@ -36,6 +36,7 @@
 [ext_resource type="PackedScene" uid="uid://jjvbctafqwi6" path="res://Environment/Imported/Room/tolet_empty.glb" id="29_dufsp"]
 [ext_resource type="PackedScene" uid="uid://dq2k0fmbx0drm" path="res://Environment/Imported/Room/lubber.glb" id="30_7mnpu"]
 [ext_resource type="PackedScene" uid="uid://isuyxsvmy2o2" path="res://Environment/Room/note.tscn" id="33_u85er"]
+[ext_resource type="Script" path="res://Scripts/Environment/teleport_next_stage.gd" id="37_5slos"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_k1f8b"]
 shader = ExtResource("4_d32sn")
@@ -80,6 +81,9 @@ size = Vector3(2.33416, 1.72171, 2.26115)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_lh8i0"]
 size = Vector3(0.71582, 1.37458, 0.755371)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bc61g"]
+size = Vector3(73.4439, 4.77637, 82.5652)
 
 [node name="Main" type="Node3D"]
 script = ExtResource("1_0lian")
@@ -321,10 +325,20 @@ dialog_key = "note"
 [node name="LabelPos" parent="Note/InteractionArea" index="2"]
 transform = Transform3D(1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, 1, -0.76963, 2.78689, -1.89574)
 
+[node name="Area3D" type="Area3D" parent="."]
+collision_layer = 255
+collision_mask = 255
+script = ExtResource("37_5slos")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.1832, -26.4164, 4.91993)
+shape = SubResource("BoxShape3D_bc61g")
+
 [connection signal="change_dialog_key" from="Dialog_Player" to="Environment/Poster/InteractionArea/IDialogCaller" method="_on_dialog_player_change_dialog_key"]
 [connection signal="change_dialog_key" from="Dialog_Player" to="Environment/Toilet_batch/StaticBody3D/CollisionShape3D/InteractionArea/IDialogCaller" method="_on_dialog_player_change_dialog_key"]
 [connection signal="dialog_finished" from="Environment/Poster/InteractionArea/IDialogCaller" to="Dialog_Player" method="_on_i_dialog_caller_dialog_finished"]
 [connection signal="dialog_finished" from="Environment/Toilet_batch/StaticBody3D/CollisionShape3D/InteractionArea/IDialogCaller" to="Dialog_Player" method="_on_i_dialog_caller_dialog_finished"]
+[connection signal="area_entered" from="Area3D" to="Area3D" method="_on_area_entered"]
 
 [editable path="Settins"]
 [editable path="Dialog_Player"]
