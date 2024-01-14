@@ -19,6 +19,7 @@ gravity=9.8
 [application]
 
 config/name="Couple Connection"
+config/version="1.0"
 run/main_scene="res://UI/main_menu.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.png"

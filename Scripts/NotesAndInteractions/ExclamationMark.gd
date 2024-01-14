@@ -9,7 +9,5 @@ func _ready():
 	var pos = labelPos.global_position - camera_pos;  
 	var dw = max(abs(pos.x), absf(pos.z))/8;
 	pixel_size *= 1 + (dw);
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+
 		

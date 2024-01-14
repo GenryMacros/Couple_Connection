@@ -19,10 +19,6 @@ func _ready():
 		BackgroundMusicPlayer.play();
 
 
-func _process(delta):
-	pass
-
-
 func _on_focus_entered(button: Button):
 	button.disabled = false;
 

@@ -15,6 +15,3 @@ func open():
 func close():
 	rotation_point.set_rotation_degrees(Vector3(0, 0, 0))
 	
-
-func _process(delta):
-	pass

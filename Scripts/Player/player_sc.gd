@@ -38,7 +38,7 @@ func _ready():
 	timer.timeout.connect(_on_timeout_complete)
 	add_child(timer)
 	
-	var player = get_parent().get_node("Player")
+	var _player = get_parent().get_node("Player")
 	#var player2 = get_parent().get_node("Player2")
 	#if player and player2:
 	#	players.append(player) 
