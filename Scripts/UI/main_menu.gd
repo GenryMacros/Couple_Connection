@@ -17,7 +17,7 @@ func _ready():
 	if not BackgroundMusicPlayer.playing:
 		BackgroundMusicPlayer.stream = load("res://Music/tracks/YOASOBI_祝福_Official_Music_Video_機動戦士ガンダム_水星の魔女_オープニングテーマ.ogg");
 		BackgroundMusicPlayer.play();
-
+	GameManager.current_scene = 0
 
 func _on_focus_entered(button: Button):
 	button.disabled = false;
