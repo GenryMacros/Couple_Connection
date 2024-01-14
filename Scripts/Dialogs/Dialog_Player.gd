@@ -194,7 +194,7 @@ func _on_pause_per_next_dialog_timeout():
 
 
 
-func _on_i_dialog_caller_dialog_finished(caller, chosenOptions):
+func _on_i_dialog_caller_dialog_finished(caller, _chosenOptions):
 	var plot : Dictionary = dialogs["plot"];
 	var key = caller.dialog_key;
 	if plot.has(key):

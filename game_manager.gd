@@ -1,8 +1,8 @@
 extends Node
 
 var nextScene
-var scenes = ["res://Game_levels/main.tscn",
-			  "res://Game_Levels/dungeon.tscn"]
+var scenes = ["res://main.tscn",
+			  "res://dungeon.tscn"]
 var player: Node
 var current_scene = 0
 var is_game_paused = false

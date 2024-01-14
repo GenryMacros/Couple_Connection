@@ -18,11 +18,6 @@ func _ready():
 		BackgroundMusicPlayer.stream = load("res://Music/tracks/YOASOBI_祝福_Official_Music_Video_機動戦士ガンダム_水星の魔女_オープニングテーマ.ogg");
 		BackgroundMusicPlayer.play();
 
-
-func _process(delta):
-	pass
-
-
 func _on_focus_entered(button: Button):
 	button.disabled = false;
 
@@ -30,6 +25,8 @@ func _on_focus_exited(button: Button):
 	button.disabled = true;
 
 func _on_play_pressed():
+	GameManager.current_scene = -1
+	GameManager.set_new_scene()
 	var loading_screen = load("res://UI/loading_scene.tscn"); 
 	get_tree().change_scene_to_packed(loading_screen);
 

@@ -20,6 +20,6 @@ func resize():
 	foreground_viewport.size = DisplayServer.window_get_size()
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	background_camera.global_transform = GameManager.player.camera_point.global_transform
 	foreground_camera.global_transform = GameManager.player.camera_point.global_transform

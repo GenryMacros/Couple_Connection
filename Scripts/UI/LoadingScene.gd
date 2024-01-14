@@ -13,7 +13,7 @@ func _ready( ):
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	scene_load_status = ResourceLoader.load_threaded_get_status(sceneName,progress);
 	progress_bar.value = floor(progress[0]*100);
 	if scene_load_status == ResourceLoader.THREAD_LOAD_LOADED:
