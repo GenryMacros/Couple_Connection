@@ -29,16 +29,17 @@ func _ready():
 
 
 func carett_visibility_change():
-	for i in range(len(pass_caretts)):
-		if i != current_pass_slot:
-			pass_caretts[i].visible = false
-	
-	var index = current_pass_slot if current_pass_slot < len(pass_caretts) else len(pass_caretts) - 1
-	pass_caretts[index].visible = !pass_caretts[index].visible
+	if !GameManager.is_game_paused:
+		for i in range(len(pass_caretts)):
+			if i != current_pass_slot:
+				pass_caretts[i].visible = false
+		
+		var index = current_pass_slot if current_pass_slot < len(pass_caretts) else len(pass_caretts) - 1
+		pass_caretts[index].visible = !pass_caretts[index].visible
 	
 	
 func _input(event):
-	if is_active:
+	if is_active and !GameManager.is_game_paused:
 		if event.is_pressed():
 			if event.is_action("Exit"):
 				pc_exit.emit()

@@ -1,4 +1,4 @@
-[gd_scene load_steps=52 format=3 uid="uid://cct77j184w7vd"]
+[gd_scene load_steps=49 format=3 uid="uid://cct77j184w7vd"]
 
 [ext_resource type="Script" path="res://Scripts/Environment/dungeon.gd" id="1_exde2"]
 [ext_resource type="PackedScene" uid="uid://btv3xq8q2os8c" path="res://Characters/Player.tscn" id="1_k28sf"]
@@ -6,7 +6,6 @@
 [ext_resource type="PackedScene" uid="uid://fe8kcl1klpdp" path="res://Environment/Room/door.tscn" id="2_wyioy"]
 [ext_resource type="Script" path="res://Scripts/Player/player_sc.gd" id="2_y44xa"]
 [ext_resource type="PackedScene" uid="uid://bqqw1wn2oh5cp" path="res://Environment/Imported/OneNight/Tree.glb" id="3_c15b2"]
-[ext_resource type="Shader" path="res://Scripts/Shaders/half_black.gdshader" id="3_poeyk"]
 [ext_resource type="PackedScene" uid="uid://cd3yjko7x3jvd" path="res://Environment/Imported/OneNight/Floor.glb" id="4_0os1i"]
 [ext_resource type="PackedScene" uid="uid://b6xi1cd7chubh" path="res://Environment/Imported/School/Floor.glb" id="4_sdo48"]
 [ext_resource type="PackedScene" uid="uid://c2uigl6mvadc" path="res://Environment/Imported/OneNight/Tree_001.glb" id="5_dlgqh"]
@@ -45,13 +44,6 @@
 [ext_resource type="PackedScene" uid="uid://6vtklfyupyuc" path="res://Environment/Imported/Room/Rug.glb" id="41_xq0cs"]
 [ext_resource type="PackedScene" uid="uid://ckujhod8fx636" path="res://Characters/Anti.tscn" id="42_ttlb3"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_siebo"]
-shader = ExtResource("3_poeyk")
-shader_parameter/alpha = 0.5
-
-[sub_resource type="ViewportTexture" id="ViewportTexture_5mpet"]
-viewport_path = NodePath("camera_point_first/Camera3D/viewport_container/background_viewport")
-
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_684b2"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
 sky_energy_multiplier = 0.1
@@ -78,10 +70,6 @@ glow_enabled = true
 script = ExtResource("1_exde2")
 
 [node name="Settins" parent="." instance=ExtResource("2_jqfeo")]
-
-[node name="Background" parent="Settins/CanvasLayer" index="1"]
-material = SubResource("ShaderMaterial_siebo")
-texture = SubResource("ViewportTexture_5mpet")
 
 [node name="Player" parent="." instance=ExtResource("1_k28sf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.47826, 0.0301895)
@@ -160,7 +148,7 @@ transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, 29.687
 transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 0.0922736, -0.502133, 0.370535)
 
 [node name="directer2" parent="Photo" instance=ExtResource("25_sgpfn")]
-transform = Transform3D(2.06468, 1.40964, 6.16175e-08, 0, -1.09278e-07, 2.5, 1.40964, -2.06468, -9.025e-08, 36.6845, 2.95104, 0.155986)
+transform = Transform3D(2.06468, 1.40964, 6.16175e-08, 0, -1.09278e-07, 2.5, 1.40964, -2.06468, -9.025e-08, 36.6845, 2.77535, 0.155986)
 
 [node name="Clock2" parent="Photo" instance=ExtResource("27_jkx5a")]
 transform = Transform3D(3.82137e-15, 8.74228e-08, -2, 2, -8.74228e-08, 0, -8.74228e-08, -2, -8.74228e-08, 37.4427, 4.5842, 6.28495)
@@ -596,7 +584,3 @@ transform = Transform3D(-0.998877, 0, 0.0473853, 0, 1, 0, -0.0473853, 0, -0.9988
 
 [node name="Anti_empty" parent="." instance=ExtResource("42_ttlb3")]
 transform = Transform3D(0.679095, 0, -0.73405, 0, 1, 0, 0.73405, 0, 0.679095, -3.21565, 0.655, 32.7062)
-
-[editable path="Settins"]
-[editable path="Player"]
-[editable path="Player/visuals/PlayerInteractionAreaPosition"]

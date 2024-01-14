@@ -1,0 +1,22 @@
+[gd_scene load_steps=6 format=3 uid="uid://ucwh41x75vm5"]
+
+[ext_resource type="PackedScene" uid="uid://dqw8epuusuafg" path="res://Environment/Imported/Mirror/glass.glb" id="1_grw0y"]
+[ext_resource type="Shader" path="res://Environment/mirror/mirror.gdshader" id="2_ltkb1"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_m5dqt"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_36ih3"]
+viewport_path = NodePath("glass/SubViewport")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lv675"]
+resource_local_to_scene = true
+render_priority = 0
+shader = ExtResource("2_ltkb1")
+shader_parameter/refl_tx = SubResource("ViewportTexture_36ih3")
+
+[node name="glass2" instance=ExtResource("1_grw0y")]
+
+[node name="glass" parent="." index="0"]
+transform = Transform3D(0.558155, 0, 0, 0, -3.71731e-08, -1, 0, 0.85042, -4.37114e-08, -2.30102, 0, 0)
+material_override = SubResource("ShaderMaterial_m5dqt")
+material_overlay = SubResource("ShaderMaterial_lv675")

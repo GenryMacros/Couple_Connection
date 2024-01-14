@@ -7,8 +7,8 @@ extends Node3D
 func _ready():
 	couple_character_anti.play("Movement")
 	couple_character_anti.stop()
-
+	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+	look_at(GameManager.player.position)

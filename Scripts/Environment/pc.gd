@@ -7,7 +7,6 @@ var is_usable = true
 @export var pc_display: CanvasLayer
 @onready var area_3d = $pc/Area3D
 
-@onready var cube_002 = $Cube_002
 
 func _ready():
 	area_3d.body_entered.connect(body_entered)
@@ -32,6 +31,6 @@ func pass_entered():
 	
 	
 func _input(event):
-	if event.is_action_pressed("ui_accept") and is_usable:
+	if !GameManager.is_game_paused and event.is_action_pressed("ui_accept") and is_usable:
 		if is_player_in_area:
 			pc_display.activate()

@@ -3,7 +3,8 @@
 [ext_resource type="Script" path="res://Scripts/Anti/couple_character_anti.gd" id="1_by5nl"]
 [ext_resource type="PackedScene" uid="uid://dfrdw7dpa3aew" path="res://Characters/couple_character_anti.glb" id="2_t3qnf"]
 
-[sub_resource type="CylinderShape3D" id="CylinderShape3D_kl1j4"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_1sr3p"]
+size = Vector3(1, 2.20459, 1)
 
 [node name="Anti" type="Node3D"]
 script = ExtResource("1_by5nl")
@@ -33,5 +34,6 @@ transform = Transform3D(-3.0598e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.0598e-08, 3,
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1.5, 0, 0, 0, 1, 0, 1.61473, 0)
-shape = SubResource("CylinderShape3D_kl1j4")
+transform = Transform3D(0.999998, -0.00227936, -0.00105495, 0.00152157, 1.5, 0.00190074, 0.00105206, -0.00285351, 0.999998, 0.000571509, 1.76598, 0.000715467)
+shape = SubResource("BoxShape3D_1sr3p")
+disabled = true

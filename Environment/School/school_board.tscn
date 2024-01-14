@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bha47i55xwrwm"]
+
+[ext_resource type="PackedScene" uid="uid://c5ic8bnrpcrie" path="res://Environment/Imported/School/school_board.glb" id="1_qs5bl"]
+
+[node name="school_board2" instance=ExtResource("1_qs5bl")]
+
+[node name="school_board" parent="." index="0"]
+layers = 3
+cast_shadow = 0
+ignore_occlusion_culling = true

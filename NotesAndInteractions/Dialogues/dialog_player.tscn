@@ -1,6 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://hvgt15fjxbed"]
+[gd_scene load_steps=5 format=3 uid="uid://hvgt15fjxbed"]
 
 [ext_resource type="Script" path="res://Scripts/Dialogs/Dialog_Player.gd" id="1_ge4f1"]
+[ext_resource type="Shader" path="res://Scripts/Shaders/half_black.gdshader" id="2_yl8gc"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xtn7o"]
+shader = ExtResource("2_yl8gc")
+shader_parameter/alpha = 0.7
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_l35mo"]
+shader = ExtResource("2_yl8gc")
+shader_parameter/alpha = 0.7
 
 [node name="Dialog_Player" type="Control"]
 process_mode = 3
@@ -57,10 +66,10 @@ size_flags_vertical = 3
 mouse_filter = 2
 
 [node name="CharacterName" type="PanelContainer" parent="CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer"]
+material = SubResource("ShaderMaterial_xtn7o")
 layout_mode = 2
 size_flags_horizontal = 3
 mouse_filter = 2
-theme_type_variation = &"EvilPanelContainer"
 
 [node name="CharacterName" type="Label" parent="CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer/CharacterName"]
 layout_mode = 2
@@ -77,11 +86,11 @@ size_flags_stretch_ratio = 4.0
 mouse_filter = 2
 
 [node name="DialogPanel" type="PanelContainer" parent="CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer"]
+material = SubResource("ShaderMaterial_l35mo")
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 4.0
 mouse_filter = 2
-theme_type_variation = &"EvilPanelContainer"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/DialogPanel"]
 layout_mode = 2

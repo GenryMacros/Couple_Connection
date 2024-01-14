@@ -1,4 +1,4 @@
-[gd_resource type="MeshLibrary" load_steps=9 format=3 uid="uid://washly5p813j"]
+[gd_resource type="MeshLibrary" load_steps=9 format=3 uid="uid://b3sdnfyf2x443"]
 
 [ext_resource type="Texture2D" uid="uid://cxjbgew3j37mq" path="res://Environment/Imported/Wall/brick_substance_TT_checker_2048x2048_UV_GRID_BaseColor.jpg" id="1_lhejg"]
 [ext_resource type="Texture2D" uid="uid://3skorndhy5gg" path="res://Environment/Imported/Wall/brick_substance_TT_checker_2048x2048_UV_GRID_Roughness.png" id="2_jypiq"]

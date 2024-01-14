@@ -2,6 +2,8 @@ extends Control
 @onready var play_button : Button = $CanvasLayer/HBoxContainer/VBoxContainer/Play;
 @onready var settings_button : Button = $CanvasLayer/HBoxContainer/VBoxContainer/Settings;
 @onready var exit_button : Button = $CanvasLayer/HBoxContainer/VBoxContainer/Exit;
+@onready var video_stream_player = $CanvasLayer/VideoStreamPlayer
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -17,7 +19,6 @@ func _ready():
 		BackgroundMusicPlayer.play();
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
 
@@ -40,7 +41,3 @@ func _on_settings_pressed():
 func _on_exit_pressed():
 	get_tree().quit();
 	
-
-
-	
-

@@ -8,3 +8,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.375, 0, 0, 0)
 [node name="Floor" parent="." index="0"]
 transform = Transform3D(2.37215, 0, 0, 0, -8.05546e-09, -2.37215, 0, 0.184287, -1.0369e-07, 0, 0, 0)
 layers = 2
+cast_shadow = 0
