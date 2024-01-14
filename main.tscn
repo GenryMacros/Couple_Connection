@@ -1,4 +1,4 @@
-[gd_scene load_steps=51 format=3 uid="uid://cw2afre340mco"]
+[gd_scene load_steps=52 format=3 uid="uid://cw2afre340mco"]
 
 [ext_resource type="Script" path="res://Scripts/Environment/main.gd" id="1_073aq"]
 [ext_resource type="PackedScene" uid="uid://be5ceayhyurry" path="res://UI/settins.tscn" id="2_rxg2b"]
@@ -38,6 +38,7 @@
 [ext_resource type="PackedScene" uid="uid://isuyxsvmy2o2" path="res://Environment/Room/note.tscn" id="36_bvx7j"]
 [ext_resource type="Script" path="res://Scripts/Environment/teleport_next_stage.gd" id="37_q6mxe"]
 [ext_resource type="AudioStream" uid="uid://tf5qoqvhluml" path="res://Music/household-clock-tick-tock.mp3" id="38_m3nis"]
+[ext_resource type="AudioStream" uid="uid://bt7fo62xmdqdf" path="res://Music/pc_sound.ogg" id="39_1p8jy"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_k1f8b"]
 shader = ExtResource("3_junvd")
@@ -341,10 +342,18 @@ script = ExtResource("37_q6mxe")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.1832, -26.4164, 4.91993)
 shape = SubResource("BoxShape3D_bc61g")
 
-[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+[node name="ClockMusicPlayer" type="AudioStreamPlayer3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.206381, 6.56049, -3.27498)
 stream = ExtResource("38_m3nis")
 autoplay = true
+
+[node name="ComputerMusicPlayer" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.29643, 4.24352, -1.07454)
+stream = ExtResource("39_1p8jy")
+volume_db = 20.0
+max_db = 6.0
+autoplay = true
+stream_paused = true
 
 [connection signal="change_dialog_key" from="Dialog_Player" to="Environment/Poster/InteractionArea/IDialogCaller" method="_on_dialog_player_change_dialog_key"]
 [connection signal="change_dialog_key" from="Dialog_Player" to="Environment/Toilet_batch/StaticBody3D/CollisionShape3D/InteractionArea/IDialogCaller" method="_on_dialog_player_change_dialog_key"]
