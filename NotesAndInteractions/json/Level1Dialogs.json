@@ -166,7 +166,7 @@
 			{
 				"actorName":"NOTE_AUTHOR",
 				"visibleName":"NOTE_AUTHOR",
-				"text": "NOTE_1",
+				"text": "NEW_NOTE_1",
 				"audioPath": "",
 				"optionReplicas":[],
 				"nextReplica": "note2"
@@ -175,16 +175,61 @@
 			{
 				"actorName":"NOTE_AUTHOR",
 				"visibleName":"NOTE_AUTHOR",
-				"text": "NOTE_2",
+				"text": "NEW_NOTE_2",
 				"audioPath": "",
 				"optionReplicas":[],
 				"nextReplica": "note3"
 			},
 			"note3":
 			{
+				"actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "NEW_NOTE_3",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "note4"
+			},
+			"note4":
+			{
 				"actorName":"NOTE_AUTHOR",
 				"visibleName":"NOTE_AUTHOR",
-				"text": "NOTE_3",
+				"text": "NEW_NOTE_4",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "note5"
+			},
+			"note5":
+			{
+				"actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "NEW_NOTE_5",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "note6"
+			},
+			"note6":
+			{
+				"actorName":"NOTE_AUTHOR",
+				"visibleName":"NOTE_AUTHOR",
+				"text": "NEW_NOTE_6",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "note7"
+			},
+			"note7":
+			{
+				"actorName":"NOTE_AUTHOR",
+				"visibleName":"NOTE_AUTHOR",
+				"text": "NEW_NOTE_7",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "note8"
+			},
+			"note8":
+			{
+				"actorName":"NOTE_AUTHOR",
+				"visibleName":"NOTE_AUTHOR",
+				"text": "NEW_NOTE_8",
 				"audioPath": "",
 				"optionReplicas":[],
 				"nextReplica": "end"
