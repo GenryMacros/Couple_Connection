@@ -79,14 +79,8 @@ script = ExtResource("1_exde2")
 
 [node name="Settins" parent="." instance=ExtResource("2_jqfeo")]
 
-[node name="Background" parent="Settins/CanvasLayer" index="0"]
+[node name="Background" parent="Settins/CanvasLayer" index="1"]
 material = SubResource("ShaderMaterial_siebo")
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 0.0
-offset_right = 0.0
-offset_bottom = 0.0
 texture = SubResource("ViewportTexture_5mpet")
 
 [node name="Player" parent="." instance=ExtResource("1_k28sf")]
