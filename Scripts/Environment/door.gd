@@ -28,6 +28,6 @@ func _on_i_dialog_caller_dialog_finished(caller : IDialogCaller, chosenOptions: 
 		if caller.dialog_key == "strangeMirror" and (chosenOptions.has("success_1") or chosenOptions.has("success_2")):
 			is_mirror_completed = true;
 		if caller.dialog_key == "forrestNote":
-			is_forest_comp leted = true;
+			is_forest_completed = true;
 		if is_forest_completed and is_mirror_completed and is_school_completed:
 			open();

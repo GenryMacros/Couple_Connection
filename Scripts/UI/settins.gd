@@ -74,30 +74,19 @@ func _on_window_mode_options_focus_exited():
 	
 func _on_master_volume_value_changed(value):
 	master_volume_label.text =  str(floor(value));
-	
+	SettingService.set_up_volume(0,int(master_volume_slider.value));
 	
 func _on_music_volume_value_changed(value):
 	music_volume_label.text = str(floor(value));
+	SettingService.set_up_volume(3,int(music_volume_slider.value));
 
 func _on_sound_effects_volume_value_changed(value):
 	sfx_volume_label.text = str(floor(value));
-
+	SettingService.set_up_volume(1,int(sfx_volume_slider.value));
 func _on_dialog_volume_value_changed(value):
 	dialog_volume_label.text = str(floor(value));
-
-func _on_master_volume_focus_exited():
-	SettingService.set_up_volume(0,int(master_volume_slider.value));
-
-func _on_dialog_volume_focus_exited():
-	SettingService.set_up_volume(2,int(dialog_volume_slider.value));
-
-
-func _on_music_volume_focus_exited():
-	SettingService.set_up_volume(3,int(music_volume_slider.value));
-
-func _on_sound_effects_volume_focus_exited():
-	SettingService.set_up_volume(1,int(sfx_volume_slider.value));
-
+	SettingService.set_up_volume(1,int(dialog_volume_slider.value));
+	
 
 func set_up_settings():
 		resolution.selected = SettingService.settings["window_size"];
