@@ -48,6 +48,7 @@ func activate_first_person():
 	is_first_person = true
 	spot_light_3d.spot_angle = 30
 	spot_light_3d.light_energy = 10
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	
 func _on_timeout_complete():
 	can_switch = true
@@ -123,7 +124,7 @@ func _physics_process(delta):
 		move_and_slide()
 
 func _unhandled_input(event):
-	if !GameManager.is_game_paused and event is InputEventMouseMotion and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
+	if !GameManager.is_game_paused and event is InputEventMouseMotion and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED and is_first_person:
 		rotate_y(-event.relative.x * 0.002)
 		camera_3d.rotate_x(-event.relative.y * 0.002)
 		camera_3d.rotation.x = clamp(camera_3d.rotation.x, -PI /2 + 0.15 , PI / 2 - 0.5)
