@@ -21,6 +21,7 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 script = ExtResource("1_ge4f1")
+type_character_speed = null
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -43,8 +44,8 @@ mouse_filter = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/VBoxContainer"]
 layout_mode = 2
-size_flags_vertical = 10
-size_flags_stretch_ratio = 7.22
+size_flags_vertical = 3
+size_flags_stretch_ratio = 4.0
 mouse_filter = 2
 
 [node name="Space2" type="Control" parent="CanvasLayer/VBoxContainer/HBoxContainer"]
@@ -55,8 +56,6 @@ mouse_filter = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 4
 size_flags_stretch_ratio = 6.0
 mouse_filter = 2
 theme_override_constants/separation = 0
@@ -90,7 +89,7 @@ mouse_filter = 2
 material = SubResource("ShaderMaterial_l35mo")
 layout_mode = 2
 size_flags_vertical = 3
-size_flags_stretch_ratio = 10.0
+size_flags_stretch_ratio = 4.0
 mouse_filter = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/DialogPanel"]
@@ -106,44 +105,43 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 mouse_filter = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/DialogPanel/HBoxContainer"]
-custom_minimum_size = Vector2(0, 300)
+[node name="DialogText" type="ScrollContainer" parent="CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/DialogPanel/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 14.11
+mouse_filter = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/DialogPanel/HBoxContainer/DialogText"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 size_flags_stretch_ratio = 5.0
 mouse_filter = 2
 theme_override_constants/separation = 0
 
-[node name="Space2" type="Control" parent="CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/DialogPanel/HBoxContainer/VBoxContainer"]
-custom_minimum_size = Vector2(0, 30)
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_stretch_ratio = 0.1
-mouse_filter = 2
-
-[node name="Replica" type="Label" parent="CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/DialogPanel/HBoxContainer/VBoxContainer"]
-custom_minimum_size = Vector2(200, 100)
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-autowrap_mode = 2
-
-[node name="CharacterTyper" type="Timer" parent="CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/DialogPanel/HBoxContainer/VBoxContainer/Replica"]
-
-[node name="VoicePlayer" type="AudioStreamPlayer" parent="CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/DialogPanel/HBoxContainer/VBoxContainer/Replica"]
-bus = &"Dialogs"
-
-[node name="Buttons" type="VBoxContainer" parent="CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/DialogPanel/HBoxContainer/VBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 0
-focus_mode = 2
-
-[node name="Space4" type="Control" parent="CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/DialogPanel/HBoxContainer/VBoxContainer"]
+[node name="Space2" type="Control" parent="CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/DialogPanel/HBoxContainer/DialogText/VBoxContainer"]
 custom_minimum_size = Vector2(0, 20)
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 0.0
 mouse_filter = 2
+
+[node name="Replica" type="Label" parent="CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/DialogPanel/HBoxContainer/DialogText/VBoxContainer"]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+autowrap_mode = 2
+
+[node name="CharacterTyper" type="Timer" parent="CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/DialogPanel/HBoxContainer/DialogText/VBoxContainer/Replica"]
+
+[node name="VoicePlayer" type="AudioStreamPlayer" parent="CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/DialogPanel/HBoxContainer/DialogText/VBoxContainer/Replica"]
+bus = &"Dialogs"
+
+[node name="Buttons" type="VBoxContainer" parent="CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/DialogPanel/HBoxContainer/DialogText/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+focus_mode = 2
 
 [node name="Space3" type="Control" parent="CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/DialogPanel/HBoxContainer"]
 layout_mode = 2
@@ -160,5 +158,5 @@ mouse_filter = 2
 wait_time = 0.2
 one_shot = true
 
-[connection signal="timeout" from="CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/DialogPanel/HBoxContainer/VBoxContainer/Replica/CharacterTyper" to="." method="_on_character_typer_timeout"]
+[connection signal="timeout" from="CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/DialogPanel/HBoxContainer/DialogText/VBoxContainer/Replica/CharacterTyper" to="." method="_on_character_typer_timeout"]
 [connection signal="timeout" from="PausePerNextDialog" to="." method="_on_pause_per_next_dialog_timeout"]

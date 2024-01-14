@@ -6,8 +6,8 @@ var scenes = ["res://Game_levels/main.tscn",
 var player: Node
 var current_scene = 0
 var is_game_paused = false
-
-
+enum ENDING {GOOD, BAD, MIDDLE}
+var ending = ENDING.BAD; 
 func _ready():
 	nextScene = scenes[0]
 

@@ -97,7 +97,6 @@ material = SubResource("ShaderMaterial_k1f8b")
 texture = SubResource("ViewportTexture_13mmr")
 
 [node name="Dialog_Player" parent="." instance=ExtResource("1_swquk")]
-visible = false
 dialog_file = "res://NotesAndInteractions/json/Level1Dialogs.json"
 
 [node name="CharacterName" parent="Dialog_Player/CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer" index="0"]
@@ -119,9 +118,11 @@ environment = SubResource("Environment_nrash")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.01384, 2.60631, 3.60871)
 script = ExtResource("2_h58oa")
 
+[node name="Camera3D" parent="Player/camera_point_first" index="0"]
+cull_mask = 1047552
+
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13.4375, -1.45409)
-visible = false
 light_energy = 3.0
 omni_range = 36.3671
 
@@ -342,6 +343,8 @@ shape = SubResource("BoxShape3D_bc61g")
 
 [editable path="Settins"]
 [editable path="Dialog_Player"]
+[editable path="Player"]
+[editable path="Player/visuals/PlayerInteractionAreaPosition"]
 [editable path="CameraRig"]
 [editable path="Environment/Cylinder2/InteractionArea"]
 [editable path="Environment/Poster/InteractionArea"]

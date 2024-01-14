@@ -1,4 +1,4 @@
-[gd_scene load_steps=87 format=3 uid="uid://cct77j184w7vd"]
+[gd_scene load_steps=84 format=3 uid="uid://cct77j184w7vd"]
 
 [ext_resource type="Script" path="res://Scripts/Environment/dungeon.gd" id="1_exde2"]
 [ext_resource type="PackedScene" uid="uid://btv3xq8q2os8c" path="res://Characters/Player.tscn" id="1_k28sf"]
@@ -61,8 +61,6 @@
 [ext_resource type="Script" path="res://Scripts/Level2/DialogAreas/mirror.gd" id="50_rian1"]
 [ext_resource type="Script" path="res://Scripts/Level2/DialogAreas/mirror_shiza.gd" id="51_hb5ms"]
 [ext_resource type="Script" path="res://Scripts/Level2/DialogAreas/start_shiza.gd" id="56_pos8u"]
-[ext_resource type="Script" path="res://Scripts/Level2/DialogAreas/final_shiza.gd" id="59_lld16"]
-[ext_resource type="Script" path="res://Scripts/Environment/teleport_next_stage.gd" id="63_6qt22"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_siebo"]
 shader = ExtResource("3_poeyk")
@@ -133,14 +131,11 @@ size = Vector3(2.69434, 3.32257, 2.58801)
 size = Vector3(4.66254, 2.76221, 2.42004)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ml4c3"]
-size = Vector3(3.41788, 3.05017, 6.79746)
+size = Vector3(3.41788, 3.05017, 3.17812)
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_n221k"]
 height = 7.59836
 radius = 4.16894
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_pm300"]
-size = Vector3(67.9591, 7.20095, 82.5652)
 
 [node name="Dungeon" type="Node3D"]
 script = ExtResource("1_exde2")
@@ -214,15 +209,7 @@ transform = Transform3D(1, 0, -7.10543e-15, 0, 1, 0, 7.10543e-15, 0, 1, -0.00625
 shape = SubResource("BoxShape3D_bgl17")
 
 [node name="IDialogCaller" parent="Photo/teacher_desk2/SchoolDesk" index="1"]
-dialog_key = "not_desk"
-
-[node name="LabelPos" parent="Photo/teacher_desk2/SchoolDesk" index="2"]
-process_mode = 4
-transform = Transform3D(1, 0, -7.10543e-15, 0, 1, 0, 7.10543e-15, 0, 1, -1.08675, -2.96332, -0.767738)
-visible = false
-
-[node name="ExclamationMark" parent="Photo/teacher_desk2/SchoolDesk/LabelPos" index="0"]
-transform = Transform3D(1, 0, -7.10543e-15, 0, 1, 0, 7.10543e-15, 0, 1, -0.330531, 0.490341, 0.291083)
+dialog_key = "isDescActive"
 
 [node name="school_desk2" parent="Photo" instance=ExtResource("22_2ipvm")]
 transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, 29.276, 2.82314, -0.969135)
@@ -312,13 +299,6 @@ script = ExtResource("26_vchf2")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.165649, -0.268509, 0.282166)
 shape = SubResource("BoxShape3D_l3o8r")
 
-[node name="IDialogCaller" parent="Mirror/blue/BlueMask" index="1"]
-dialog_key = "maskHappy"
-
-[node name="LabelPos" parent="Mirror/blue/BlueMask" index="2"]
-process_mode = 4
-visible = false
-
 [node name="red" parent="Mirror" instance=ExtResource("38_mg36t")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -39.163, 1.38939, 4.55075)
 
@@ -329,13 +309,6 @@ script = ExtResource("28_361ym")
 [node name="CollisionShape3D" parent="Mirror/red/RedMask" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0487061, -0.725037, 0.0836792)
 shape = SubResource("BoxShape3D_tqfkj")
-
-[node name="IDialogCaller" parent="Mirror/red/RedMask" index="1"]
-dialog_key = "maskSad"
-
-[node name="LabelPos" parent="Mirror/red/RedMask" index="2"]
-process_mode = 4
-visible = false
 
 [node name="yellow" parent="Mirror" instance=ExtResource("39_lnqb6")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -43.8512, 1.50202, 4.5517)
@@ -348,13 +321,6 @@ script = ExtResource("30_ww4t2")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.465729, 0.201675, 0.95047)
 shape = SubResource("BoxShape3D_8ssnk")
 
-[node name="IDialogCaller" parent="Mirror/yellow/YellowMask" index="1"]
-dialog_key = "maskApathy"
-
-[node name="LabelPos" parent="Mirror/yellow/YellowMask" index="2"]
-process_mode = 4
-visible = false
-
 [node name="pink2" parent="Mirror" instance=ExtResource("40_sjuqp")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -34.1544, 1.58297, 4.56426)
 
@@ -366,13 +332,8 @@ script = ExtResource("29_f0aod")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.619791, -0.469194, -0.662282)
 shape = SubResource("BoxShape3D_3a2fi")
 
-[node name="IDialogCaller" parent="Mirror/pink2/PinkMask" index="1"]
-dialog_key = "maskPink"
-
 [node name="LabelPos" parent="Mirror/pink2/PinkMask" index="2"]
-process_mode = 4
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.06185, 1.64232, -1.43172)
-visible = false
 
 [node name="ExclamationMark" parent="Mirror/pink2/PinkMask/LabelPos" index="0"]
 visible = true
@@ -456,13 +417,6 @@ script = ExtResource("41_aupya")
 [node name="CollisionShape3D" parent="Emptyness/bench2/forrestBench" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.133422, 0.0827262, 0.733517)
 shape = SubResource("BoxShape3D_0ra4a")
-
-[node name="IDialogCaller" parent="Emptyness/bench2/forrestBench" index="1"]
-dialog_key = "forrestBench"
-
-[node name="LabelPos" parent="Emptyness/bench2/forrestBench" index="2"]
-process_mode = 4
-visible = false
 
 [node name="InvisibleWall7" parent="Emptyness" instance=ExtResource("14_h42mb")]
 transform = Transform3D(2.75781, 0, 0, 0, 4.95948, 0, 0, 0, 25.7405, 3.476, -1.957, 50.683)
@@ -752,13 +706,6 @@ script = ExtResource("44_py6kq")
 [node name="CollisionShape3D" parent="photo_frame2/Photo" index="0"]
 shape = SubResource("SphereShape3D_jh4fd")
 
-[node name="IDialogCaller" parent="photo_frame2/Photo" index="1"]
-dialog_key = "not_photo"
-
-[node name="LabelPos" parent="photo_frame2/Photo" index="2"]
-process_mode = 4
-visible = false
-
 [node name="Book" parent="." instance=ExtResource("33_satyi")]
 transform = Transform3D(-1.95121, 0, 2.27877, 0, 3, 0, -2.27877, 0, -1.95121, 3.22009, 0.553829, 62.1063)
 
@@ -770,16 +717,12 @@ script = ExtResource("47_k4u12")
 transform = Transform3D(1, 0, -5.96046e-08, 0, 1.00003, 0, 5.96046e-08, 0, 1, 0.160189, 0, 0.11032)
 shape = SubResource("BoxShape3D_4amj2")
 
-[node name="IDialogCaller" parent="Book/forrestLetter" index="1"]
-dialog_key = "forrestNote"
-
 [node name="LabelPos" parent="Book/forrestLetter" index="2"]
-process_mode = 4
 transform = Transform3D(1, 0, -5.96046e-08, 0, 1, 0, 5.96046e-08, 0, 1, 0, 0.885485, 0)
-visible = false
 
 [node name="ExclamationMark" parent="Book/forrestLetter/LabelPos" index="0"]
 transform = Transform3D(1, 0, -5.96046e-08, 0, 1, 0, 5.96046e-08, 0, 1, 0, 0, 0)
+visible = true
 
 [node name="mirror2" parent="." instance=ExtResource("35_qxop4")]
 transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, -34.1115, -1.19986, 5.77782)
@@ -792,22 +735,14 @@ script = ExtResource("50_rian1")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.139557, -0.487877)
 shape = SubResource("BoxShape3D_4rp28")
 
-[node name="IDialogCaller" parent="mirror2/mirror2" index="1"]
-dialog_key = "not_mirror"
-
-[node name="LabelPos" parent="mirror2/mirror2" index="2"]
-process_mode = 4
-visible = false
-
-[node name="Label" parent="mirror2/mirror2/LabelPos/ExclamationMark/SubViewport" index="0"]
-visible = false
-
 [node name="Anti_main" parent="." instance=ExtResource("42_ttlb3")]
 transform = Transform3D(-0.639962, 0, 0.768406, 0, 1, 0, -0.768406, 0, -0.639962, 2.69838, 0.608549, -3.88515)
 
 [node name="StartShiza" parent="Anti_main" instance=ExtResource("14_vjuxl")]
 transform = Transform3D(1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, 1, 0, 2.28256, 0)
 script = ExtResource("56_pos8u")
+interaction_key = null
+isPickUp = null
 
 [node name="CollisionShape3D" parent="Anti_main/StartShiza" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.114481, -0.318235, -0.625362)
@@ -818,12 +753,7 @@ dialog_key = "startLevelShiza"
 is_autoplayed = true
 
 [node name="LabelPos" parent="Anti_main/StartShiza" index="2"]
-process_mode = 4
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.35715, 0)
-visible = false
-
-[node name="ExclamationMark" parent="Anti_main/StartShiza/LabelPos" index="0"]
-layers = 0
 
 [node name="Anti_school" parent="." instance=ExtResource("42_ttlb3")]
 transform = Transform3D(0.860547, 0, 0.509372, 0, 1, 0, -0.509372, 0, 0.860547, 37.6679, 0.555507, 3.35623)
@@ -840,39 +770,26 @@ shape = SubResource("CylinderShape3D_b0cu4")
 dialog_key = "schoolShiza"
 is_autoplayed = true
 
-[node name="LabelPos" parent="Anti_school/SchoolShiza" index="2"]
-process_mode = 4
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2072.64, 2.22837, 1231.94)
-visible = false
-
-[node name="ExclamationMark" parent="Anti_school/SchoolShiza/LabelPos" index="0"]
-layers = 0
-
 [node name="Anti_mirror" parent="." instance=ExtResource("42_ttlb3")]
-transform = Transform3D(-0.000628277, 0, -1, 0, 1, 0, 1, 0, -0.000628277, -39.5426, 0.684844, 0.467059)
+transform = Transform3D(-0.000628277, 0, -1, 0, 1, 0, 1, 0, -0.000628277, -39.529, 0.56193, 0.706988)
 
 [node name="MirrorShiza" parent="Anti_mirror" instance=ExtResource("14_vjuxl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.30898, 1.69653, -0.409431)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.02428, 0)
 script = ExtResource("51_hb5ms")
 
 [node name="CollisionShape3D" parent="Anti_mirror/MirrorShiza" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.21335, -0.0490417, -0.827168)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.138183, -0.0490417, -0.794006)
 shape = SubResource("BoxShape3D_4shs7")
 
 [node name="IDialogCaller" parent="Anti_mirror/MirrorShiza" index="1"]
 dialog_key = "mirrorShiza"
 is_autoplayed = true
 
-[node name="LabelPos" parent="Anti_mirror/MirrorShiza" index="2"]
-process_mode = 4
-visible = false
-
 [node name="Anti_end" parent="." instance=ExtResource("42_ttlb3")]
 transform = Transform3D(-0.998877, 0, 0.0473853, 0, 1, 0, -0.0473853, 0, -0.998877, -0.700719, 0.676345, -30.0512)
 
 [node name="FinalShiza" parent="Anti_end" instance=ExtResource("14_vjuxl")]
 transform = Transform3D(1, 0, -7.45058e-09, 0, 1, 0, 7.45058e-09, 0, 1, 0, 2.00937, 0)
-script = ExtResource("59_lld16")
 
 [node name="CollisionShape3D" parent="Anti_end/FinalShiza" index="0"]
 transform = Transform3D(1, 0, -1.11759e-06, 0, 1, 0, 1.11759e-06, 0, 1, 0.188196, -0.438477, -0.7414)
@@ -882,31 +799,20 @@ shape = SubResource("BoxShape3D_58h2n")
 dialog_key = "finalShiza"
 is_autoplayed = true
 
-[node name="LabelPos" parent="Anti_end/FinalShiza" index="2"]
-process_mode = 4
-visible = false
-
 [node name="Anti_empty" parent="." instance=ExtResource("42_ttlb3")]
-transform = Transform3D(0.679095, 0, -0.73405, 0, 1, 0, 0.73405, 0, 0.679095, -3.32063, 0.655, 29.3621)
+transform = Transform3D(0.679095, 0, -0.73405, 0, 1, 0, 0.73405, 0, 0.679095, -3.21565, 0.655, 32.7062)
 
 [node name="forrestShiza" parent="Anti_empty" instance=ExtResource("14_vjuxl")]
 transform = Transform3D(1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, 1, 0, 2.09215, 0)
 script = ExtResource("49_5aqif")
 
 [node name="CollisionShape3D" parent="Anti_empty/forrestShiza" index="0"]
-transform = Transform3D(1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, 1, -0.100395, -0.375183, -1.90997)
+transform = Transform3D(1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, 1, -0.100388, -0.375183, -0.100296)
 shape = SubResource("BoxShape3D_ml4c3")
 
 [node name="IDialogCaller" parent="Anti_empty/forrestShiza" index="1"]
 dialog_key = "forrestShiza"
 is_autoplayed = true
-
-[node name="LabelPos" parent="Anti_empty/forrestShiza" index="2"]
-process_mode = 4
-visible = false
-
-[node name="ExclamationMark" parent="Anti_empty/forrestShiza/LabelPos" index="0"]
-process_mode = 4
 
 [node name="fucked_paper" parent="." instance=ExtResource("49_nqqu8")]
 transform = Transform3D(0.3, 0, 0, 0, 0.238832, -0.181547, 0, 0.181547, 0.238832, 38.4016, 0.725654, 5.93582)
@@ -919,43 +825,7 @@ script = ExtResource("50_3uli2")
 transform = Transform3D(0.999999, 0, 0, 0, 1, 7.45058e-09, 0, -7.45058e-09, 1, 0.472244, -0.060843, -0.941118)
 shape = SubResource("CylinderShape3D_n221k")
 
-[node name="IDialogCaller" parent="fucked_paper/pieceOfPaper" index="1"]
-dialog_key = "not_paper"
-
-[node name="LabelPos" parent="fucked_paper/pieceOfPaper" index="2"]
-process_mode = 4
-visible = false
-
-[node name="LevelChanger" type="Area3D" parent="."]
-collision_layer = 255
-collision_mask = 255
-script = ExtResource("63_6qt22")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="LevelChanger"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.81606, -12.5937, -35.7717)
-shape = SubResource("BoxShape3D_pm300")
-
-[connection signal="change_dialog_key" from="Dialog_Player" to="Photo/teacher_desk2/SchoolDesk" method="_on_dialog_player_change_dialog_key"]
-[connection signal="change_dialog_key" from="Dialog_Player" to="photo_frame2/Photo" method="_on_dialog_player_change_dialog_key"]
-[connection signal="change_dialog_key" from="Dialog_Player" to="mirror2/mirror2" method="_on_dialog_player_change_dialog_key"]
-[connection signal="change_dialog_key" from="Dialog_Player" to="Anti_school/SchoolShiza" method="_on_dialog_player_change_dialog_key"]
-[connection signal="change_dialog_key" from="Dialog_Player" to="fucked_paper/pieceOfPaper" method="_on_dialog_player_change_dialog_key"]
-[connection signal="dialog_finished" from="Photo/teacher_desk2/SchoolDesk/IDialogCaller" to="Dialog_Player" method="_on_i_dialog_caller_dialog_finished"]
-[connection signal="dialog_finished" from="photo_frame2/Photo/IDialogCaller" to="Dialog_Player" method="_on_i_dialog_caller_dialog_finished"]
-[connection signal="dialog_finished" from="photo_frame2/Photo/IDialogCaller" to="main_door" method="_on_i_dialog_caller_dialog_finished"]
-[connection signal="dialog_finished" from="Book/forrestLetter/IDialogCaller" to="main_door" method="_on_i_dialog_caller_dialog_finished"]
-[connection signal="dialog_finished" from="mirror2/mirror2/IDialogCaller" to="main_door" method="_on_i_dialog_caller_dialog_finished"]
-[connection signal="dialog_finished" from="mirror2/mirror2/IDialogCaller" to="mirror2" method="_on_i_dialog_caller_dialog_finished"]
 [connection signal="dialog_finished" from="Anti_main/StartShiza/IDialogCaller" to="Anti_main/StartShiza" method="_on_i_dialog_caller_dialog_finished"]
-[connection signal="dialog_finished" from="Anti_school/SchoolShiza/IDialogCaller" to="Dialog_Player" method="_on_i_dialog_caller_dialog_finished"]
-[connection signal="dialog_finished" from="Anti_school/SchoolShiza/IDialogCaller" to="Anti_school/SchoolShiza" method="_on_i_dialog_caller_dialog_finished"]
-[connection signal="dialog_finished" from="Anti_mirror/MirrorShiza/IDialogCaller" to="Dialog_Player" method="_on_i_dialog_caller_dialog_finished"]
-[connection signal="dialog_finished" from="Anti_mirror/MirrorShiza/IDialogCaller" to="Anti_mirror/MirrorShiza" method="_on_i_dialog_caller_dialog_finished"]
-[connection signal="dialog_finished" from="Anti_end/FinalShiza/IDialogCaller" to="Anti_end/FinalShiza" method="_on_i_dialog_caller_dialog_finished"]
-[connection signal="dialog_finished" from="Anti_end/FinalShiza/IDialogCaller" to="LevelChanger" method="_on_i_dialog_caller_dialog_finished"]
-[connection signal="dialog_finished" from="Anti_empty/forrestShiza/IDialogCaller" to="Anti_empty/forrestShiza" method="_on_i_dialog_caller_dialog_finished"]
-[connection signal="dialog_finished" from="fucked_paper/pieceOfPaper/IDialogCaller" to="Dialog_Player" method="_on_i_dialog_caller_dialog_finished"]
-[connection signal="area_entered" from="LevelChanger" to="LevelChanger" method="_on_area_entered"]
 
 [editable path="Settins"]
 [editable path="Player"]

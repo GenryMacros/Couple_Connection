@@ -1,16 +1,56 @@
-[gd_scene load_steps=5 format=3 uid="uid://pd4r2d7qrx25"]
+[gd_scene load_steps=8 format=3 uid="uid://pd4r2d7qrx25"]
 
 [ext_resource type="PackedScene" uid="uid://d3vu3dr5v3s6c" path="res://Environment/Imported/Mirror/mirror.glb" id="1_butmc"]
-[ext_resource type="Texture2D" uid="uid://crjgfiorhumop" path="res://Environment/mirror/player_img_2.png" id="2_v2dfo"]
+[ext_resource type="Shader" path="res://Scripts/Shaders/mirror_dark.gdshader" id="2_6pyy8"]
+[ext_resource type="Script" path="res://Scripts/Environment/mirror_2.gd" id="2_inq3h"]
+[ext_resource type="Texture2D" uid="uid://c8iwk4kt8cnjf" path="res://Environment/mirror/player_img_2_cut.png" id="3_8y3au"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m3ccd"]
-albedo_texture = ExtResource("2_v2dfo")
+[sub_resource type="ViewportTexture" id="ViewportTexture_20rtl"]
+viewport_path = NodePath("mirror/Sprite3D/SubViewport")
 
-[sub_resource type="PlaneMesh" id="PlaneMesh_t4mx3"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oedvn"]
+bg_color = Color(0.0352941, 0.0352941, 0.0352941, 1)
+corner_radius_top_left = 200
+corner_radius_top_right = 200
+corner_radius_bottom_right = 200
+corner_radius_bottom_left = 200
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_l2ial"]
+shader = ExtResource("2_6pyy8")
+shader_parameter/corner_radius = 2000.0
+shader_parameter/dark_coof = 22.0
 
 [node name="mirror2" instance=ExtResource("1_butmc")]
+script = ExtResource("2_inq3h")
 
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="mirror" index="1"]
-transform = Transform3D(-0.666396, -1.14641e-14, -6.12266e-08, -6.78822e-15, -0.999997, 1.22453e-07, -5.82581e-08, 1.74845e-07, 0.700349, -0.0253834, -0.0454085, -0.0170307)
-material_override = SubResource("StandardMaterial3D_m3ccd")
-mesh = SubResource("PlaneMesh_t4mx3")
+[node name="Sprite3D" type="Sprite3D" parent="mirror" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.020861, -0.072882, -0.00756812)
+axis = 1
+texture = SubResource("ViewportTexture_20rtl")
+
+[node name="SubViewport" type="SubViewport" parent="mirror/Sprite3D" index="0"]
+transparent_bg = true
+snap_2d_transforms_to_pixel = true
+sdf_oversize = 0
+size = Vector2i(200, 200)
+
+[node name="Panel" type="Panel" parent="mirror/Sprite3D/SubViewport" index="0"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_oedvn")
+
+[node name="TextureRect" type="TextureRect" parent="mirror/Sprite3D/SubViewport/Panel" index="0"]
+material = SubResource("ShaderMaterial_l2ial")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -18.8596
+offset_right = 18.8596
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_8y3au")
+expand_mode = 2

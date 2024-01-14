@@ -1852,34 +1852,25 @@
             {
                 "actorName":"STRANGE_MIRROR",
 				"visibleName":"STRANGE_MIRROR",
-				"text": "MIRROR_MIRROR_RPL_5",
+				"text": "MIRROR_MIRROR_RPL_6",
 				"audioPath": "",
 				"optionReplicas":"",
 				"nextReplica": "rpl3"
             },
             "rpl3":
             {
-                "actorName":"STRANGE_MIRROR",
-				"visibleName":"STRANGE_MIRROR",
-				"text": "MIRROR_MIRROR_RPL_6",
+                "actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "MIRROR_PLAYER_RPL_7",
 				"audioPath": "",
 				"optionReplicas":"",
 				"nextReplica": "rpl4"
             },
             "rpl4":
             {
-                "actorName":"INNER_VOICE",
-				"visibleName":"INNER_VOICE",
-				"text": "MIRROR_PLAYER_RPL_7",
-				"audioPath": "",
-				"optionReplicas":"",
-				"nextReplica": "rpl5"
-            },
-            "rpl5":
-            {
                 "actorName":"STRANGE_MIRROR",
 				"visibleName":"STRANGE_MIRROR",
-				"text": "MIRROR_PLAYER_RPL_7",
+				"text": "MIRROR_MIRROR_RPL_8",
 				"audioPath": "",
 				"optionReplicas":"",
 				"nextReplica": "end"
@@ -1940,7 +1931,7 @@
 				"optionReplicas":[],
 				"nextReplica": "rpl1"
 			},
-            "rpl":
+            "rpl1":
             {
                 "actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
@@ -2230,7 +2221,7 @@
     "photo":
     {
         "script":
-		{
+		{ 
             "start":
 			{
 				"actorName":"INNER_VOICE",
@@ -2256,8 +2247,8 @@
 				"text": "PHOTO_SHE_2",
 				"audioPath": "",
 				"optionReplicas":[],
-				"nextReplica": "rpl2"
-			},
+				"nextReplica": "rpl3"
+			}, 
             "rpl3":
 			{
 				"actorName":"SHE",
@@ -2282,10 +2273,10 @@
 				"visibleName":"SHE",
 				"text": "PHOTO_SHE_5",
 				"audioPath": "",
-				"optionReplicas":[],
+				"optionReplicas":[], 
 				"nextReplica": "rpl6"
 			},
-            "rpl7":
+            "rpl6":
 			{
 				"actorName":"SHE",
 				"visibleName":"SHE",
@@ -2305,19 +2296,82 @@
 			}
         }
     },
-    "void":
+    "forrestBench":
     {
         "script":
 		{
             "start":
 			{
-				"actorName":"",
-				"visibleName":"",
-				"text": "",
+				"actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "FORREST_BENCH_PLAYER_RPL_1",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl1"
+			},
+            "rpl1":
+            {
+                "actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "FORREST_BENCH_PLAYER_RPL_2",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl2"
+            },
+            "rpl2":
+            {
+                "actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "FORREST_BENCH_PLAYER_RPL_3",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl3"
+            },
+            "rpl3":
+            {
+                "actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "FORREST_BENCH_PLAYER_RPL_4",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl4"
+            },
+            "rpl4":
+            {
+                "actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "FORREST_BENCH_PLAYER_RPL_5",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl5"
+            },
+            "rpl5":
+            {
+                "actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "FORREST_BENCH_PLAYER_RPL_6",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl6"
+            },
+            "rpl6":
+            {
+                "actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "FORREST_BENCH_PLAYER_RPL_7",
+				"audioPath": "",
+				"optionReplicas":[],
+				"nextReplica": "rpl7"
+            },
+            "rpl7":
+            {
+                "actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
+				"text": "FORREST_BENCH_PLAYER_RPL_8",
 				"audioPath": "",
 				"optionReplicas":[],
 				"nextReplica": "end"
-			},
+            },
             "end":
 			{
 				"actorName":"",
@@ -2332,43 +2386,62 @@
     "isPlayerCompleteLevel2":
     {
     },
-    "isPlayerOpenTheGate":
-    {
-    },
-    "isPlayerReadTheTable":
-    {
-    },
+    "isPlayerCompletedSchool":{},
+    "isPlayerCompletedForrest":{},
+    "isPlayerCompletedMirror":{},
+    "isPlayerOpenTheGate":{},
+    "isPlayerReadTheTable":{},
+    "isDescActive":{},
     "plot":
 	{
 		"schoolShiza":
 		{
-			"requiredDialogKeys":["schoolShiza","forrestShiza","mirrorShiza"],
-			"changeKey": "isPlayerCompleteLevel2", 
-			"changeTo":"finalShiza"
+			"requiredDialogKeys":[],
+			"changeKey": "not_desk", 
+			"changeTo":"schoolDesk"
 		},
         "forrestShiza":
 		{
-			"requiredDialogKeys":["schoolShiza","forrestShiza","mirrorShiza"],
+			"requiredDialogKeys":[],
 			"changeKey": "isPlayerCompleteLevel2", 
 			"changeTo":"finalShiza"
 		},
         "mirrorShiza":
 		{
-			"requiredDialogKeys":["schoolShiza","forrestShiza","mirrorShiza"],
-			"changeKey": "isPlayerCompleteLevel2", 
-			"changeTo":"finalShiza"
+			"requiredDialogKeys":[],
+			"changeKey": "not_mirror", 
+			"changeTo":"strangeMirror"
 		},
         "schoolDesk":
         {
             "requiredDialogKeys":[],
-			"changeKey": "isPlayerReadTheTable", 
+			"changeKey": "not_paper", 
 			"changeTo":"pieceOfPaper"
         },
         "pieceOfPaper":
         {
             "requiredDialogKeys":["schoolDesk"],
-			"changeKey": "isPlayerOpenTheGate", 
+			"changeKey": "not_photo", 
 			"changeTo":"photo"
+        },
+        "photo":
+        {
+            "requiredDialogKeys":[],
+			"changeKey": "isPlayerCompletedSchool", 
+			"changeTo":"isPlayerCompletedSchoolTrue"
+        },
+        "strangeMirror":
+        {
+            "requiredDialogKeys":[],
+            "requiredOptions":["success_1"],
+			"changeKey": "isPlayerCompletedMirror", 
+			"changeTo":"isPlayerCompletedMirrorTrue"
+        },
+        "forrestNote":
+        {
+            "requiredDialogKeys":[],
+			"changeKey": "isPlayerCompletedForrest", 
+			"changeTo":"isPlayerCompletedForrestTrue"
         }
 	}
 }

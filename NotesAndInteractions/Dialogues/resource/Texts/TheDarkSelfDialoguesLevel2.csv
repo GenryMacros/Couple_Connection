@@ -1,0 +1,201 @@
+KEY,en,ua
+SHIZA,???,???
+SHIZA_RPL_1,You are here again... Seems like 1987 attempts were not enough,Ти знову тут... 1987 разів було не достатньо...
+SHIZA_RPL_2,Why open the door.. Now again.. Pain..,Нащо чіпати двері… Тепер знову… Біль…
+PLAYER_RPL_1,Where am i?,Де я?
+SHIZA_RPL_3,Does it really matter?,Хіба це важливо???
+SHIZA_RPL_3_PLAYER_RPL_OPTION_1,Yes,Так
+SHIZA_RPL_3_PLAYER_RPL_OPTION_2,I guess not,"Певно, ні"
+SHIZA_RPL_4,Doesn't matter!,Не важливо!
+SHIZA_RPL_5,And what was important?,А що було важливим?
+SHIZA_RPL_5_PLAYER_RPL_OPTION_1,Friends,Друзі 
+SHIZA_RPL_5_PLAYER_RPL_OPTION_2,Parents,Батьки
+SHIZA_RPL_5_PLAYER_RPL_OPTION_3,Love,Кохання
+SHIZA_RPL_6,The one and only important thing was PAIN..,Важливим був ЛИШЕ БІЛЬ…
+SCHOOL_SHIZA_RPL_1,You are here... Do you know where are we?,Ти тут… Знаєш де це ?
+SCHOOL_SHIZA_RPL_1_PLAYER_RPL_OPTION_1,My school???,Моя школа???
+SCHOOL_PLAYER_RPL_1,"Anxiety, sadness and resentment overflow you","*Тривога, смуток і образа сповнюють вас*"
+SCHOOL_PLAYER_RPL_2,I can't be there... I must go...,Тут не можна бути… Треба піти…
+SCHOOL_PLAYER_RPL_3,Soon everyone will come back...,Скоро всі повернуться…
+SCHOOL_PLAYER_RPL_4,I will be alone again,Я знову буду один…
+SCHOOL_SHIZA_RPL_2,*HA HA HA HA*,*ХА ХА ХА ХА*
+SCHOOL_SHIZA_RPL_3,I should stay away from him...,Триматимусь від нього подалі…
+SCHOOL_SHIZA_RPL_4,Better not to bother him...,Краще його не чіпати…
+SCHOOL_SHIZA_RPL_5,*Whispers* Did you hear what have happend to his parents?,"*Плітки* Ти чула, що стало з його батьками?"
+SCHOOL_PLAYER_RPL_5,*Memories overflow your mind*,*Спогади заповнюють вашу голову*
+SCHOOL_PLAYER_RPL_6,Why? Why are you avoiding me?,Чому? Чому ви уникаєте мене? 
+SCHOOL_PLAYER_RPL_7,I too want with you!! I too want to play!!!,Я теж хочу з вами!!! Я теж хочу пограти!!!
+SCHOOL_PLAYER_RPL_8,Let me join to you!!!,Візьміть до себе!!!!
+SCHOOL_SHIZA_RPL_6,Join? Who are you?,До себе? Хто ти такий? 
+SCHOOL_SHIZA_RPL_7,You are worthless! They don't need you! You are not interesting to them.,Ти ніщо! Ти їм не потрібен! Ти їм не цікавий.
+SCHOOL_SHIZA_RPL_8,Be happy they don't bully you.,"Насолоджуйся тим, що вони не чіпають тебе."
+SCHOOL_SHIZA_RPL_9,"Afterall, they are your beloved F R I E N D S!!!",Це ж твої любі Д   Р   У   З   І !!!
+FORREST_SHIZA_RPL_1,*Breathes in* What a fantastic air!!!,*Вдихає* Яке чудове повітря!!!
+FORREST_PLAYER_RPL_1,*Subconsciously you take deep breath*,*Підсвідомо ви робите глибокий вдих*
+FORREST_PLAYER_RPL_2,*Your lungs are filling with something heavy*,*Ваши легені наповнюються чимоь неймовірно важким*
+FORREST_PLAYER_RPL_3,*You are choking...*,*Ви задихаєтеся…*
+FORREST_SHIZA_RPL_2,"MORE, MORE, MORE!","ЩЕ, ЩЕ, ЩЕ!"
+FORREST_SHIZA_RPL_3,"This lantern, forest, air...","Цей ліхтар, ліс, повітря..."
+FORREST_PLAYER_RPL_4,Just not here...,Тільки не сюди…
+FORREST_PLAYER_RPL_5,Let me go...,Дай мені піти…
+FORREST_SHIZA_RPL_4,You can't run from our conversation...,Від розмови зі мною не втечеш...
+FORREST_SHIZA_RPL_5,Little boy sits on bench...,Маленький хлопчик сидить на лавці...
+FORREST_PLAYER_RPL_6,*It is hard to breathe*,*Дихання перехоплює*
+FORREST_SHIZA_RPL_6,Little boy is capricious...,Маленький хлопчик вередує...
+FORREST_SHIZA_RPL_7,"Litlte boy ran away from parents, because they haven't done some whim of his","Маленький хлопчик втік від батьків, бо ті не зробили якусь дрібницю..."
+FORREST_PLAYER_RPL_7,*You start crying*,*На очах навертаються сльози*
+FORREST_SHIZA_RPL_8,Little boy is waiting...,Маленький хлопчик чекає…
+FORREST_SHIZA_RPL_9,Mom is gone for a long time... As well as Dad...,Мами довго нема… Тата довго нема…
+FORREST_PLAYER_RPL_8,*You want to kill yourself*,*Вам хочеться вбити себе*
+FORREST_SHIZA_RPL_10,Little boy is scared...,Маленькому хлопчику стає страшно...
+FORREST_SHIZA_RPL_11,Little boy starts to cry for real...,Маленький хлопчик починає плакати по справжньому...
+FORREST_SHIZA_RPL_12,Little boy doesn't know yet what have happened...,"Маленький хлопчик ще не знає, що трапилося..."
+FORREST_SHIZA_RPL_13,Little boy hear shouting and sirens...,"Маленький хлопчик чує крики, верещать сирени..."
+FORREST_SHIZA_RPL_14,Everyone run away from park...,Всі тікають з парку...
+FORREST_SHIZA_RPL_15,No one cares about little boy...,Всім все одно на маленького хлопчика...
+FORREST_SHIZA_RPL_16,Little boy see lantern...,Маленький хлопчик бачить ліхтар...
+FORREST_SHIZA_RPL_17,"Behind the lantern, a cloud of dark smoke covers the ground...",За ліхтарем кубла темного диму застеляють землю...
+FORREST_SHIZA_RPL_18,A fire is breaking out behind the lantern...,За ліхтарем розгортається пожежа...
+FORREST_SHIZA_RPL_19,Behind the lantern are the parents of a little boy...,За ліхтарем батьки маленького хлопчика...
+FORREST_SHIZA_RPL_20,Little boy faints...,Маленький хлопчик втрачає свідомість...
+FORREST_SHIZA_RPL_21,Little boy avoided death...,Маленький хлопчик уник смерті...
+FORREST_SHIZA_RPL_22,Little boy left them...,Маленький хлопчик їх покинув...
+FORREST_SHIZA_RPL_23,Little boy is now alone...,Маленький хлопчик тепер самотній...
+BROKEN_HEARTH,Broken hearth,Розбите серце
+MIRROR_SHIZA_RPL_1,Nice room...,Гарна кімнатка…
+MIRROR_SHIZA_RPL_2,"Although, not yours...",Але все ж не твоя…
+MIRROR_SHIZA_RPL_2_PLAYER_OPTION_1,Was mine?,Була моєю ?
+MIRROR_SHIZA_RPL_3,Never. You only dreamed about it...,Ніколи. Ти лише мріяв про це…
+MIRROR_SHIZA_RPL_3_PLAYER_OPTION_1,Why?,Чому?
+MIRROR_SHIZA_RPL_4,"Because you believed that if you wear a mask, she will let you into her heart","Бо вірив, якщо вдягнеш маску, то вона пустить тебе до свого серця"
+MIRROR_SHIZA_RPL_5,What were you not to her?,Яким ти тільки не був для неї?
+MIRROR_SHIZA_RPL_6,"Im joyful, im life of the party","Я – радісний, Я – душа компанії..."
+MIRROR_BROKEN_HEARTH_RPL_1,Anyway i was not interesting to her,Та я все одно був їй не цікавий.
+MIRROR_SHIZA_RPL_7,Im sad. Life is colorless and only death awaits us.,Я – сумний. У життя нема барв і всіх нас чекає смерть.
+MIRROR_SHIZA_RPL_8,"Brr, it's disgusting to remember.","Брр, аж згадувати противно."
+MIRROR_BROKEN_HEARTH_RPL_2,"Her ex, he was exactly that case...","Її колишній, він же був саме таким випадком…"
+MIRROR_BROKEN_HEARTH_RPL_3,"He pissed me off - he didn't even have any problems in his life, unlike me","Бісив мене - у нього навіть проблем в житті не було, не те що у мене"
+MIRROR_BROKEN_HEARTH_RPL_4,But again she didn't even look at me,Але вона знову навіть не глянула у мій бік
+MIRROR_SHIZA_RPL_9,"I am indifferent. If you don't show any interest, you become only more attractive!","Я – байдужий. Якщо не проявляти інтерес, то дівчата тільки більше цікавляться!"
+MIRROR_SHIZA_RPL_10,Hahahaha! What an idiot!,Хаххахахах! Ну і йолуп!
+MIRROR_BROKEN_HEARTH_RPL_5,She got married...,Вона вийшла заміж…
+MIRROR_BROKEN_HEARTH_RPL_6,"She is happy.,, Very happy...",Вона щаслива… Дуже щаслива…
+MIRROR_BROKEN_HEARTH_RPL_7,Why?! Why?! Why?!,Чому?! Чому?! Чому?!
+MIRROR_BROKEN_HEARTH_RPL_8,Why was I deprived even of hope???,Чому мене позбавили навіть надії???
+MIRROR_BROKEN_HEARTH_RPL_9,I want to have at least her...,Я хочу мати бодай її
+MIRROR_SHIZA_RPL_11,But you will have only DESPAIR,"Та все що ти матимеш, це лише ВІДЧАЙ"
+MIRROR_SHIZA_RPL_12,"She is not interested in you, was not, and never will be!","Ти їй не цікавий, не був, і не будеш!"
+MIRROR_SHIZA_RPL_13,"YOU are just ordinary, pathetic YOU!","ТИ це просто звичайний, жалюгідний ТИ!"
+MIRROR_PLAYER_RPL_1,Im ordinary...,Я звичайний . . .
+MIRROR_PLAYER_RPL_2,Im pathetic...,Я жалюгідний . . .
+FINAL_SHIZA_RPL_1,You've reached this far...,Ти дійшов сюди ???
+FINAL_SHIZA_RPL_2,That's new...,Це вперше…
+FINAL_SHIZA_RPL_3,I guess that's the end..., Гадаю це все…
+FINAL_SHIZA_RPL_4,It will HURT again.,Буде БОЛЯЧЕ знову.
+FINAL_SHIZA_RPL_5,Do you really want this?,Ти точно хочеш цього?
+FINAL_SHIZA_RPL_6,You can go back...,Ти можеш повернутися…
+FINAL_SHIZA_RPL_7,I will close the door...,Я зачиню двері…
+FINAL_SHIZA_RPL_8,None will bother you...,Ніхто більше не потурбує…
+FINAL_SHIZA_RPL_9,You will be alone. You will be safe.,Ти будеш один. Ти будеш в безпеці.
+FINAL_SHIZA_RPL_9_PLAYER_OPTION_1,"I guess, im ready","Гадаю, я готовий"
+FINAL_SHIZA_RPL_9_PLAYER_OPTION_2,"It is too much, bring me back",Це занадто поверни мене 
+FINAL_SHIZA_RPL_10_OPTION_2,Right choice...,Правильно…
+FINAL_SHIZA_RPL_11_OPTION_2,It will be better for both of us...,Так буде краще для нас обох…
+FINAL_SHIZA_RPL_10_OPTION_1,Then I probably have only one question...,"Тоді певно, маю лиш одне запитання…"
+FINAL_SHIZA_RPL_11_OPTION_1,Who am i?,Хто я?
+FINAL_SHIZA_RPL_11_OPTION_1_PLAYER_OPTION_1,"You are my torturer,",Ти - мій кат.
+FINAL_SHIZA_RPL_11_OPTION_1_PLAYER_OPTION_2,You are my protector.,Ти -  мій захисник.
+FINAL_SHIZA_RPL_12_OPTION_1_1,Why i torture you?,Чому я тебе катую?
+FINAL_PLAYER_RPL_1_OPTION_1_1,Because I'm pathetic??? Because that's what I am!,Бо я жалюгідний??? Бо такий вже я!
+FINAL_SHIZA_RPL_13_OPTION_1_1,Hmm... Another wrong conclusion...,Хмм… Ще один не правильний висновок…
+FINAL_SHIZA_RPL_14_OPTION_1_1,"Nevermind, see you next time...","Нічого, до наступної зустрічі…"
+FINAL_SHIZA_RPL_13_OPTION_1_2,What am I protecting you from?,Від чого я тебе захищаю?
+FINAL_PLAYER_RPL_1_OPTION_1_2,"From world, from pain, from life!","Від світу, від болю, від життя!"
+FINAL_SHIZA_RPL_14_OPTION_1_2,And you want to come back?,І ти хочеш назад?
+FINAL_PLAYER_RPL_2_OPTION_1_2,I must live!,Я мушу жити!
+FINAL_PLAYER_RPL_3_OPTION_1_2,I'll figure it out... even alone,Але я витримаю … навіть один
+FINAL_SHIZA_RPL_15_OPTION_1_2,You was never alone,Ти ніколи не був один.
+FINAL_SHIZA_RPL_16_OPTION_1_2,We had one another,Ми були одне в одного.
+FINAL_SHIZA_RPL_17_OPTION_1_2,But now there will be other as well...,Але тепер будуть і інші...
+FINAL_SHIZA_RPL_18_OPTION_1_2,I will rejoice with you.,Я радітиму разом з тобою.
+FINAL_SHIZA_RPL_19_OPTION_1_2,It's time.,Тобі час.
+MASK_APATHY,Mask of Indifference,Маска Байдужості
+MASK_HAPPY,Mask of Joy,Маска Радості
+MASK_SAD,Mask of Sadness,Маска Суму
+MASK_PINK,Pink mask,Рожева Маска
+MIRROR_MASK_APATHY_RPL_1,Neither Sadness nor Joy is my friend.,"Ні Сум, ні Радість мені не товариш."
+MIRROR_MASK_HAPPPY_RPL_1,What started with Sadness - will not end well.,Що почалося Сумом – хорошим не закінчиться.
+MIRROR_MASK_SAD_RPL_1,"Where there is Joy, there will be Sadness, we are thick as thieves","Де є Радість, там буде Сум, ми не розлий вода."
+MIRROR_MASK_PINK_RPL_1,*Broken. Unable to read*,*Зламана. Неможливо прочитати*
+STRANGE_MIRROR,Strange mirror,Дивне дзеркало
+MIRROR_MIRROR_RPL_1,What should be first?,Що першим мусить бути?
+MIRROR_MIRROR_RPL_1_OPTION_1,Sadness,Сум
+MIRROR_MIRROR_RPL_1_OPTION_2,Indifference,Байдужість
+MIRROR_MIRROR_RPL_1_OPTION_3,Joy,Радість
+MIRROR_MIRROR_RPL_1_OPTION_4,???,???
+MIRROR_MIRROR_RPL_2,And next should stay,І далі слідувать повино
+MIRROR_MIRROR_RPL_3,The last choice of yours:,Останій вибір твій:
+MIRROR_MIRROR_RPL_4_SUCCESS,"Hmm smart head, would you like to ask me something?","Хмм, розумна голова, хотів би в мене щось спитати?"
+MIRROR_MIRROR_RPL_4_FAIL,"Well, we have time, but I don't have legs, so I'll wait...","Ну, час в нас є, а в мене ніг нема, тож я чекатиму..."
+MIRROR_MIRROR_RPL_4_SUCCESS_OPTION_1,What kind of pink mask?,Що за рожева маска?
+MIRROR_MIRROR_RPL_4_SUCCESS_OPTION_2,"No, nothing","Ні, нічого"
+MIRROR_MIRROR_RPL_5,This is the passion of one young man who died right before my eyes,"Це Пристрать одного юнака, що згасла прям на моїх очах"
+MIRROR_MIRROR_RPL_6,"After that, he completely turned his back to the world...","Після цього, він з кінцями відвернувся від світу..."
+MIRROR_PLAYER_RPL_7,Yes... But there would be no other way...,Так... Але іншого шляху й не було б...
+MIRROR_MIRROR_RPL_8,You think?! The answer is right before your eyes.,Хіба?! Відповідь перед очима.
+FORREST_NOTE,"*Letter. In some places, the letters are blurred by tears*
+Dear M@m and Dad* Today I am 7, as you taught me, I brush my te@th twice a day, I am well taken ca@e of, so I will grow up like Dad, don't worry... Hmm, i am f@ne... I go to school, I recently got a top score in math, I'm going to be an eng@neer, I don't know what that means until the end, but ad@lts like it when I say that... I think it would be nice and you... *indecipherable scribbles* I mi@s you, I want you to be here. I want you to visit my school and room, I want to visit you.
+*Further inscriptions cannot be read*
+*A small inscription of an adult at the end*
+I don't want you to see what I'm like now, I want you...","*Лист. Подекуди букви розплилися від сліз*
+Любі м@ма й тато*  Сьогодні мені вже 7, як ви мене і вч@ли я чищу зуб@ двічі на день, мене гарно г@дують, тож я виросту великим як тат@о, не хвилюйтеся… Хмм, у мене все д@бре... Я ходжу в школу, нещодавно отримав максим@льний бал з математики, я стану інженер@м, не знаю, що це означає до кінця, але дор@слим подобається коли я так кажу…Гадаю сп@добалося б і вам… *нерозбірливі каракулі* Я за вами с@мую , хочу щоб ви були тут. Хочу щоб ви поб@чили мою школу і кімнату, хочу до вас в обій@и.
+*Далі написи неможливо читати*
+*В кінці невеликий напис дорослої людини*
+Не хочу, щоб ви побачили, який я зараз, хочу до вас…"
+SCHOOL_DESK_PLAYER_RPL_1,School...,Школа…
+SCHOOL_DESK_PLAYER_RPL_2,Hated this place...,Ненавидів це місце…
+SCHOOL_DESK_PLAYER_RPL_3,"I was not offended, I was not bullied...","Мене не кривдили, не знущалися…"
+SCHOOL_DESK_PLAYER_RPL_4,There was nothing like this...,Не було нічого такого…
+SCHOOL_DESK_PLAYER_RPL_5,As if I simply did not exist...,Я просто і не існував немов…
+SCHOOL_DESK_PLAYER_RPL_6,Also sat at the first desk.,Ще й сидів за першою партою.
+SCHOOL_DESK_PLAYER_RPL_7,"In front of everyone, yet alone","Перед усіма, але один…"
+SCHOOL_DESK_PLAYER_RPL_8,I think I decided that myself.,"Здається, я сам так вирішив."
+SCHOOL_DESK_PLAYER_RPL_9,We were from different worlds.,Ми були з різних світів.
+SCHOOL_DESK_PLAYER_RPL_10,But deep inside i also wanted...,"Але десь глибоко в душі, я теж хотів…"
+SCHOOL_DESK_PLAYER_RPL_11,"Real friends, like in books...","Друзів, справжніх як у книжках…"
+SCHOOL_DESK_PLAYER_RPL_12,Although…,Хоча…
+SCHOOL_DESK_PLAYER_RPL_13,*Memories of the past overflow you*,*Спогади минулого прориваються до вас*
+SCHOOL_DESK_PLAYER_RPL_14,The teacher was sitting here...,Тут сиділа вчителька…
+SCHOOL_DESK_PLAYER_RPL_15,"Harsh, but seems she also didn't care about me","Сурова,  але їй здається також було байдуже до мене"
+SCHOOL_DESK_PLAYER_RPL_16,Although... She yelled at me,Хоча… Вона кричала на мене
+SCHOOL_DESK_PLAYER_RPL_17,I stood in the corner...,Я стояв у кутку…
+SCHOOL_DESK_PLAYER_RPL_18,"There, near the trash bin...",Он там на місці сміття…
+SCHOOL_DESK_PLAYER_RPL_19,But for what?,Але за що?
+SCHOOL_DESK_PLAYER_RPL_20,There was something…,Було щось…
+SCHOOL_DESK_PLAYER_RPL_21,"Small, white","Маленьке, біле"
+UNKNOW_AUTHOR,Unknown author,Невідомий автор
+PIECE_OF_PAPER_UNKNOW_AUTHOR_1,"Hi, come to me after school?","Гайда, після школи до мене?"
+PIECE_OF_PAPER_UNKNOW_AUTHOR_2,We can play Pacman or something???,Пограємо в Пакмена чи ще щось???
+PIECE_OF_PAPER_UNKNOW_AUTHOR_3,"PS. Mrs. X is freaking me out, im soooo bored with mathematics.","PS. Місіс X задовбала, от зануда мене вже нудить від математики."
+PIECE_OF_PAPER_UNKNOW_AUTHOR_4,Old witch,Стара шкапа
+PIECE_OF_PAPER_UNKNOW_AUTHOR_5,Look:,Дивись:
+PIECE_OF_PAPER_UNKNOW_AUTHOR_6,*Insulting drawing of Mrs. X as a old witch attached*,*Прикладений образливий малюнок місіс Х у образі шкапи*
+PIECE_OF_PAPER_PLAYER_1,Right... I met you right here,Точно…Я ж зустрів тебе саме тут
+PIECE_OF_PAPER_PLAYER_2,My first friend...,Моя перша подруга…
+PIECE_OF_PAPER_PLAYER_3,My first love...,Моє перше кохання…
+SHE,She,Вона
+PHOTO_PLAYER_1,"*A small, open letter near the photo*","*Біля фото невеличкий, відкритий лист*"
+PHOTO_SHE_1,I know we haven't been that close in recent years...,"Я знаю, що ми вже не так близько спілкуємося останні роки..."
+PHOTO_SHE_2,"You know, marriage and all these family troubles...","Знаєш, шлюб і ці всі сімейні клопоти…"
+PHOTO_SHE_3,But sometimes you just want to get stuck in retro games like in childhood...,Але іноді хочеться як в дитинстві просто залипнути в ретро ігри…
+PHOTO_SHE_4,In such moments I remember you.,В такі моменти я згадую тебе.
+PHOTO_SHE_5,"Look what I found, by the way","Дивись, до речі, що знайшла"
+PHOTO_SHE_6,"*In the photo, you and the girl are still teenagers, beer is hidden somewhere under the pillows, your favorite video game is on TV. That was one of the best sleepovers you've ever had.*","*На фото ви, і дівчина, ще підлітки, десь під подушками сховане пиво, на TV улюблена відеогра. То була одна з найкращих ваших ночівель.*"
+FORREST_BENCH_PLAYER_RPL_1,*old broken bench*,*стара побита лавка*
+FORREST_BENCH_PLAYER_RPL_2,It was probably the worst day of my life,То певно був найгірший день мого життя
+FORREST_BENCH_PLAYER_RPL_3,I will never forget that horror,Я ніколи не забуду того жахіття
+FORREST_BENCH_PLAYER_RPL_4,I still sometimes wonder if it would be better to just stay with them,"Я досі інколи думаю, чи не краще було б просто лишитися з ними"
+FORREST_BENCH_PLAYER_RPL_5,Wouldn't it be better to die...,Чи не краще було б померти…
+FORREST_BENCH_PLAYER_RPL_6,But fate brought me to this bench...,Але доля привела на цю лавку…
+FORREST_BENCH_PLAYER_RPL_7,My fate is similar to hers,Моя доля схожа на її
+FORREST_BENCH_PLAYER_RPL_8,Old and shattered. Clinging to a world I shouldn't have belonged to.,"Старий і побитий. Тримаюся за світ, якому не мав належати."

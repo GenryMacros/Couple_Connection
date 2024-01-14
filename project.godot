@@ -21,6 +21,7 @@ gravity=9.8
 config/name="Couple Connection"
 run/main_scene="res://UI/main_menu.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
+run/max_fps=144
 config/icon="res://icon.png"
 
 [autoload]
@@ -123,7 +124,7 @@ interact={
 
 [internationalization]
 
-locale/translations=PackedStringArray("res://NotesAndInteractions/Dialogues/resource/Texts/TheDarkSelfCharacters.en.translation", "res://NotesAndInteractions/Dialogues/resource/Texts/TheDarkSelfCharacters.ua.translation", "res://NotesAndInteractions/Dialogues/resource/Texts/TheDarkSelfDialogues.en.translation", "res://NotesAndInteractions/Dialogues/resource/Texts/TheDarkSelfDialogues.ua.translation", "res://NotesAndInteractions/Dialogues/resource/Texts/TheDarkSelfDialoguesLevel1.en.translation", "res://NotesAndInteractions/Dialogues/resource/Texts/TheDarkSelfDialoguesLevel1.ua.translation", "res://NotesAndInteractions/Dialogues/resource/Texts/TheDarkSelfUI.en.translation", "res://NotesAndInteractions/Dialogues/resource/Texts/TheDarkSelfUI.ua.translation")
+locale/translations=PackedStringArray("res://NotesAndInteractions/Dialogues/resource/Texts/TheDarkSelfCharacters.en.translation", "res://NotesAndInteractions/Dialogues/resource/Texts/TheDarkSelfCharacters.ua.translation", "res://NotesAndInteractions/Dialogues/resource/Texts/TheDarkSelfDialogues.en.translation", "res://NotesAndInteractions/Dialogues/resource/Texts/TheDarkSelfDialogues.ua.translation", "res://NotesAndInteractions/Dialogues/resource/Texts/TheDarkSelfDialoguesLevel1.en.translation", "res://NotesAndInteractions/Dialogues/resource/Texts/TheDarkSelfDialoguesLevel1.ua.translation", "res://NotesAndInteractions/Dialogues/resource/Texts/TheDarkSelfUI.en.translation", "res://NotesAndInteractions/Dialogues/resource/Texts/TheDarkSelfUI.ua.translation", "res://NotesAndInteractions/Dialogues/resource/Texts/TheDarkSelfDialoguesLevel2.en.translation", "res://NotesAndInteractions/Dialogues/resource/Texts/TheDarkSelfDialoguesLevel2.ua.translation")
 
 [layer_names]
 

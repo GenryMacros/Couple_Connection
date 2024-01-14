@@ -2,13 +2,13 @@ extends Control
 
 @export_file("*json")  var dialog_file
 @onready var background = $CanvasLayer;
-@onready var replica_audio_player = $CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/DialogPanel/HBoxContainer/DialogText/VBoxContainer/Replica/VoicePlayer
-@onready var replica_text_label =  $CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/DialogPanel/HBoxContainer/DialogText/VBoxContainer/Replica
-@onready var type_char_timer = $CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/DialogPanel/HBoxContainer/DialogText/VBoxContainer/Replica/CharacterTyper
+@onready var replica_audio_player = $CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/DialogPanel/HBoxContainer/VBoxContainer/Replica/VoicePlayer
+@onready var replica_text_label =  $CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/DialogPanel/HBoxContainer/VBoxContainer/Replica
+@onready var type_char_timer = $CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/DialogPanel/HBoxContainer/VBoxContainer/Replica/CharacterTyper
 @onready var character_name_label = $CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer/CharacterName/CharacterName
-@onready var buttons_container = $CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/DialogPanel/HBoxContainer/DialogText/VBoxContainer/Buttons
+@onready var buttons_container = $CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/DialogPanel/HBoxContainer/VBoxContainer/Buttons
 @onready var wait_timer = $PausePerNextDialog;
-
+@export var type_character_time_in_seconds = .0005;
 var dialog_key = ""
 var dialogs = {};
 var dialog_script = {};
@@ -17,7 +17,6 @@ var message_char_index = 0;
 var curr_message = "";
 var is_in_progress = false;
 var is_rested = true;
-var type_character_speed = .1;
 var isChoiceReplicaTextTyped = false;
 var isAllOptionShowed = false;
 var isOptionChosen = false;
@@ -34,15 +33,18 @@ func _ready():
 	
 
 func load_dialogs():
-	if FileAccess.file_exists(dialog_file):
-		var dataFile = FileAccess.open(dialog_file, FileAccess.READ);
-		var parsedResult = JSON.parse_string(dataFile.get_as_text());
-		if parsedResult is Dictionary:
-			return parsedResult;
+	if dialog_file != null:
+		if FileAccess.file_exists(dialog_file):
+			var dataFile = FileAccess.open(dialog_file, FileAccess.READ);
+			var parsedResult = JSON.parse_string(dataFile.get_as_text());
+			if parsedResult is Dictionary:
+				return parsedResult;
+			else:
+				print("Error reading file!");
 		else:
-			print("Error reading file!");
+			print("File doesn't exist!");
 	else:
-		print("File doesn't exist!");
+		print("File path equals null");
 
 func show_replica():
 	replica_text_label.text += curr_message[message_char_index];
@@ -66,7 +68,7 @@ func process_replica():
 		if FileAccess.file_exists(curr_replica["audioPath"]):
 			replica_audio_player.stream = load(curr_replica["audioPath"]);
 			replica_audio_player.play();
-		type_char_timer.set_wait_time(type_character_speed);
+		type_char_timer.set_wait_time(type_character_time_in_seconds);
 		type_char_timer.start();
 	else:
 		type_char_timer.wait_time /=1.5;
@@ -151,7 +153,7 @@ func finish_dialog():
 	replica_text_label.text = "";
 	character_name_label.text = "";
 	replica_audio_player.stop();
-	type_char_timer.set_wait_time(type_character_speed);
+	type_char_timer.set_wait_time(type_character_time_in_seconds);
 	background.visible = false;
 	get_tree().paused = false
 	if playedDialogs.has(dialog_key):
@@ -160,7 +162,7 @@ func finish_dialog():
 		playedDialogs[dialog_key] = 1;
 	caller.dialog_finished.emit(caller,chosenOptions);
 	is_in_progress = false;
-	is_rested = false;
+	is_rested = false; 
 	wait_timer.start();
 		
 func on_display_dialog(dialog_caller):
@@ -172,14 +174,14 @@ func on_display_dialog(dialog_caller):
 		caller = dialog_caller
 		dialog_key = caller.dialog_key;
 		if not dialogs.has(dialog_key):
-			caller.dialog_finished.emit(dialog_key,["invalid key"]);
+			caller.dialog_finished.emit(caller,["invalid key"]);
 		else:
 			get_tree().paused = true;
 			background.visible = true;
 			is_in_progress = true;
 			dialog_script = dialogs[dialog_key]["script"];
 			curr_replica = dialog_script["start"];
-			type_char_timer.set_wait_time(type_character_speed);
+			type_char_timer.set_wait_time(type_character_time_in_seconds);
 			next_replica();
 
 
@@ -199,3 +201,7 @@ func _on_i_dialog_caller_dialog_finished(caller, chosenOptions):
 		var requiredDialogs : Array = plot[key]["requiredDialogKeys"];
 		if playedDialogs.has_all(requiredDialogs):
 			change_dialog_key.emit(plot[key]["changeKey"],plot[key]["changeTo"]);
+
+
+
+		
