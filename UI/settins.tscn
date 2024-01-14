@@ -1,6 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://be5ceayhyurry"]
+[gd_scene load_steps=8 format=3 uid="uid://be5ceayhyurry"]
 
 [ext_resource type="Script" path="res://Scripts/UI/settins.gd" id="1_drky1"]
+[ext_resource type="Shader" path="res://Scripts/Shaders/pixelization_canvas.gdshader" id="2_tb342"]
+[ext_resource type="VideoStream" path="res://UI/Videos/intro_mp4.ogv" id="3_i2bde"]
+[ext_resource type="Shader" path="res://Scripts/Shaders/half_black.gdshader" id="4_0uijf"]
+[ext_resource type="Texture2D" uid="uid://cg2tthymtpdfa" path="res://icon.png" id="5_8m87s"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2xtv6"]
+shader = ExtResource("2_tb342")
+shader_parameter/amount = 200
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_updbl"]
+shader = ExtResource("4_0uijf")
+shader_parameter/alpha = 0.7
 
 [node name="Settins" type="Control"]
 layout_mode = 3
@@ -15,12 +27,26 @@ script = ExtResource("1_drky1")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="Background" type="TextureRect" parent="CanvasLayer"]
-offset_left = 1920.0
-offset_right = 1920.0
-offset_bottom = 1080.0
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="CanvasLayer"]
+material = SubResource("ShaderMaterial_2xtv6")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+stream = ExtResource("3_i2bde")
+autoplay = true
+expand = true
+loop = true
+
+[node name="Background" type="TextureRect" parent="CanvasLayer"]
+material = SubResource("ShaderMaterial_updbl")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_8m87s")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer"]
 anchors_preset = 15

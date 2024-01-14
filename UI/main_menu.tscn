@@ -1,6 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://c5j58jxb57khh"]
+[gd_scene load_steps=7 format=3 uid="uid://c5j58jxb57khh"]
 
 [ext_resource type="Script" path="res://Scripts/UI/main_menu.gd" id="1_nor1u"]
+[ext_resource type="VideoStream" path="res://UI/Videos/intro_mp4.ogv" id="2_bh83q"]
+[ext_resource type="Shader" path="res://Scripts/Shaders/pixelization_canvas.gdshader" id="2_cj8rr"]
+[ext_resource type="Shader" path="res://Scripts/Shaders/half_black.gdshader" id="3_dqu26"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_dtsl5"]
+shader = ExtResource("2_cj8rr")
+shader_parameter/amount = 200
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ifuki"]
+shader = ExtResource("3_dqu26")
+shader_parameter/alpha = 0.7
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -13,12 +24,24 @@ script = ExtResource("1_nor1u")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="Background" type="TextureRect" parent="CanvasLayer"]
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="CanvasLayer"]
+material = SubResource("ShaderMaterial_dtsl5")
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+stream = ExtResource("2_bh83q")
+autoplay = true
+expand = true
+loop = true
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+material = SubResource("ShaderMaterial_ifuki")
+offset_right = 715.0
+offset_bottom = 1080.0
+size_flags_horizontal = 3
+color = Color(0, 0, 0, 1)
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer"]
 anchors_preset = 9
@@ -37,17 +60,19 @@ layout_mode = 2
 [node name="Spacer" type="Control" parent="CanvasLayer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
-size_flags_stretch_ratio = 2.0
+size_flags_stretch_ratio = 0.5
 
 [node name="Header" type="Label" parent="CanvasLayer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 6
 theme_type_variation = &"HeaderLarge"
-text = "The Dark Self"
+text = "THE DARK SELF"
 
 [node name="Spacer3" type="Control" parent="CanvasLayer/HBoxContainer/VBoxContainer"]
 custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.8
 
 [node name="Play" type="Button" parent="CanvasLayer/HBoxContainer/VBoxContainer"]
 layout_mode = 2

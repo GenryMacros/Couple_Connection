@@ -47,6 +47,7 @@
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_siebo"]
 shader = ExtResource("3_poeyk")
+shader_parameter/alpha = 0.5
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_5mpet"]
 viewport_path = NodePath("Player/camera_point_first/Camera3D/viewport_container/background_viewport")

@@ -39,9 +39,10 @@
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_k1f8b"]
 shader = ExtResource("4_d32sn")
+shader_parameter/alpha = 0.5
 
-[sub_resource type="ViewportTexture" id="ViewportTexture_ushse"]
-viewport_path = NodePath("CameraRig/base_camera/foreground_viewport_container2/foreground_viewport")
+[sub_resource type="ViewportTexture" id="ViewportTexture_13mmr"]
+viewport_path = NodePath("CameraRig/base_camera/background_viewport_container/background_viewport")
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_d4mk8"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -87,15 +88,9 @@ script = ExtResource("1_0lian")
 z_as_relative = false
 focus_mode = 2
 
-[node name="Background" parent="Settins/CanvasLayer" index="0"]
+[node name="Background" parent="Settins/CanvasLayer" index="1"]
 material = SubResource("ShaderMaterial_k1f8b")
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 0.0
-offset_right = 0.0
-offset_bottom = 0.0
-texture = SubResource("ViewportTexture_ushse")
+texture = SubResource("ViewportTexture_13mmr")
 
 [node name="Dialog_Player" parent="." instance=ExtResource("1_swquk")]
 visible = false

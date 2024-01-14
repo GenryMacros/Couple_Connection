@@ -10,7 +10,8 @@ extends Node3D
 func _ready():
 	player.activate_first_person()
 	canvas_layer.visible = false
-
+	GameManager.is_game_paused = false
+	
 func _input(event):
 	if event.is_action_pressed("Exit"):
 		if not GameManager.is_game_paused:
