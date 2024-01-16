@@ -12,7 +12,7 @@ var screenResolutions : Dictionary = {
 }
 var windowMode : Dictionary = {
 	0: Window.MODE_WINDOWED,
-	1: Window.MODE_FULLSCREEN
+	1: Window.MODE_EXCLUSIVE_FULLSCREEN
 }
 var settings: Dictionary = {
 	"window_size":0,

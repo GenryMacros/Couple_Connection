@@ -43,7 +43,7 @@ shader = ExtResource("3_p6tdj")
 shader_parameter/alpha = 0.5
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_13mmr"]
-viewport_path = NodePath("CameraRig/base_camera/background_viewport_container/background_viewport")
+viewport_path = NodePath("base_camera/background_viewport_container/background_viewport")
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_d4mk8"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -334,6 +334,18 @@ script = ExtResource("37_70m8l")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.1832, -26.4164, 4.91993)
 shape = SubResource("BoxShape3D_bc61g")
+
+[node name="ClockMusicPlayer" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.206381, 6.56049, -3.27498)
+stream = ExtResource("38_m3nis")
+autoplay = true
+
+[node name="ComputerMusicPlayer" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.29643, 4.24352, -1.07454)
+stream = ExtResource("39_1p8jy")
+volume_db = 20.0
+max_db = 6.0
+autoplay = true
 
 [connection signal="change_dialog_key" from="Dialog_Player" to="Environment/Poster/InteractionArea/IDialogCaller" method="_on_dialog_player_change_dialog_key"]
 [connection signal="change_dialog_key" from="Dialog_Player" to="Environment/Toilet_batch/StaticBody3D/CollisionShape3D/InteractionArea/IDialogCaller" method="_on_dialog_player_change_dialog_key"]
