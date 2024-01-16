@@ -45,7 +45,7 @@ shader = ExtResource("3_junvd")
 shader_parameter/alpha = 0.5
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_13mmr"]
-viewport_path = NodePath("CameraRig/base_camera/background_viewport_container/background_viewport")
+viewport_path = NodePath("base_camera/background_viewport_container/background_viewport")
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_d4mk8"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -353,7 +353,6 @@ stream = ExtResource("39_1p8jy")
 volume_db = 20.0
 max_db = 6.0
 autoplay = true
-stream_paused = true
 
 [connection signal="change_dialog_key" from="Dialog_Player" to="Environment/Poster/InteractionArea/IDialogCaller" method="_on_dialog_player_change_dialog_key"]
 [connection signal="change_dialog_key" from="Dialog_Player" to="Environment/Toilet_batch/StaticBody3D/CollisionShape3D/InteractionArea/IDialogCaller" method="_on_dialog_player_change_dialog_key"]
