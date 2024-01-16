@@ -310,15 +310,6 @@
 				"text": "FORREST_SHIZA_RPL_1",
 				"audioPath": "",
 				"optionReplicas":[],
-				"nextReplica": "rpl1"
-			},
-            "rpl1":
-			{
-				"actorName":"SHIZA",
-				"visibleName":"SHIZA",
-				"text": "FORREST_SHIZA_RPL_1",
-				"audioPath": "",
-				"optionReplicas":[],
 				"nextReplica": "rpl2"
 			},
             "rpl2":
@@ -358,15 +349,6 @@
 				"nextReplica": "rpl6"
 			},
             "rpl6":
-			{
-				"actorName":"SHIZA",
-				"visibleName":"SHIZA",
-				"text": "FORREST_SHIZA_RPL_3",
-				"audioPath": "",
-				"optionReplicas":[],
-				"nextReplica": "rpl7"
-			},
-            "rpl7":
 			{
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
@@ -542,15 +524,6 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FORREST_SHIZA_RPL_17",
-				"audioPath": "",
-				"optionReplicas":[],
-				"nextReplica": "rpl27"
-			},
-            "rpl27":
-			{
-				"actorName":"SHIZA",
-				"visibleName":"SHIZA",
-				"text": "FORREST_SHIZA_RPL_18",
 				"audioPath": "",
 				"optionReplicas":[],
 				"nextReplica": "rpl28"
@@ -987,7 +960,7 @@
 				"visibleName":"SHIZA",
 				"text": "FINAL_SHIZA_RPL_9",
 				"audioPath": "",
-				"optionReplicas":["rpl10","rpl11"],
+				"optionReplicas":["rpl10","badEnding"],
 				"nextReplica": "choice"
 			},
             "rpl10":
@@ -999,7 +972,7 @@
 				"optionReplicas":[],
 				"nextReplica": "rpl14"
 			},
-            "rpl11":
+            "badEnding":
 			{
 				"actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
@@ -2383,15 +2356,6 @@
 			}
         }
     },
-    "isPlayerCompleteLevel2":
-    {
-    },
-    "isPlayerCompletedSchool":{},
-    "isPlayerCompletedForrest":{},
-    "isPlayerCompletedMirror":{},
-    "isPlayerOpenTheGate":{},
-    "isPlayerReadTheTable":{},
-    "isDescActive":{},
     "plot":
 	{
 		"schoolShiza":
