@@ -85,7 +85,7 @@ func _on_sound_effects_volume_value_changed(value):
 	SettingService.set_up_volume(1,int(sfx_volume_slider.value));
 func _on_dialog_volume_value_changed(value):
 	dialog_volume_label.text = str(floor(value));
-	SettingService.set_up_volume(1,int(dialog_volume_slider.value));
+	SettingService.set_up_volume(2,int(dialog_volume_slider.value));
 	
 
 func set_up_settings():

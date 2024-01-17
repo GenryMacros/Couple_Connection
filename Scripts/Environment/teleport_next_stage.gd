@@ -10,7 +10,8 @@ func _on_i_dialog_caller_dialog_finished(caller : IDialogCaller, chosenOptions :
 	if caller.dialog_key == "finalShiza":
 		if chosenOptions.has("badEnding"):
 			var loading_screen = load("res://UI/loading_scene.tscn"); 
-			GameManager.ending = GameManager.ENDING.BAD;
+			GameManager.current_scene = -1;
+			GameManager.set_new_scene();
 			get_tree().change_scene_to_packed(loading_screen);
 		elif chosenOptions.has("rpl16"):
 			var loading_screen = load("res://UI/loading_scene.tscn"); 

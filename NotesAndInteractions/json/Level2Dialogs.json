@@ -667,15 +667,6 @@
 				"text": "MIRROR_SHIZA_RPL_6",
 				"audioPath": "",
 				"optionReplicas":[],
-				"nextReplica": "rpl8"
-            },
-            "rpl8":
-            {
-                "actorName":"SHIZA",
-				"visibleName":"SHIZA",
-				"text": "MIRROR_SHIZA_RPL_6",
-				"audioPath": "",
-				"optionReplicas":[],
 				"nextReplica": "rpl9"
             },
             "rpl9":
@@ -718,15 +709,6 @@
             {
                 "actorName":"BROKEN_HEARTH",
 				"visibleName":"BROKEN_HEARTH",
-				"text": "MIRROR_BROKEN_HEARTH_RPL_2",
-				"audioPath": "",
-				"optionReplicas":[],
-				"nextReplica": "rpl14"
-            },
-            "rpl14":
-            {
-                "actorName":"BROKEN_HEARTH",
-				"visibleName":"BROKEN_HEARTH",
 				"text": "MIRROR_BROKEN_HEARTH_RPL_3",
 				"audioPath": "",
 				"optionReplicas":[],
@@ -751,15 +733,6 @@
 				"nextReplica": "rpl17"
             },
             "rpl17":
-            {
-                "actorName":"SHIZA",
-				"visibleName":"SHIZA",
-				"text": "MIRROR_SHIZA_RPL_10",
-				"audioPath": "",
-				"optionReplicas":[],
-				"nextReplica": "rpl18"
-            },
-            "rpl18":
             {
                 "actorName":"SHIZA",
 				"visibleName":"SHIZA",
@@ -941,15 +914,6 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FINAL_SHIZA_RPL_8",
-				"audioPath": "",
-				"optionReplicas":[],
-				"nextReplica": "rpl8"
-			},
-            "rpl8":
-			{
-				"actorName":"SHIZA",
-				"visibleName":"SHIZA",
-				"text": "FINAL_SHIZA_RPL_9",
 				"audioPath": "",
 				"optionReplicas":[],
 				"nextReplica": "rpl9"

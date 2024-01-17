@@ -1,9 +1,41 @@
-[gd_scene load_steps=8 format=3 uid="uid://pd4r2d7qrx25"]
+[gd_scene load_steps=13 format=3 uid="uid://pd4r2d7qrx25"]
 
 [ext_resource type="PackedScene" uid="uid://d3vu3dr5v3s6c" path="res://Environment/Imported/Mirror/mirror.glb" id="1_butmc"]
 [ext_resource type="Shader" path="res://Scripts/Shaders/mirror_dark.gdshader" id="2_6pyy8"]
 [ext_resource type="Script" path="res://Scripts/Environment/mirror_2.gd" id="2_inq3h"]
 [ext_resource type="Texture2D" uid="uid://c8iwk4kt8cnjf" path="res://Environment/mirror/player_img_2_cut.png" id="3_8y3au"]
+[ext_resource type="Shader" path="res://Scripts/Shaders/highlighter.gdshader" id="3_iglw2"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_v1gox"]
+render_priority = 0
+shader = ExtResource("3_iglw2")
+shader_parameter/shine_color = Color(1, 1, 0, 1)
+shader_parameter/cycle_interval = 2.0
+shader_parameter/shine_speed = 2.0
+shader_parameter/shine_width = 10.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gp0t2"]
+resource_name = "Material.002"
+next_pass = SubResource("ShaderMaterial_v1gox")
+cull_mode = 2
+albedo_color = Color(0.826659, 0.826659, 0.826659, 1)
+roughness = 0.0263158
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_jatib"]
+render_priority = 0
+shader = ExtResource("3_iglw2")
+shader_parameter/shine_color = Color(1, 1, 0, 1)
+shader_parameter/cycle_interval = 2.0
+shader_parameter/shine_speed = 2.0
+shader_parameter/shine_width = 10.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_46j21"]
+resource_name = "Material.001"
+next_pass = SubResource("ShaderMaterial_jatib")
+cull_mode = 2
+albedo_color = Color(0.686659, 0.686659, 0.686659, 1)
+metallic = 0.684211
+roughness = 0.5
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_20rtl"]
 viewport_path = NodePath("mirror/Sprite3D/SubViewport")
@@ -22,6 +54,10 @@ shader_parameter/dark_coof = 22.0
 
 [node name="mirror2" instance=ExtResource("1_butmc")]
 script = ExtResource("2_inq3h")
+
+[node name="mirror" parent="." index="0"]
+material_override = SubResource("StandardMaterial3D_gp0t2")
+material_overlay = SubResource("StandardMaterial3D_46j21")
 
 [node name="Sprite3D" type="Sprite3D" parent="mirror" index="1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.020861, -0.072882, -0.00756812)

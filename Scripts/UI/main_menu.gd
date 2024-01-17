@@ -27,7 +27,6 @@ func _on_focus_exited(button: Button):
 func _on_play_pressed():
 	GameManager.current_scene = -1
 	GameManager.set_new_scene()
-	BackgroundMusicPlayer.stop()
 	var loading_screen = load("res://UI/loading_scene.tscn"); 
 	get_tree().change_scene_to_packed(loading_screen);
 

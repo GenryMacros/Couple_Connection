@@ -22,7 +22,7 @@
 [ext_resource type="PackedScene" uid="uid://c31sr1atp6es6" path="res://Environment/Imported/Room/Clock.glb" id="20_gobof"]
 [ext_resource type="PackedScene" uid="uid://da5ap1y2jqiut" path="res://Environment/Imported/Door/jail_door.glb" id="21_c1an7"]
 [ext_resource type="PackedScene" uid="uid://ol4j8hj1pxcj" path="res://Environment/Imported/Room/trash_can.glb" id="22_8ebfx"]
-[ext_resource type="PackedScene" uid="uid://bha47i55xwrwm" path="res://Environment/School/school_board.tscn" id="23_xem14"]
+[ext_resource type="PackedScene" path="res://Environment/School/school_board.tscn" id="23_xem14"]
 [ext_resource type="PackedScene" uid="uid://2hvfb4ajs0kq" path="res://Environment/Imported/Mirror/floor.glb" id="24_s23fi"]
 [ext_resource type="PackedScene" uid="uid://dr1jkqtrvc3ni" path="res://Environment/mirror/floor_opaque.tscn" id="25_lyyvo"]
 [ext_resource type="PackedScene" uid="uid://r473gu4dnuxq" path="res://Environment/Imported/Mirror/blue.glb" id="26_172qg"]
@@ -810,7 +810,7 @@ visible = false
 visible = false
 
 [node name="Anti_main" parent="." instance=ExtResource("55_dsudn")]
-transform = Transform3D(-0.639962, 0, 0.768406, 0, 1, 0, -0.768406, 0, -0.639962, 2.69838, 0.608549, -3.88515)
+transform = Transform3D(-0.999607, 0, 0.0280262, 0, 1, 0, -0.0280262, 0, -0.999607, 1.27297, 0.608549, -3.88515)
 
 [node name="StartShiza" parent="Anti_main" instance=ExtResource("15_ayqmo")]
 transform = Transform3D(1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, 1, 0, 2.28256, 0)

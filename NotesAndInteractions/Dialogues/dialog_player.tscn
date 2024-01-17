@@ -136,6 +136,7 @@ bus = &"Dialogs"
 [node name="Buttons" type="VBoxContainer" parent="CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/DialogPanel/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 0
+size_flags_vertical = 3
 focus_mode = 2
 
 [node name="Space4" type="Control" parent="CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer/DialogPanel/HBoxContainer/VBoxContainer"]

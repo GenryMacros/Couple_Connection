@@ -13,33 +13,50 @@ script = ExtResource("1_igm15")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer"]
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 
-[node name="Spacer" type="Control" parent="CanvasLayer/HBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/PanelContainer"]
+layout_mode = 2
+
+[node name="Spacer" type="Control" parent="CanvasLayer/PanelContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="EndingTexet" type="Label" parent="CanvasLayer/HBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/PanelContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+size_flags_stretch_ratio = 4.0
+
+[node name="EndingTexet" type="Label" parent="CanvasLayer/PanelContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 4.0
-horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
-[node name="Timer" type="Timer" parent="CanvasLayer/HBoxContainer/EndingTexet"]
-one_shot = true
+[node name="CharacterTimer" type="Timer" parent="CanvasLayer/PanelContainer/HBoxContainer/VBoxContainer/EndingTexet"]
 
-[node name="CharacterTimer" type="Timer" parent="CanvasLayer/HBoxContainer/EndingTexet"]
+[node name="NextPageButton" type="Button" parent="CanvasLayer/PanelContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+size_flags_stretch_ratio = 0.5
+theme_type_variation = &"DialogButton"
+disabled = true
 
-[node name="Spacer2" type="Control" parent="CanvasLayer/HBoxContainer"]
+[node name="Spacer2" type="Control" parent="CanvasLayer/PanelContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[connection signal="timeout" from="CanvasLayer/HBoxContainer/EndingTexet/Timer" to="." method="_on_timer_timeout"]
-[connection signal="timeout" from="CanvasLayer/HBoxContainer/EndingTexet/CharacterTimer" to="." method="_on_character_timer_timeout"]
+[connection signal="timeout" from="CanvasLayer/PanelContainer/HBoxContainer/VBoxContainer/EndingTexet/CharacterTimer" to="." method="_on_character_timer_timeout"]
+[connection signal="focus_entered" from="CanvasLayer/PanelContainer/HBoxContainer/VBoxContainer/NextPageButton" to="." method="_on_next_page_button_focus_entered"]
+[connection signal="focus_exited" from="CanvasLayer/PanelContainer/HBoxContainer/VBoxContainer/NextPageButton" to="." method="_on_next_page_button_focus_exited"]
+[connection signal="pressed" from="CanvasLayer/PanelContainer/HBoxContainer/VBoxContainer/NextPageButton" to="." method="_on_next_page_button_pressed"]
