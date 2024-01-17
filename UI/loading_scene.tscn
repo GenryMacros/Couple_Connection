@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://c6rogvadjbdcc"]
+[gd_scene load_steps=6 format=3 uid="uid://c6rogvadjbdcc"]
 
 [ext_resource type="Script" path="res://Scripts/UI/LoadingScene.gd" id="1_usarp"]
 [ext_resource type="Shader" path="res://Scripts/Shaders/pixelization_canvas.gdshader" id="3_a6ng8"]
@@ -7,6 +7,9 @@
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_8xed3"]
 shader = ExtResource("3_a6ng8")
 shader_parameter/amount = 200
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_407cl"]
+bg_color = Color(0.298039, 0.368627, 0.882353, 1)
 
 [node name="LoadingScene" type="Control"]
 layout_mode = 3
@@ -62,6 +65,7 @@ size_flags_horizontal = 3
 
 [node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_styles/fill = SubResource("StyleBoxFlat_407cl")
 
 [node name="Spacer" type="Control" parent="CanvasLayer/HBoxContainer"]
 layout_mode = 2
