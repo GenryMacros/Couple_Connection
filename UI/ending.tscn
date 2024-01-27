@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://cov7464s3n5ke"]
+[gd_scene load_steps=3 format=3 uid="uid://cov7464s3n5ke"]
 
 [ext_resource type="Script" path="res://UI/ending.gd" id="1_igm15"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mxcbw"]
+bg_color = Color(0, 0, 0, 1)
 
 [node name="Ending" type="Control"]
 layout_mode = 3
@@ -21,6 +24,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_mxcbw")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/PanelContainer"]
 layout_mode = 2
@@ -51,6 +55,7 @@ size_flags_vertical = 4
 size_flags_stretch_ratio = 0.5
 theme_type_variation = &"DialogButton"
 disabled = true
+text = "Продовжити"
 
 [node name="Spacer2" type="Control" parent="CanvasLayer/PanelContainer/HBoxContainer"]
 layout_mode = 2

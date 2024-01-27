@@ -8,7 +8,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "SHIZA_RPL_1",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/start/StartShiza1.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl1"
 			},
@@ -17,7 +17,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "SHIZA_RPL_2",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/start/StartShiza2.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl2"
 			},
@@ -26,7 +26,7 @@
 				"actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "PLAYER_RPL_1",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/start/StartPlayer1.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl3"
 			},
@@ -35,7 +35,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "SHIZA_RPL_3",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/start/StartShiza3.mp3",
 				"optionReplicas":["rpl4","rpl5"],
 				"nextReplica": "choice"
 			},
@@ -44,7 +44,7 @@
 				"actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "SHIZA_RPL_3_PLAYER_RPL_OPTION_1",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/start/StartPlayer2.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl6"
 			},
@@ -53,7 +53,7 @@
 				"actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "SHIZA_RPL_3_PLAYER_RPL_OPTION_2",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/start/StartPlayer3.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl6"
 			},
@@ -62,7 +62,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "SHIZA_RPL_4",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/start/StartShiza4.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl7"
 			},
@@ -71,7 +71,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "SHIZA_RPL_5",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/start/StartShiza5.mp3",
 				"optionReplicas":["rpl8","rpl9","rpl10"],
 				"nextReplica": "choice"
 			},
@@ -80,7 +80,7 @@
 				"actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "SHIZA_RPL_5_PLAYER_RPL_OPTION_1",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/start/StartPlayer4.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl11"
 			},
@@ -89,7 +89,7 @@
 				"actorName":"INNER_VOICE",
 				"visibleName":"SHINNER_VOICEIZA",
 				"text": "SHIZA_RPL_5_PLAYER_RPL_OPTION_2",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/start/StartPlayer5.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl11"
 			},
@@ -98,7 +98,7 @@
 				"actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "SHIZA_RPL_5_PLAYER_RPL_OPTION_3",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/start/StartPlayer6.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl11"
 			},
@@ -107,7 +107,7 @@
                 "actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "SHIZA_RPL_6",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/start/StartShiza6.mp3",
 				"optionReplicas":[],
 				"nextReplica": "end"
             },
@@ -129,9 +129,9 @@
             "start":
 			{
 				"actorName":"SHIZA",
-				"visibleName":"SHIZA",
+				"visibleName":"SHIZA", 
 				"text": "SCHOOL_SHIZA_RPL_1",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/shiza/SchoolShiza1.mp3",
 				"optionReplicas":["rpl1"],
 				"nextReplica": "choice"
 			},
@@ -140,7 +140,7 @@
                 "actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "SCHOOL_SHIZA_RPL_1_PLAYER_RPL_OPTION_1",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/shiza/SchoolPlayer1.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl2"
             },
@@ -149,7 +149,7 @@
                 "actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "SCHOOL_PLAYER_RPL_1",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/shiza/narrator_school_1.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl3"
             },
@@ -158,7 +158,7 @@
                 "actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "SCHOOL_PLAYER_RPL_2",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/shiza/SchoolPlayer2.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl4"
             },
@@ -167,7 +167,7 @@
                 "actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "SCHOOL_PLAYER_RPL_3",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/shiza/SchoolPlayer3.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl5"
             },
@@ -176,7 +176,7 @@
                 "actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "SCHOOL_PLAYER_RPL_4",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/shiza/SchoolPlayer4.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl6"
             },
@@ -185,7 +185,7 @@
                 "actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "SCHOOL_SHIZA_RPL_2",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/shiza/SchoolShiza2.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl7"
             },
@@ -194,7 +194,7 @@
                 "actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "SCHOOL_SHIZA_RPL_3",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/shiza/SchoolShiza3.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl8"
             },
@@ -203,7 +203,7 @@
                 "actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "SCHOOL_SHIZA_RPL_4",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/shiza/SchoolShiza4.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl9"
             },
@@ -212,7 +212,7 @@
                 "actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "SCHOOL_SHIZA_RPL_5",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/shiza/SchoolShiza5.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl10"
             },
@@ -221,7 +221,7 @@
                 "actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "SCHOOL_PLAYER_RPL_5",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/shiza/narrator_school_2.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl11"
             },
@@ -230,7 +230,7 @@
                 "actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "SCHOOL_PLAYER_RPL_6",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/shiza/SchoolPlayer5.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl12"
             },
@@ -239,7 +239,7 @@
                 "actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "SCHOOL_PLAYER_RPL_7",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/shiza/SchoolPlayer6.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl13"
             },
@@ -248,7 +248,7 @@
                 "actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "SCHOOL_PLAYER_RPL_8",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/shiza/SchoolPlayer7.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl14"
             },
@@ -257,7 +257,7 @@
                 "actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "SCHOOL_SHIZA_RPL_6",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/shiza/SchoolShiza6.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl15"
             },
@@ -266,7 +266,7 @@
                 "actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "SCHOOL_SHIZA_RPL_7",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/shiza/SchoolShiza7.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl16"
             },
@@ -275,7 +275,7 @@
                 "actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "SCHOOL_SHIZA_RPL_8",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/shiza/SchoolShiza8.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl17"
             },
@@ -284,7 +284,7 @@
                 "actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "SCHOOL_SHIZA_RPL_9",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/shiza/SchoolShiza9.mp3",
 				"optionReplicas":[],
 				"nextReplica": "end"
             },
@@ -308,7 +308,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FORREST_SHIZA_RPL_1",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/forrest/shiza/ForrestShiza1.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl2"
 			},
@@ -317,7 +317,7 @@
 				"actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "FORREST_PLAYER_RPL_1",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/forrest/shiza/narrator_forest_1.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl3"
 			},
@@ -326,7 +326,7 @@
 				"actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "FORREST_PLAYER_RPL_2",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/forrest/shiza/narrator_forest_2.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl4"
 			},
@@ -335,7 +335,7 @@
 				"actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "FORREST_PLAYER_RPL_3",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/forrest/shiza/narrator_forest_3.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl5"
 			},
@@ -344,16 +344,16 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FORREST_SHIZA_RPL_2",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/forrest/shiza/ForrestShiza2.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl6"
 			},
             "rpl6":
 			{
-				"actorName":"SHIZA",
-				"visibleName":"SHIZA",
+				"actorName":"INNER_VOICE",
+				"visibleName":"INNER_VOICE",
 				"text": "FORREST_SHIZA_RPL_3",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/forrest/shiza/ForrestPlayer1.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl8"
 			},
@@ -362,7 +362,7 @@
 				"actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "FORREST_PLAYER_RPL_4",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/forrest/shiza/ForrestPlayer2.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl9"
 			},
@@ -371,7 +371,7 @@
 				"actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "FORREST_PLAYER_RPL_5",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/forrest/shiza/ForrestPlayer3.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl10"
 			},
@@ -380,7 +380,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FORREST_SHIZA_RPL_4",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/forrest/shiza/ForrestShiza3.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl11"
 			},
@@ -389,7 +389,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FORREST_SHIZA_RPL_5",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/forrest/shiza/ForrestShiza4.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl12"
 			},
@@ -398,7 +398,7 @@
 				"actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "FORREST_PLAYER_RPL_6",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/forrest/shiza/narrator_forest_4.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl13"
 			},
@@ -407,7 +407,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FORREST_SHIZA_RPL_6",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/forrest/shiza/ForrestShiza5.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl14"
 			},
@@ -416,7 +416,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FORREST_SHIZA_RPL_7",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/forrest/shiza/ForrestShiza6.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl15"
 			},
@@ -425,7 +425,7 @@
 				"actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "FORREST_PLAYER_RPL_7",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/forrest/shiza/narrator_forest_5.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl16"
 			},
@@ -434,7 +434,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FORREST_SHIZA_RPL_8",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/forrest/shiza/ForrestShiza7.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl17"
 			},
@@ -443,7 +443,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FORREST_SHIZA_RPL_9",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/forrest/shiza/ForrestShiza8.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl18"
 			},
@@ -452,7 +452,7 @@
 				"actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "FORREST_PLAYER_RPL_8",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/forrest/shiza/narrator_forest_6.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl19"
 			},
@@ -461,7 +461,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FORREST_SHIZA_RPL_10",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/forrest/shiza/ForrestShiza9.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl20"
 			},
@@ -470,7 +470,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FORREST_SHIZA_RPL_11",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/forrest/shiza/ForrestShiza10.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl21"
 			},
@@ -479,7 +479,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FORREST_SHIZA_RPL_12",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/forrest/shiza/ForrestShiza11.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl22"
 			},
@@ -488,7 +488,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FORREST_SHIZA_RPL_13",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/forrest/shiza/ForrestShiza12.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl23"
 			},
@@ -497,7 +497,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FORREST_SHIZA_RPL_14",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/forrest/shiza/ForrestShiza13.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl24"
 			},
@@ -506,7 +506,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FORREST_SHIZA_RPL_15",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/forrest/shiza/ForrestShiza14.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl25"
 			},
@@ -515,7 +515,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FORREST_SHIZA_RPL_16",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/forrest/shiza/ForrestShiza15.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl26"
 			},
@@ -524,7 +524,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FORREST_SHIZA_RPL_17",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/forrest/shiza/ForrestShiza16.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl28"
 			},
@@ -533,7 +533,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FORREST_SHIZA_RPL_18",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/forrest/shiza/ForrestShiza17.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl29"
 			},
@@ -542,7 +542,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FORREST_SHIZA_RPL_19",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/forrest/shiza/ForrestShiza18.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl30"
 			},
@@ -551,7 +551,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FORREST_SHIZA_RPL_20",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/forrest/shiza/ForrestShiza19.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl31"
 			},
@@ -560,16 +560,16 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FORREST_SHIZA_RPL_21",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/forrest/shiza/ForrestShiza20.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl32"
 			},
             "rpl32":
-			{
+			{ 
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FORREST_SHIZA_RPL_22",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/forrest/shiza/ForrestShiza21.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl33"
 			},
@@ -578,7 +578,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FORREST_SHIZA_RPL_23",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/forrest/shiza/ForrestShiza22.mp3",
 				"optionReplicas":[],
 				"nextReplica": "end"
 			},
@@ -602,7 +602,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "MIRROR_SHIZA_RPL_1",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/shiza/MirrorShiza1.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl1"
 			},
@@ -611,7 +611,7 @@
                 "actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "MIRROR_SHIZA_RPL_2",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/shiza/MirrorShiza2.mp3",
 				"optionReplicas":["rpl2"],
 				"nextReplica": "choice"
             },
@@ -620,7 +620,7 @@
                 "actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "MIRROR_SHIZA_RPL_2_PLAYER_OPTION_1",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/shiza/MirrorPlayer1.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl3"
             },
@@ -629,7 +629,7 @@
                 "actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "MIRROR_SHIZA_RPL_3",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/shiza/MirrorShiza3.mp3",
 				"optionReplicas":["rpl4"],
 				"nextReplica": "choice"
             },
@@ -638,7 +638,7 @@
                 "actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "MIRROR_SHIZA_RPL_3_PLAYER_OPTION_1",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/shiza/MirrorPlayer2.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl5"
             },
@@ -647,7 +647,7 @@
                 "actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "MIRROR_SHIZA_RPL_4",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/shiza/MirrorShiza4.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl6"
             },
@@ -656,7 +656,7 @@
                 "actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "MIRROR_SHIZA_RPL_5",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/shiza/MirrorShiza5.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl7"
             },
@@ -665,7 +665,7 @@
                 "actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "MIRROR_SHIZA_RPL_6",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/shiza/MirrorShiza6.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl9"
             },
@@ -674,7 +674,7 @@
                 "actorName":"BROKEN_HEARTH",
 				"visibleName":"BROKEN_HEARTH",
 				"text": "MIRROR_BROKEN_HEARTH_RPL_1",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/shiza/BrokenHearth1.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl10"
             },
@@ -683,7 +683,7 @@
                 "actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "MIRROR_SHIZA_RPL_7",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/shiza/MirrorShiza7.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl11"
             },
@@ -692,7 +692,7 @@
                 "actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "MIRROR_SHIZA_RPL_8",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/shiza/MirrorShiza8.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl12"
             },
@@ -701,7 +701,7 @@
                 "actorName":"BROKEN_HEARTH",
 				"visibleName":"BROKEN_HEARTH",
 				"text": "MIRROR_BROKEN_HEARTH_RPL_2",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/shiza/BrokenHearth2.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl13"
             },
@@ -710,7 +710,7 @@
                 "actorName":"BROKEN_HEARTH",
 				"visibleName":"BROKEN_HEARTH",
 				"text": "MIRROR_BROKEN_HEARTH_RPL_3",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/shiza/BrokenHearth3.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl15"
             },
@@ -719,7 +719,7 @@
                 "actorName":"BROKEN_HEARTH",
 				"visibleName":"BROKEN_HEARTH",
 				"text": "MIRROR_BROKEN_HEARTH_RPL_4",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/shiza/BrokenHearth4.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl16"
             },
@@ -728,7 +728,7 @@
                 "actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "MIRROR_SHIZA_RPL_9",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/shiza/MirrorShiza9.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl17"
             },
@@ -737,7 +737,7 @@
                 "actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "MIRROR_SHIZA_RPL_10",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/shiza/yolup.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl19"
             },
@@ -746,7 +746,7 @@
                 "actorName":"BROKEN_HEARTH",
 				"visibleName":"BROKEN_HEARTH",
 				"text": "MIRROR_BROKEN_HEARTH_RPL_5",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/shiza/BrokenHearth5.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl20"
             },
@@ -755,7 +755,7 @@
                 "actorName":"BROKEN_HEARTH",
 				"visibleName":"BROKEN_HEARTH",
 				"text": "MIRROR_BROKEN_HEARTH_RPL_6",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/shiza/BrokenHearth6.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl21"
             },
@@ -764,7 +764,7 @@
                 "actorName":"BROKEN_HEARTH",
 				"visibleName":"BROKEN_HEARTH",
 				"text": "MIRROR_BROKEN_HEARTH_RPL_7",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/shiza/BrokenHearth7.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl22"
             },
@@ -773,7 +773,7 @@
                 "actorName":"BROKEN_HEARTH",
 				"visibleName":"BROKEN_HEARTH",
 				"text": "MIRROR_BROKEN_HEARTH_RPL_8",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/shiza/BrokenHearth8.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl23"
             },
@@ -782,7 +782,7 @@
                 "actorName":"BROKEN_HEARTH",
 				"visibleName":"BROKEN_HEARTH",
 				"text": "MIRROR_BROKEN_HEARTH_RPL_9",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/shiza/BrokenHearth9.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl24"
             },
@@ -791,7 +791,7 @@
                 "actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "MIRROR_SHIZA_RPL_11",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/shiza/MirrorShiza10.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl25"
             },
@@ -800,7 +800,7 @@
                 "actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "MIRROR_SHIZA_RPL_12",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/shiza/MirrorShiza11.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl26"
             },
@@ -809,7 +809,7 @@
                 "actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "MIRROR_SHIZA_RPL_13",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/shiza/MirrorShiza12.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl27"
             },
@@ -818,7 +818,7 @@
                 "actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "MIRROR_PLAYER_RPL_1",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/shiza/MirrorPlayer3.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl28"
             },
@@ -827,7 +827,7 @@
                 "actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "MIRROR_PLAYER_RPL_2",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/shiza/MirrorPlayer4.mp3",
 				"optionReplicas":[],
 				"nextReplica": "end"
             },
@@ -851,7 +851,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FINAL_SHIZA_RPL_1",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/final/FinalShiza1.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl1"
 			},
@@ -860,7 +860,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FINAL_SHIZA_RPL_2",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/final/FinalShiza2.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl2"
 			},
@@ -869,7 +869,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FINAL_SHIZA_RPL_3",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/final/FinalShiza3.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl3"
 			},
@@ -878,7 +878,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FINAL_SHIZA_RPL_4",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/final/FinalShiza4.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl4"
 			},
@@ -887,7 +887,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FINAL_SHIZA_RPL_5",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/final/FinalShiza5.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl5"
 			},
@@ -896,7 +896,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FINAL_SHIZA_RPL_6",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/final/FinalShiza6.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl6"
 			},
@@ -905,7 +905,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FINAL_SHIZA_RPL_7",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/final/FinalShiza7.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl7"
 			},
@@ -914,7 +914,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FINAL_SHIZA_RPL_8",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/final/FinalShiza8.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl9"
 			},
@@ -923,7 +923,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FINAL_SHIZA_RPL_9",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/final/FinalShiza9.mp3",
 				"optionReplicas":["rpl10","badEnding"],
 				"nextReplica": "choice"
 			},
@@ -932,7 +932,7 @@
 				"actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "FINAL_SHIZA_RPL_9_PLAYER_OPTION_1",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/final/FinalPlayer1.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl14"
 			},
@@ -941,7 +941,7 @@
 				"actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "FINAL_SHIZA_RPL_9_PLAYER_OPTION_2",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/final/FinalPlayer8.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl12"
 			},
@@ -950,7 +950,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FINAL_SHIZA_RPL_10_OPTION_2",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/final/FinalShiza22.mp3",
 				"optionReplicas":[],
 				"nextReplica": "badEndingReturnToRoom"
 			},
@@ -959,7 +959,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FINAL_SHIZA_RPL_11_OPTION_2",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/final/FinalShiza23.mp3",
 				"optionReplicas":[],
 				"nextReplica": "end"
 			},
@@ -968,7 +968,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FINAL_SHIZA_RPL_10_OPTION_1",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/final/FinalShiza10.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl15"
 			},
@@ -977,7 +977,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FINAL_SHIZA_RPL_11_OPTION_1",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/final/FinalShiza11.mp3",
 				"optionReplicas":["rpl16","rpl17"],
 				"nextReplica": "choice"
 			},
@@ -986,7 +986,7 @@
 				"actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "FINAL_SHIZA_RPL_11_OPTION_1_PLAYER_OPTION_1",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/final/FinalPlayer2.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl18"
 			},
@@ -995,7 +995,7 @@
 				"actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "FINAL_SHIZA_RPL_11_OPTION_1_PLAYER_OPTION_2",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/final/FinalPlayer4.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl22"
 			},
@@ -1004,7 +1004,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FINAL_SHIZA_RPL_12_OPTION_1_1",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/final/FinalShiza12.mp3",
 				"optionReplicas":["rpl19"],
 				"nextReplica": "choice"
 			},
@@ -1013,7 +1013,7 @@
 				"actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "FINAL_PLAYER_RPL_1_OPTION_1_1",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/final/FinalPlayer3.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl20"
 			},
@@ -1022,7 +1022,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FINAL_SHIZA_RPL_13_OPTION_1_1",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/final/FinalShiza13.mp3",
 				"optionReplicas":[],
 				"nextReplica": "middleEndingReturnToRealWorld"
 			},
@@ -1031,7 +1031,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FINAL_SHIZA_RPL_14_OPTION_1_1",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/final/FinalShiza14.mp3",
 				"optionReplicas":[],
 				"nextReplica": "end"
 			},
@@ -1040,7 +1040,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FINAL_SHIZA_RPL_13_OPTION_1_2",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/final/FinalShiza15.mp3",
 				"optionReplicas":["rpl23"],
 				"nextReplica": "choice"
 			},
@@ -1049,7 +1049,7 @@
 				"actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "FINAL_PLAYER_RPL_1_OPTION_1_2",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/final/FinalPlayer5.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl24"
 			},
@@ -1058,7 +1058,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FINAL_SHIZA_RPL_14_OPTION_1_2",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/final/FinalShiza16.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl25"
 			},
@@ -1067,7 +1067,7 @@
 				"actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "FINAL_PLAYER_RPL_2_OPTION_1_2",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/final/FinalPlayer6.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl26"
 			},
@@ -1076,7 +1076,7 @@
 				"actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "FINAL_PLAYER_RPL_3_OPTION_1_2",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/final/FinalPlayer7.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl27"
 			},
@@ -1085,7 +1085,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FINAL_SHIZA_RPL_15_OPTION_1_2",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/final/FinalShiza17.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl28"
 			},
@@ -1094,7 +1094,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FINAL_SHIZA_RPL_16_OPTION_1_2",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/final/FinalShiza18.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl29"
 			},
@@ -1103,7 +1103,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FINAL_SHIZA_RPL_17_OPTION_1_2",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/final/FinalShiza19.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl30"
 			},
@@ -1112,7 +1112,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FINAL_SHIZA_RPL_18_OPTION_1_2",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/final/FinalShiza20.mp3",
 				"optionReplicas":[],
 				"nextReplica": "goodEnding"
 			},
@@ -1121,7 +1121,7 @@
 				"actorName":"SHIZA",
 				"visibleName":"SHIZA",
 				"text": "FINAL_SHIZA_RPL_19_OPTION_1_2",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/final/FinalShiza21.mp3",
 				"optionReplicas":[],
 				"nextReplica": "end"
 			},
@@ -1145,7 +1145,7 @@
 				"actorName":"MASK_APATHY",
 				"visibleName":"MASK_APATHY",
 				"text": "MIRROR_MASK_APATHY_RPL_1",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/masks/indifferenece.mp3",
 				"optionReplicas":[],
 				"nextReplica": "end"
 			},
@@ -1169,7 +1169,7 @@
 				"actorName":"MASK_HAPPY",
 				"visibleName":"MASK_HAPPY",
 				"text": "MIRROR_MASK_HAPPPY_RPL_1",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/masks/happyness.mp3",
 				"optionReplicas":[],
 				"nextReplica": "end"
 			},
@@ -1193,7 +1193,7 @@
 				"actorName":"MASK_SAD",
 				"visibleName":"MASK_SAD",
 				"text": "MIRROR_MASK_SAD_RPL_1",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/masks/sadness.mp3",
 				"optionReplicas":[],
 				"nextReplica": "end"
 			},
@@ -1217,7 +1217,7 @@
 				"actorName":"MASK_PINK",
 				"visibleName":"MASK_PINK",
 				"text": "MIRROR_MASK_PINK_RPL_1",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/masks/narrator_mirror_0.mp3",
 				"optionReplicas":[],
 				"nextReplica": "end"
 			},
@@ -1241,7 +1241,7 @@
 				"actorName":"STRANGE_MIRROR",
 				"visibleName":"STRANGE_MIRROR",
 				"text": "MIRROR_MIRROR_RPL_1",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/strange_mirror/mirror_0.mp3",
 				"optionReplicas":["sad4","apathy4","happy4","pink4"],
 				"nextReplica": "choice"
 			},
@@ -1286,7 +1286,7 @@
 				"actorName":"STRANGE_MIRROR",
 				"visibleName":"STRANGE_MIRROR",
 				"text": "MIRROR_MIRROR_RPL_2",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/strange_mirror/mirror_1.mp3",
 				"optionReplicas":["Sad_apathy3","Sad_happy3","Sad_pink3"],
 				"nextReplica": "choice"
 			},
@@ -1322,7 +1322,7 @@
 				"actorName":"STRANGE_MIRROR",
 				"visibleName":"STRANGE_MIRROR",
 				"text": "MIRROR_MIRROR_RPL_2",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/strange_mirror/mirror_1.mp3",
 				"optionReplicas":["Apathy_sad3","Apathy_happy3","Apathy_pink3"],
 				"nextReplica": "choice"
 			},
@@ -1358,8 +1358,8 @@
 				"actorName":"STRANGE_MIRROR",
 				"visibleName":"STRANGE_MIRROR",
 				"text": "MIRROR_MIRROR_RPL_2",
-				"audioPath": "",
-				"optionReplicas":["Happy_sad3","Happy_apathy3","Happy_pink3"],
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/strange_mirror/mirror_1.mp3",
+				"optionReplicas":["Happy_apathy3","Happy_sad3","Happy_pink3"],
 				"nextReplica": "choice"
 			},
             "Happy_sad3":
@@ -1394,7 +1394,7 @@
 				"actorName":"STRANGE_MIRROR",
 				"visibleName":"STRANGE_MIRROR",
 				"text": "MIRROR_MIRROR_RPL_2",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/strange_mirror/mirror_1.mp3",
 				"optionReplicas":["Pink_sad3","Pink_apathy3","Pink_happy3"],
 				"nextReplica": "choice"
 			},
@@ -1430,7 +1430,7 @@
                 "actorName":"STRANGE_MIRROR",
 				"visibleName":"STRANGE_MIRROR",
 				"text": "MIRROR_MIRROR_RPL_3",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/strange_mirror/mirror_2.mp3",
 				"optionReplicas":["SadApathy_happy2","SadApathy_pink2"],
 				"nextReplica": "choice"
             },
@@ -1457,7 +1457,7 @@
                 "actorName":"STRANGE_MIRROR",
 				"visibleName":"STRANGE_MIRROR",
 				"text": "MIRROR_MIRROR_RPL_3",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/strange_mirror/mirror_2.mp3",
 				"optionReplicas":["SadHappy_apathy2","SadHappy_pink2"],
 				"nextReplica": "choice"
             },
@@ -1484,7 +1484,7 @@
                 "actorName":"STRANGE_MIRROR",
 				"visibleName":"STRANGE_MIRROR",
 				"text": "MIRROR_MIRROR_RPL_3",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/strange_mirror/mirror_2.mp3",
 				"optionReplicas":["SadPink_apathy2","SadPink_happy2"],
 				"nextReplica": "choice"
             },
@@ -1511,7 +1511,7 @@
                 "actorName":"STRANGE_MIRROR",
 				"visibleName":"STRANGE_MIRROR",
 				"text": "MIRROR_MIRROR_RPL_3",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/strange_mirror/mirror_2.mp3",
 				"optionReplicas":["ApathyHappy_sad2","ApathyHappy_pink2"],
 				"nextReplica": "choice"
             },
@@ -1538,7 +1538,7 @@
                 "actorName":"STRANGE_MIRROR",
 				"visibleName":"STRANGE_MIRROR",
 				"text": "MIRROR_MIRROR_RPL_3",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/strange_mirror/mirror_2.mp3",
 				"optionReplicas":["ApathyPink_sad2","ApathyPink_happy2"],
 				"nextReplica": "choice"
             },
@@ -1565,7 +1565,7 @@
                 "actorName":"STRANGE_MIRROR",
 				"visibleName":"STRANGE_MIRROR",
 				"text": "MIRROR_MIRROR_RPL_3",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/strange_mirror/mirror_2.mp3",
 				"optionReplicas":["ApathySad_pink2","ApathySad_happy2"],
 				"nextReplica": "choice"
             },
@@ -1592,7 +1592,7 @@
                 "actorName":"STRANGE_MIRROR",
 				"visibleName":"STRANGE_MIRROR",
 				"text": "MIRROR_MIRROR_RPL_3",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/strange_mirror/mirror_2.mp3",
 				"optionReplicas":["HappyPink_sad2","HappyPink_apathy2"],
 				"nextReplica": "choice"
             },
@@ -1619,8 +1619,8 @@
                 "actorName":"STRANGE_MIRROR",
 				"visibleName":"STRANGE_MIRROR",
 				"text": "MIRROR_MIRROR_RPL_3",
-				"audioPath": "",
-				"optionReplicas":["HappySad_pinkd2","HappySad_apathy2"],
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/strange_mirror/mirror_2.mp3",
+				"optionReplicas":["HappySad_apathy2","HappySad_pinkd2"],
 				"nextReplica": "choice"
             },
             "HappySad_pinkd2":
@@ -1637,7 +1637,7 @@
                 "actorName":"STRANGE_MIRROR",
 				"visibleName":"STRANGE_MIRROR",
 				"text": "MIRROR_MIRROR_RPL_4_SUCCESS",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/strange_mirror/mirror_3.mp3",
 				"optionReplicas":["success_1","success_2"],
 				"nextReplica": "choice"
             },
@@ -1655,7 +1655,7 @@
                 "actorName":"STRANGE_MIRROR",
 				"visibleName":"STRANGE_MIRROR",
 				"text": "MIRROR_MIRROR_RPL_3",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/strange_mirror/mirror_2.mp3",
 				"optionReplicas":["HappyApathy_pink2","HappyApathy_sad2"],
 				"nextReplica": "choice"
             },
@@ -1682,7 +1682,7 @@
                 "actorName":"STRANGE_MIRROR",
 				"visibleName":"STRANGE_MIRROR",
 				"text": "MIRROR_MIRROR_RPL_3",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/strange_mirror/mirror_2.mp3",
 				"optionReplicas":["PinkHappy_apathy2","PinkHappy_sad2"],
 				"nextReplica": "choice"
             },
@@ -1709,7 +1709,7 @@
                 "actorName":"STRANGE_MIRROR",
 				"visibleName":"STRANGE_MIRROR",
 				"text": "MIRROR_MIRROR_RPL_3",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/strange_mirror/mirror_2.mp3",
 				"optionReplicas":["PinkSad_apathy2","PinkSad_happy2"],
 				"nextReplica": "choice"
             },
@@ -1736,7 +1736,7 @@
                 "actorName":"STRANGE_MIRROR",
 				"visibleName":"STRANGE_MIRROR",
 				"text": "MIRROR_MIRROR_RPL_3",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/strange_mirror/mirror_2.mp3",
 				"optionReplicas":["PinkApathy_sad2","PinkApathy_happy2"],
 				"nextReplica": "choice"
             },
@@ -1763,7 +1763,7 @@
                 "actorName":"STRANGE_MIRROR",
 				"visibleName":"STRANGE_MIRROR",
 				"text": "MIRROR_MIRROR_RPL_4_SUCCESS_OPTION_1",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/strange_mirror/StrangeMirrorPlayer1.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl1"
             },
@@ -1772,7 +1772,7 @@
                 "actorName":"STRANGE_MIRROR",
 				"visibleName":"STRANGE_MIRROR",
 				"text": "MIRROR_MIRROR_RPL_4_SUCCESS_OPTION_2",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/strange_mirror/StrangeMirrorPlayer2.mp3",
 				"optionReplicas":[],
 				"nextReplica": "end"
             },
@@ -1781,7 +1781,7 @@
                 "actorName":"STRANGE_MIRROR",
 				"visibleName":"STRANGE_MIRROR",
 				"text": "MIRROR_MIRROR_RPL_5",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/strange_mirror/mirror_5.mp3",
 				"optionReplicas":"",
 				"nextReplica": "rpl2"
             },
@@ -1790,7 +1790,7 @@
                 "actorName":"STRANGE_MIRROR",
 				"visibleName":"STRANGE_MIRROR",
 				"text": "MIRROR_MIRROR_RPL_6",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/strange_mirror/mirror_6.mp3",
 				"optionReplicas":"",
 				"nextReplica": "rpl3"
             },
@@ -1799,7 +1799,7 @@
                 "actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "MIRROR_PLAYER_RPL_7",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/strange_mirror/StrangeMirrorPlayer3.mp3",
 				"optionReplicas":"",
 				"nextReplica": "rpl4"
             },
@@ -1808,7 +1808,7 @@
                 "actorName":"STRANGE_MIRROR",
 				"visibleName":"STRANGE_MIRROR",
 				"text": "MIRROR_MIRROR_RPL_8",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/strange_mirror/mirror_7.mp3",
 				"optionReplicas":"",
 				"nextReplica": "end"
             },
@@ -1816,7 +1816,7 @@
                 "actorName":"STRANGE_MIRROR",
 				"visibleName":"STRANGE_MIRROR",
 				"text": "MIRROR_MIRROR_RPL_4_FAIL",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/mirror/strange_mirror/mirror_4.mp3",
 				"optionReplicas":"",
 				"nextReplica": "end"
             },
@@ -1840,7 +1840,7 @@
 				"actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "FORREST_NOTE",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/forrest/note/ForrestNote.mp3",
 				"optionReplicas":[],
 				"nextReplica": "end"
 			},
@@ -1864,7 +1864,7 @@
 				"actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "SCHOOL_DESK_PLAYER_RPL_1",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/teacher_desk/teacher_desk_1.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl1"
 			},
@@ -1873,7 +1873,7 @@
                 "actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "SCHOOL_DESK_PLAYER_RPL_2",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/teacher_desk/teacher_desk_2.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl2"
             },
@@ -1882,7 +1882,7 @@
                 "actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "SCHOOL_DESK_PLAYER_RPL_3",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/teacher_desk/teacher_desk_3.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl3"
             },
@@ -1891,7 +1891,7 @@
                 "actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "SCHOOL_DESK_PLAYER_RPL_4",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/teacher_desk/teacher_desk_4.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl4"
             },
@@ -1900,7 +1900,7 @@
                 "actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "SCHOOL_DESK_PLAYER_RPL_5",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/teacher_desk/teacher_desk_5.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl5"
             },
@@ -1909,7 +1909,7 @@
                 "actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "SCHOOL_DESK_PLAYER_RPL_6",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/teacher_desk/teacher_desk_6.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl6"
             },
@@ -1918,7 +1918,7 @@
                 "actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "SCHOOL_DESK_PLAYER_RPL_7",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/teacher_desk/teacher_desk_7.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl7"
             },
@@ -1927,7 +1927,7 @@
                 "actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "SCHOOL_DESK_PLAYER_RPL_8",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/teacher_desk/teacher_desk_8.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl8"
             },
@@ -1936,7 +1936,7 @@
                 "actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "SCHOOL_DESK_PLAYER_RPL_9",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/teacher_desk/teacher_desk_9.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl9"
             },
@@ -1945,7 +1945,7 @@
                 "actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "SCHOOL_DESK_PLAYER_RPL_10",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/teacher_desk/teacher_desk_10.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl10"
             },
@@ -1954,7 +1954,7 @@
                 "actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "SCHOOL_DESK_PLAYER_RPL_11",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/teacher_desk/teacher_desk_11.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl11"
             },
@@ -1963,7 +1963,7 @@
                 "actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "SCHOOL_DESK_PLAYER_RPL_12",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/teacher_desk/teacher_desk_12.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl12"
             },
@@ -1972,16 +1972,16 @@
                 "actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "SCHOOL_DESK_PLAYER_RPL_13",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/teacher_desk/narrator_school_3.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl13"
-            },
+            }, 
             "rpl13":
             {
                 "actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "SCHOOL_DESK_PLAYER_RPL_14",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/teacher_desk/teacher_desk_13.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl14"
             },
@@ -1990,7 +1990,7 @@
                 "actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "SCHOOL_DESK_PLAYER_RPL_15",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/teacher_desk/teacher_desk_14_after_narator.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl15"
             },
@@ -1999,7 +1999,7 @@
                 "actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "SCHOOL_DESK_PLAYER_RPL_16",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/teacher_desk/teacher_desk_15.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl16"
             },
@@ -2008,7 +2008,7 @@
                 "actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "SCHOOL_DESK_PLAYER_RPL_17",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/teacher_desk/teacher_desk_16.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl17"
             },
@@ -2017,7 +2017,7 @@
                 "actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "SCHOOL_DESK_PLAYER_RPL_18",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/teacher_desk/teacher_desk_17.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl18"
             },
@@ -2026,7 +2026,7 @@
                 "actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "SCHOOL_DESK_PLAYER_RPL_19",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/teacher_desk/teacher_desk_18.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl19"
             },
@@ -2035,7 +2035,7 @@
                 "actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "SCHOOL_DESK_PLAYER_RPL_20",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/teacher_desk/teacher_desk_19.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl20"
             },
@@ -2044,7 +2044,7 @@
                 "actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "SCHOOL_DESK_PLAYER_RPL_21",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/teacher_desk/teacher_desk_20.mp3",
 				"optionReplicas":[],
 				"nextReplica": "end"
             },
@@ -2068,7 +2068,7 @@
 				"actorName":"UNKNOW_AUTHOR",
 				"visibleName":"UNKNOW_AUTHOR",
 				"text": "PIECE_OF_PAPER_UNKNOW_AUTHOR_1",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/trash_can/girly_girl_0.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl1"
 			},
@@ -2077,7 +2077,7 @@
 				"actorName":"UNKNOW_AUTHOR",
 				"visibleName":"UNKNOW_AUTHOR",
 				"text": "PIECE_OF_PAPER_UNKNOW_AUTHOR_2",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/trash_can/girly_girl_1.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl2"
 			},
@@ -2086,7 +2086,7 @@
 				"actorName":"UNKNOW_AUTHOR",
 				"visibleName":"UNKNOW_AUTHOR",
 				"text": "PIECE_OF_PAPER_UNKNOW_AUTHOR_3",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/trash_can/girly_girl_2.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl3"
 			},
@@ -2095,7 +2095,7 @@
 				"actorName":"UNKNOW_AUTHOR",
 				"visibleName":"UNKNOW_AUTHOR",
 				"text": "PIECE_OF_PAPER_UNKNOW_AUTHOR_4",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/trash_can/girly_girl_3.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl4"
 			},
@@ -2104,7 +2104,7 @@
 				"actorName":"UNKNOW_AUTHOR",
 				"visibleName":"UNKNOW_AUTHOR",
 				"text": "PIECE_OF_PAPER_UNKNOW_AUTHOR_5",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/trash_can/girly_girl_4.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl5"
 			},
@@ -2113,7 +2113,7 @@
 				"actorName":"UNKNOW_AUTHOR",
 				"visibleName":"UNKNOW_AUTHOR",
 				"text": "PIECE_OF_PAPER_UNKNOW_AUTHOR_6",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/trash_can/narrator_school_4.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl6"
 			},
@@ -2122,7 +2122,7 @@
 				"actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "PIECE_OF_PAPER_PLAYER_1",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/trash_can/Player1.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl7"
 			},
@@ -2131,7 +2131,7 @@
 				"actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "PIECE_OF_PAPER_PLAYER_2",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/trash_can/Player2.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl8"
 			},
@@ -2140,7 +2140,7 @@
 				"actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "PIECE_OF_PAPER_PLAYER_3",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/trash_can/Player3.mp3",
 				"optionReplicas":[],
 				"nextReplica": "end"
 			},
@@ -2164,7 +2164,7 @@
 				"actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "PHOTO_PLAYER_1",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/photo/narrator_school_5.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl1"
 			},
@@ -2173,7 +2173,7 @@
 				"actorName":"SHE",
 				"visibleName":"SHE",
 				"text": "PHOTO_SHE_1",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/photo/girly_girl_5.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl2"
 			},
@@ -2182,7 +2182,7 @@
 				"actorName":"SHE",
 				"visibleName":"SHE",
 				"text": "PHOTO_SHE_2",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/photo/girly_girl_6.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl3"
 			}, 
@@ -2191,7 +2191,7 @@
 				"actorName":"SHE",
 				"visibleName":"SHE",
 				"text": "PHOTO_SHE_3",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/photo/girly_girl_7.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl4"
 			},
@@ -2200,7 +2200,7 @@
 				"actorName":"SHE",
 				"visibleName":"SHE",
 				"text": "PHOTO_SHE_4",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/photo/girly_girl_8.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl5"
 			},
@@ -2209,7 +2209,7 @@
 				"actorName":"SHE",
 				"visibleName":"SHE",
 				"text": "PHOTO_SHE_5",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/photo/girly_girl_9.mp3",
 				"optionReplicas":[], 
 				"nextReplica": "rpl6"
 			},
@@ -2218,7 +2218,7 @@
 				"actorName":"SHE",
 				"visibleName":"SHE",
 				"text": "PHOTO_SHE_6",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/school/photo/narrator_school_6.mp3",
 				"optionReplicas":[],
 				"nextReplica": "end"
 			},
@@ -2242,7 +2242,7 @@
 				"actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "FORREST_BENCH_PLAYER_RPL_1",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/forrest/bench/narrator_forest_7.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl1"
 			},
@@ -2251,7 +2251,7 @@
                 "actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "FORREST_BENCH_PLAYER_RPL_2",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/forrest/bench/ForrestBench1.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl2"
             },
@@ -2260,7 +2260,7 @@
                 "actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "FORREST_BENCH_PLAYER_RPL_3",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/forrest/bench/ForrestBench2.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl3"
             },
@@ -2269,7 +2269,7 @@
                 "actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "FORREST_BENCH_PLAYER_RPL_4",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/forrest/bench/ForrestBench3.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl4"
             },
@@ -2278,7 +2278,7 @@
                 "actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "FORREST_BENCH_PLAYER_RPL_5",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/forrest/bench/ForrestBench4.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl5"
             },
@@ -2287,7 +2287,7 @@
                 "actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "FORREST_BENCH_PLAYER_RPL_6",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/forrest/bench/ForrestBench5.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl6"
             },
@@ -2296,7 +2296,7 @@
                 "actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "FORREST_BENCH_PLAYER_RPL_7",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/forrest/bench/ForrestBench6.mp3",
 				"optionReplicas":[],
 				"nextReplica": "rpl7"
             },
@@ -2305,7 +2305,7 @@
                 "actorName":"INNER_VOICE",
 				"visibleName":"INNER_VOICE",
 				"text": "FORREST_BENCH_PLAYER_RPL_8",
-				"audioPath": "",
+				"audioPath": "res://NotesAndInteractions/Dialogues/resource/Voice/lvl2/forrest/bench/ForrestBench7.mp3",
 				"optionReplicas":[],
 				"nextReplica": "end"
             },

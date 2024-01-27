@@ -31,6 +31,16 @@ func _ready():
 	dialogs = load_dialogs();
 	NotesAndInteractionService.display_dialog.connect(on_display_dialog);
 	
+func _process(delta):
+	if buttons_container.get_child_count() > 0:
+		var isFocused = false;
+		for node in buttons_container.get_children():
+			if node is Button:
+				var button  = node as Button;
+				if button.has_focus():
+					isFocused = true;
+		if not isFocused:
+			buttons_container.get_child(0).grab_focus();
 
 func load_dialogs():
 	if dialog_file != null:
