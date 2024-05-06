@@ -1,1 +1,1 @@
-Game page: https://lightfrosted.itch.io/the-dark-self
+#Game page: https://lightfrosted.itch.io/the-dark-self
